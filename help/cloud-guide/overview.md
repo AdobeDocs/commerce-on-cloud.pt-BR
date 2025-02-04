@@ -1,12 +1,14 @@
 ---
 title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
+source-git-commit: 2cd0f97b89b3a87b40ac36655304b2c1cd11b4b1
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
+
 
 # Commerce na infraestrutura em nuvem
 
