@@ -2,10 +2,11 @@
 title: Patches da nuvem para o Commerce
 description: Consulte uma lista das melhorias mais recentes no pacote de Patches na nuvem.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-10-07T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+last-substantial-update: 2025-02-06T00:00:00Z
+exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
+source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2326'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,16 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 
 <!--Add release notes below-->
 
-## v1.1.2 {#latest}
+## v1.1.3 {#latest}
+
+
+Data de lançamento: 6 de fevereiro de 2025
+
+- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13149	 - -->
+
+
+
+## v1.1.2
 
 Data de lançamento: 5 de novembro de 2024
 

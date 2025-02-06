@@ -2,10 +2,11 @@
 title: Notas de versão do ECE-Tools
 description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-10-07T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+last-substantial-update: 2024-02-06T00:00:00Z
+exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
+source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '3022'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,16 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.0 {#latest}
+## v2002.2.1 {#latest}
+
+
+Data de lançamento: 6 de fevereiro de 2024
+
+- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13145	 - -->
+- ![Ícone de correção](../../assets/fix.svg) **Validador para Opensearch**-Corrigido o validador que gerou uma mensagem enganosa sobre a versão errada do serviço.<!-- MCLOUD-13184	 - -->
+
+
+## v2002.2.0
 
 Data de lançamento: 7 de outubro de 2024
 
