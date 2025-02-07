@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: 6a686858394e65dfbb665bb76332ee13348dad7e
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # ece-tools
 
-**Versão**: 2002.2.0
+**Versão**: 2002.2.1
 
 Esta referência contém 34 comandos disponíveis através da ferramenta de linha de comando `ece-tools`.
 A lista inicial é gerada automaticamente usando o comando `ece-tools list` no Adobe Commerce na infraestrutura em nuvem.
@@ -453,7 +453,7 @@ Para opções globais, consulte [Opções globais](#global-options).
 ece-tools cloud:config:create <configuration>
 ```
 
-Cria um arquivo `.magento.env.yaml` com a configuração de variável de compilação, implantação e pós-implantação especificada. Substitui qualquer arquivo `.magento,.env.yaml` existente.
+Cria um arquivo `.magento.env.yaml` com a configuração de variável de compilação, implantação e pós-implantação especificada. Substitui qualquer arquivo `.magento.env.yaml` existente.
 
 ### Argumentos
 
