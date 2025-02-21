@@ -2,23 +2,24 @@
 title: Fazer backup do banco de dados
 description: Saiba como usar as ferramentas ECE para criar um backup do banco de dados para um projeto de infraestrutura Adobe Commerce na nuvem.
 feature: Cloud, Iaas, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 351f7691-3153-4b8a-83af-8b8895b93d98
+source-git-commit: 3a3b0cd6e28f3e6ed3521a86f7c7c8868be0cf83
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # Fazer backup do banco de dados
 
-Você pode criar uma cópia do banco de dados usando o comando `ece-tools db-dump` sem capturar todos os dados do ambiente de serviços e montagens. Por padrão, este comando cria backups no diretório `/app/var/dump-main` para todas as conexões de banco de dados especificadas na configuração do ambiente. A operação de despejo de BD alterna o aplicativo para o modo de manutenção, interrompe os processos de fila do consumidor e desabilita os trabalhos cron antes do início do despejo.
+Você pode criar uma cópia do banco de dados usando o comando `ece-tools db-dump` sem capturar todos os dados do ambiente de serviços e montagens. Por padrão, este comando cria backups no diretório `app/var/` para todas as conexões de banco de dados especificadas na configuração do ambiente. A operação de despejo de BD alterna o aplicativo para o modo de manutenção, interrompe os processos de fila do consumidor e desabilita os trabalhos cron antes do início do despejo.
 
 Considere as seguintes diretrizes para despejo de banco de dados:
 
-- Para ambientes de produção, o Adobe recomenda concluir operações de despejo de banco de dados fora do horário de pico para minimizar as interrupções de serviço que ocorrem quando o site está no modo de manutenção.
+- Para ambientes de produção, a Adobe recomenda concluir operações de despejo de banco de dados fora do horário de pico para minimizar as interrupções de serviço que ocorrem quando o site está no modo de manutenção.
 - Se ocorrer um erro durante a operação de despejo, o comando exclui o arquivo de despejo para conservar espaço em disco. Examine os logs para obter detalhes (`var/log/cloud.log`).
 - Para ambientes de Produção Pro, esse comando despeja apenas de _um_ dos três nós de alta disponibilidade, portanto, os dados de produção gravados em um nó diferente durante o despejo podem não ser copiados. O comando gera um arquivo `var/dbdump.lock` para impedir que o comando seja executado em mais de um nó.
-- Para um backup de todos os serviços de ambiente, o Adobe recomenda criar um [backup](snapshots.md).
+- Para um backup de todos os serviços de ambiente, a Adobe recomenda criar um [backup](snapshots.md).
 
 Você pode optar por fazer backup de vários bancos de dados anexando os nomes dos bancos de dados ao comando. O exemplo a seguir faz backup de dois bancos de dados: `main` e `sales`:
 
@@ -28,8 +29,8 @@ php vendor/bin/ece-tools db-dump main sales
 
 Use o comando `php vendor/bin/ece-tools db-dump --help` para obter mais opções:
 
-- `--dump-directory=<dir>` — Escolha um diretório de destino para o despejo de banco de dados
-- `--remove-definers`—Remover instruções DEFINER do despejo de banco de dados
+- `--dump-directory=<dir>` — Escolha um diretório de destino para o despejo de banco de dados. **Não escolha diretórios públicos da Web como `pub/media` ou`pub/static`**.
+- `--remove-definers`—Remover instruções DEFINER do despejo de banco de dados.
 
 **Para criar um despejo de banco de dados no ambiente de Preparo ou de Produção**:
 
@@ -49,6 +50,10 @@ Use o comando `php vendor/bin/ece-tools db-dump --help` para obter mais opções
 
 1. Crie um backup do banco de dados. Para escolher um diretório de destino para o despejo do banco de dados, use a opção `--dump-directory`.
 
+   >[!WARNING]
+   >
+   >Se você especificar um diretório de destino, não escolha diretórios públicos da Web como `pub/media` ou `pub/static`.
+
    ```bash
    php vendor/bin/ece-tools db-dump -- main
    ```
@@ -65,7 +70,7 @@ Use o comando `php vendor/bin/ece-tools db-dump --help` para obter mais opções
    [2020-01-28 16:38:10] INFO: Running Magento cron and consumers processes were not found.
    [2020-01-28 16:38:10] INFO: Waiting for lock on db dump.
    [2020-01-28 16:38:10] INFO: Start creation DB dump for main database...
-   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /tmp/qxmtlseakof6y/dump-main-1580229490.sql.gz
+   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /app/qxmtlseakof6y/var/dump-main-1580229490.sql.gz
    [2020-01-28 16:38:10] INFO: Backup completed.
    [2020-01-28 16:38:11] NOTICE: Maintenance mode is disabled.
    ```

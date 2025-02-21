@@ -2,9 +2,10 @@
 title: Gerenciamento de backup
 description: Saiba como criar e restaurar manualmente um backup para seu projeto do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Paas, Snapshots, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
+source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,10 @@ ht-degree: 0%
 Você pode executar um backup manual de ambientes Iniciadores ativos a qualquer momento usando o botão **[!UICONTROL Backup]** no [!DNL Cloud Console] ou usando o comando `magento-cloud snapshot:create`.
 
 Um backup ou _instantâneo_ é um backup completo de dados do ambiente que inclui todos os dados persistentes de serviços em execução (banco de dados MySQL) e quaisquer arquivos armazenados nos volumes montados (var, pub/media, app/etc). O instantâneo _não_ inclui código, pois o código já está armazenado no repositório baseado em Git. Não é possível fazer download de uma cópia de um snapshot.
+
+>[!WARNING]
+>
+>Embora os backups normalmente contenham o conteúdo de diretórios montados, incluindo diretórios da Web públicos como `pub/media`, não mova os arquivos de saída de backup para diretórios da Web públicos como `pub/media` ou `pub/static`.
 
 O recurso de backup/instantâneo **não** se aplica aos ambientes Pro Staging e Production, que recebem backups regulares para fins de recuperação de desastres por padrão. Consulte [Pro Backup &amp; Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery) para obter mais informações. Ao contrário dos backups dinâmicos automáticos nos ambientes Pro Staging e Production, os backups são **não** automáticos. É _sua_ responsabilidade criar manualmente um backup ou configurar um trabalho cron para criar periodicamente um backup dos seus ambientes de integração Starter ou Pro.
 
