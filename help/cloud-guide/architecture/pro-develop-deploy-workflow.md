@@ -2,9 +2,10 @@
 title: Fluxo de trabalho do projeto Pro
 description: Saiba como usar os fluxos de trabalho de desenvolvimento e implantação do Pro.
 feature: Cloud, Iaas, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: efe41991-8940-4d5c-a720-80369274bee3
+source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ O gráfico a seguir demonstra o fluxo de trabalho de desenvolvimento e implanta�
 
 ## Fluxo de trabalho de desenvolvimento
 
-O ambiente de integração fornece uma única ramificação de base `integration` contendo seu Adobe Commerce no código de infraestrutura em nuvem. Você pode criar uma ramificação de ambiente ativa adicional. Isso permite até duas ramificações ativas implantadas nos contêineres do Platform as a service (PaaS). Não há limite para o número de ambientes inativos.
+O ambiente de integração fornece uma única ramificação de base `integration` contendo seu Adobe Commerce no código de infraestrutura em nuvem. Você pode criar uma ramificação de ambiente ativa adicional. Isso permite até duas ramificações ativas implantadas nos contêineres do Platform as a service (PaaS). Não há limite para o número de ambientes inativos. No entanto, quanto mais ambientes inativos houver, mais tempo levará para o Cloud Console carregar.
 
 {{enhanced-integration-envs}}
 
