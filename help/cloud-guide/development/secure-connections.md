@@ -4,9 +4,10 @@ description: Saiba como aplicar chaves SSH ao projeto Adobe Commerce na infraest
 role: Developer
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
+source-git-commit: c25e5b74ae8105995107860246ecb9ba45910bb1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Crie um par de chaves SSH em cada máquina e espaço de trabalho que exija acess
 
 ## Adicionar uma chave pública SSH à sua conta
 
-Depois de adicionar sua chave pública SSH à conta do Adobe Commerce na infraestrutura em nuvem, reimplante todos os ambientes ativos em sua conta para instalar a chave.
+Depois de adicionar ou atualizar sua chave pública SSH para sua conta do Adobe Commerce na infraestrutura em nuvem, [reimplante todos os ambientes ativos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) em sua conta para instalar a chave.
 
 Você pode adicionar chaves SSH à sua conta usando um dos seguintes métodos: Cloud CLI ou [!DNL Cloud Console].
 
