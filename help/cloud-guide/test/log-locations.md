@@ -2,7 +2,8 @@
 title: Exibir e gerenciar logs
 description: Entenda os tipos de arquivos de log disponíveis na infraestrutura da nuvem e onde encontrá-los.
 last-substantial-update: 2023-05-23T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
+source-git-commit: 7615347cd5b528406c2a0e72be3450350655eeb9
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -111,7 +112,7 @@ Re-deploying environment project-integration-ID
 
 >[!TIP]
 >
->Ao configurar o ambiente de nuvem, você pode configurar [Slack baseado em log e notificações por email](../environment/set-up-notifications.md) para criar e implantar ações.
+>Ao configurar seu ambiente de nuvem, você pode configurar [notificações por email e Slack baseadas em log](../environment/set-up-notifications.md) para criar e implantar ações.
 
 Os seguintes logs têm um local comum para todos os projetos na nuvem:
 
@@ -208,13 +209,13 @@ Para ambientes de preparo e produção Pro, os logs de implantação, pós-impla
 
 | Arquivo de log | Estágio Pro | Produção Pro |
 | ------------------- | --------------------------------------------------- | ----------------------------------------------- |
-| **Log de implantação** | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>_stg/deploy.log` | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>/deploy.log` |
-| **Log pós-implantação** | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>_stg/post_deploy.log` | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
-| **Log do Cron** | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>_stg/cron.log` | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>/cron.log` |
-| **Log de acesso do Nginx** | `/var/log/platform/<project-ID>_stg/access.log` | `/var/log/platform/<project-ID>/access.log` |
-| **Log de erros do Nginx** | `/var/log/platform/<project-ID>_stg/error.log` | `/var/log/platform/<project-ID>/error.log` |
-| **log de acesso ao PHP** | `/var/log/platform/<project-ID>_stg/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
-| **log do FPM do PHP** | `/var/log/platform/<project-ID>_stg/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
+| **Log de implantação** | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>_stg*/deploy.log` | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>/deploy.log` |
+| **Log pós-implantação** | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>_stg*/post_deploy.log` | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
+| **Log do Cron** | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>_stg*/cron.log` | Somente o primeiro nó:<br>`/var/log/platform/<project-ID>/cron.log` |
+| **Log de acesso do Nginx** | `/var/log/platform/<project-ID>_stg*/access.log` | `/var/log/platform/<project-ID>/access.log` |
+| **Log de erros do Nginx** | `/var/log/platform/<project-ID>_stg*/error.log` | `/var/log/platform/<project-ID>/error.log` |
+| **log de acesso ao PHP** | `/var/log/platform/<project-ID>_stg*/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
+| **log do FPM do PHP** | `/var/log/platform/<project-ID>_stg*/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
 
 ### Arquivos de log arquivados
 
@@ -234,13 +235,13 @@ Os arquivos de log arquivados são sempre armazenados no diretório onde o arqui
 
 Como cada serviço é executado em um contêiner separado, os logs do serviço não estão disponíveis no ambiente de integração. A infraestrutura do Adobe Commerce na nuvem fornece acesso ao container do servidor Web somente no ambiente de integração. Os seguintes locais de registro de serviço são para os ambientes de produção e preparo profissionais:
 
-- **Log Redis**: `/var/log/platform/<project-ID>_stg/redis-server-<project-ID>_stg.log`
-- **log de Elasticsearch**: `/var/log/elasticsearch/elasticsearch.log`
+- **Log Redis**: `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
+- **log do Elasticsearch**: `/var/log/elasticsearch/elasticsearch.log`
 - **Log de coleta de lixo Java**: `/var/log/elasticsearch/gc.log`
 - **Log de email**: `/var/log/mail.log`
 - **Log de erros do MySQL**: `/var/log/mysql/mysql-error.log`
 - **Log lento do MySQL**: `/var/log/mysql/mysql-slow.log`
-- **log do RabbitMQ**: `/var/log/rabbitmq/rabbit@host1.log`
+- **Log de RabbitMQ**: `/var/log/rabbitmq/rabbit@host1.log`
 
 Os logs de serviço são arquivados e salvos por períodos diferentes, dependendo do tipo de log. Por exemplo, os registros MySQL têm o tempo de vida mais curto, removido após sete dias.
 
