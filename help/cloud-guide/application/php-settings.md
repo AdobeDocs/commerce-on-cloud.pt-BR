@@ -2,9 +2,10 @@
 title: Configurações do PHP
 description: Saiba mais sobre as configurações ideais do PHP para a configuração de aplicativos do Commerce na infraestrutura de nuvem.
 feature: Cloud, Configuration, Extensions
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
+source-git-commit: 1725741cfab62a2791fe95cfae9ed9dffa352339
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -66,10 +67,16 @@ Essas configurações permitem que processos PHP armazenem em cache caminhos par
 
 ### Verificar configurações personalizadas de PHP
 
-Depois de enviar as alterações de `php.ini` para o ambiente em nuvem, você pode verificar se a configuração personalizada do PHP foi adicionada ao ambiente. Por exemplo, use SSH para fazer logon no ambiente remoto e exibir o arquivo usando algo semelhante ao seguinte:
+Depois de enviar as alterações de `php.ini` para o ambiente em nuvem, você pode verificar se a configuração personalizada do PHP foi adicionada ao ambiente. Por exemplo, use SSH para fazer logon no ambiente remoto, exibir informações de configuração do PHP e filtrar a diretiva `register_argc_argv`:
 
 ```bash
-cat /etc/php/<php-version>/fpm/php.ini
+php -i | grep register_argc_ar
+```
+
+Saída de exemplo:
+
+```text
+register_argc_argv => On => On
 ```
 
 >[!WARNING]
@@ -127,7 +134,7 @@ Por exemplo, para configurar o PHP para executar somente scripts protegidos pelo
 sourceguardian.restrict_unencoded = "1"
 ```
 
-Consulte a [seção 3.5 da documentação do SourceGuardian](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _Este é um link para um PDF_.
+Consulte a [seção 3.5 da documentação do SourceGuardian](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _Este é um link para uma PDF_.
 
 [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter ajuda sobre como instalar essas extensões PHP em todos os ambientes de Produção e de Pro Staging. Inclua seu arquivo atualizado `.magento/services.yaml`, arquivo `.magento.app.yaml` com a versão atualizada do PHP e quaisquer extensões adicionais do PHP. Para alterações em um ambiente de Produção em tempo real, você deve fornecer um aviso mínimo de 48 horas. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto.
 
