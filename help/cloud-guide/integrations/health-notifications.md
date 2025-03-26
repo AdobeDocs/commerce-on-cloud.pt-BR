@@ -1,10 +1,11 @@
 ---
 title: Notificações de integridade
-description: Saiba como configurar notificações por Slack, email e PagerDuty para o uso do espaço em disco no seu projeto Adobe Commerce na infraestrutura em nuvem.
+description: Saiba como configurar notificações do Slack, de email e do PagerDuty para o uso do espaço em disco no seu projeto Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Observability, Integration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 5a7f37e9-e8f9-4b6b-b628-60dcaa60cc64
+source-git-commit: c3c708656e3d79c0893d1c02e60dcdf2ad8d7c7c
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -29,9 +30,9 @@ A integração do email de integridade requer um endereço de origem e pelo meno
 magento-cloud integration:add --type health.email --from-address you@example.com --recipients them@example.com --recipients others@example.com
 ```
 
-## Notificações do canal de Slack
+## Notificações de canal do Slack
 
-o Slack é um serviço externo que usa aplicativos interativos chamados bots para postar mensagens em uma sala de chat. Antes de receber notificações de integridade no Slack, você deve criar um [usuário de bot](https://api.slack.com/bot-users) personalizado para o seu grupo de Slack. Após configurar o usuário de bot para seu canal ou canais, salve o [token de bot](https://api.slack.com/docs/token-types#bot) fornecido pelo Slack para registrar sua integração. O exemplo a seguir registra notificações de integridade em um canal Slack:
+O Slack é um serviço externo que usa aplicativos interativos chamados bots para postar mensagens em uma sala de chat. Antes de receber notificações de integridade no Slack, você deve criar um [usuário de bot](https://api.slack.com/bot-users) personalizado para o seu grupo do Slack. Depois de configurar o usuário de bot para seu canal ou canais, salve o [token de bot](https://api.slack.com/docs/token-types#bot) fornecido pela Slack para registrar sua integração. O exemplo a seguir registra notificações de integridade em um canal do Slack:
 
 ```bash
 magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --channel '#slack-channel-name'
@@ -44,3 +45,13 @@ PagerDuty é um serviço externo que pode notificar membros da equipe sobre prob
 ```bash
 magento-cloud integration:add --type health.pagerduty --routing-key PAGERDUTY_ROUTING_KEY
 ```
+
+## Gerenciamento de logs
+
+Para aumentar o espaço disponível em disco, você pode truncar ou remover arquivos de log de seu ambiente. Se o logrotate estiver ativado, primeiro baixe uma cópia de backup dos logs e, em seguida, remova-os:
+
+```bash
+rm -rf some-log-file.log.gz
+```
+
+Como alternativa, você pode truncar arquivos de log individuais para reduzir seu tamanho. Para obter um exemplo detalhado de truncamento de arquivos de log, consulte o tutorial em vídeo Truncar Arquivos de Log{target="_blank"}.
