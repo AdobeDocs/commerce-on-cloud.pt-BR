@@ -3,11 +3,11 @@ title: Pacote do Cloud Docker
 description: Consulte uma lista das melhorias mais recentes no pacote do Cloud Docker.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-02-06T00:00:00Z
+last-substantial-update: 2025-04-03T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: 7f62dbc7db9924abfe304b46ed62d9577471386d
+source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,14 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.4.1 {#latest}
+## v1.4.2 {#latest}
+
+Data de lançamento: 3 de abril de 2025
+
+- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Adição de `php-cli` imagens 8.4 e `php-fpm` imagens 8.4.
+
+
+## v1.4.1
 
 Data de lançamento: 6 de fevereiro de 2025
 
@@ -81,7 +88,7 @@ Data de lançamento: 13 de setembro de 2022
 
 Data de lançamento: 31 de março de 2022
 
-- ![novo ícone](../../assets/new.svg) **Imagem Elasticsearch 7.10 adicionada**<!-- MCLOUD-8548 -->
+- ![novo ícone](../../assets/new.svg) **Imagem do Elasticsearch 7.10 adicionada**<!-- MCLOUD-8548 -->
 
 ## v1.3.1
 
@@ -96,7 +103,7 @@ Data de lançamento: 10 de março de 2022
    - Atualização do xDebug versão 3.1.2
    - xmlrpc 1.0.0RC3 atualizado
 
-- ![ícone de correção](../../assets/fix.svg) **melhorias no Elasticsearch e no OpenSearch**—Melhorias no Elasticsearch e no OpenSearch Dockerfiles; removeu a imagem Elasticsearch 5.2.
+- ![ícone de correção](../../assets/fix.svg) **Melhorias no Elasticsearch e no OpenSearch**—Melhorias no Elasticsearch e no OpenSearch Dockerfiles; removeu a imagem do Elasticsearch 5.2.
 - ![Corrigir ícone](../../assets/fix.svg) **Extensão de sódio**—Habilitou a extensão `sodium` por padrão em todas as imagens PHP.
 - ![ícone de correção](../../assets/fix.svg) **Volume de cache do Composer** — Caminho fixo para o volume de cache do Composer ter pacotes do Composer em cache.
 - ![Ícone de correção](../../assets/fix.svg) **Limitação de memória em nginx**—Limitação de memória corrigida na imagem NGINX.
@@ -126,7 +133,7 @@ Data de lançamento: 29 de julho de 2021
 Data de lançamento: 14 de junho de 2021
 
 - ![novo ícone](../../assets/new.svg) **Adição do PHP 8.0**—Atualização do PHP para a versão 8.0, permitindo que você aproveite todos os novos recursos e otimizações que o PHP 8.0 inclui.<!--MCLOUD-7941-->
-- ![novo ícone](../../assets/new.svg) **Atualizado para o Verniz 6.6 e Elasticsearch 7.11.2**—Os links a seguir fornecem informações sobre a versão do [Cache de Verniz 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) e Elasticsearch 7.11.2.<!--MCLOUD-7921-->
+- ![novo ícone](../../assets/new.svg) **Atualizado para o Vernish 6.6 e o Elasticsearch 7.11.2**—Os links a seguir fornecem informações sobre a versão do [Varnish Cache 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) e do Elasticsearch 7.11.2.<!--MCLOUD-7921-->
 - ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por ](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
 - ![novo ícone](../../assets/new.svg) **Adição de uma opção de sincronização de arquivo:`manual-native`**—A opção de sincronização de arquivo `manual-native` fornece controle manual sobre a sincronização, que fornece o melhor desempenho para ambientes macOS e Windows. Leia sobre como usar a opção `manual-native` no [Modo de desenvolvedor](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/) e [Sincronizando dados em um ambiente de desenvolvedor do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data/#file-synchronization-options).<!--MCLOUD-7977-->
 - ![novo ícone](../../assets/new.svg) **Remoção de exclusões de volume dos comandos `up` e `down`**—A opção `--volume` foi removida dos comandos `bin/magento-docker up` e `bin/magento-docker down`, substituída pelo novo comando `bin/magento-docker init` com um aviso de perda de dados. Essa alteração ajuda a evitar a perda acidental de dados. *[Enviado por joeshelton-wagento](https://github.com/magento/magento-cloud-docker/pull/319).*<!--PR #319-->
@@ -172,7 +179,7 @@ Data de lançamento: 21 de dezembro de 2020
 
 - ![novo ícone](../../assets/new.svg) **Consumo de memória do NGINX**—Reduziu a memória consumida pelo processo do NGINX para TLS e serviços Web.<!--MCLOUD-7259-->
 
-- ![novo ícone](../../assets/new.svg) **Blackfire**—Desabilitou a extensão do PHP Blackfire por padrão na imagem do Cloud Docker.
+- ![novo ícone](../../assets/new.svg) **Blackfire**—Desabilitou a extensão PHP Blackfire por padrão na imagem do Cloud Docker.
 
 - ![ícone de correção](../../assets/fix.svg) **contêiner PHP-FPM**—Corrigiu a verificação de integridade do contêiner PHP-FPM alterando o `WEB_PORT` de `80` para `8080`.<!--MCLOUD-7232-->
 
@@ -190,13 +197,13 @@ Data de lançamento: 9 de novembro de 2020
 
    - ![Ícone de correção](../../assets/fix.svg) **Contêiner de banco de dados**—Corrigiu a verificação de integridade do contêiner de banco de dados adicionando a senha de banco de dados necessária ao comando de verificação de integridade.<!--MCLOUD-7122-->
 
-   - ![novo ícone](../../assets/new.svg) **contêiner de Elasticsearch**
+   - ![novo ícone](../../assets/new.svg) **contêiner Elasticsearch**
 
       - Adição de suporte ao Elasticsearch 7.9 para compatibilidade com versões futuras do Adobe Commerce.<!--MCLOUD-7190-->
 
-      - **Configuração do plug-in de Elasticsearch**—Adição de suporte para usar as informações de configuração do plug-in de Elasticsearch do arquivo `services.yaml` para gerar o arquivo `docker-compose.yaml` para um ambiente do Cloud Docker for Commerce. Consulte [plug-ins de Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-plugins).<!--MCLOUD-2789-->
+      - **Configuração do plug-in do Elasticsearch** — Adição de suporte para usar as informações de configuração do plug-in do Elasticsearch do arquivo `services.yaml` para gerar o arquivo `docker-compose.yaml` para um ambiente do Cloud Docker for Commerce. Consulte [plug-ins do Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-plugins).<!--MCLOUD-2789-->
 
-      - **suporte ao plug-in Elasticsearch**—Suporte adicionado para os seguintes plug-ins Elasticsearch: `analysis-icu`, `analysis-phonetic`, `analysis-stempel` e `analysis-nori`. Os plug-ins `analysis-icu` e `analysis-phonetic` são instalados por padrão. Você pode adicionar ou remover os `analysis-stempel` e `analysis-nori` plug-ins conforme necessário.<!--MCLOUD-2789-->
+      - **Suporte ao plug-in do Elasticsearch**—Suporte adicionado para os seguintes plug-ins do Elasticsearch: `analysis-icu`, `analysis-phonetic`, `analysis-stempel` e `analysis-nori`. Os plug-ins `analysis-icu` e `analysis-phonetic` são instalados por padrão. Você pode adicionar ou remover os `analysis-stempel` e `analysis-nori` plug-ins conforme necessário.<!--MCLOUD-2789-->
 
    - ![novo ícone](../../assets/new.svg) **contêiner CLI**
 
@@ -218,7 +225,7 @@ Data de lançamento: 9 de novembro de 2020
 
    - **Configuração de MailHog**—Agora você pode usar as seguintes opções de comando `ece-docker build:compose` para desabilitar MailHog e especificar portas: `--no-mailhog`, `--mailhog-http-port` e `--mailhog-smtp-port`. Consulte [Configurar email](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
 
-   - Para o Cloud Docker para Commerce 1.2.0 e posterior, o Adobe agora fornece imagens do Docker para cada versão de patch, e o gerador de configuração do Docker cria a configuração do Docker com uma versão de patch especificada, em vez de usar a mais recente. Anteriormente, o gerador de configuração do Docker criava a configuração usando a versão de patch mais recente, o que poderia quebrar o Cloud Docker para ambientes Commerce criados com uma versão anterior.<!--MCLOUD-7093-->
+   - Para o Cloud Docker para Commerce 1.2.0 e posterior, a Adobe agora fornece imagens do Docker para cada versão de patch, e o gerador de configuração do Docker cria a configuração do Docker com uma versão de patch especificada, em vez de usar a mais recente. Anteriormente, o gerador de configuração do Docker criava a configuração usando a versão de patch mais recente, o que poderia quebrar o Cloud Docker para ambientes Commerce criados com uma versão anterior.<!--MCLOUD-7093-->
 
    - **Especificar imagens e versões personalizadas na configuração personalizada do Cloud Docker**—O comando `build:custom:compose` foi atualizado com opções para especificar imagens e versões personalizadas ao gerar um arquivo de configuração personalizado composto pelo Docker (`docker-compose.yaml`). Consulte [Criar uma configuração personalizada de composição do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/configure/custom-docker-compose/). <!--MCLOUD-7089-->
 
@@ -263,7 +270,7 @@ Data de lançamento: 25 de junho de 2020
 
 - ![novo ícone](../../assets/new.svg) **Suporte para implantação do Adobe Commerce e do Magento Open Source**—Agora você pode usar o Cloud Docker for Commerce para implantar um ambiente de desenvolvimento local para projetos que não estejam hospedados no Adobe Commerce na infraestrutura em nuvem.<!--MCLOUD-5667-->
 
-- ![novo ícone](../../assets/new.svg) **suporte a Blackfire.io**—Suporte adicionado para usar a [extensão Blackfire.io](https://developer.adobe.com/commerce/cloud-tools/docker/test/blackfire/) para teste de desempenho automatizado. [Correção enviada por Adarsh Manickam da Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/202)<!--MCLOUD-5857-->
+- ![novo ícone](../../assets/new.svg) **suporte ao Blackfire.io**—Adicionou suporte para usar a [extensão do Blackfire.io](https://developer.adobe.com/commerce/cloud-tools/docker/test/blackfire/) para teste de desempenho automatizado. [Correção enviada por Adarsh Manickam da Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/202)<!--MCLOUD-5857-->
 
 - ![novo ícone](../../assets/new.svg) **Atualizações do contêiner**
 
@@ -291,9 +298,9 @@ Data de lançamento: 25 de junho de 2020
 
       - Suporte adicionado para Elasticsearch 6.8, 7.2, 7.5 e 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Adicionada a capacidade de personalizar a [configuração do contêiner de Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) ao gerar o arquivo de configuração de composição do Docker.<!--MCLOUD-3059-->
+      - Adicionada a capacidade de personalizar a [configuração do contêiner do Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) ao gerar o arquivo de configuração de composição do Docker.<!--MCLOUD-3059-->
 
-      - Adicionada a opção `--no-es` às opções de configuração do serviço para gerar o arquivo de configuração Docker Compose. Use essa opção para ignorar a instalação do contêiner de Elasticsearch e usar a pesquisa MySQL. Esta opção só tem suporte para o Adobe Commerce versões 2.3.5 e anteriores.<!--MCLOUD-3766-->
+      - Adicionada a opção `--no-es` às opções de configuração do serviço para gerar o arquivo de configuração Docker Compose. Use essa opção para ignorar a instalação do contêiner Elasticsearch e usar a pesquisa MySQL. Esta opção só tem suporte para o Adobe Commerce versões 2.3.5 e anteriores.<!--MCLOUD-3766-->
 
    - ![novo ícone](../../assets/new.svg) **contêiner FPM-XDEBUG**—Adicionou uma opção de configuração de serviço para instalar e configurar o Xdebug para depurar o PHP no ambiente do Cloud Docker. Consulte [Configurar Xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).<!--MCLOUD-4098-->
 
@@ -316,8 +323,8 @@ Data de lançamento: 25 de junho de 2020
 | Limpar cache Redis | `bin/magento-docker flush-redis` |
 | Limpar cache de verniz | `bin/magento-docker flush-varnish` |
 | Ignorar instalação padrão do Verniz | `.vendor/bin/ece-docker build:compose --no-varnish`<!--MCLOUD-2634--> |
-| [Personalizar opções de Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059--> |
-| [Remover configuração de Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766--> |
+| [Personalizar opções do Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059--> |
+| [Remover configuração do Elasticsearch](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766--> |
 | Configurar o contêiner de BD com o MySQL versão 5.6 ou 5.7 | `./vendor/bin/ece-docker build:compose --db <mysql-version-number> --db-image mysql`<!--MCLOUD-5691--> |
 | Especificar URL de base personalizada | `./vendor/bin/ece-docker build:compose --host=<hostname> --port=<port-number>`<!--MCLOUD-3063--> |
 | [Adicionar contêiner para configuração Xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/) | `.vendor/bin/ece-docker build:compose --mode developer --sync-engine native --with-xdebug`<!--MCLOUD-4098--> |
@@ -360,7 +367,7 @@ Data de lançamento: 5 de fevereiro de 2020
 
       - ![novo ícone](../../assets/new.svg) **Certificados NGINX gerados automaticamente**—O arquivo de configuração do Docker agora inclui a configuração para gerar automaticamente certificados NGINX para o contêiner da Web.<!--MAGECLOUD-4258-->
 
-   - ![novo ícone](../../assets/new.svg) **Novo contêiner Selenium**—Adicionou um [contêiner Selenium](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#selenium-container) para suportar o teste de aplicativo Adobe Commerce usando o MFTF (Estrutura de Teste Funcional Magento).<!--MAGECLOUD-4040-->
+   - ![novo ícone](../../assets/new.svg) **Novo contêiner Selenium**—Adicionou um [contêiner Selenium](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#selenium-container) para suportar o teste de aplicativos Adobe Commerce usando o MFTF (Estrutura de Teste Funcional) do Magento.<!--MAGECLOUD-4040-->
 
    - ![novo ícone](../../assets/new.svg) **[!DNL RabbitMQ]versão suporte**—Atualizado a configuração de contêiner [!DNL RabbitMQ] para suportar [!DNL RabbitMQ] versão 3.8.<!--MAGECLOUD-4674-->
 
