@@ -2,11 +2,11 @@
 title: Notas de versão do ECE-Tools
 description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-03T00:00:00Z
+last-substantial-update: 2024-04-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
+source-git-commit: 2522e606aebac79285793cd40428d3e064a3c1db
 workflow-type: tm+mt
-source-wordcount: '3059'
+source-wordcount: '3065'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ As notas de versão incluem:
 
 ## v2002.2.2 {#latest}
 
-Data de lançamento: 3 de abril de 2025
+Data de lançamento: 7 de abril de 2025
 
-- ![novo ícone](../../assets/new.svg) **Valkey**—Suporte adicionado para um novo serviço (Valkey), que é uma substituição para Redis.<!-- MCLOUD-13455	 - -->
-- ![Ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Suporte adicionado para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13493	 - -->
+- ![novo ícone](../../assets/new.svg) **Valkey**—Adicionou suporte para um novo serviço (Valkey), que é uma substituição para Redis.&lt;!— MCLOUD-13455 —>
+- ![Ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Adicionou suporte para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5. &lt;!— MCLOUD-13493 —>
 
 ## v2002.2.1
 
 Data de lançamento: 6 de fevereiro de 2024
 
-- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13145	 - -->
-- ![Ícone de correção](../../assets/fix.svg) **Validador para Opensearch**-Corrigido o validador que gerou uma mensagem enganosa sobre a versão errada do serviço.<!-- MCLOUD-13184	 - -->
+- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13145     - -->
+- ![Ícone de correção](../../assets/fix.svg) **Validador para Opensearch**-Corrigido o validador que gerou uma mensagem enganosa sobre a versão incorreta do serviço.&lt;!— MCLOUD-13184 —>
 
 
 ## v2002.2.0
