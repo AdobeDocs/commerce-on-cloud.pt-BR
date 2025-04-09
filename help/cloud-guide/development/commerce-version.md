@@ -2,7 +2,8 @@
 title: Atualizar versão do Commerce
 description: Saiba como atualizar a versão do Adobe Commerce no projeto de infraestrutura em nuvem.
 feature: Cloud, Upgrade
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Você pode atualizar a base de código do Adobe Commerce para uma versão mais r
 
 Dependendo da configuração do seu projeto, suas tarefas de atualização podem incluir o seguinte:
 
-- Serviços de atualização — como MariaDB (MySQL), OpenSearch, RabbitMQ e Redis — para compatibilidade com novas versões do Adobe Commerce.
+- Update services—such as MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis—for compatibility with new Adobe Commerce versions.
 - Converta um arquivo de gerenciamento de configuração mais antigo.
 - Atualize o arquivo `.magento.app.yaml` com novas configurações para ganchos e variáveis de ambiente.
 - Atualize extensões de terceiros para a versão mais recente com suporte.
@@ -123,7 +124,7 @@ Antes de atualizar o aplicativo, você deve atualizar os arquivos de configuraç
 
 ### .magento.app.yaml
 
-Sempre examine os valores contidos no arquivo [.magento.app.yaml](../application/configure-app-yaml.md) para a sua versão instalada, pois ele controla a maneira como o aplicativo é criado e implantado na infraestrutura de nuvem. O exemplo a seguir é para a versão 2.4.7 e usa o Composer 2.7.2. A propriedade `build: flavor:` não é usada para o Composer 2.x; consulte [Instalando e usando o Composer 2](../application/properties.md#installing-and-using-composer-2).
+Sempre examine os valores contidos no arquivo [.magento.app.yaml](../application/configure-app-yaml.md) para a sua versão instalada, pois ele controla a maneira como o aplicativo é criado e implantado na infraestrutura de nuvem. O exemplo a seguir é para a versão 2.4.8 e usa o Composer 2.8.4. A propriedade `build: flavor:` não é usada para o Composer 2.x; consulte [Instalando e usando o Composer 2](../application/properties.md#installing-and-using-composer-2).
 
 **Para atualizar o `.magento.app.yaml` arquivo**:
 
@@ -134,13 +135,13 @@ Sempre examine os valores contidos no arquivo [.magento.app.yaml](../application
 1. Atualize as opções do PHP.
 
    ```yaml
-   type: php:8.3
+   type: php:8.4
    
    build:
        flavor: none
    dependencies:
        php:
-           composer/composer: '2.7.2'
+           composer/composer: '2.8.4'
    ```
 
 1. Modifique os comandos `build` e `deploy` da propriedade `hooks`.
@@ -375,9 +376,9 @@ Revise suas páginas de extensão e módulo de terceiros no Marketplace ou outro
 
 1. Instale a atualização conforme documentado pela documentação de terceiros.
 
-1. Ative e teste a extensão.
+1. Enable and test the extension.
 
-1. Adicione, confirme e envie as alterações de código para o remoto.
+1. Add, commit, and push the code changes to the remote.
 
 1. Encaminhar e testar no ambiente de integração.
 

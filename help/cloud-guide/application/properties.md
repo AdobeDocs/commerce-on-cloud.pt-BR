@@ -2,7 +2,8 @@
 title: Propriedades
 description: Use a lista de propriedades como referência ao configurar o aplicativo  [!DNL Commerce]  para compilação e implantação na infraestrutura de nuvem.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -20,7 +21,7 @@ O arquivo `.magento.app.yaml` usa propriedades para gerenciar o suporte ao ambie
 | [`dependencies`](#dependencies) | Habilitar dependências adicionais | `php:composer/composer: '2.2.4'` | Não |
 | [`disk`](#disk) | Definir o tamanho do disco persistente | `5120` | Sim |
 | [`firewall`](firewall-property.md) | (Somente iniciador) Controlar tráfego de saída | — | Não |
-| [`hooks`](hooks-property.md) | Personalizar comandos do shell para as fases de criação, implantação e pós-implantação | — | Não |
+| [`hooks`](hooks-property.md) | Personalize comandos shell para fases de build, implantar e postagem-implantar | — | Não |
 | [`mounts`](#mounts) | Definir caminhos | Caminhos:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Não |
 | [`name`](#name) | Definir o nome do aplicativo | `mymagento` | Sim |
 | [`relationships`](#relationships) | Serviços de mapa | Serviços:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Não |
@@ -54,7 +55,7 @@ A propriedade `build` determina o que acontece por padrão ao compilar o projeto
 
 ```yaml
 # The toolstack used to build the application.
-type: php:8.3
+type: php:8.4
 build:
     flavor: none
 
@@ -154,7 +155,7 @@ relationships:
     <name>: "<service-name>:<endpoint-name>"
 ```
 
-Veja a seguir um exemplo dos relacionamentos padrão:
+Veja a seguir um exemplo das relações padrão:
 
 ```yaml
 relationships:
@@ -164,11 +165,11 @@ relationships:
     rabbitmq: "rabbitmq:rabbitmq"
 ```
 
-Consulte [Serviços](../services/services-yaml.md) para obter uma lista completa dos tipos de serviços e pontos de extremidade atualmente com suporte.
+Consulte [Serviços](../services/services-yaml.md) para obter uma lista completa de tipos e endpoints de serviços suportados no momento.
 
 ## `mounts`
 
-Um objeto cujas chaves são caminhos relativos à raiz do aplicativo. A montagem é uma área gravável no disco para arquivos. Esta é uma lista padrão de montagens configuradas no arquivo `magento.app.yaml` usando a sintaxe `volume_id[/subpath]`:
+Um objeto cujas chaves são caminhos relativos à raiz do aplicativo. O monte é uma área gravável no disco para arquivos. A seguir, uma lista padrão de montagens configuradas no `magento.app.yaml` arquivo usando a `volume_id[/subpath]` sintaxe:
 
 ```yaml
  # The mounts that will be performed when the package is deployed.
@@ -185,18 +186,18 @@ O formato para adicionar sua montagem a esta lista é o seguinte:
 "/public/sites/default/files": "shared:files/files"
 ```
 
-- `shared` — Compartilha um volume entre seus aplicativos dentro de um ambiente.
-- `disk` — Define o tamanho disponível para o volume compartilhado.
+- `shared`—Compartilha um volume entre seus aplicativos dentro de uma ambiente.
+- `disk`— Define o tamanho disponível para o volume compartilhado.
 
 >[!NOTE]
 >
->Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
+>Nos ambientes Pro Staging e Production, você deve [enviar uma Adobe Systems Comércio tíquete](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de Suporte para atualizar a configuração e `disk` a `mounts` configuração do seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml` .
 
-Você pode tornar a montagem da Web acessível adicionando-a ao bloco de locais [`web`](web-property.md).
+Você pode tornar a Web de montagem acessível adicionando-a ao [`web`](web-property.md) bloco de locais.
 
 >[!WARNING]
 >
->Depois que o site tiver dados, não altere a parte `subpath` do nome de montagem. Este valor é o identificador exclusivo da área `files`. Se você alterar esse nome, perderá todos os dados do site armazenados no local antigo.
+>Depois que o site tiver dados, não altere a `subpath` parte do nome de montagem. Esse valor é o identificador exclusivo da `files` área. Se você alterar esse nome, perderá todos os dados do site armazenados no local antigo.
 
 ## `access`
 
