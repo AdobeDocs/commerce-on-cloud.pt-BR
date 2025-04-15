@@ -2,11 +2,11 @@
 title: Patches da nuvem para o Commerce
 description: Consulte uma lista das melhorias mais recentes no pacote de Patches na nuvem.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-02-06T00:00:00Z
+last-substantial-update: 2025-04-15T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: 4c8da3e40561a43674906cdf7f461bbcb1066c30
+source-git-commit: cebf68dfc1722a055a6217fa50552116d216d579
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,13 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 
 <!--Add release notes below-->
 
-## v1.1.4 {#latest}
+## v1.1.5 {#latest}
+
+Data de lançamento: 15 de abril de 2025
+
+- ![novo ícone](../../assets/new.svg) **Adição de correção para B2B 1.5.2**—Correção para o problema ACP2E-3833 com B2B módulo 1.5.2 e MariaDB 10.6<!-- MCLOUD-13605	-->
+
+## v1.1.4
 
 Data de lançamento: 13 de fevereiro de 2025
 
