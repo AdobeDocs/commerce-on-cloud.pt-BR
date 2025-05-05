@@ -48,7 +48,7 @@ A página fornece um status para componentes e serviços do Adobe Commerce, segu
 >
 > Abra o novo [!DNL Cloud Console] e exiba as atividades do projeto e do ambiente.
 >
->**Próxima etapa**: [Fazer logon no Console Cl[!DNL ]oud](cloud-console.md)
+>**Próxima etapa**: [Fazer logon no Console Cloud](cloud-console.md)
 
 <!-- link definitions -->
 

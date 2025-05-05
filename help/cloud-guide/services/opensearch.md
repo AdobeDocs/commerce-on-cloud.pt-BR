@@ -85,7 +85,7 @@ O OpenSearch permite extrair dados de qualquer fonte, qualquer formato e pesquis
 
 ## Compatibilidade de software OpenSearch
 
-Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, sempre verifique a compatibilidade entre a versão do serviço OpenSearch e o cliente PHP](https://github.com/opensearch-project/opensearch-php) do [OpenSearch para Adobe Commerce.
+Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, sempre verifique a compatibilidade entre a versão do serviço OpenSearch e o cliente PHP[&#128279;](https://github.com/opensearch-project/opensearch-php) do OpenSearch para Adobe Commerce.
 
 - **Primeira configuração**-Confirme se a versão do OpenSearch especificada no arquivo `services.yaml` é compatível com o cliente OpenSearch PHP configurado para Adobe Commerce.
 

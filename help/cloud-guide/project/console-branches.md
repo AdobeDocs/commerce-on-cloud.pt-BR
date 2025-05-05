@@ -87,7 +87,7 @@ Antes de excluir um ambiente, você deve desativá-lo. Depois que um ambiente es
 
 1. Clique no ícone de configuração no lado direito da barra de navegação superior, que abre as configurações do ambiente.
 
-1. Na guia _[!UICONTROL General]_, role para baixo até a seção_[!UICONTROL Deactivate environment]_, clique em **[!UICONTROL Deactivate environment and delete data]** e siga as instruções.
+1. Na guia _[!UICONTROL General]_, role para baixo até a seção&#x200B;_[!UICONTROL Deactivate environment]_, clique em **[!UICONTROL Deactivate environment and delete data]** e siga as instruções.
 
 ## Sincronizar um ambiente
 

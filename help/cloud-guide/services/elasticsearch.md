@@ -77,7 +77,7 @@ Para o Adobe Commerce versão 2.4.4 e posterior, consulte [Configurar o serviço
 
 ## Compatibilidade de software de Elasticsearch
 
-Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, sempre verifique a compatibilidade entre a versão do serviço Elasticsearch e o cliente PHP](https://github.com/elastic/elasticsearch-php) do [Elasticsearch para Adobe Commerce.
+Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, sempre verifique a compatibilidade entre a versão do serviço Elasticsearch e o cliente PHP[&#128279;](https://github.com/elastic/elasticsearch-php) do Elasticsearch para Adobe Commerce.
 
 - **Configuração pela primeira vez**-Confirme se a versão do Elasticsearch especificada no arquivo `services.yaml` é compatível com o cliente Elasticsearch PHP configurado para Adobe Commerce.
 
