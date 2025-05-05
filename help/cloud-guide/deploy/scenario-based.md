@@ -40,7 +40,7 @@ hooks:
 
 >[!NOTE]
 >
->Com o lançamento do `ece-tools` 2002.1.x, há um novo formato de [configuração de ganchos](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html). O formato herdado das versões do `ece-tools` 2002.0.x ainda é suportado. No entanto, é necessário atualizar para o novo formato para usar o recurso de implantação baseada em cenário.
+>Com o lançamento do `ece-tools` 2002.1.x, há um novo formato de [configuração de ganchos](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=pt-BR). O formato herdado das versões do `ece-tools` 2002.0.x ainda é suportado. No entanto, é necessário atualizar para o novo formato para usar o recurso de implantação baseada em cenário.
 
 ## Revisar etapas do cenário
 

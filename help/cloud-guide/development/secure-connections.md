@@ -29,7 +29,7 @@ Crie um par de chaves SSH em cada máquina e espaço de trabalho que exija acess
 
 ## Adicionar uma chave pública SSH à sua conta
 
-Depois de adicionar ou atualizar sua chave pública SSH para sua conta do Adobe Commerce na infraestrutura em nuvem, [reimplante todos os ambientes ativos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) em sua conta para instalar a chave.
+Depois de adicionar ou atualizar sua chave pública SSH para sua conta do Adobe Commerce na infraestrutura em nuvem, [reimplante todos os ambientes ativos](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) em sua conta para instalar a chave.
 
 Você pode adicionar chaves SSH à sua conta usando um dos seguintes métodos: Cloud CLI ou [!DNL Cloud Console].
 
@@ -155,10 +155,10 @@ Dependendo do cliente, opções adicionais podem ser necessárias para concluir 
 
 Para **ambientes iniciais e ambientes de integração Pro**, você também pode considerar [adicionar um `mount`](../application/properties.md#mounts) para acessar um diretório específico. Você adicionaria a montagem ao arquivo `.magento.app.yaml`. Para obter uma lista de diretórios graváveis, consulte [Estrutura de projeto](../project/file-structure.md). Esse ponto de montagem só funciona nesses ambientes.
 
-Para **ambientes de Preparo e Produção Pro**, se você não tiver acesso SSH ao ambiente, deverá [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar acesso sFTP e um ponto de montagem para acesso à pasta específica, por exemplo, `pub/media`.
+Para **ambientes de Preparo e Produção Pro**, se você não tiver acesso SSH ao ambiente, deverá [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar acesso sFTP e um ponto de montagem para acesso à pasta específica, por exemplo, `pub/media`.
 
 >[!NOTE]
->Para Preparo e Produção Profissionais, se a conexão sFTP for para um usuário _genérico_ que **não** precise ser [adicionado ao projeto na nuvem](../project/user-access.md), você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) com a chave **pública** anexada. **Nunca forneça sua chave SSH privada.**
+>Para Preparo e Produção Profissionais, se a conexão sFTP for para um usuário _genérico_ que **não** precise ser [adicionado ao projeto na nuvem](../project/user-access.md), você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) com a chave **pública** anexada. **Nunca forneça sua chave SSH privada.**
 
 ## Tunelamento SSH
 

@@ -55,7 +55,7 @@ Data de lançamento: 10 de março de 2023
 
 Data de lançamento: 13 de setembro de 2022
 
-- ![Ícone de correção](../../assets/fix.svg) **Erros no warmup**—Corrigiu um problema que tentava [warmup](../environment/variables-post-deploy.md#warm_up_pages) quando a visibilidade da página estava definida como [**Não Visível Individualmente**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) no Administrador, resultando em `ERROR: Warming up failed: <link to page>` erros no log de implantação.<!-- MCLOUD-9134 -->
+- ![Ícone de correção](../../assets/fix.svg) **Erros no warmup**—Corrigiu um problema que tentava [warmup](../environment/variables-post-deploy.md#warm_up_pages) quando a visibilidade da página estava definida como [**Não Visível Individualmente**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) no Administrador, resultando em `ERROR: Warming up failed: <link to page>` erros no log de implantação.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 

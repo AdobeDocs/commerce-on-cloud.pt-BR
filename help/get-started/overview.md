@@ -19,7 +19,7 @@ Este guia pressupõe que você tenha algum conhecimento prático e compreensão 
 
 - [Documentação do desenvolvedor do Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site do Adobe Developer) — desenvolva, personalize, integre, estenda e use recursos avançados
 
-- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do Commerce
+- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do Commerce
 
 >[!TIP]
 >

@@ -18,7 +18,7 @@ Os usuários que têm acesso administrativo ao projeto Adobe Commerce na infraes
 
 Você pode substituir as credenciais de usuário Admin durante a instalação do Commerce pelas variáveis ADMIN na tabela a seguir.
 
-Se quiser alterar os valores após a instalação, conecte-se ao seu ambiente usando SSH e use o comando [`admin:user` da Adobe Commerce CLI ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) para criar ou editar as credenciais de usuário do Administrador.
+Se quiser alterar os valores após a instalação, conecte-se ao seu ambiente usando SSH e use o comando [`admin:user` da Adobe Commerce CLI ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=pt-BR) para criar ou editar as credenciais de usuário do Administrador.
 
 | Variável | Padrão | Descrição |
 | -------------- | --------------------------- | ----------- |

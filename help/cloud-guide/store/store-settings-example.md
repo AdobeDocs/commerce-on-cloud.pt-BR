@@ -56,7 +56,7 @@ No ambiente de integração, é possível fazer logon no Administrador para modi
    ![Alterar localidade](../../assets/locale-options.png)
 
 1. Clique em **Salvar configuração**.
-1. Se solicitado, [limpe o cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Se solicitado, [limpe o cache](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management).
 1. Faça logout do Administrador.
 
 ## Exportar valores e transferir config.php para o seu sistema local
@@ -159,7 +159,7 @@ Para adicionar valores de configuração no Admin do ambiente de integração. E
 1. No painel direito, expanda **Configurações do JavaScript**.
 1. Na lista **Mesclar arquivos do JavaScript**, clique em **Sim**.
 1. Clique em **Salvar configuração**.
-1. Se solicitado, [limpe o cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Se solicitado, [limpe o cache](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management).
 1. Faça logout do Administrador.
 
 Ao executar o comando dump novamente, a nova configuração é anexada ao arquivo.

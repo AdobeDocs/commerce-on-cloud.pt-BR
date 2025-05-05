@@ -58,14 +58,14 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Ativar dimensionamento automático
 
-Para habilitar ou desabilitar o dimensionamento automático para o projeto de infraestrutura em nuvem do Adobe Commerce, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Escolha os seguintes motivos no ticket:
+Para habilitar ou desabilitar o dimensionamento automático para o projeto de infraestrutura em nuvem do Adobe Commerce, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket). Escolha os seguintes motivos no ticket:
 
 - **Motivo do contato**: Solicitação de Alteração de Infraestrutura
 - **Motivo do Contato do Adobe Commerce Infrastructure**: Outra Solicitação de Alteração de Infraestrutura
 
 >[!IMPORTANT]
 >
->O recurso de dimensionamento automático captura eventos imprevistos. Mesmo que o dimensionamento automático esteja habilitado, a Adobe recomenda que você continue a [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) se esperar um evento futuro.
+>O recurso de dimensionamento automático captura eventos imprevistos. Mesmo que o dimensionamento automático esteja habilitado, a Adobe recomenda que você continue a [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) se esperar um evento futuro.
 
 ### Teste de carga
 

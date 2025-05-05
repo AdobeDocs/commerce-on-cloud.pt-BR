@@ -18,7 +18,7 @@ Quando o MFA é ativado em um projeto, todas as contas de usuário com acesso SS
 
 >[!NOTE]
 >
->O MFA não está habilitado em projetos na nuvem por padrão. O proprietário da conta do projeto Adobe Commerce na infraestrutura em nuvem deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para habilitá-lo. Quando o MFA é habilitado, todos os usuários devem ter a autenticação de dois fatores (TFA) habilitada em sua conta do Adobe Commerce na infraestrutura em nuvem para obter acesso SSH aos ambientes do projeto.
+>O MFA não está habilitado em projetos na nuvem por padrão. O proprietário da conta do projeto Adobe Commerce na infraestrutura em nuvem deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para habilitá-lo. Quando o MFA é habilitado, todos os usuários devem ter a autenticação de dois fatores (TFA) habilitada em sua conta do Adobe Commerce na infraestrutura em nuvem para obter acesso SSH aos ambientes do projeto.
 
 ## Certificados para acesso SSH
 

@@ -264,6 +264,6 @@ Remover as entradas de plug-in de `elasticsearch:` em `.magento/services.yaml` n
 
 Consulte os seguintes artigos de suporte da Adobe Commerce para obter ajuda com a solução de problemas de Elasticsearch:
 
-- [Elasticsearch 5 está configurado, mas a página de pesquisa não carrega com o erro &quot;Fielddata está desabilitado...&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html)
+- [Elasticsearch 5 está configurado, mas a página de pesquisa não carrega com o erro &quot;Fielddata está desabilitado...&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=pt-BR)
 - [Elasticsearch na solução de problemas do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.html)
-- O Status do Índice [Elasticsearch é `yellow` ou `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html)
+- O Status do Índice [Elasticsearch é `yellow` ou `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html?lang=pt-BR)

@@ -21,7 +21,7 @@ A fase _build_ monta contêineres para os serviços definidos nos arquivos de co
 
 ## ![Fase de implantação](../../assets/status-deploy.png) Fase de implantação
 
-A fase _implantar_ coloca uma suspensão temporária em solicitações de entrada e faz a transição do site para o [modo de manutenção](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html). A fase de implantação usa os novos contêineres e, após a montagem do sistema de arquivos, abre conexões de rede, ativa os serviços definidos na seção `relationships` do arquivo `.magento.app.yaml` e executa os ganchos de implantação definidos no arquivo `.magento.app.yaml`. Tudo é _somente leitura_, exceto os diretórios definidos no arquivo `.magento.app.yaml`. Por padrão, a propriedade [`mounts` ](../application/properties.md#mounts) inclui os seguintes diretórios:
+A fase _implantar_ coloca uma suspensão temporária em solicitações de entrada e faz a transição do site para o [modo de manutenção](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=pt-BR). A fase de implantação usa os novos contêineres e, após a montagem do sistema de arquivos, abre conexões de rede, ativa os serviços definidos na seção `relationships` do arquivo `.magento.app.yaml` e executa os ganchos de implantação definidos no arquivo `.magento.app.yaml`. Tudo é _somente leitura_, exceto os diretórios definidos no arquivo `.magento.app.yaml`. Por padrão, a propriedade [`mounts` ](../application/properties.md#mounts) inclui os seguintes diretórios:
 
 - `app/etc` — contém os arquivos de configuração `env.php` e `config.php`
 - `pub/media` — contém todos os dados de mídia, como produtos ou categorias

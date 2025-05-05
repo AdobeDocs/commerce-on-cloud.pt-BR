@@ -35,7 +35,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Para adicionar uma visualização de loja à URL base do site, não é necessário criar vários diretórios. Consulte [Adicionar o código de armazenamento à URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) no _Guia de Configuração_.
+>Para adicionar uma visualização de loja à URL base do site, não é necessário criar vários diretórios. Consulte [Adicionar o código de armazenamento à URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=pt-BR) no _Guia de Configuração_.
 
 ## Adicionar domínios
 
@@ -45,11 +45,11 @@ O processo para adicionar um domínio depende do tipo de conta da Cloud:
 
 - Para preparo e produção profissionais
 
-  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou abra um tíquete de suporte para solicitar assistência. Além disso, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar que novos domínios sejam adicionados a um cluster.
+  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou abra um tíquete de suporte para solicitar assistência. Além disso, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar que novos domínios sejam adicionados a um cluster.
 
 - Somente para produção inicial
 
-  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar assistência. Além disso, você deve adicionar o novo domínio à guia **Domínios** em [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar assistência. Além disso, você deve adicionar o novo domínio à guia **Domínios** em [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configurar instalação local
 
@@ -212,7 +212,7 @@ Onde a configuração de rotas define como as URLs são processadas, a proprieda
 
 ### Configurar sites, lojas e visualizações de loja
 
-Na _Interface do Administrador_, configure os **Sites**, as **Lojas** e as **Exibições da Loja** do Adobe Commerce. Consulte [Configurar vários sites, lojas e exibições de loja no Administrador](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) no _Guia de Configuração_.
+Na _Interface do Administrador_, configure os **Sites**, as **Lojas** e as **Exibições da Loja** do Adobe Commerce. Consulte [Configurar vários sites, lojas e exibições de loja no Administrador](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=pt-BR) no _Guia de Configuração_.
 
 É importante usar o mesmo nome e código de seus sites, lojas e exibições de loja do Administrador ao configurar a instalação local. Você precisa desses valores ao atualizar o arquivo `magento-vars.php`.
 
@@ -352,4 +352,4 @@ A Adobe recomenda fazer testes completos no ambiente de preparo antes de enviá-
 
 <!-- link definitions -->
 
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
+[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html?lang=pt-BR

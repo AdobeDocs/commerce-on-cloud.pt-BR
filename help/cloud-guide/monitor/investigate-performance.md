@@ -30,7 +30,7 @@ Todos os dados coletados detalham o tempo gasto em ações que transmitem dados,
 
 >[!TIP]
 >
->Para obter detalhes sobre como usar esses dados para solucionar problemas de desempenho do aplicativo, consulte [Solução de problemas de desempenho usando o New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) na _Central de Ajuda do Adobe Commerce_.
+>Para obter detalhes sobre como usar esses dados para solucionar problemas de desempenho do aplicativo, consulte [Solução de problemas de desempenho usando o New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=pt-BR) na _Central de Ajuda do Adobe Commerce_.
 
 ## Monitorar o desempenho com alertas gerenciados
 
@@ -46,7 +46,7 @@ O Adobe fornece a _Política de alerta de Alertas Gerenciados para Adobe Commerc
 | Carga de consulta MariaDB | NRI | Pro |
 | Memória Redis | NRI | Pro |
 
-Quando a infraestrutura do site ou as condições do aplicativo acionam um limite de alerta, o New Relic envia notificações de alerta para que você possa resolver o problema de forma proativa. Consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes sobre limites de alerta e etapas de solução de problemas para resolver os problemas que dispararam o alerta.
+Quando a infraestrutura do site ou as condições do aplicativo acionam um limite de alerta, o New Relic envia notificações de alerta para que você possa resolver o problema de forma proativa. Consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes sobre limites de alerta e etapas de solução de problemas para resolver os problemas que dispararam o alerta.
 
 >[!TIP]
 >
@@ -76,7 +76,7 @@ Quando a infraestrutura do site ou as condições do aplicativo acionam um limit
 
      >[!NOTE]
      >
-     >Se a política _Alertas Gerenciados para Adobe Commerce_ não estiver disponível, consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) na _Central de Ajuda da Adobe Commerce_.
+     >Se a política _Alertas Gerenciados para Adobe Commerce_ não estiver disponível, consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_.
 
 1. Clique na guia **[!UICONTROL Alert conditions]** para revisar as condições de alerta definidas na política.
 

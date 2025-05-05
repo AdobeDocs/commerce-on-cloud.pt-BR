@@ -27,7 +27,7 @@ Você pode definir configurações de aplicativo, rotas, criar e implantar açõ
 
 ## Atualizações de configuração para ambientes Pro
 
-Para ambientes de preparo e produção profissionais da infraestrutura em nuvem do Adobe Commerce, você pode atualizar muitas opções de configuração em seu ambiente de desenvolvimento local e confirmar as alterações para aplicá-las a esses ambientes. No entanto, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para atualizar as seguintes opções de configuração:
+Para ambientes de preparo e produção profissionais da infraestrutura em nuvem do Adobe Commerce, você pode atualizar muitas opções de configuração em seu ambiente de desenvolvimento local e confirmar as alterações para aplicá-las a esses ambientes. No entanto, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para atualizar as seguintes opções de configuração:
 
 - Instalar ou atualizar serviços no arquivo `.magento/services.yaml`.
 - Altere a configuração das propriedades `mounts` e `disk` no arquivo `.magento.app.yaml`.

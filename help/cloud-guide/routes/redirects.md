@@ -23,7 +23,7 @@ A seguir, é mostrado como gerenciar regras de redirecionamento no Adobe Commerc
 
 >[!WARNING]
 >
->Para projetos de infraestrutura em nuvem do Adobe Commerce, a configuração de vários redirecionamentos e regravações não regex no arquivo `routes.yaml` pode causar problemas de desempenho. Se o arquivo do `routes.yaml` tiver 32 KB ou mais, descarregue os redirecionamentos não regex e substitua no Fastly. Consulte [Descarregar redirecionamentos não regex para Fastly em vez de Nginx (rotas)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html) na _Central de Ajuda do Adobe Commerce_.
+>Para projetos de infraestrutura em nuvem do Adobe Commerce, a configuração de vários redirecionamentos e regravações não regex no arquivo `routes.yaml` pode causar problemas de desempenho. Se o arquivo do `routes.yaml` tiver 32 KB ou mais, descarregue os redirecionamentos não regex e substitua no Fastly. Consulte [Descarregar redirecionamentos não regex para Fastly em vez de Nginx (rotas)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=pt-BR) na _Central de Ajuda do Adobe Commerce_.
 
 ## Redirecionamentos de rota inteira
 

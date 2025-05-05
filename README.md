@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Este site contém a documentação mais recente para o desenvolvedor do Commerce na Infraestrutura em nuvem.
 
-- [Guia da Infraestrutura do Commerce na Nuvem](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
-- [Introdução ao Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html) na infraestrutura em nuvem
+- [Guia da Infraestrutura do Commerce na Nuvem](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=pt-BR)
+- [Introdução ao Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=pt-BR) na infraestrutura em nuvem
 
 ## Código de conduta do Adobe Open Source
 
@@ -19,7 +19,7 @@ Consulte o artigo [Contribuição](contributing.md).
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações, abra o artigo e clique no link **Editar**, que direciona você à origem GitHub do artigo. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Se você estiver contribuindo com pequenas atualizações, abra o artigo e clique no link **Editar**, que direciona você à origem GitHub do artigo. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
 
 As pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso do Adobe.
 
@@ -35,7 +35,7 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor de uma equi
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais detalhes.
 
 ## Markdown
 

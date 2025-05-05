@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Atualizar versão do Commerce
 
-Você pode atualizar a base de código do Adobe Commerce para uma versão mais recente. Antes de atualizar seu projeto, verifique os [requisitos de sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no guia _Instalação_ para obter os requisitos de versão de software mais recentes.
+Você pode atualizar a base de código do Adobe Commerce para uma versão mais recente. Antes de atualizar seu projeto, verifique os [requisitos de sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no guia _Instalação_ para obter os requisitos de versão de software mais recentes.
 
 Dependendo da configuração do seu projeto, suas tarefas de atualização podem incluir o seguinte:
 
@@ -289,15 +289,15 @@ Examine as informações das [versões de serviço](../services/services-yaml.md
 
 1. Revise os patches atualmente aplicados:
 
-   - Se houver patches instalados no diretório `m2-hotfixes`, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e trabalhe com o Suporte da Adobe Commerce para verificar quais patches ainda podem ser aplicados à nova versão. Remova os patches não aplicáveis do diretório `m2-hotfixes`.
+   - Se houver patches instalados no diretório `m2-hotfixes`, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e trabalhe com o Suporte da Adobe Commerce para verificar quais patches ainda podem ser aplicados à nova versão. Remova os patches não aplicáveis do diretório `m2-hotfixes`.
 
    - Se houver [Patches de Qualidade] aplicados no arquivo `.magento.env.yaml`, verifique se eles ainda podem ser aplicados à nova versão. Remova os patches não aplicáveis da seção `QUALITY_PATCHES` do arquivo `.magento.env.yaml`.
 
-   **Método 1**: [Verifique as versões aplicáveis nas notas de versão de Patches de Qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Método 1**: [Verifique as versões aplicáveis nas notas de versão de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Método 2**: [Exibir patches e status disponíveis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Método 2**: [Exibir patches e status disponíveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Método 3**: [Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
+   **Método 3**: [Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR)
 
 
 1. Adicionar, confirmar e enviar alterações de código.

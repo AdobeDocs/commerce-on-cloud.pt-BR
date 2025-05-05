@@ -49,9 +49,9 @@ Siga as práticas recomendadas para compilações e implantações e use o fluxo
 
    - Use o SSH para fazer logon no servidor remoto e verifique o seguinte:
 
-      - Verifique o status do indexador e reindexe conforme necessário. Consulte [Gerenciar os indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) no _Guia de configuração_.
+      - Verifique o status do indexador e reindexe conforme necessário. Consulte [Gerenciar os indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR) no _Guia de configuração_.
 
       - Verifique os logs do `cron` e a tabela `cron_schedule` no banco de dados do Adobe Commerce para verificar o status do cron e execute novamente os trabalhos do cron, conforme necessário.
-Consulte [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) no _Guia de Configuração_.
+Consulte [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR#logging) no _Guia de Configuração_.
 
    - Conclua o UAT de teste de aceitação do usuário pós-atualização em ambientes de preparo e produção e corrija quaisquer problemas relacionados a atualizações de extensões personalizadas e de terceiros.

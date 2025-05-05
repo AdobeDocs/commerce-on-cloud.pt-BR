@@ -140,7 +140,7 @@ O tamanho de disco mínimo recomendado é de 256 MB. Se você vir o erro `UserEr
 
 >[!NOTE]
 >
->Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
+>Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
 >
 >Não é possível aumentar temporariamente o armazenamento em disco no armazenamento temporário ou na produção; esse processo não é reversível.
 
@@ -191,7 +191,7 @@ O formato para adicionar sua montagem a esta lista é o seguinte:
 
 >[!NOTE]
 >
->Nos ambientes Pro Staging e Production, você deve [enviar uma Adobe Systems Comércio tíquete](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) de Suporte para atualizar a configuração e `disk` a `mounts` configuração do seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml` .
+>Nos ambientes Pro Staging e Production, você deve [enviar uma Adobe Systems Comércio tíquete](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) de Suporte para atualizar a configuração e `disk` a `mounts` configuração do seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml` .
 
 Você pode tornar a Web de montagem acessível adicionando-a ao [`web`](web-property.md) bloco de locais.
 

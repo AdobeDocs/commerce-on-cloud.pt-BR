@@ -39,7 +39,7 @@ Você precisa das credenciais do Fastly para configurar os serviços do Fastly C
 
 >[!NOTE]
 >
->Com o Adobe Commerce na infraestrutura em nuvem, não é possível acessar diretamente o Fastly Admin. Use o administrador para revisar e atualizar a configuração do Fastly em seus ambientes. Se você não conseguir resolver um problema usando os recursos do Fastly no Admin, envie um [tíquete de Suporte do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>Com o Adobe Commerce na infraestrutura em nuvem, não é possível acessar diretamente o Fastly Admin. Use o administrador para revisar e atualizar a configuração do Fastly em seus ambientes. Se você não conseguir resolver um problema usando os recursos do Fastly no Admin, envie um [tíquete de Suporte do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket).
 
 Use os métodos a seguir para localizar e salvar a ID de serviço e o token da API do Fastly no seu ambiente:
 
@@ -135,7 +135,7 @@ Depois de habilitar o módulo Fastly, carregue o [código VCL](https://github.co
 
 ## Provisionar certificados SSL/TLS
 
-O Adobe fornece um certificado SSL/TLS validado pelo domínio para fornecer tráfego HTTPS seguro do Fastly. O Adobe fornece um certificado para cada ambiente Pro Production, Staging e Starter Production para proteger todos os domínios nesse ambiente. Para obter informações detalhadas sobre o certificado fornecido, consulte [certificados SSL de Adobe (TLS) para Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html).
+O Adobe fornece um certificado SSL/TLS validado pelo domínio para fornecer tráfego HTTPS seguro do Fastly. O Adobe fornece um certificado para cada ambiente Pro Production, Staging e Starter Production para proteger todos os domínios nesse ambiente. Para obter informações detalhadas sobre o certificado fornecido, consulte [certificados SSL de Adobe (TLS) para Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=pt-BR).
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Para rotear o tráfego dos URLs de armazenamento para o serviço Fastly, atualiz
 
    >[!NOTE]
    >
-   >Como alternativa ao uso da CLI da nuvem, você pode atualizar a URL base do [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html)
+   >Como alternativa ao uso da CLI da nuvem, você pode atualizar a URL base do [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=pt-BR)
 
 1. Reinicie o navegador da Web.
 
@@ -314,4 +314,4 @@ Depois de verificar os serviços do Fastly no site de Preparo, repita o processo
 
 >[!TIP]
 >
-> Se você tiver problemas com os serviços do Fastly em seus ambientes do Adobe Commerce, consulte a [Solução de problemas do Adobe Commerce Fastly](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html).
+> Se você tiver problemas com os serviços do Fastly em seus ambientes do Adobe Commerce, consulte a [Solução de problemas do Adobe Commerce Fastly](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html?lang=pt-BR).

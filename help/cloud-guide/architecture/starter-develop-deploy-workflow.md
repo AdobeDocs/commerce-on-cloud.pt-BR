@@ -104,9 +104,9 @@ Quando estiver pronto para configurar o armazenamento, envie todo o código para
 Para obter as melhores informações sobre configurações, consulte a documentação do Adobe Commerce e as extensões instaladas. Estes são alguns links e ideias que ajudam você a começar:
 
 - [Práticas recomendadas para configuração de armazenamento](../store/best-practices.md) para práticas recomendadas específicas na nuvem
-- [Configuração básica](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) para acesso de administrador de loja, nome, idiomas, moedas, identidade visual, sites, exibições de loja e muito mais
-- [Tema](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) para a aparência do site e lojas, incluindo CSS e layouts
-- [Configuração do sistema](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) para funções, ferramentas, notificações e sua chave de criptografia para o banco de dados
+- [Configuração básica](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/store-details) para acesso de administrador de loja, nome, idiomas, moedas, identidade visual, sites, exibições de loja e muito mais
+- [Tema](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/content-menu#design-features) para a aparência do site e lojas, incluindo CSS e layouts
+- [Configuração do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/guide-overview) para funções, ferramentas, notificações e sua chave de criptografia para o banco de dados
 - Configurações de extensão usando a documentação
 
 Além das configurações de loja, você pode configurar vários sites e lojas, serviços configurados e muito mais. Consulte [Configurar armazenamento](../store/overview.md).
@@ -162,9 +162,9 @@ Adicione todos os seus produtos, catálogos, conteúdo do site e assim por diant
 
 Para ajudar a exportar dados de produção como dados de teste para uso em ambientes de preparo e integração:
 
-- [Execute os utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) comandos da CLI (Recomendado) ao exportar um backup protegido do cliente e armazenar dados usando sua chave de criptografia do Adobe Commerce
+- [Execute os utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=pt-BR) comandos da CLI (Recomendado) ao exportar um backup protegido do cliente e armazenar dados usando sua chave de criptografia do Adobe Commerce
 
-- Ferramenta [Coleta de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) para gerar e exportar dados
+- Ferramenta [Coleta de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/support#data-collector) para gerar e exportar dados
 
 Para migrar esses dados, consulte [Migrar e implantar arquivos e dados estáticos](../deploy/staging-production.md#migrate-static-files).
 
@@ -172,7 +172,7 @@ Para migrar esses dados, consulte [Migrar e implantar arquivos e dados estático
 
 >[!NOTE]
 >
->Antes de enviar os dados para outro ambiente, você deve considerar a limpeza dos dados. Você tem algumas opções, incluindo [usar utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) ou desenvolver um script para limpar os dados do cliente.
+>Antes de enviar os dados para outro ambiente, você deve considerar a limpeza dos dados. Você tem algumas opções, incluindo [usar utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=pt-BR) ou desenvolver um script para limpar os dados do cliente.
 
 >[!WARNING]
 >

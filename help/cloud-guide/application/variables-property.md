@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Propriedade de variáveis
 
-Você pode usar variáveis de ambiente baseadas em aplicativos para personalizar as configurações de armazenamento. Essas variáveis usam uma sintaxe específica. Consulte [Substituir configurações](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) no _Guia de configuração_.
+Você pode usar variáveis de ambiente baseadas em aplicativos para personalizar as configurações de armazenamento. Essas variáveis usam uma sintaxe específica. Consulte [Substituir configurações](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=pt-BR) no _Guia de configuração_.
 
 As variáveis de ambiente a seguir, incluídas no arquivo `.magento.app.yaml`, são necessárias para versões específicas do aplicativo [!DNL Commerce].
 

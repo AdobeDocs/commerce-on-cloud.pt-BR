@@ -137,7 +137,7 @@ Os tempos de restauração variam dependendo do tamanho do banco de dados:
 
 ## Restaurar um Instantâneo da Recuperação de Desastres
 
-Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Reverter código
 

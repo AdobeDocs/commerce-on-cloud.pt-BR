@@ -176,7 +176,7 @@ O Adobe Commerce na infraestrutura em nuvem usa uma arquitetura de alta disponib
 
 >[!NOTE]
 >
->Os volumes montados incluem/referem-se apenas a [montagens graváveis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) e não incluirão todo o diretório `app/`. Quanto aos outros arquivos, eles são criados/gerados pelo [processo de compilação e implantação](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), e você também terá que verificar se há arquivos restantes no repositório Git.
+>Os volumes montados incluem/referem-se apenas a [montagens graváveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) e não incluirão todo o diretório `app/`. Quanto aos outros arquivos, eles são criados/gerados pelo [processo de compilação e implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), e você também terá que verificar se há arquivos restantes no repositório Git.
 
 {{pro-backups}}
 
@@ -210,4 +210,4 @@ O dimensionamento do cluster Pro e as configurações de _computação_ variam d
 
 A arquitetura redundante capacita a infraestrutura em nuvem do Adobe a fazer upscaling sem tempo de inatividade. Ao fazer o upscaling, cada uma das três instâncias gira para atualizar a capacidade sem afetar a operação do site. Por exemplo, você pode adicionar servidores web extras a um cluster existente se a restrição estiver no nível do PHP em vez do nível do banco de dados. Isso fornece _dimensionamento horizontal_ para complementar o dimensionamento vertical fornecido por CPUs extras no nível do banco de dados. Consulte [Arquitetura em escala](scaled-architecture.md).
 
-Se você esperar um aumento significativo no tráfego por um evento ou outro motivo, poderá solicitar um aumento temporário na capacidade. Consulte [Como solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) na _Central de Ajuda do Commerce_.
+Se você esperar um aumento significativo no tráfego por um evento ou outro motivo, poderá solicitar um aumento temporário na capacidade. Consulte [Como solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=pt-BR) na _Central de Ajuda do Commerce_.

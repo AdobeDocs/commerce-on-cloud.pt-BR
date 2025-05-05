@@ -177,7 +177,7 @@ stage:
 - **Padrão**—_Não definido_
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
+Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=pt-BR) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
 
 - `DENY`—A página não pode ser exibida em um quadro.
 - `SAMEORIGIN`—(A configuração padrão do Adobe Commerce.) A página pode ser exibida somente em um quadro na mesma origem da própria página.

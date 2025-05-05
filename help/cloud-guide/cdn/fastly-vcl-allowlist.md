@@ -74,7 +74,7 @@ O seguinte código de trecho de VCL personalizado (formato JSON) mostra a lógic
 }
 ```
 
-Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) deste exemplo, revise os valores para determinar se você precisa fazer alterações. Em seguida, insira cada valor nos respectivos campos, como `type` no campo Tipo, `content` no campo Conteúdo.
+Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=pt-BR#add-the-custom-vcl-snippet) deste exemplo, revise os valores para determinar se você precisa fazer alterações. Em seguida, insira cada valor nos respectivos campos, como `type` no campo Tipo, `content` no campo Conteúdo.
 
 - `name` — Nome do trecho VCL. Para este exemplo, `allowlist`.
 

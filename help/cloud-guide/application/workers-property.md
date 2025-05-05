@@ -17,7 +17,7 @@ Você pode definir um trabalhador para ser executado independentemente da instâ
 
 Os funcionários estão disponíveis para uso somente com ambientes de preparo e produção profissionais. Os ambientes de integração Pro e Starter podem optar por usar a variável [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner).
 
-Para configurar um trabalhador no Pro Staging ou na Produção, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) e inclua as seguintes informações:
+Para configurar um trabalhador no Pro Staging ou na Produção, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) e inclua as seguintes informações:
 
 - ID do projeto
 - ID do ambiente

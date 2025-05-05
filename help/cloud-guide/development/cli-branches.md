@@ -30,7 +30,7 @@ As instruções a seguir usam uma combinação de comandos da CLI do `magento-cl
 
 **Para clonar um ambiente `master` do projeto**:
 
-1. Faça logon na estação de trabalho local com uma conta do [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
+1. Faça logon na estação de trabalho local com uma conta do [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR).
 
 1. Altere para o diretório do servidor Web ou host virtual _docroot_.
 

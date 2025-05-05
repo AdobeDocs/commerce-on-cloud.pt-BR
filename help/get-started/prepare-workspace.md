@@ -27,7 +27,7 @@ Antes de configurar um espaço de trabalho, colete as seguintes chaves e acesso 
 
 - **Chave de Criptografia do Adobe Commerce**
 
-  Ao importar somente um sistema existente, capture a chave de criptografia usada para proteger seu acesso e seus dados para o banco de dados. Para obter detalhes sobre esta chave, consulte [Resolver problemas com a chave de criptografia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
+  Ao importar somente um sistema existente, capture a chave de criptografia usada para proteger seu acesso e seus dados para o banco de dados. Para obter detalhes sobre esta chave, consulte [Resolver problemas com a chave de criptografia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html?lang=pt-BR)
 
 ## Ferramentas do desenvolvedor
 

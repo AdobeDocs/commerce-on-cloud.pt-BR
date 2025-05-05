@@ -78,7 +78,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Para ambientes Pro Staging e Pro Production, a rotação, compactação e remoção automáticas do registro são ativadas para arquivos de registro com um nome de arquivo fixo. Cada tipo de arquivo de log tem um padrão rotativo e uma duração.
 >Detalhes completos sobre a rotação de logs e a duração de logs compactados do ambiente podem ser encontrados em: `/etc/logrotate.conf` e `/etc/logrotate.d/<various>`.
->Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar alterações na configuração de rotação do log.
+>Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar alterações na configuração de rotação do log.
 
 >[!TIP]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR).
 
 ## Logs do aplicativo
 

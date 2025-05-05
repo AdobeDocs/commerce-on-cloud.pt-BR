@@ -66,9 +66,9 @@ O Adobe testa regularmente o código principal do aplicativo em busca de vulnera
 - OWASPZAP
 - andSqlMap
 
-A base de código completa é verificada com essas ferramentas quinzenalmente. Os clientes são notificados sobre patches de segurança por emails diretos, notificações no aplicativo e na [Central de Segurança](https://helpx.adobe.com/security.html).
+A base de código completa é verificada com essas ferramentas quinzenalmente. Os clientes são notificados sobre patches de segurança por emails diretos, notificações no aplicativo e na [Central de Segurança](https://helpx.adobe.com/br/security.html).
 
-Os clientes devem garantir que esses patches sejam aplicados em seus aplicativos personalizados dentro de 30 dias do lançamento, de acordo com as diretrizes de PCI. O Adobe também fornece uma [Ferramenta de Verificação de Segurança](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) que permite aos comerciantes monitorar regularmente seus sites e receber atualizações sobre riscos de segurança conhecidos, malware e acesso não autorizado. A Ferramenta de verificação de segurança é um serviço gratuito e pode ser executada em qualquer versão do Adobe Commerce.
+Os clientes devem garantir que esses patches sejam aplicados em seus aplicativos personalizados dentro de 30 dias do lançamento, de acordo com as diretrizes de PCI. O Adobe também fornece uma [Ferramenta de Verificação de Segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-scan) que permite aos comerciantes monitorar regularmente seus sites e receber atualizações sobre riscos de segurança conhecidos, malware e acesso não autorizado. A Ferramenta de verificação de segurança é um serviço gratuito e pode ser executada em qualquer versão do Adobe Commerce.
 
 Para incentivar os pesquisadores de segurança a identificar e relatar vulnerabilidades, a Adobe Commerce tem um [programa de retribuição de bugs](https://hackerone.com/magento), além de testes internos. Além disso, o cliente recebe o código fonte completo do aplicativo para sua própria análise, se desejado.
 
@@ -108,7 +108,7 @@ O GDPR solicita que todas as informações de identificação pessoal (como nome
 
 >[!NOTE]
 >
->Esta página fornece uma visão geral do que deve ser considerado para o GDPR. Consulte o _[Guia de Segurança e Conformidade](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ para obter detalhes sobre como a Adobe Commerce armazena informações pessoais. Para determinar como sua empresa deve cumprir quaisquer obrigações legais, consulte seu advogado ou consulte o [texto oficial](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Esta página fornece uma visão geral do que deve ser considerado para o GDPR. Consulte o _[Guia de Segurança e Conformidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/overview)_ para obter detalhes sobre como a Adobe Commerce armazena informações pessoais. Para determinar como sua empresa deve cumprir quaisquer obrigações legais, consulte seu advogado ou consulte o [texto oficial](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Backups
 

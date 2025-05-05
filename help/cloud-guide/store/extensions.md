@@ -49,7 +49,7 @@ Embora esta seção discuta como obter o nome e a versão de uma extensão do Co
 
 ## Instalar uma extensão
 
-A Adobe recomenda trabalhar em uma ramificação de desenvolvimento ao adicionar uma extensão à implementação. Ao instalar uma extensão, o nome da extensão (`<VendorName>_<ComponentName>`) é inserido automaticamente no arquivo [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html). Não há necessidade de editar o arquivo diretamente.
+A Adobe recomenda trabalhar em uma ramificação de desenvolvimento ao adicionar uma extensão à implementação. Ao instalar uma extensão, o nome da extensão (`<VendorName>_<ComponentName>`) é inserido automaticamente no arquivo [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=pt-BR). Não há necessidade de editar o arquivo diretamente.
 
 **Para instalar uma extensão**:
 
@@ -155,7 +155,7 @@ Nunca ative ou desative uma extensão enquanto estiver conectado em ambientes re
 
 ## Atualizar uma extensão
 
-Antes de continuar, é necessário o nome e a versão do Composer para a extensão. Além disso, confirme se a extensão é compatível com o projeto e a versão do Adobe Commerce. Em particular, [verifique a versão necessária do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) antes de começar.
+Antes de continuar, é necessário o nome e a versão do Composer para a extensão. Além disso, confirme se a extensão é compatível com o projeto e a versão do Adobe Commerce. Em particular, [verifique a versão necessária do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) antes de começar.
 
 **Para atualizar uma extensão**:
 
@@ -189,4 +189,4 @@ Antes de continuar, é necessário o nome e a versão do Composer para a extens�
    git push origin <branch-names>
    ```
 
-Se você encontrar erros, consulte [Recuperar de falha de componente](../deploy/recover-failed-deployment.md). Para saber mais sobre o uso de extensões com o Adobe Commerce, consulte [Extensões](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) no _Guia do Administrador_.
+Se você encontrar erros, consulte [Recuperar de falha de componente](../deploy/recover-failed-deployment.md). Para saber mais sobre o uso de extensões com o Adobe Commerce, consulte [Extensões](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html?lang=pt-BR) no _Guia do Administrador_.

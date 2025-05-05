@@ -13,7 +13,7 @@ ht-degree: 1%
 
 O serviço `mysql` fornece armazenamento de dados persistente com base nas versões 10.2 a 10.4 do [MariaDB](https://mariadb.com/), com suporte para o mecanismo de armazenamento [XtraDB](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html) e reimplementou os recursos do MySQL 5.6 e 5.7.
 
-A reindexação no MariaDB 10.4 leva mais tempo em comparação com outras versões do MariaDB ou MySQL. Consulte [Indexadores](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) no guia de _Práticas recomendadas de desempenho_.
+A reindexação no MariaDB 10.4 leva mais tempo em comparação com outras versões do MariaDB ou MySQL. Consulte [Indexadores](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=pt-BR#indexers) no guia de _Práticas recomendadas de desempenho_.
 
 >[!WARNING]
 >
@@ -72,7 +72,7 @@ mysql:
             optimizer_use_condition_selectivity: 1
 ```
 
-O `properties` no exemplo acima modifica as configurações padrão `optimizer` como [recomendado no Guia de Práticas Recomendadas de Desempenho](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers).
+O `properties` no exemplo acima modifica as configurações padrão `optimizer` como [recomendado no Guia de Práticas Recomendadas de Desempenho](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=pt-BR#indexers).
 
 **Opções de configuração do MariaDB**:
 
@@ -88,7 +88,7 @@ O `properties` no exemplo acima modifica as configurações padrão `optimizer` 
 
 Como opção, você pode configurar vários usuários com permissões diferentes para acessar o banco de dados `main`.
 
-Por padrão, há um ponto de extremidade chamado `mysql` que tem acesso de administrador ao banco de dados. Para configurar vários usuários do banco de dados, você deve definir vários pontos de extremidade no arquivo `services.yaml` e declarar as relações no arquivo `.magento.app.yaml`. Para ambientes de Preparo e Produção Profissionais, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar o usuário adicional.
+Por padrão, há um ponto de extremidade chamado `mysql` que tem acesso de administrador ao banco de dados. Para configurar vários usuários do banco de dados, você deve definir vários pontos de extremidade no arquivo `services.yaml` e declarar as relações no arquivo `.magento.app.yaml`. Para ambientes de Preparo e Produção Profissionais, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar o usuário adicional.
 
 Use uma matriz aninhada para definir os endpoints de acesso do usuário específico. Cada endpoint pode designar acesso a um ou mais schemas (bancos de dados) e diferentes níveis de permissão em cada um.
 
@@ -212,13 +212,13 @@ O acesso direto ao banco de dados do MariaDB requer que você use um SSH para fa
 >
 >Esse recurso está disponível somente nos clusters Pro Production e Staging.
 
-Às vezes, você precisa se conectar ao banco de dados secundário para melhorar o desempenho do banco de dados ou resolver problemas de bloqueio do banco de dados. Se esta configuração for necessária, use `"port" : 3304` para estabelecer a conexão. Consulte o tópico [Prática recomendada para configurar a conexão subordinada do MySQL](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html) no guia _Práticas recomendadas de implementação_.
+Às vezes, você precisa se conectar ao banco de dados secundário para melhorar o desempenho do banco de dados ou resolver problemas de bloqueio do banco de dados. Se esta configuração for necessária, use `"port" : 3304` para estabelecer a conexão. Consulte o tópico [Prática recomendada para configurar a conexão subordinada do MySQL](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html?lang=pt-BR) no guia _Práticas recomendadas de implementação_.
 
 ## Solução de problemas
 
 Consulte os seguintes artigos de suporte da Adobe Commerce para obter ajuda com a solução de problemas do MySQL:
 
-- [Verificando consultas e processos lentos MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html)
-- [Criar despejo de banco de dados na Nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)
-- [Solução de problemas da Ferramenta de Migração de Dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-- [Atualização do Adobe Commerce: compacta para tabelas dinâmicas 2.2.x, 2.3.x para 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+- [Verificando consultas e processos lentos MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=pt-BR)
+- [Criar despejo de banco de dados na Nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=pt-BR)
+- [Solução de problemas da Ferramenta de Migração de Dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+- [Atualização do Adobe Commerce: compacta para tabelas dinâmicas 2.2.x, 2.3.x para 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=pt-BR)

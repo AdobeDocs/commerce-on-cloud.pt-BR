@@ -31,7 +31,7 @@ Exemplos para domínios de produção e de preparo:
 
 Consulte [Configurar vários sites ou lojas](../cloud-guide/store/multiple-sites.md) no guia _Commerce na Infraestrutura na Nuvem_ para obter mais orientações sobre domínios múltiplos ou exclusivos.
 
-Consulte [Várias contas do Fastly e domínios atribuídos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} se você tiver uma conta do Fastly existente que vincula o mesmo ápice e subdomínios usados no site do Adobe Commerce.
+Consulte [Várias contas do Fastly e domínios atribuídos](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"} se você tiver uma conta do Fastly existente que vincula o mesmo ápice e subdomínios usados no site do Adobe Commerce.
 
 ## Domínio de email transacional
 

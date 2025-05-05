@@ -231,7 +231,7 @@ As instruções para instalar o aplicativo autenticador e habilitar o TFA estão
 
      >[!WARNING]
      >
-     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para redefinir o aplicativo TFA.
+     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para redefinir o aplicativo TFA.
 
 1. Após concluir a configuração do TFA, clique em **Salvar** para atualizar sua conta.
 
