@@ -39,7 +39,7 @@ O OpenSearch permite extrair dados de qualquer fonte, qualquer formato e pesquis
        disk: 1024
    ```
 
-   Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar a versão do OpenSearch nos ambientes de Preparo e Produção.
+   Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a versão do OpenSearch nos ambientes de Preparo e Produção.
 
 1. Defina ou verifique a propriedade `relationships` no arquivo `.magento.app.yaml`.
 
@@ -92,7 +92,7 @@ Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, 
 
 - **Atualização de projeto**-Verifique se o cliente OpenSearch PHP na nova versão do aplicativo é compatível com a versão do serviço OpenSearch instalada na infraestrutura de nuvem.
 
-O suporte à versão e compatibilidade do serviço é determinado por versões testadas e implantadas na infraestrutura da nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no _Guia de Instalação_ para obter uma lista de versões com suporte.
+O suporte à versão e compatibilidade do serviço é determinado por versões testadas e implantadas na infraestrutura da nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no _Guia de Instalação_ para obter uma lista de versões com suporte.
 
 **Para verificar a compatibilidade do software OpenSearch**:
 
