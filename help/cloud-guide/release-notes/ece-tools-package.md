@@ -2,11 +2,11 @@
 title: Notas de versão do ECE-Tools
 description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-24T00:00:00Z
+last-substantial-update: 2024-05-27T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: dff5792f310382eb97c9595da08faac90e602126
+source-git-commit: 70664897a10a59668fad74565c04b4ad72474736
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3166'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,16 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.4 {#latest}
+## v2002.2.5 {#latest}
+
+Data de lançamento: 27 de maio de 2025
+
+- ![ícone de correção](../../assets/new.svg) **Compatibilidade com Extended Valkey**-Compatibilidade com Extended Valkey no Adobe Commerce.<!-- MCLOUD-13595	 - -->
+- ![ícone de correção](../../assets/fix.svg) **Validador RabbitMQ atualizado**-Validador atualizado para RabbitMQ.<!-- MCLOUD-13589	 - -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de MariaDB atualizado**-Validador de ece-tools atualizado para MariaDB 10.11.<!-- MCLOUD-13593	 - -->
+- ![Ícone de correção](../../assets/fix.svg) **Compatibilidade estendida do Opensearch2** - O Opensearch2 é compatível com as versões 2.4.4 mais recentes.<!-- MCLOUD-13710	 - -->
+
+## v2002.2.4
 
 Data de lançamento: 24 de abril de 2025
 
