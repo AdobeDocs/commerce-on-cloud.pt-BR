@@ -4,9 +4,10 @@ description: Consulte a lista de variáveis de ambiente que controlam ações na
 feature: Cloud, Configuration, Cache, Deploy, SCD, Storage, Search
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 980ec809-8c68-450a-9db5-29c5674daa16
+source-git-commit: 275a2a5c58b7c5db12f8f31bffed85004e77172f
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ stage:
             database: 11
 ```
 
-O exemplo a seguir usa o [recurso de pré-carregamento Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=pt-BR#redis-preload-feature) conforme definido no _Guia de configuração_:
+O exemplo a seguir usa o [recurso de pré-carregamento Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature) conforme definido no _Guia de configuração_:
 
 ```yaml
 stage:
@@ -97,7 +98,7 @@ stage:
 - **Padrão**—`true`
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Habilita ou desabilita a limpeza de [arquivos de conteúdo estático](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=pt-BR) gerados durante a fase de compilação ou implantação. Use o valor padrão _true_ em desenvolvimento como uma prática recomendada.
+Habilita ou desabilita a limpeza de [arquivos de conteúdo estático](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) gerados durante a fase de compilação ou implantação. Use o valor padrão _true_ em desenvolvimento como uma prática recomendada.
 
 - **`true`** — Remove todo o conteúdo estático existente antes de implantar o conteúdo estático atualizado.
 - **`false`** — A implantação somente substitui arquivos de conteúdo estático existentes se o conteúdo gerado contiver uma versão mais recente.
@@ -156,7 +157,7 @@ stage:
       consumers: []
 ```
 
-Por padrão, o processo de implantação substitui todas as configurações no arquivo `env.php`. Consulte [Gerenciar filas de mensagens](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html?lang=pt-BR) no _Guia de Configuração do Commerce_ para Adobe Commerce local.
+Por padrão, o processo de implantação substitui todas as configurações no arquivo `env.php`. Consulte [Gerenciar filas de mensagens](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) no _Guia de Configuração do Commerce_ para Adobe Commerce local.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -186,7 +187,7 @@ stage:
 
 >[!WARNING]
 >
->Defina o valor `CRYPT_KEY` por meio do [!DNL Cloud Console] em vez do arquivo `.magento.env.yaml` para evitar a exposição da chave no repositório de código-fonte de seu ambiente. Consulte [Definir variáveis de ambiente e projeto](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html?lang=pt-BR#configure-environment).
+>Defina o valor `CRYPT_KEY` por meio do [!DNL Cloud Console] em vez do arquivo `.magento.env.yaml` para evitar a exposição da chave no repositório de código-fonte de seu ambiente. Consulte [Definir variáveis de ambiente e projeto](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
 
 Ao mover o banco de dados de um ambiente para outro sem um processo de instalação, você precisará das informações criptográficas correspondentes. O Adobe Commerce usa o valor da chave de criptografia definido em [!DNL Cloud Console] como o valor `crypt/key` no arquivo `env.php`.
 
@@ -277,7 +278,7 @@ stage:
 
 >[!NOTE]
 >
->Em um cluster Pro de Preparo/Produção que tenha três nós (ou três nós de serviço na [Arquitetura em Escala](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier)), o `indices_settings` deve ser definido da seguinte maneira:
+>Em um cluster Pro de Preparo/Produção que tenha três nós (ou três nós de serviço na [Arquitetura em Escala](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier)), o `indices_settings` deve ser definido da seguinte maneira:
 >
 >```yaml
 >           indices_settings:
@@ -302,7 +303,7 @@ stage:
 **Limitações conhecidas**:
 
 - Alterar o mecanismo de pesquisa para qualquer tipo diferente de `elasticsuite` causa uma falha de implantação acompanhada de um erro de validação apropriado
-- A remoção do serviço de Elasticsearch causa uma falha de implantação acompanhada de um erro de validação apropriado
+- A remoção do serviço Elasticsearch causa uma falha de implantação acompanhada de um erro de validação apropriado
 
 >[!NOTE]
 >
@@ -313,10 +314,10 @@ stage:
 - **Padrão**—`false`
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Ativa e desativa Google Analytics ao implantar em ambientes de Preparo e Integração. Por padrão, Google Analytics é verdadeiro somente para o ambiente de Produção. Defina esse valor como `true` para habilitar Google Analytics nos ambientes de Preparo e Integração.
+Ativa e desativa o Google Analytics ao implantar em ambientes de Preparo e Integração. Por padrão, o Google Analytics é verdadeiro somente para o ambiente de Produção. Defina esse valor como `true` para habilitar o Google Analytics nos ambientes de Preparo e Integração.
 
-- **`true`** — Habilita Google Analytics em ambientes de Preparo e Integração.
-- **`false`** — Desabilita Google Analytics em ambientes de Preparo e Integração.
+- **`true`** — Habilita o Google Analytics em ambientes de Preparo e Integração.
+- **`false`** — Desabilita o Google Analytics em ambientes de Preparo e Integração.
 
 Adicione a variável de ambiente `ENABLE_GOOGLE_ANALYTICS` ao estágio `deploy` no arquivo `.magento.env.yaml`:
 
@@ -328,7 +329,7 @@ stage:
 
 >[!NOTE]
 >
->O processo de implantação sempre ativa Google Analytics em ambientes de produção.
+>O processo de implantação sempre habilita o Google Analytics em ambientes de produção.
 
 ## `FORCE_UPDATE_URLS`
 
@@ -348,7 +349,7 @@ stage:
 - **Padrão**—`file`
 - **Versão** — Adobe Commerce 2.2.5 e posterior
 
-O provedor de bloqueio impede a inicialização de trabalhos cron duplicados e grupos cron. Use o provedor de bloqueio `file` no ambiente de Produção. Os ambientes iniciais e o ambiente de integração Pro não usam a variável [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md), portanto, o `ece-tools` aplica o provedor de bloqueio `db` automaticamente.
+O provedor de bloqueio impede a inicialização de trabalhos cron duplicados e grupos cron. Use o provedor de bloqueio `file` no ambiente de Produção. Os ambientes iniciais e o ambiente de integração Pro não usam a variável [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md), portanto, o `ece-tools` aplica automaticamente o provedor de bloqueio `db`.
 
 ```yaml
 stage:
@@ -356,7 +357,7 @@ stage:
     LOCK_PROVIDER: "db"
 ```
 
-Consulte [Configurar o bloqueio](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=pt-BR) no _Guia de instalação_.
+Consulte [Configurar o bloqueio](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html) no _Guia de instalação_.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
@@ -442,7 +443,7 @@ stage:
 
 >[!NOTE]
 >
->Se você especificar `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` como o modelo de back-end do Redis para habilitar o [cache L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR), o `ece-tools` gerará a configuração do cache automaticamente. Veja um exemplo de [arquivo de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR#configuration-example) no _Guia de Configuração do Adobe Commerce_. Para substituir a configuração de cache gerada, use a variável de implantação [CACHE_CONFIGURATION](#cache_configuration).
+>Se você especificar `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` como o modelo de back-end do Redis para habilitar o [cache L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), o `ece-tools` gerará a configuração do cache automaticamente. Veja um exemplo de [arquivo de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) no _Guia de Configuração do Adobe Commerce_. Para substituir a configuração de cache gerada, use a variável de implantação [CACHE_CONFIGURATION](#cache_configuration).
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -451,7 +452,7 @@ stage:
 
 >[!WARNING]
 >
->_não_ habilite esta variável em um projeto de [arquitetura escalonada](../architecture/scaled-architecture.md). Isso causa erros de conexão Redis. Os escravos Redis ainda estão ativos, mas não são usados para leituras Redis. Como alternativa, a Adobe recomenda o uso do Adobe Commerce 2.3.5 ou posterior, a implementação de uma nova configuração de back-end Redis e o armazenamento em cache L2 para Redis.
+>_não_ habilite esta variável em um projeto de [arquitetura escalonada](../architecture/scaled-architecture.md). Isso causa erros de conexão Redis. Os escravos Redis ainda estão ativos, mas não são usados para leituras Redis. Como alternativa, a Adobe recomenda o uso do Adobe Commerce 2.3.5 ou posterior, a implementação de uma nova configuração de back-end do Redis e a implementação do cache L2 para Redis.
 
 >[!TIP]
 >
@@ -468,6 +469,58 @@ stage:
 Você deve ter um serviço Redis configurado no arquivo `.magento.app.yaml` e no arquivo `services.yaml`.
 
 [ECE-Tools versão 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) e posterior usa mais configurações tolerantes a falhas. Se o Adobe Commerce não puder ler dados da instância _slave_ do Redis, ele lerá os dados da instância _master_ do Redis.
+
+A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` ](#cache_configuration).
+
+## `VALKEY_BACKEND`
+
+- **Padrão**—`Cm_Cache_Backend_Redis`
+- **Versão** — Adobe Commerce 2.8.0 e posterior
+
+`VALKEY_BACKEND` especifica a configuração do modelo de back-end para o cache Valkey.
+
+O Adobe Commerce versão 2.8.0 e posterior inclui os seguintes modelos de back-end:
+
+- `Cm_Cache_Backend_Redis`
+- `\Magento\Framework\Cache\Backend\Redis`
+- `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
+
+O exemplo a seguir descreve como definir `VALKEY_BACKEND`:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+>[!NOTE]
+>
+>Se você especificar `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` como o modelo de back-end Valkey para habilitar o [cache L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), o `ece-tools` gerará a configuração de cache automaticamente. Veja um exemplo de [arquivo de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) no _Guia de Configuração do Adobe Commerce_. Para substituir a configuração de cache gerada, use a variável de implantação [CACHE_CONFIGURATION](#cache_configuration).
+
+## `VALKEY_USE_SLAVE_CONNECTION`
+
+- **Padrão**—`false`
+- **Versão** — Adobe Commerce 2.4.8 e posterior
+
+>[!WARNING]
+>
+>_não_ habilite esta variável em um projeto de [arquitetura escalonada](../architecture/scaled-architecture.md). Isso causa erros de conexão do Valkey. Os escravos Redis ainda estão ativos, mas não são usados para leituras Redis. Como alternativa, a Adobe recomenda usar o Adobe Commerce 2.4.8 ou posterior, implementando uma nova configuração de back-end do Valkey e implementando o cache L2 para o Valkey.
+
+>[!TIP]
+>
+>A variável `VALKEY_USE_SLAVE_CONNECTION` é compatível somente com ambientes de cluster Adobe Commerce em Staging e Production Pro de infraestrutura em nuvem e não é compatível com projetos iniciais.
+
+O Adobe Commerce pode ler várias instâncias de Redis de forma assíncrona. `VALKEY_USE_SLAVE_CONNECTION` Defina como `true` para usar automaticamente uma conexão _somente leitura_ com uma instância Redis para receber tráfego somente leitura em um nó não mestre. Essa conexão melhora o desempenho por meio do balanceamento de carga, pois somente um nó lida com o tráfego de leitura-gravação. Defina `VALKEY_USE_SLAVE_CONNECTION` como `false` para remover qualquer matriz de conexão somente leitura existente do arquivo `env.php`.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_USE_SLAVE_CONNECTION: true
+```
+
+Você deve ter um serviço Redis configurado no arquivo `.magento.app.yaml` e no arquivo `services.yaml`.
+
+[ECE-Tools versão 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) e posterior usa mais configurações tolerantes a falhas. Se o Adobe Commerce não puder ler dados da instância Valkey _slave_, ele lerá dados da instância Redis _master_.
 
 A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` ](#cache_configuration).
 
@@ -581,7 +634,7 @@ stage:
 - **Padrão**—`quick`
 - **Versão** — Adobe Commerce 2.2.0 e posterior
 
-Permite personalizar a [estratégia de implantação](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=pt-BR) para conteúdo estático. Consulte [Implantar arquivos de exibição estáticos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=pt-BR).
+Permite personalizar a [estratégia de implantação](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) para conteúdo estático. Consulte [Implantar arquivos de exibição estáticos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 Use estas opções _somente_ se você tiver mais de uma localidade:
 
@@ -617,7 +670,7 @@ Para reduzir ainda mais o tempo de implantação, use o [Gerenciamento de Config
 
 Use essa variável de ambiente para manter configurações personalizadas do serviço de pesquisa entre implantações. Por exemplo:
 
-Configuração de Elasticsearch:
+Configuração do Elasticsearch:
 
 ```yaml
 stage:

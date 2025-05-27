@@ -2,7 +2,8 @@
 title: Configurar o serviço Valkey
 description: Saiba como configurar e otimizar o Valkey como uma solução de cache de back-end para o Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Cache, Services
-source-git-commit: f73c742cbdbf56ac073802074d5a9cd921591f0f
+exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
+source-git-commit: 242582ea61d0d93725a7f43f2ca834db9e1a7c29
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [Valkey](https://valkey.io) é uma solução de cache de back-end opcional que substitui o `Zend Framework Zend_Cache_Backend_File`, que a Adobe Commerce usa por padrão.
 
-Consulte [Configurar Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=pt-BR){target="_blank"}  no _Guia de configuração_.
+Consulte [Configurar Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} no _Guia de configuração_.
 
 {{service-instruction}}
 
@@ -59,7 +60,7 @@ Supondo que sua relação com Valkey tenha o nome `valkey`, você poderá acess�
 1. Abra um túnel SSH para um host.
 
    ```bash
-   valkey-cli -h valkeycache.internal
+   valkey-cli -h valkey.internal
    ```
 
 ## Obter versão do Valkey instalada
@@ -67,7 +68,7 @@ Supondo que sua relação com Valkey tenha o nome `valkey`, você poderá acess�
 Use o comando a seguir para instalar a versão do Valkey em um ambiente de integração:
 
 ```bash
-valkey-cli -h valkeycache.internal info | grep version
+valkey-cli -h valkey.internal info | grep version
 ```
 
 Resposta:
