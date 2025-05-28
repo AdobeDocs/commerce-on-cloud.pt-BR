@@ -3,9 +3,9 @@ title: Gerenciamento de backup
 description: Saiba como criar e restaurar manualmente um backup para seu projeto do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
+source-git-commit: 3efc5478428c4ede9e2106e1cbef8362c525ccd8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,8 @@ Você pode criar um backup manual de qualquer ambiente Starter ativo e ambiente 
    +---------------------------+----------------------+------------+
    ```
 
+Para criar um despejo de banco de dados de qualquer ambiente, incluindo Preparo e Produção, consulte o artigo da Base de Conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
+
 ## Restaurar um backup manual
 
 Você deve ter [acesso de Administrador](../project/user-access.md) ao ambiente. Você tem até **sete dias** para _restaurar_ um backup manual. A restauração de um backup não altera o código da ramificação Git atual. Restaurar um backup dessa maneira não se aplica a ambientes de preparo e produção Pro; consulte [Pro Backup &amp; Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
@@ -137,7 +139,7 @@ Os tempos de restauração variam dependendo do tamanho do banco de dados:
 
 ## Restaurar um Instantâneo da Recuperação de Desastres
 
-Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Reverter código
 
