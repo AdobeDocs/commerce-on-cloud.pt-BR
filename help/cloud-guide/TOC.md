@@ -3,10 +3,10 @@ user-guide-title: Guia do Commerce na nuvem
 user-guide-description: Saiba como gerenciar o aplicativo do Adobe Commerce na infraestrutura em nuvem.
 product: magento
 feature: Cloud
-source-git-commit: fd7879e8f3c9e1965cf4aa3d99824e577971529d
+source-git-commit: 3347ad0a5fe202cbd80d08b7289c20a1c98ed1e3
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 7%
+source-wordcount: '359'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 7%
    + [Fluxo de trabalho Pro](architecture/pro-develop-deploy-workflow.md)
    + [Arquitetura dimensionada](architecture/scaled-architecture.md)
    + [Dimensionamento automático](architecture/autoscaling.md)
-+ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=pt-BR)
++ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Notas de versão {#release-notes}
    + [Conjunto de ferramentas da nuvem](release-notes/cloud-tools-suite.md)
    + [Pacote ECE-Tools](release-notes/ece-tools-package.md)
@@ -137,9 +137,9 @@ ht-degree: 7%
       + [RabbitMQ](services/rabbitmq.md)
       + [Redis](services/redis.md)
       + [Valkey](services/valkey.md)
-+ Fastly services {#cdn}
++ Serviços Fastly {#cdn}
    + [Visão geral](cdn/fastly.md)
-   + Instalação do Fastly {#setup-fastly}
+   + Configuração do Fastly {#setup-fastly}
       + [Configurar os serviços do Fastly](cdn/fastly-configuration.md)
       + [Personalizar configuração do cache](cdn/fastly-custom-cache-configuration.md)
       + [Personalizar páginas de erro e manutenção](cdn/fastly-custom-response.md)
@@ -153,7 +153,7 @@ ht-degree: 7%
       + [INCLUIR NA LISTA DE BLOQUEIOS IP](cdn/fastly-vcl-blocking.md)
       + [Ignorar cache Fastly](cdn/fastly-vcl-bypass-to-origin.md)
    + [Solução de problemas rápida](cdn/fastly-troubleshooting.md)
-+ Configurações de armazenamento {#configure-store}
++ Configurações da loja {#configure-store}
    + [Visão geral](store/overview.md)
    + [Práticas recomendadas](store/best-practices.md)
    + [Tema personalizado](store/custom-theme.md)
@@ -163,13 +163,14 @@ ht-degree: 7%
    + [Mapa do site e robôs de mecanismo de pesquisa](store/robots-sitemap.md)
    + [Métodos de pagamento do PayPal](store/paypal.md)
    + [Gerenciamento de configuração](store/store-settings.md)
-+ Site de inicialização {#launch}
++ Site de lançamento {#launch}
    + [Visão geral](launch/overview.md)
    + [Lista de verificação de inicialização](launch/checklist.md)
    + [Etapas de inicialização](launch/steps.md)
 + Monitorar site {#monitor}
    + [Desempenho](monitor/performance.md)
-   + Serviço New Relic {#new-relic}
+   + [Telemetria operacional](monitor/operational-telemetry.md)
+   + serviço New Relic {#new-relic}
       + [Visão geral do New Relic](monitor/new-relic-service.md)
       + [Gerenciamento de contas e usuários](monitor/account-management.md)
       + Investigar o desempenho {#investigate}
