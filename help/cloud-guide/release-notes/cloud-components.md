@@ -3,9 +3,9 @@ title: Componentes na nuvem do Commerce
 description: Consulte uma lista das melhorias mais recentes no pacote de componentes da nuvem.
 recommendations: noDisplay, catalog
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: dcf71ffbdafae46e6a02735c090c33a8fe248bc6
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,13 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.1.1 {#latest}
+## v1.1.2 {#latest}
 
+Data de lançamento: 03 de junho de 2025
+
+- ![ícone de correção](../../assets/fix.svg) **Compatibilidade aprimorada com 2.4.8**-Bibliotecas de terceiros atualizadas para melhor compatibilidade com 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v1.1.1
 
 Data de lançamento: 6 de fevereiro de 2025
 
@@ -55,7 +60,7 @@ Data de lançamento: 10 de março de 2023
 
 Data de lançamento: 13 de setembro de 2022
 
-- ![Ícone de correção](../../assets/fix.svg) **Erros no warmup**—Corrigiu um problema que tentava [warmup](../environment/variables-post-deploy.md#warm_up_pages) quando a visibilidade da página estava definida como [**Não Visível Individualmente**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) no Administrador, resultando em `ERROR: Warming up failed: <link to page>` erros no log de implantação.<!-- MCLOUD-9134 -->
+- ![Ícone de correção](../../assets/fix.svg) **Erros no warmup**—Corrigiu um problema que tentava [warmup](../environment/variables-post-deploy.md#warm_up_pages) quando a visibilidade da página estava definida como [**Não Visível Individualmente**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) no Administrador, resultando em `ERROR: Warming up failed: <link to page>` erros no log de implantação.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
@@ -129,7 +134,7 @@ Data de lançamento: 6 de fevereiro de 2020
 
 Data de lançamento: 23 de julho de 2019
 
-- ![ícone de correção](../../assets/fix.svg) Corrigido um problema que afetava a funcionalidade [**WARM_UP_PAGES**](../environment/variables-post-deploy.md#warm_up_pages) que usa uma URL de repositório padrão. Agora, se o comando `config:show:default-url` não puder buscar uma URL base, a URL da variável MAGENTO_CLOUD_ROUTES será usada.<!-- MAGECLOUD-3866 -->
+- ![ícone de correção](../../assets/fix.svg) Corrigido um problema que afetava a funcionalidade [**WARM_UP_PAGES**](../environment/variables-post-deploy.md#warm_up_pages) que usa uma URL de repositório padrão. Agora, se o comando `config:show:default-url` não puder buscar uma URL base, então a URL da variável MAGENTO_CLOUD_ROUTES será usada.<!-- MAGECLOUD-3866 -->
 
 ## v1.0.0
 
