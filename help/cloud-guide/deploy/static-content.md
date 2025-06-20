@@ -2,9 +2,10 @@
 title: Implantação de conteúdo estático
 description: Saiba mais sobre as estratégias para implantar conteúdo estático, como imagens, scripts e CSS, no Adobe Commerce em projetos de infraestrutura em nuvem.
 feature: Cloud, Build, Deploy, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
+source-git-commit: 325b7584daa38ad788905a6124e6d037cf679332
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -13,9 +14,9 @@ ht-degree: 0%
 
 A implantação de conteúdo estático (SCD) tem um impacto significativo no processo de implantação da loja, que depende do volume de conteúdo a ser gerado (como imagens, scripts, CSS, vídeos, temas, localidades e páginas da Web) e quando gerar o conteúdo. Por exemplo, a estratégia padrão gera conteúdo estático durante a [fase de implantação](process.md#deploy-phase-deploy-phase) quando o site está em modo de manutenção; no entanto, essa estratégia de implantação leva tempo para gravar o conteúdo diretamente no diretório `pub/static` montado. Você tem várias opções ou estratégias para ajudar a melhorar o tempo de implantação, dependendo das suas necessidades.
 
-## Otimizar conteúdo do JavaScript e do HTML
+## Otimizar o conteúdo do JavaScript e do HTML
 
-Você pode usar o agrupamento e a minificação para criar conteúdo otimizado de JavaScript e HTML durante a implantação de conteúdo estático.
+Você pode usar o agrupamento e a minificação para criar conteúdo otimizado do JavaScript e do HTML durante a implantação de conteúdo estático.
 
 ### Reduzir conteúdo
 
@@ -35,9 +36,14 @@ As estratégias de implantação diferem com base na escolha entre gerar conteú
 
 ### Configuração do SCD na compilação
 
-Gerar conteúdo estático durante a fase de compilação com HTML minified é a configuração ideal para [**zero-downtime** implantações](reduce-downtime.md), também conhecido como **estado ideal**. Em vez de copiar arquivos para uma unidade montada, ele cria um link simbólico do diretório `./init/pub/static`.
+Gerar conteúdo estático durante a fase de compilação com HTML minificado é a configuração ideal para [**zero-downtime** implantações](reduce-downtime.md), também conhecido como **estado ideal**. Em vez de copiar arquivos para uma unidade montada, ele cria um link simbólico do diretório `./init/pub/static`.
 
 A geração de conteúdo estático requer acesso a temas e localidades. O Adobe Commerce armazena temas no sistema de arquivos, que é acessível durante a fase de criação; no entanto, o Adobe Commerce armazena localidades no banco de dados. O banco de dados _não_ está disponível durante a fase de compilação. Para gerar o conteúdo estático durante a fase de compilação, você deve usar o comando `config:dump` no pacote `ece-tools` para mover localidades para o sistema de arquivos. Ele lê as localidades e as salva no arquivo `app/etc/config.php`.
+
+>[!NOTE]
+>Após executar o comando `config:dump` no pacote `ece-tools`, as configurações despejadas no arquivo [ do `config.php` são bloqueadas (esmaecidas) no painel Administrador](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). a única maneira de atualizar essas configurações no Administrador é excluí-las do arquivo localmente e reimplantar o projeto.
+>>Além disso, sempre que você adicionar um novo site/grupo de armazenamento à sua instância, lembre-se de executar o comando `config:dump` para garantir que o banco de dados esteja sincronizado. Você também pode escolher [quais configurações devem ser despejadas](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) no arquivo `config.php`.
+>>Se você excluir a configuração de armazenamento/grupo de armazenamento/site do arquivo `config.php` porque os campos estão esmaecidos, mas não executam essa etapa, as novas entidades que não foram despejadas serão excluídas do banco de dados na próxima implantação.
 
 **Para configurar seu projeto para gerar o SCD na compilação**:
 
