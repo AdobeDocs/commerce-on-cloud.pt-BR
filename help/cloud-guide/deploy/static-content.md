@@ -42,8 +42,8 @@ A geração de conteúdo estático requer acesso a temas e localidades. O Adobe 
 
 >[!NOTE]
 >Após executar o comando `config:dump` no pacote `ece-tools`, as configurações despejadas no arquivo [ do `config.php` são bloqueadas (esmaecidas) no painel Administrador](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). a única maneira de atualizar essas configurações no Administrador é excluí-las do arquivo localmente e reimplantar o projeto.
->>Além disso, sempre que você adicionar um novo site/grupo de armazenamento à sua instância, lembre-se de executar o comando `config:dump` para garantir que o banco de dados esteja sincronizado. Você também pode escolher [quais configurações devem ser despejadas](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) no arquivo `config.php`.
->>Se você excluir a configuração de armazenamento/grupo de armazenamento/site do arquivo `config.php` porque os campos estão esmaecidos, mas não executam essa etapa, as novas entidades que não foram despejadas serão excluídas do banco de dados na próxima implantação.
+>&#x200B;>Além disso, sempre que você adicionar um novo site/grupo de armazenamento à sua instância, lembre-se de executar o comando `config:dump` para garantir que o banco de dados esteja sincronizado. Você também pode escolher [quais configurações devem ser despejadas](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) no arquivo `config.php`.
+>&#x200B;>Se você excluir a configuração de armazenamento/grupo de armazenamento/site do arquivo `config.php` porque os campos estão esmaecidos, mas não executam essa etapa, as novas entidades que não foram despejadas serão excluídas do banco de dados na próxima implantação.
 
 **Para configurar seu projeto para gerar o SCD na compilação**:
 
