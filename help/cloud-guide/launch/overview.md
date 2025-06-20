@@ -1,9 +1,10 @@
 ---
 title: Lançamento do site
 description: Saiba como iniciar a preparação para a inicialização do site.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
+source-git-commit: 38ac38d4edd0f317155d0d4537021a29a21d5761
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -38,11 +39,11 @@ Você precisa das seguintes informações e recursos para se preparar para o lan
 
 - Certificado SSL/TLS
 
-Como parte da assinatura do Adobe Commerce na infraestrutura em nuvem, o Adobe fornece um certificado SSL/TLS validado pelo domínio, emitido pela Let&#39;s Encrypt. Cada ambiente Pro Production, Staging e Starter Production (`master`) tem um certificado exclusivo que cobre todos os domínios e subdomínios nesse ambiente. Esses certificados são provisionados e carregados no site automaticamente após a atualização da configuração DNS para desenvolvimento e produção. Consulte [Provisionar certificados SSL/TLS](../cdn/fastly-configuration.md#provision-ssltls-certificates).
+Como parte da assinatura do Adobe Commerce na infraestrutura em nuvem, a Adobe fornece um certificado SSL/TLS validado pelo domínio emitido pela Let&#39;s Encrypt. Cada ambiente Pro Production, Staging e Starter Production (`master`) tem um certificado exclusivo que cobre todos os domínios e subdomínios nesse ambiente. Esses certificados são provisionados e carregados no site automaticamente após a atualização da configuração DNS para desenvolvimento e produção. Consulte [Provisionar certificados SSL/TLS](../cdn/fastly-configuration.md#provision-ssltls-certificates).
 
 >[!NOTE]
 >
->Se você quiser implantar seu próprio certificado SSL de Validação Estendida para sua empresa, em vez de usar o certificado Vamos Criptografar, contate sua CTA ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket).
+>Se você quiser implantar seu próprio certificado SSL de Validação Estendida para sua empresa, em vez de usar o certificado Vamos Criptografar, contate sua CTA ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Configurar a ferramenta Verificação de segurança
 
@@ -58,13 +59,17 @@ Como parte da assinatura do Adobe Commerce na infraestrutura em nuvem, o Adobe f
 >
 >Incluir na lista de permissões Adicione esses endereços IP a uma pesquisa no arquivo de regras de firewall da rede para permitir que a ferramenta verifique seu site. A ferramenta publica solicitações somente para as portas 80 e 443.
 
-A Ferramenta de Verificação de Segurança permite que você monitore regularmente os sites da loja e receba atualizações de riscos de segurança conhecidos, malware e software desatualizado. Essa ferramenta é um serviço gratuito disponível para todas as implementações e versões do Adobe Commerce na infraestrutura em nuvem. Você acessa a ferramenta por meio de sua [conta Commerce Marketplace](https://account.magento.com/customer/account/login).
+A Ferramenta de Verificação de Segurança permite que você monitore regularmente os sites da loja e receba atualizações de riscos de segurança conhecidos, malware e software desatualizado. Essa ferramenta é um serviço gratuito disponível para todas as implementações e versões do Adobe Commerce na infraestrutura em nuvem. Você acessa a ferramenta por meio de sua [conta do Commerce Marketplace](https://account.magento.com/customer/account/login).
 
 - Monitorar o status de segurança de seus sites e as atualizações de segurança aplicadas
 
 - Receber atualizações de segurança e notificações específicas do site
 
-Consulte o [Guia do Usuário](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-scan) para obter informações sobre a configuração e o uso da ferramenta de verificação de segurança. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação de usuários (UAT).
+>[!NOTE]
+>
+>A Adobe recomenda usar a Ferramenta de verificação de segurança em vez de outras ferramentas de terceiros para garantir a melhor qualidade do serviço durante a investigação de descobertas.
+
+Consulte o [Guia do Usuário](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) para obter informações sobre a configuração e o uso da ferramenta de verificação de segurança. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação de usuários (UAT).
 
 Cada site examinado deve ser registrado por meio da guia Security Scan (Verificação de segurança). Durante o processo de registro, você deve aceitar a isenção de responsabilidade antes de começar a verificar. Você controla o agendamento e autoriza o usuário a receber notificações quando cada verificação é concluída. Você pode programar varreduras para uma data e hora específicas e recorrentes, ou executar uma varredura sob demanda, conforme necessário.
 
@@ -79,7 +84,7 @@ Visbot/2.0 (+http://www.visvo.com/en/webmasters.jsp;bot@visvo.com)
 
 ## Verificar seu site
 
-1. Acesse sua [conta Commerce Marketplace](https://account.magento.com/customer/account/login).
+1. Acesse sua [conta do Commerce Marketplace](https://account.magento.com/customer/account/login).
 
 1. Clique na guia Verificação de Segurança e selecione **Ir para Verificação de Segurança**.
 
