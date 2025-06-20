@@ -43,7 +43,7 @@ Como parte da assinatura do Adobe Commerce na infraestrutura em nuvem, a Adobe f
 
 >[!NOTE]
 >
->Se você quiser implantar seu próprio certificado SSL de Validação Estendida para sua empresa, em vez de usar o certificado Vamos Criptografar, contate sua CTA ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>Se você quiser implantar seu próprio certificado SSL de Validação Estendida para sua empresa, em vez de usar o certificado Vamos Criptografar, contate sua CTA ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket).
 
 ## Configurar a ferramenta Verificação de segurança
 
@@ -69,7 +69,7 @@ A Ferramenta de Verificação de Segurança permite que você monitore regularme
 >
 >A Adobe recomenda usar a Ferramenta de verificação de segurança em vez de outras ferramentas de terceiros para garantir a melhor qualidade do serviço durante a investigação de descobertas.
 
-Consulte o [Guia do Usuário](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) para obter informações sobre a configuração e o uso da ferramenta de verificação de segurança. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação de usuários (UAT).
+Consulte o [Guia do Usuário](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-scan) para obter informações sobre a configuração e o uso da ferramenta de verificação de segurança. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação de usuários (UAT).
 
 Cada site examinado deve ser registrado por meio da guia Security Scan (Verificação de segurança). Durante o processo de registro, você deve aceitar a isenção de responsabilidade antes de começar a verificar. Você controla o agendamento e autoriza o usuário a receber notificações quando cada verificação é concluída. Você pode programar varreduras para uma data e hora específicas e recorrentes, ou executar uma varredura sob demanda, conforme necessário.
 
