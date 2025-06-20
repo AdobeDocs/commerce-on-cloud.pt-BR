@@ -3,9 +3,9 @@ title: Gerenciamento de backup
 description: Saiba como criar e restaurar manualmente um backup para seu projeto do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b9bbbb9b83ed995951feaa9391015f02a9661206
+source-git-commit: 13cb5e3231c2173d5687aec3e4e64ecc154ee962
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,18 @@ O recurso de backup/instantâneo **não** se aplica aos ambientes Pro Staging e 
 
 Você pode criar um backup manual de qualquer ambiente Starter ativo e ambiente Pro de integração do [!DNL Cloud Console] ou criar um instantâneo da CLI da nuvem. Você deve ter uma [Função de administrador](../project/user-access.md) para o ambiente.
 
+>[!NOTE]
+>
+>Você pode criar um backup do código diretamente nos clusters Pro Production e Staging executando o seguinte comando no terminal - ajustando-o para qualquer pasta/caminho que você deseja incluir/excluir:
+>
+```bash
+>mkdir -p var/support
+>/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
+>```
+
 **Para criar um backup de banco de dados do ambiente Pro**:
-Para criar um despejo de banco de dados de qualquer ambiente Pro, incluindo Preparo e Produção, consulte o artigo da Base de conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
+
+Para criar um despejo de banco de dados de qualquer ambiente Pro, incluindo Preparo e Produção, consulte o artigo da Base de conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
 
 **Para criar um backup de qualquer ambiente Inicial usando o[!DNL Cloud Console]**:
 
@@ -140,10 +150,15 @@ Os tempos de restauração variam dependendo do tamanho do banco de dados:
 
 ## Restaurar um Instantâneo da Recuperação de Desastres
 
-Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Reverter código
 
 Backups e instantâneos _não_ incluem uma cópia do código. Seu código já está armazenado no repositório baseado em Git, portanto, você pode usar comandos baseados em Git para reverter (ou reverter) o código. Por exemplo, use `git log --oneline` para rolar pelas confirmações anteriores; em seguida, use [`git revert`](https://git-scm.com/docs/git-revert) para restaurar o código de uma confirmação específica.
 
 Você também pode optar por armazenar o código em uma ramificação _inativa_. Use comandos git para criar uma ramificação em vez de usar comandos `magento-cloud`. Consulte sobre [comandos do Git](../dev-tools/cloud-cli-overview.md#git-commands) no tópico da CLI da nuvem.
+
+## Informações relacionadas
+
+- [Fazer backup do banco de dados](database-dump.md)
+- [Backup e recuperação de desastres](../architecture/pro-architecture.md#backup-and-disaster-recovery) para clusters Pro Production e Staging
