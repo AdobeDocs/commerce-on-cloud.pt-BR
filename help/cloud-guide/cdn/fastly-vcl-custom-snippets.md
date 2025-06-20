@@ -2,9 +2,10 @@
 title: Introdução a trechos de VCL personalizados
 description: Saiba mais sobre como usar trechos de código da Linguagem de controle do Vernish para personalizar a configuração do serviço Fastly para o Adobe Commerce.
 feature: Cloud, Configuration, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
+source-git-commit: 71fb8f5b3f32553d8b247de44fea29b1bb945584
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '2037'
 ht-degree: 0%
 
 ---
@@ -316,3 +317,16 @@ Esses exemplos de solicitação de API usam variáveis de ambiente exportadas pa
 - **Substituir valores no [código padrão de VCL do Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Crie um trecho com valores atualizados e atribua uma prioridade de `100`.
+
+## Trechos que não podem ser visualizados/modificados pelo administrador do Commerce
+
+Não é possível visualizar ou modificar alguns trechos diretamente no Administrador do Commerce. Por exemplo, [trechos dinâmicos](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Na seção Trechos de VCL Personalizados, você não verá trechos que foram adicionados pela equipe de Suporte na Nuvem diretamente ao [Painel de gerenciamento do Fastly](fastly.md#fastly-service-account-and-credentials).
+
+
+**Para observar os trechos adicionados pela equipe de Suporte na Nuvem:**
+
+1. Vá para a seção **Ferramentas**.
+
+1. Clique em **Listar todas as versões** ao lado de _Histórico de Versões_.
+
+1. Clique no ícone de olho ao lado da Versão VCL aplicável para exibir os trechos existentes.
