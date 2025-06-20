@@ -37,7 +37,7 @@ Você pode criar um backup manual de qualquer ambiente Starter ativo e ambiente 
 
 **Para criar um backup de banco de dados do ambiente Pro**:
 
-Para criar um despejo de banco de dados de qualquer ambiente Pro, incluindo Preparo e Produção, consulte o artigo da Base de conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
+Para criar um despejo de banco de dados de qualquer ambiente Pro, incluindo Preparo e Produção, consulte o artigo da Base de conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
 
 **Para criar um backup de qualquer ambiente Inicial usando o[!DNL Cloud Console]**:
 
@@ -150,7 +150,7 @@ Os tempos de restauração variam dependendo do tamanho do banco de dados:
 
 ## Restaurar um Instantâneo da Recuperação de Desastres
 
-Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Reverter código
 
