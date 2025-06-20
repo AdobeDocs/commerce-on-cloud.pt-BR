@@ -30,7 +30,7 @@ Você pode criar um backup manual de qualquer ambiente Starter ativo e ambiente 
 >
 >Você pode criar um backup do código diretamente nos clusters Pro Production e Staging executando o seguinte comando no terminal - ajustando-o para qualquer pasta/caminho que você deseja incluir/excluir:
 >
-```bash
+>```bash
 >mkdir -p var/support
 >/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
 >```
