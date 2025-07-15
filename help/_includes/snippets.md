@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+source-git-commit: adcdcb663db466953f085f365a38de8301840ba4
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -7,17 +7,17 @@ ht-degree: 0%
 ---
 # Trechos de nuvem
 
-## aviso de Elasticsearch {#elasticsearch-support}
+## Aviso do Elasticsearch {#elasticsearch-support}
 
 >[!WARNING]
 >
->O Elasticsearch 7.11 e posterior não é compatível com o Adobe Commerce na infraestrutura em nuvem. As versões do Adobe Commerce 2.3.7-p3, 2.4.3-p2 e 2.4.4 e posteriores são compatíveis com o serviço OpenSearch. As instalações locais continuam a suportar o Elasticsearch.
+>O Elasticsearch 7.11 e posterior não é compatível com o Adobe Commerce na infraestrutura em nuvem. As versões do Adobe Commerce 2.3.7-p3, 2.4.3-p2 e 2.4.4 e posteriores são compatíveis com o serviço OpenSearch. As instalações locais continuam sendo compatíveis com o Elasticsearch.
 
 ## Integração aprimorada {#enhanced-integration-envs}
 
 >[!NOTE]
 >
->Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
+>Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
 
 ## Opções de mesclagem {#merge-options}
 
@@ -32,31 +32,33 @@ Defina a opção `_merge` como uma das opções a seguir:
 
 >[!NOTE]
 >
->A Adobe recomenda o uso de um repositório privado para o seu projeto do Adobe Commerce na infraestrutura em nuvem para proteger qualquer informação proprietária ou trabalho de desenvolvimento, como extensões e configurações confidenciais.
+>A Adobe recomenda o uso de um repositório privado para o seu projeto do Adobe Commerce na infraestrutura em nuvem para proteger qualquer informação ou trabalho de desenvolvimento proprietário, como extensões e configurações confidenciais.
 
 ## Aviso de autoatendimento do profissional {#pro-self-service-warning}
 
 >[!WARNING]
 >
->Alguns **projetos profissionais** exigem um tíquete de suporte para atualizar a configuração de rota no arquivo `routes.yaml` e a configuração cron no arquivo `.magento.app.yaml`. O Adobe recomenda atualizar e testar arquivos de configuração YAML em um ambiente de Integração e, em seguida, implantar alterações no ambiente de Preparo. Se suas alterações não forem aplicadas aos sites de Preparo após a reimplantação e não houver mensagens de erro relacionadas no log, você **DEVE** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) que descreva as tentativas de alterações de configuração. Inclua quaisquer arquivos de configuração YAML atualizados no ticket.
+>Alguns **projetos profissionais** exigem um tíquete de suporte para atualizar a configuração de rota no arquivo `routes.yaml` e a configuração cron no arquivo `.magento.app.yaml`. A Adobe recomenda atualizar e testar arquivos de configuração YAML em um ambiente de Integração e, em seguida, implantar alterações no ambiente de preparo. Se suas alterações não forem aplicadas aos sites de Preparo após a reimplantação e não houver mensagens de erro relacionadas no log, você **DEVE** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) que descreva as tentativas de alterações de configuração. Inclua quaisquer arquivos de configuração YAML atualizados no ticket.
 
 ## Suporte a serviços profissionais {#pro-update-service}
 
->[!TIP]
->
->Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html?lang=pt-BR) somente em ambientes `Staging` e `Production`.
->
->Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html?lang=pt-BR) em _Configuração do aplicativo_.
->
->Para alterações em um ambiente de Produção em tempo real (**Somente profissionais**), é necessário um aviso de no mínimo 48 horas. Isso permite que a equipe de infraestrutura da nuvem tenha tempo suficiente para empacotar recursos e realizar uma atualização segura. O período de aviso começa quando a equipe de infraestrutura reconhece a solicitação e programa a atualização, exceto nos finais de semana. Por exemplo, para que os upgrades de serviço sejam concluídos na segunda-feira, uma confirmação do upgrade agendado deve ser recebida até quarta-feira. Durante períodos de pico de demanda, pode levar mais tempo para processar sua solicitação.
+>[!BEGINSHADEBOX]
+
+- Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html) somente em ambientes `Staging` e `Production`.
+
+- Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) em _Configuração do aplicativo_.
+
+- Para alterações em um ambiente de Produção em tempo real (**Somente profissionais**), é necessário um aviso de no mínimo 48 horas. Isso permite que a equipe de infraestrutura da nuvem tenha tempo suficiente para empacotar recursos e realizar uma atualização segura. O período de aviso começa quando a equipe de infraestrutura reconhece a solicitação e programa a atualização, exceto nos finais de semana. Por exemplo, para que os upgrades de serviço sejam concluídos na segunda-feira, uma confirmação do upgrade agendado deve ser recebida até quarta-feira. Durante períodos de pico de demanda, pode levar mais tempo para processar sua solicitação.
+
+>[!ENDSHADEBOX]
 
 ## Backups Pro {#pro-backups}
 
 >[!TIP]
 >
->Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
+>Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
 >
->O Adobe **não** restaura quaisquer ambientes a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=pt-BR) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
+>O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
 
 ## Aviso de reimplantação {#redeploy-warning}
 
@@ -86,7 +88,7 @@ Defina a opção `_merge` como uma das opções a seguir:
 
 >[!NOTE]
 >
->Alguns projetos exigem um fluxo de trabalho de desenvolvimento mais sofisticado. Para atender a essa necessidade, o Adobe oferece um [ambiente de preparo adicional](/help/cloud-guide/test/second-staging.md) como uma opção complementar à sua infraestrutura em nuvem.
+>Alguns projetos exigem um fluxo de trabalho de desenvolvimento mais sofisticado. Para atender a essa necessidade, a Adobe oferece um [ambiente de preparo adicional](/help/cloud-guide/test/second-staging.md) como opção complementar à sua infraestrutura em nuvem.
 
 ## Instrução de serviço {#service-instruction}
 
@@ -94,7 +96,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
+>[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
 
 ## Alteração de serviço {#service-change-tip}
 
@@ -106,7 +108,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!TIP]
 >
->Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR) na _Central de Ajuda do Commerce_.
+>Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) na _Central de Ajuda do Commerce_.
 
 ## Atualização para ECE-Tools {#ece-tools-package}
 
@@ -130,6 +132,6 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->Em vez de carregar manualmente trechos de VCL personalizados, você pode adicionar trechos ao diretório `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` em seu ambiente. Os trechos neste diretório são carregados automaticamente quando você clica em _carregar VCL para Fastly_ no Commerce Admin. Consulte [Implantação automatizada de trechos de VCL personalizados](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) no módulo Fastly CDN para obter a documentação do Magento 2.
+>Em vez de carregar manualmente trechos de VCL personalizados, você pode adicionar trechos ao diretório `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` em seu ambiente. Os trechos neste diretório são carregados automaticamente quando você clica em _carregar VCL para Fastly_ no Commerce Admin. Consulte [Implantação de trechos de VCL personalizados automatizada](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) no módulo CDN Fastly para obter a documentação do Magento 2.
 
 <!-- Fastly-related snippets end -->
