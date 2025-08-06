@@ -3,9 +3,9 @@ title: Gerenciar espaço em disco
 description: Saiba como gerenciar o espaço em disco usando a interface de linha de comando.
 feature: Cloud, Storage
 exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
-source-git-commit: b8cabaad4b7805858563cecbe5ffc2fdb9aeac58
+source-git-commit: 45d5a54bfd02fe9e61ca92789689dabf634d4bbe
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,8 @@ Dois [arquivos de configuração](../environment/overview.md) controlam a aloca�
 
 >[!IMPORTANT]
 >
->Para ambientes de Produção e Preparo Profissionais, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a alocação de espaço em disco. Um aumento de tamanho dos ambientes de produção Pro e de preparo só pode ocorrer em determinados intervalos. Portanto, dependendo do uso atual do espaço em disco, o suporte pode recomendar o aumento da alocação de espaço em disco em um mínimo de 10 GB. Depois de alocado, o aumento de armazenamento para preparo e produção Pro não pode ser revertido. O armazenamento não pode ser realocado nem redistribuído entre os recursos. Para adicionar mais espaço de armazenamento de arquivos, reduza o espaço em disco alocado para o MySQL.
+>- Para ambientes de Produção e Preparo Profissionais, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar a alocação de espaço em disco. Um aumento de tamanho dos ambientes de produção Pro e de preparo só pode ocorrer em determinados intervalos. Portanto, dependendo do uso atual do espaço em disco, o suporte pode recomendar o aumento da alocação de espaço em disco em um mínimo de 10 GB. Depois de alocado, o aumento de armazenamento para preparo e produção Pro não pode ser revertido. O armazenamento não pode ser realocado nem redistribuído entre os recursos. Para adicionar mais espaço de armazenamento de arquivos, reduza o espaço em disco alocado para o MySQL.
+>- Os ambientes de produção e de preparo profissionais hospedados no AWS têm um [resfriamento obrigatório de 6 horas](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) que se aplica a aumentos de espaço em disco. Depois que o espaço em disco for aumentado em uma montagem, você deve aguardar 6 horas antes que o espaço em disco possa ser aumentado novamente nessa montagem.
 
 ### Espaço em disco do aplicativo
 
@@ -188,7 +189,7 @@ O arquivo `.magento/services.yaml` controla o espaço em disco disponível para 
 
 ## Monitorar espaço em disco
 
-Em ambientes de produção Pro, é possível monitorar o espaço em disco e outros indicadores de desempenho usando a política de alerta Gerenciado para Adobe Commerce para New Relic. Para obter detalhes, consulte [Monitorar o desempenho com Alertas Gerenciados](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Para obter mais orientações, consulte [Práticas recomendadas para resolver problemas de desempenho do banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=pt-BR).
+Em ambientes de produção Pro, é possível monitorar o espaço em disco e outros indicadores de desempenho usando a política de alerta Gerenciado para Adobe Commerce para New Relic. Para obter detalhes, consulte [Monitorar o desempenho com Alertas Gerenciados](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Para obter mais orientações, consulte [Práticas recomendadas para resolver problemas de desempenho do banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
 
 ## Não há mais espaço
 
