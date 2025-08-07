@@ -2,11 +2,11 @@
 title: Notas de versão do ECE-Tools
 description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-06-03T00:00:00Z
+last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: e447e19d89edeaec84314c52b377f3712e0f0400
+source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
 workflow-type: tm+mt
-source-wordcount: '3185'
+source-wordcount: '3269'
 ht-degree: 0%
 
 ---
@@ -28,20 +28,34 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.6 {#latest}
+## v2002.2.7 {#latest}
+
+Data de lançamento: 07 de agosto de 2025
+
+- ![ícone de correção](../../assets/fix.svg) **Correções do PHP 8.4** - Compatibilidade de tipo adicionada.<!-- MCLOUD-13965 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de EOL** - Datas atualizadas do fim da vida útil (EOL).<!-- MCLOUD-13929 -->
+- ![novo ícone](../../assets/new.svg) **Valkey**-Adição dos testes funcionais do PHP 8.2 e PHP 8.3.<!-- MCLOUD-13610 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de Valkey**-Corrigiu a mensagem de aviso de ferramentas ECE.<!-- MCLOUD-13896 -->
+- ![Ícone de correção](../../assets/fix.svg) **Ferramentas ECE**-Adição de melhorias nos Testes de unidade.<!-- MCLOUD-13838 -->
+- ![novo ícone](../../assets/new.svg) **Validador para serviços** - Adição de suporte a novas versões de Opensearch, MariaDB e PHP.<!-- MCLOUD-13923 -->
+- ![novo ícone](../../assets/new.svg) **Opensearch3**-Suporte adicionado para Opensearch3.<!-- MCLOUD-13763 -->
+- ![Ícone de correção](../../assets/fix.svg) **Suporte a Opensearch para 2.4.4-p7/p12**-Atualização do script de validação.<!-- MCLOUD-13945 -->
+- ![novo ícone](../../assets/new.svg) **Testes do Opensearch3**-Testes funcionais adicionados.<!-- MCLOUD-13769 -->
+
+## v2002.2.6
 
 Data de lançamento: 03 de junho de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Compatibilidade aprimorada com 2.4.8**-Bibliotecas de terceiros atualizadas para melhor compatibilidade com 2.4.8<!-- MCLOUD-13707	 - -->
+- ![ícone de correção](../../assets/fix.svg) **Compatibilidade aprimorada com 2.4.8**-Bibliotecas de terceiros atualizadas para melhor compatibilidade com 2.4.8<!-- MCLOUD-13707 -->
 
 ## v2002.2.5
 
 Data de lançamento: 27 de maio de 2025
 
-- ![novo ícone](../../assets/new.svg) **Compatibilidade com Valkey Estendida**-Compatibilidade com Valkey Estendida no Adobe Commerce.<!-- MCLOUD-13595	 - -->
-- ![ícone de correção](../../assets/fix.svg) **Validador RabbitMQ atualizado**-Validador atualizado para RabbitMQ.<!-- MCLOUD-13589	 - -->
-- ![ícone de correção](../../assets/fix.svg) **Validador de MariaDB atualizado**-Validador de ece-tools atualizado para MariaDB 10.11.<!-- MCLOUD-13593	 - -->
-- ![Ícone de correção](../../assets/fix.svg) **Compatibilidade estendida do Opensearch2** - O Opensearch2 é compatível com as versões 2.4.4 mais recentes.<!-- MCLOUD-13710	 - -->
+- ![novo ícone](../../assets/new.svg) **Compatibilidade com Valkey Estendida**-Compatibilidade com Valkey Estendida no Adobe Commerce.<!-- MCLOUD-13595 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador RabbitMQ atualizado**-Validador atualizado para RabbitMQ.<!-- MCLOUD-13589 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de MariaDB atualizado**-Validador de ece-tools atualizado para MariaDB 10.11.<!-- MCLOUD-13593 -->
+- ![Ícone de correção](../../assets/fix.svg) **Compatibilidade estendida do Opensearch2** - O Opensearch2 é compatível com as versões 2.4.4 mais recentes.<!-- MCLOUD-13710 -->
 
 ## v2002.2.4
 
@@ -53,8 +67,8 @@ Data de lançamento: 24 de abril de 2025
 
 Data de lançamento: 9 de abril de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Corrigir Valkey** Corrigiu um problema com a configuração personalizada valkey.<!-- MCLOUD-13569	 - -->
-- ![ícone de correção](../../assets/fix.svg) **Validador de correção**-Validador corrigido para RabbitMQ 4.0.<!-- MCLOUD-13560	 - -->
+- ![ícone de correção](../../assets/fix.svg) **Corrigir Valkey** Corrigiu um problema com a configuração personalizada valkey.<!-- MCLOUD-13569 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de correção**-Validador corrigido para RabbitMQ 4.0.<!-- MCLOUD-13560 -->
 
 ## v2002.2.2
 
@@ -64,16 +78,15 @@ Data de lançamento: 7 de abril de 2025
 
 Data de lançamento: 7 de abril de 2025
 
-- ![novo ícone](../../assets/new.svg) **Valkey**—Adicionou suporte para um novo serviço (Valkey), que é uma substituição para Redis.&lt;!— MCLOUD-13455 —>
-- ![Ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Adicionou suporte para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5. &lt;!— MCLOUD-13493 —>
+- ![novo ícone](../../assets/new.svg) **Valkey**—Suporte adicionado para um novo serviço (Valkey), que é uma substituição para Redis.<!-- MCLOUD-13455 -->
+- ![Ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Suporte adicionado para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5.<!-- MCLOUD-13493 -->
 
 ## v2002.2.1
 
 Data de lançamento: 6 de fevereiro de 2024
 
-- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13145     - -->
-- ![Ícone de correção](../../assets/fix.svg) **Validador para Opensearch**-Corrigido o validador que gerou uma mensagem enganosa sobre a versão incorreta do serviço.&lt;!— MCLOUD-13184 —>
-
+- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13145 -->
+- ![Ícone de correção](../../assets/fix.svg) **Validador para Opensearch**-Corrigido o validador que gerou uma mensagem enganosa sobre a versão errada do serviço.<!-- MCLOUD-13184 -->
 
 ## v2002.2.0
 
@@ -231,7 +244,7 @@ Data de lançamento: 1 de fevereiro de 2021
 
 - ![ícone de correção](../../assets/fix.svg) **validação de MariaDB 10.3**—Validação de MariaDB 10.3 corrigida para Adobe Commerce 2.3.6-p1.<!--MCLOUD-7416-->
 
-- ![ícone de correção](../../assets/fix.svg) **Cache:flush log**—Entradas de log aprimoradas para indicar o início e término da etapa `cache:flush`.<!--MCLOUD-7503-->
+- ![ícone de correção](../../assets/fix.svg) **Cache:flush registrando em log**—Entradas de log aprimoradas para indicar o início e término da etapa `cache:flush`.<!--MCLOUD-7503-->
 
 ## v2002.1.4
 
