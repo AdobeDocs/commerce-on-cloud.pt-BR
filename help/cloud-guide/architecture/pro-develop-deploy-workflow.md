@@ -3,9 +3,9 @@ title: Fluxo de trabalho do projeto Pro
 description: Saiba como usar os fluxos de trabalho de desenvolvimento e implantação do Pro.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
+source-git-commit: 8aacac9ae721bc98cbe29e67ddf23d784e478e55
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,20 @@ O projeto Pro inclui um único repositório Git com uma ramificação global `ma
 
 ![Lista de ambientes profissionais](../../assets/pro-environments.png)
 
-Esses ambientes são `read-only`, aceitando alterações de código implantado de ramificações enviadas pelo seu espaço de trabalho local. Consulte a [Arquitetura Pro](pro-architecture.md) para obter uma visão geral completa dos ambientes Pro. Consulte [[!DNL Cloud Console]](../project/overview.md#cloud-console) para obter uma visão geral da lista de ambientes Pro na visualização de projeto.
+Esses ambientes são `read-only`, aceitando alterações de código implantado de ramificações enviadas somente do seu espaço de trabalho local.
 
 O gráfico a seguir demonstra o fluxo de trabalho de desenvolvimento e implantação do Pro, que usa uma abordagem simples de ramificação Git. Você [desenvolve](#development-workflow) código usando uma ramificação ativa com base no ambiente `integration`, _enviando_ e _enviando_ alterações de código de e para sua ramificação remota, Ativa. Você implanta o código verificado _mesclando_ a ramificação remota na ramificação base, o que ativa um processo [de compilação e implantação](#deployment-workflow) automatizado para esse ambiente.
 
 ![Exibição de alto nível do fluxo de trabalho de desenvolvimento da arquitetura Pro](../../assets/pro-dev-workflow.png)
+
+Como o ambiente é somente leitura, não é possível fazer alterações no código diretamente no ambiente de nuvem. Se você tentar executar o `composer install` para instalar qualquer módulo, receberá um erro, por exemplo:
+
+```bash
+file_put_contents(...): Failed to open stream: Read-only file system  
+The disk hosting /app/<cluster_ID> is full
+```
+
+Para obter mais informações, consulte [Arquitetura Pro](pro-architecture.md) para obter uma visão geral dos ambientes Pro, e consulte [[!DNL Cloud Console]](../project/overview.md#cloud-console) para obter uma visão geral da lista de ambientes Pro na exibição de projeto.
 
 ## Fluxo de trabalho de desenvolvimento
 
