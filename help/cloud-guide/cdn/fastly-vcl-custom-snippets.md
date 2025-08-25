@@ -3,7 +3,7 @@ title: Introdução a trechos de VCL personalizados
 description: Saiba mais sobre como usar trechos de código da Linguagem de controle do Vernish para personalizar a configuração do serviço Fastly para o Adobe Commerce.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: a51946f65ccd606cde6fbb4278f625a49ae42dad
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 0%
@@ -332,3 +332,5 @@ Esses exemplos de solicitação de API usam variáveis de ambiente exportadas pa
 - **Substituir valores no [código padrão de VCL do Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Crie um trecho com valores atualizados e atribua uma prioridade de `100`.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

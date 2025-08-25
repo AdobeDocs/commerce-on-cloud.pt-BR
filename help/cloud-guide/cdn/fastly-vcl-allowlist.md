@@ -2,7 +2,8 @@
 title: VCL personalizado para permitir solicitações
 description: Filtre solicitações recebidas e permita o acesso por endereço IP para sites do Adobe Commerce com uma lista ACL do Fastly Edge e um trecho VCL personalizado.
 feature: Cloud, Configuration, Security
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 0%
@@ -74,11 +75,11 @@ O seguinte código de trecho de VCL personalizado (formato JSON) mostra a lógic
 }
 ```
 
-Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=pt-BR#add-the-custom-vcl-snippet) deste exemplo, revise os valores para determinar se você precisa fazer alterações. Em seguida, insira cada valor nos respectivos campos, como `type` no campo Tipo, `content` no campo Conteúdo.
+Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) deste exemplo, revise os valores para determinar se você precisa fazer alterações. Em seguida, insira cada valor nos respectivos campos, como `type` no campo Tipo, `content` no campo Conteúdo.
 
 - `name` — Nome do trecho VCL. Para este exemplo, `allowlist`.
 
-- `priority` — Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL de Magento padrão (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
+- `priority` — Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL padrão do Magento (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
 
 - `type` — Especifica um local para inserir o trecho no código de VCL com controle de versão. Este VCL é um tipo de trecho `recv` que adiciona o código de trecho à sub-rotina `vcl_recv` abaixo do código VCL padrão do Fastly e acima de qualquer objeto.
 
@@ -90,7 +91,7 @@ Na amostra de código, a condição `!req.http.Fastly-FF` é importante ao usar 
 
 Depois de revisar e atualizar o código do seu ambiente, use um dos métodos a seguir para adicionar o trecho de VCL personalizado à configuração do serviço Fastly:
 
-- [Adicionar o trecho de VCL personalizado do Administrador](#add-the-custom-vcl-snippet). Esse método é recomendado se você puder acessar o Administrador. (Requer o módulo [Fastly CDN para o Magento 2 versão 1.2.58](fastly-configuration.md#upgrade) ou posterior.)
+- [Adicionar o trecho de VCL personalizado do Administrador](#add-the-custom-vcl-snippet). Esse método é recomendado se você puder acessar o Administrador. (Requer o [Módulo CDN Fastly para o Magento 2 versão 1.2.58](fastly-configuration.md#upgrade) ou posterior.)
 
 - Salve o exemplo de código JSON em um arquivo (por exemplo, `allowlist.json`) e [carregue-o usando a API Fastly](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Use esse método se não conseguir acessar o Administrador.
 
@@ -129,3 +130,5 @@ O Fastly valida a versão atualizada do código do VCL durante o processo de upl
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

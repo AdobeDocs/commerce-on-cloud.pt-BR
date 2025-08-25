@@ -2,7 +2,8 @@
 title: Redirecionar solicitações para um back-end do CMS
 description: Saiba como redirecionar solicitações recebidas de uma loja do Adobe Commerce para um site do WordPress separado usando o módulo Fastly edge.
 feature: Cloud, Configuration, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ef024c68-395b-4d47-9362-a8404a93dbbe
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -45,6 +46,8 @@ Use os Módulos do Fastly Edge para criar e carregar o código de VCL personaliz
 
    - Configure o _Módulo Edge de integração de outro CMS/back-end_ para lidar com substituições de URL do Adobe Commerce no back-end do WordPress.
 
-     Para obter instruções detalhadas, consulte [Módulos Fastly Edge - Outra integração CMS/Backend](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) no _módulo Fastly CDN para a documentação do Magento 2_.
+     Para obter instruções detalhadas, consulte [Módulos do Fastly Edge - Outra integração CMS/Backend](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) na documentação do _Módulo CDN do Fastly para Magento 2_.
 
 1. Depois de atualizar a configuração do serviço Fastly, teste seu armazenamento no Adobe Commerce para garantir que as solicitações de URL especificadas para o WordPress sejam roteadas novamente corretamente.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

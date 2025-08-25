@@ -2,7 +2,8 @@
 title: VCL personalizado para solicitações de bloqueio
 description: Bloqueie solicitações recebidas pelo endereço IP usando uma lista de controle de acesso (ACL) do Edge com um trecho de VCL personalizado.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -38,7 +39,7 @@ Você faz referência à ACL do Edge pelo nome em seu código de trecho de VCL.
 
 >[!NOTE]
 >
->Este exemplo mostra aos usuários avançados como criar um trecho de código VCL para configurar regras de bloqueio personalizadas para fazer upload no serviço Fastly. Você pode configurar um incluir na lista de bloqueios incluo na lista de permissões de classificação ou de classificação com base no país do administrador da Adobe Commerce usando o recurso [Bloqueio](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) disponível no módulo Fastly CDN for Magento 2.
+>Este exemplo mostra aos usuários avançados como criar um trecho de código VCL para configurar regras de bloqueio personalizadas para fazer upload no serviço Fastly. Você pode configurar um incluo na lista de bloqueios de classificação ou de inclui na lista de permissões com base no país do Administrador da Adobe Commerce usando o recurso [Bloqueio](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) disponível no módulo Fastly CDN para Magento 2.
 
 Depois de definir a ACL do Edge, você pode usá-la para criar o trecho VCL para bloquear o acesso aos endereços IP especificados na ACL. Você pode usar o mesmo trecho de VCL em ambientes de Preparo e Produção, mas deve fazer upload do trecho para cada ambiente separadamente.
 
@@ -58,7 +59,7 @@ Antes de criar um trecho com base neste exemplo, revise os valores para determin
 
 - `name`: Nome do trecho VCL. Neste exemplo, usamos o nome `blocklist`.
 
-- `priority`: Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL de Magento padrão (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
+- `priority`: Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL padrão do Magento (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
 
 - `type`: Especifica o tipo de trecho de VCL que determina o local do trecho no código de VCL gerado. Neste exemplo, usamos `recv`, que insere o código de VCL na sub-rotina `vcl_recv`, abaixo do VCL padrão e acima de qualquer objeto. Consulte a [Referência de trecho Fastly VCL](https://docs.fastly.com/api/config#api-section-snippet) para obter a lista de tipos de trecho.
 
@@ -155,3 +156,5 @@ Este exemplo usa o código de país ISO 3166-1 de dois caracteres para o país a
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

@@ -2,7 +2,8 @@
 title: Bloquear spam de referência
 description: Bloqueie spam de referência do seu site usando o dicionário Fastly Edge e um trecho de VCL personalizado.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
@@ -79,7 +80,7 @@ Antes de criar um trecho com base neste exemplo, revise os valores para determin
 
 - `dynamic` — O valor 0 indica um [trecho regular](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) para carregar no VCL com versão para a configuração Fastly.
 
-- `priority` — Determina quando o trecho VCL é executado. A prioridade é `5` para executar este código de trecho antes que qualquer trecho de VCL de Magento padrão (`magentomodule_*`) receba uma prioridade de 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
+- `priority` — Determina quando o trecho VCL é executado. A prioridade é `5` para executar este código de trecho antes que qualquer trecho padrão de VCL do Magento (`magentomodule_*`) receba uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
 
 - `type` — Especifica um local para inserir o trecho na versão do VCL. Neste exemplo, o trecho VCL é um trecho `recv`. Quando o trecho é inserido na versão do VCL, ele é adicionado à sub-rotina `vcl_recv`, abaixo do código padrão do Fastly VCL e acima de qualquer objeto.
 
@@ -135,3 +136,5 @@ O Fastly valida a versão atualizada do VCL durante o processo de upload. Se a v
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->
