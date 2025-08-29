@@ -1,7 +1,7 @@
 ---
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: 5236f2718e5091dfc2fc140e15d4ac87a073d1d0
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Este site contém a documentação mais recente para o desenvolvedor do Commerce na Infraestrutura em nuvem.
 
-- [Guia da Infraestrutura do Commerce na Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview)
-- [Introdução ao Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/start/overview) na infraestrutura em nuvem
+- [Guia da Infraestrutura do Commerce na Nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Introdução ao Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) na infraestrutura em nuvem
 
 ## Código de conduta do Adobe Open Source
 
@@ -18,7 +18,7 @@ Este projeto adotou o [Código de conduta do Adobe Open Source](code-of-conduct.
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/pt-br/docs/contributor/contributor-guide/introduction).
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 A forma como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
@@ -40,7 +40,7 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/pt-br/docs/contributor/contributor-guide/introduction) para obter mais detalhes.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) para obter mais detalhes.
 
 ## Como usar marcação para formatar seu tópico
 
@@ -70,7 +70,7 @@ Em geral, a maioria dos autores só precisa adicionar uma versão de lançamento
 >**OBSERVAÇÃO:**
 >
 >- A geração de conteúdo de modelo requer o trabalho na linha de comando em um terminal.
->- É necessário ter o Ruby instalado para executar o script de renderização. Consulte [_jekyll/.ruby-version] (_jekyll/.ruby-version) para obter a versão necessária.
+>- É necessário ter o Ruby instalado para executar o script de renderização. Consulte [_jekyll/.ruby-version](_jekyll/.ruby-version) para obter a versão necessária.
 
 Consulte o seguinte para obter uma descrição da estrutura do arquivo para conteúdo de modelos:
 
@@ -131,3 +131,31 @@ Para atualizar o conteúdo do modelo:
    ```
 
 Consulte a documentação do Jekyll para obter mais detalhes sobre [Arquivos de dados](https://jekyllrb.com/docs/datafiles), [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/) e outros recursos.
+
+## Ganchos de pré-confirmação para otimização de imagem
+
+Esse repositório inclui ganchos de pré-confirmação automatizados que otimizam imagens antes da confirmação. **Todos os colaboradores devem habilitar esses ganchos** para garantir uma otimização de imagem consistente e um tamanho de repositório reduzido.
+
+### Configuração rápida
+
+Após clonar o repositório, execute:
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### O que os ganchos fazem
+
+- Detectar automaticamente arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
+- Executar `image_optim` para compactar e otimizar imagens
+- Transferir imagens otimizadas automaticamente
+- Garantir que todas as imagens confirmadas estejam corretamente otimizadas
+
+### Benefícios
+
+- Tamanho reduzido do repositório
+- Carregamentos de página mais rápidos para a documentação
+- Qualidade de imagem consistente em todos os colaboradores
+- Não é necessária otimização manual
+
+Para obter instruções detalhadas de instalação, solução de problemas e configuração, consulte [`.githooks/README.md`](.githooks/README.md).
