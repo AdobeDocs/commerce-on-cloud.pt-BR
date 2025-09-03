@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">Referência de CLI</a> e das <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Mensagens de erro</a> após a versão ECE-Tools, v2002.2.7.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">Referência de CLI</a> e das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Mensagens de erro</a> após a versão ECE-Tools, v2002.2.7.</p>
 </td>
       <td>
         Técnico
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">notas de versão</a> para os componentes da nuvem, Docker, patches e o pacote de ferramentas ECE.</p>
+      <td><p>Adição das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">notas de versão</a> para os componentes da nuvem, Docker, patches e o pacote de ferramentas ECE.</p>
 </td>
       <td>
         Atualização importante
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de uma observação sobre o período de resfriamento obrigatório de 6 horas após <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space">aumentos de espaço em disco</a> para projetos hospedados no AWS.</p>
+      <td><p>Adição de uma observação sobre o período de resfriamento obrigatório de 6 horas após <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space">aumentos de espaço em disco</a> para projetos hospedados no AWS.</p>
 </td>
       <td>
         Técnico
@@ -89,7 +89,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de mais informações sobre a <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">autenticação básica</a> no Fastly.</p>
+      <td><p>Adição de mais informações sobre a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">autenticação básica</a> no Fastly.</p>
 </td>
       <td>
         Atualização importante
@@ -111,7 +111,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adicionados detalhes de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey">configuração</a> ausentes para o serviço Valkey.</p>
+      <td><p>Adicionados detalhes de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/valkey">configuração</a> ausentes para o serviço Valkey.</p>
 </td>
       <td>
         Técnico
@@ -133,7 +133,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Foram removidas <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">instruções de atualização</a> para versões do Commerce que atingiram o fim do suporte e estavam causando confusão.</p>
+      <td><p>Foram removidas <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">instruções de atualização</a> para versões do Commerce que atingiram o fim do suporte e estavam causando confusão.</p>
 </td>
       <td>
         Atualização importante, feedback
