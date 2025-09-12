@@ -19,12 +19,12 @@ Esta ferramenta estende a funcionalidade do [[!DNL Cloud Console]](../../get-sta
 >
 >Essa é uma ferramenta local e só é suportada em sistemas operacionais baseados em Unix. O Windows não é compatível. Ele não pode ser instalado no ambiente de nuvem (que é somente leitura) usando o método descrito nesta página. Você só pode instalar módulos no ambiente de Nuvem por meio de um dos **fluxos de trabalho de implantação** a seguir.
 >
->- [Fluxo de trabalho de implantação profissional](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Fluxo de trabalho de implantação inicial](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Fluxo de trabalho de implantação profissional](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Fluxo de trabalho de implantação inicial](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **Para instalar a `magento-cloud` CLI**:
 
-1. Na sua _estação de trabalho local_, altere para o diretório onde você pretende clonar o projeto na Nuvem e onde o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) tem acesso de _gravação_.
+1. Na sua _estação de trabalho local_, altere para o diretório onde você pretende clonar o projeto na Nuvem e onde o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR) tem acesso de _gravação_.
 
 1. Instale a CLI do `magento-cloud`.
 
@@ -137,7 +137,7 @@ As etapas a seguir demonstram o uso dos comandos CLI e Git alternadamente para g
 
 1. Na estação de trabalho local, altere para o diretório do projeto.
 
-1. Alternar para o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
+1. Alternar para o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR).
 
 1. Faça logon no projeto.
 
