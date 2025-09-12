@@ -1,27 +1,30 @@
 ---
 title: CLI da nuvem
 description: Saiba mais sobre a CLI da magento-cloud e como ela ajuda você a gerenciar ambientes de desenvolvimento locais para seu projeto de infraestrutura do Adobe Commerce na nuvem.
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 71a705f2-8672-4125-b539-b7b1621f2f64
+source-git-commit: 82d89f442792baec995dd0be40f2a49cba168f76
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
 
-
 # CLI da nuvem
 
-A ferramenta da CLI do `magento-cloud` permite que desenvolvedores e administradores de sistema gerenciem projetos e ambientes na nuvem, executem rotinas e executem tarefas de automação localmente. A CLI do `magento-cloud` estende os recursos e a funcionalidade do [[!DNL Cloud Console]](../../get-started/cloud-console.md). Depois de instalar a CLI do `magento-cloud` na estação de trabalho local, você poderá usá-la para gerenciar os ambientes de integração do Adobe Commerce na infraestrutura em nuvem Starter e Pro.
+A CLI do `magento-cloud` é uma ferramenta de linha de comando que permite que desenvolvedores e administradores de sistema gerenciem projetos e ambientes de infraestrutura em nuvem do Adobe Commerce em sua estação de trabalho local.
+
+Esta ferramenta estende a funcionalidade do [[!DNL Cloud Console]](../../get-started/cloud-console.md) fornecendo recursos de automação adicionais e acesso direto aos recursos de gerenciamento de projetos. Depois de instalar a ferramenta localmente, você pode usá-la para gerenciar os ambientes de integração do Starter e do Pro.
 
 >[!NOTE]
 >
->Essa é uma ferramenta local e não pode ser instalada no ambiente de nuvem (que é somente leitura) usando esse método. Você só pode instalar módulos no ambiente de Nuvem por meio do **fluxo de trabalho de implantação**
->- [Fluxo de trabalho de implantação profissional](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Fluxo de trabalho de implantação inicial](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>Essa é uma ferramenta local e só é suportada em sistemas operacionais baseados em Unix. O Windows não é compatível. Ele não pode ser instalado no ambiente de nuvem (que é somente leitura) usando o método descrito nesta página. Você só pode instalar módulos no ambiente de Nuvem por meio de um dos **fluxos de trabalho de implantação** a seguir.
+>
+>- [Fluxo de trabalho de implantação profissional](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Fluxo de trabalho de implantação inicial](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **Para instalar a `magento-cloud` CLI**:
 
-1. Na sua _estação de trabalho local_, altere para o diretório onde você pretende clonar o projeto na Nuvem e onde o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR) tem acesso de _gravação_.
+1. Na sua _estação de trabalho local_, altere para o diretório onde você pretende clonar o projeto na Nuvem e onde o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) tem acesso de _gravação_.
 
 1. Instale a CLI do `magento-cloud`.
 
@@ -61,7 +64,7 @@ A ferramenta da CLI do `magento-cloud` permite que desenvolvedores e administrad
 
 ## Comandos comuns
 
-O Adobe projetou esses comandos para gerenciar ambientes de integração na nuvem e recomenda que você execute a CLI do `magento-cloud` de um diretório de projeto para poder omitir o parâmetro `-p <project-ID>`.
+A Adobe projetou esses comandos para gerenciar ambientes de integração na nuvem e recomenda que você execute a CLI do `magento-cloud` de um diretório de projeto para poder omitir o parâmetro `-p <project-ID>`.
 
 A lista de comandos da CLI `magento-cloud` comumente usados inclui apenas as opções necessárias. Você pode usar a opção `--help` com qualquer comando para ver mais informações.
 
@@ -134,7 +137,7 @@ As etapas a seguir demonstram o uso dos comandos CLI e Git alternadamente para g
 
 1. Na estação de trabalho local, altere para o diretório do projeto.
 
-1. Alternar para o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR).
+1. Alternar para o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Faça logon no projeto.
 
