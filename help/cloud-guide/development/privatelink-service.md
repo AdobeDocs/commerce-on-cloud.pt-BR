@@ -37,7 +37,7 @@ A integração do serviço PrivateLink para projetos de infraestrutura em nuvem 
 - O suporte da Adobe Commerce não abrange a solução de problemas do AWS PrivateLink além da ativação inicial.
 - Os clientes são responsáveis pelos custos associados ao gerenciamento de sua própria VPC.
 - Suporte ao **protocolo HTTPS (porta 443) pela plataforma:**
-   - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encapsulamento de origem rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
+   - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encapsulamento de origem rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=pt-BR).
    - **AWS PrivateLink**: há suporte para conexões do protocolo HTTPS (porta 443).
 - PrivateDNS não está disponível.
 
@@ -205,7 +205,7 @@ Você pode usar o aplicativo Telnet para testar a conexão com o serviço de pon
 
 ## Alterar configuração do PrivateLink
 
-[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
+[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
 
 - Remova a conexão PrivateLink do ambiente de produção ou preparo do Adobe Commerce na infraestrutura em nuvem Pro.
 - Altere o número da conta da plataforma Customer Cloud para acessar o serviço de endpoint da Adobe.
