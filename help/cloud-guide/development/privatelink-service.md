@@ -2,9 +2,10 @@
 title: Serviço PrivateLink
 description: Saiba como usar o serviço PrivateLink para estabelecer uma conexão segura entre uma nuvem privada e a plataforma de nuvem da Adobe Commerce na mesma região.
 feature: Cloud, Iaas, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
+source-git-commit: 0e7f268de078bd9840358b66606a60b2a2225764
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -15,18 +16,18 @@ O Adobe Commerce na infraestrutura de nuvem oferece suporte à integração com 
 
 >[!TIP]
 >
->O PrivateLink é melhor usado para proteger conexões para integrações não HTTP(S), como transferências de banco de dados ou arquivos. Se você planeja integrar seu aplicativo com as APIs do Adobe Commerce, veja como criar uma [Malha de API Adobe](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) no _Malha de API para o Adobe Developer App Builder_.
+>O PrivateLink é melhor usado para proteger conexões para integrações não HTTP(S), como transferências de banco de dados ou arquivos. Se você planeja integrar seu aplicativo com as APIs do Adobe Commerce, veja como criar uma [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) na _API Mesh para o Adobe Developer App Builder_.
 
 ## Recursos e suporte
 
 A integração do serviço PrivateLink para projetos de infraestrutura em nuvem do Adobe Commerce inclui os seguintes recursos e suporte:
 
-- Uma conexão segura entre a Nuvem privada virtual (VPC) do cliente e o Adobe VPC na mesma plataforma de nuvem (AWS ou Azure) na mesma região da Nuvem.
-- Suporte para comunicação unidirecional ou bidirecional entre os serviços de endpoint disponíveis no Adobe e VPCs do cliente.
+- Uma conexão segura entre a Nuvem privada virtual (VPC) do cliente e a Adobe VPC na mesma plataforma de nuvem (AWS ou Azure) na mesma região da Nuvem.
+- Suporte para comunicação unidirecional ou bidirecional entre serviços de endpoint disponíveis na Adobe e VPCs do cliente.
 - Ativação de serviço:
 
    - Abra as portas necessárias no ambiente Adobe Commerce na infraestrutura em nuvem
-   - Estabeleça a conexão inicial entre o cliente e os VPCs Adobe
+   - Estabeleça a conexão inicial entre o cliente e os VPCs do Adobe
    - Solução de problemas de conexão durante a ativação
 
 ## Limitação
@@ -35,7 +36,9 @@ A integração do serviço PrivateLink para projetos de infraestrutura em nuvem 
 - Não é possível estabelecer conexões SSH usando PrivateLink. Consulte [Habilitar chaves SSH](secure-connections.md).
 - O suporte da Adobe Commerce não abrange a solução de problemas do AWS PrivateLink além da ativação inicial.
 - Os clientes são responsáveis pelos custos associados ao gerenciamento de sua própria VPC.
-- Você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem através do Link Privado do Azure devido a [Encobrimento rápido da origem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=pt-BR). Essa limitação não se aplica ao AWS PrivateLink.
+- Suporte ao **protocolo HTTPS (porta 443) pela plataforma:**
+   - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encapsulamento de origem rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
+   - **AWS PrivateLink**: há suporte para conexões do protocolo HTTPS (porta 443).
 - PrivateDNS não está disponível.
 
 ## Tipos de conexão PrivateLink
@@ -74,10 +77,10 @@ Obtenha os seguintes dados necessários para a ativação do PrivateLink:
 
 - **Número da conta da Nuvem do Cliente** (AWS ou Azure) — deve estar na mesma região que a Adobe Commerce na instância da infraestrutura em nuvem
 - **Região da nuvem**—Forneça a região da nuvem onde a conta está hospedada para fins de verificação
-- **Portas de serviços e comunicação**—o Adobe deve abrir portas para habilitar a comunicação de serviço entre VPCs, por exemplo, porta SQL 3306, porta SFTP 2222
+- **Portas de serviços e comunicação** — a Adobe deve abrir portas para habilitar a comunicação de serviço entre VPCs, por exemplo, porta SQL 3306, porta SFTP 2222
 - **ID do Projeto** — Forneça a ID do projeto do Adobe Commerce na infraestrutura em nuvem Pro. Você pode obter a ID do Projeto e outras informações do projeto usando o seguinte comando [CLI da Nuvem](../dev-tools/cloud-cli-overview.md): `magento-cloud project:info`
 - **Tipo de conexão** — especifique unidirecional ou bidirecional para o tipo de conexão
-- **Serviço de ponto de extremidade**—Para conexões PrivateLink bidirecionais, forneça a URL DNS para o serviço de ponto de extremidade do VPC ao qual o Adobe deve se conectar, por exemplo: `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`
+- **Serviço de ponto de extremidade** — Para conexões PrivateLink bidirecionais, forneça a URL DNS para o serviço de ponto de extremidade do VPC ao qual o Adobe deve se conectar, por exemplo: `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`
 - **Acesso ao serviço de ponto de extremidade concedido**—Para se conectar ao serviço externo, permita o acesso ao serviço de ponto de extremidade à seguinte entidade de conta da AWS: `arn:aws:iam::402592597372:root`
 
   >[!WARNING]
@@ -106,34 +109,34 @@ O fluxo de trabalho a seguir descreve o processo de ativação da integração d
 
 1. **O cliente** envia um tíquete de suporte solicitando a habilitação do PrivateLink com a linha de assunto `PrivateLink support for <company>`. Inclua os [dados necessários para a habilitação](#prerequisites) no tíquete. O Adobe usa o tíquete Suporte para coordenar a comunicação durante o processo de ativação.
 
-1. **Adobe** habilita o acesso da conta do cliente ao serviço de ponto de extremidade no Adobe VPC.
+1. O **Adobe** habilita o acesso da conta do cliente ao serviço de ponto de extremidade no Adobe VPC.
 
-   - Atualize a configuração do serviço de ponto de extremidade Adobe para aceitar solicitações iniciadas da conta do AWS ou do Azure do cliente.
+   - Atualize a configuração do serviço de ponto de extremidade do Adobe para aceitar solicitações iniciadas da conta do cliente do AWS ou do Azure.
    - Atualize o tíquete Suporte para fornecer o nome de serviço do ponto de extremidade do Adobe VPC ao qual se conectar, por exemplo `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`.
 
-1. O **Cliente** adiciona o serviço de ponto de extremidade Adobe à sua conta da Nuvem (AWS ou Azure), o que aciona uma solicitação de conexão com o Adobe. Consulte a documentação da plataforma na nuvem para obter instruções:
+1. O **Cliente** adiciona o serviço de ponto de extremidade da Adobe à sua conta da Nuvem (AWS ou Azure), o que aciona uma solicitação de conexão com a Adobe. Consulte a documentação da plataforma na nuvem para obter instruções:
 
    - Para o AWS, consulte [Aceitar e rejeitar solicitações de conexão de ponto de extremidade de interface].
    - Para o Azure, consulte [Gerenciar solicitações de conexão].
 
-1. **Adobe** aprova a solicitação de conexão.
+1. O **Adobe** aprova a solicitação de conexão.
 
-1. Após a aprovação da solicitação de conexão, o **cliente** [verifica a conexão](#test-vpc-endpoint-service-connection) entre a VPC e o Adobe VPC.
+1. Após a aprovação da solicitação de conexão, **o cliente** [verifica a conexão](#test-vpc-endpoint-service-connection) entre sua VPC e a Adobe VPC.
 
 1. Etapas adicionais para ativar conexões bidirecionais:
 
-   - **Adobe** fornece a entidade de conta de Adobe (usuário raiz para a conta do AWS ou do Azure) e solicita acesso ao serviço de ponto de extremidade do VPC do cliente.
-   - O **Cliente** habilita o acesso Adobe ao serviço de ponto de extremidade no VPC do cliente. Isso pressupõe que a entidade de conta Adobe tenha acesso a `arn:aws:iam::402592597372:root`, conforme descrito anteriormente no pré-requisito **acesso ao serviço de Ponto de Extremidade concedido**.
+   - A **Adobe** fornece a entidade de conta da Adobe (usuário raiz para a conta do AWS ou do Azure) e solicita acesso ao serviço de ponto de extremidade do VPC do cliente.
+   - O **Cliente** habilita o acesso da Adobe ao serviço de ponto de extremidade no VPC do cliente. Isso pressupõe que a entidade de conta da Adobe tenha acesso a `arn:aws:iam::402592597372:root`, conforme descrito anteriormente no pré-requisito **acesso ao serviço de Ponto de Extremidade concedido**.
 
-      - Atualize a configuração do serviço de ponto de extremidade do cliente para aceitar solicitações iniciadas da conta Adobe. Consulte a documentação da plataforma na nuvem para obter instruções:
+      - Atualize a configuração do serviço de ponto de extremidade do cliente para aceitar solicitações iniciadas da conta do Adobe. Consulte a documentação da plataforma na nuvem para obter instruções:
 
          - Para o AWS, consulte [Adicionando e removendo permissões para o serviço de ponto de extremidade].
          - Para o Azure, consulte [Gerenciar uma conexão de Ponto de Extremidade Privado]
 
-      - Forneça ao Adobe o nome do serviço de ponto de extremidade do VPC do cliente.
+      - Forneça à Adobe o nome do serviço de ponto de extremidade do VPC do cliente.
 
-   - **Adobe** adiciona o serviço de ponto de extremidade do cliente à conta da plataforma Adobe (AWS ou Azure), o que aciona uma solicitação de conexão com o cliente VPC.
-   - O **Cliente** aprova a solicitação de conexão do Adobe para concluir a instalação.
+   - O **Adobe** adiciona o serviço de ponto de extremidade do cliente à conta da plataforma Adobe (AWS ou Azure), o que aciona uma solicitação de conexão com o cliente VPC.
+   - O **Cliente** aprova a solicitação de conexão da Adobe para concluir a configuração.
    - O **Cliente** [verifica a conexão](#test-vpc-endpoint-service-connection) do Adobe VPC.
 
 ## Testar conexão do serviço de ponto de extremidade do VPC
@@ -163,7 +166,7 @@ Você pode usar o aplicativo Telnet para testar a conexão com o serviço de pon
    Exemplo de resposta bem-sucedida:
 
    ```
-   * Rebuilt URL to: telnet://vpce-007ffnb9qkcnjgult-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce.amazonaws.com:80
+   * Rebuilt URL to: telnet://vpce-007ffnb9qkcnjgult-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce. amazonaws.com:80
    * Connected to vpce-0088d56482571241d-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce. amazonaws.com (191.210.82.246) port 80 (#0)
    ```
 
@@ -202,10 +205,10 @@ Você pode usar o aplicativo Telnet para testar a conexão com o serviço de pon
 
 ## Alterar configuração do PrivateLink
 
-[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
+[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
 
 - Remova a conexão PrivateLink do ambiente de produção ou preparo do Adobe Commerce na infraestrutura em nuvem Pro.
-- Altere o número da conta da plataforma Customer Cloud para acessar o serviço de ponto de extremidade Adobe.
+- Altere o número da conta da plataforma Customer Cloud para acessar o serviço de endpoint da Adobe.
 - Adicionar ou remover conexões PrivateLink do Adobe VPC para outros serviços de endpoint disponíveis no ambiente VPC do cliente.
 
 ## Configurar conexões bidirecionais do PrivateLink
