@@ -2,9 +2,10 @@
 title: Projeto de infraestrutura em nuvem
 description: Leia uma visão geral sobre a Adobe Commerce na infraestrutura em nuvem [!DNL Cloud Console] e saiba como acessar as configurações da conta.
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
+source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -13,11 +14,11 @@ ht-degree: 0%
 
 O projeto de infraestrutura do Adobe Commerce na nuvem inclui todo o código em ramificações Git, ambientes associados e scripts para implantar o aplicativo [!DNL Commerce]. Os ambientes contêm serviços para dar suporte ao aplicativo [!DNL Commerce], incluindo um banco de dados, servidor Web e servidor de cache.
 
-O Adobe fornece um [!DNL Cloud Console] e ferramentas de desenvolvedor para gerenciar totalmente todos os aspectos do seu projeto. Você, como proprietário da conta, tem acesso total a todos os ambientes.
+A Adobe fornece um [!DNL Cloud Console] e ferramentas de desenvolvedor para gerenciar totalmente todos os aspectos do seu projeto. Você, como proprietário da conta, tem acesso total a todos os ambientes.
 
 ## [!DNL Cloud Console]
 
-O [!DNL Cloud Console] fornece métodos interativos para compilar, gerenciar e implantar o código Commerce em um formato simples. [Faça logon em  [!DNL Cloud Console]](https://console.adobecommerce.com) para ver sua lista de projetos. Você só pode ver projetos que você tem permissão para acessar como administrador ou para tipos de ambientes específicos. Se você for um Parceiro de soluções Adobe, poderá ver vários projetos para clientes aos quais dá suporte.
+O [!DNL Cloud Console] fornece métodos interativos para compilar, gerenciar e implantar o código Commerce em um formato simples. [Faça logon em  [!DNL Cloud Console]](https://console.adobecommerce.com) para ver sua lista de projetos. Você só pode ver projetos que você tem permissão para acessar como administrador ou para tipos de ambientes específicos. Se você for um Parceiro de soluções da Adobe, poderá ver vários projetos para clientes aos quais oferece suporte.
 
 >[!TIP]
 >
@@ -42,7 +43,7 @@ A visão geral do projeto, desde que você não tenha um ambiente selecionado, m
 
 E na visão geral do projeto principal:
 
-- O modo de exibição Ambientes mostra uma lista ou uma exibição em árvore de ![ramificação ativa](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} ambientes (inativos).
+- A exibição de ambientes mostra uma exibição de lista ou árvore de ![ramificação ativa](../../assets/icon-active.png){width="32"} (ativa) e ![ramificação inativa](../../assets/icon-inactive.png){width="32"} (inativa) ambientes.
 - [Fluxo de atividade](activity-stream.md) mostra atividades em execução, pendentes e recentes para o projeto.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
@@ -140,7 +141,7 @@ Clique em **[!UICONTROL Environments]** e selecione um ambiente específico na l
 
 >[!WARNING]
 >
->**NÃO** use o método de controle de acesso HTTP para proteger ambientes de Preparo e Produção Pro. Isso interrompe o armazenamento em cache do Fastly. Em vez disso, use o recurso [Bloqueio](../cdn/fastly-vcl-blocking.md) disponível no Fastly CDN para Adobe Commerce.
+>**NÃO** use o método de controle de acesso HTTP para proteger ambientes de Preparo e Produção Pro. Isso interrompe o armazenamento em cache do Fastly. Em vez disso, use o recurso [Bloqueio](../cdn/fastly-vcl-blocking.md) disponível no Fastly CDN para Adobe Commerce para bloquear o acesso ou implementar o controle de acesso usando o [Fastly Basic Auth](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md).
 
 ## Credenciais do Fastly e do New Relic
 
