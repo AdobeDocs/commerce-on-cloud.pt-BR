@@ -2,7 +2,8 @@
 title: Solução de problemas rápida
 description: Saiba como solucionar problemas e gerenciar o módulo e os serviços do Fastly CDN para Adobe Commerce.
 feature: Cloud, Configuration, Cache, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 69954ef9-9ece-411e-934e-814a56542290
+source-git-commit: f496a4a96936558e6808b3ce74eac32dfdb9db19
 workflow-type: tm+mt
 source-wordcount: '1834'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Solução de problemas rápida
 
-Use as informações a seguir para solucionar problemas e gerenciar o módulo Fastly CDN para o Magento 2 em seus ambientes de projeto do Adobe Commerce na infraestrutura em nuvem. Por exemplo, você pode investigar valores de cabeçalho de resposta e comportamento do armazenamento em cache para resolver problemas de serviço e desempenho do Fastly.
+Use as seguintes informações para solucionar problemas e gerenciar o módulo Fastly CDN para Magento 2 em seus ambientes de projeto do Adobe Commerce na infraestrutura em nuvem. Por exemplo, você pode investigar valores de cabeçalho de resposta e comportamento do armazenamento em cache para resolver problemas de serviço e desempenho do Fastly.
 
 Em ambientes de produção e preparo profissionais, você pode usar os [logs do New Relic](../monitor/log-management.md) para exibir e analisar os dados de log do Fastly CDN e do WAF para solucionar erros e problemas de desempenho.
 
@@ -39,9 +40,9 @@ Use a lista a seguir para identificar e solucionar problemas relacionados à con
 
 - **O menu Armazenar não é exibido ou funciona**—Talvez você esteja usando um link ou link temporário diretamente para o servidor de origem em vez de usar a URL do site ativo, ou você usou `-H "host:URL"` em um [comando cURL](#check-live-site-through-fastly). Se você ignorar o Fastly no servidor de origem, o menu principal não funcionará e cabeçalhos incorretos serão exibidos para permitir o armazenamento em cache no lado do navegador.
 
-- **A navegação superior não funciona**—A navegação superior depende do processamento ESI (Edge Side Includes) que é habilitado quando você carrega os trechos de VCL padrão do Magento Fastly. Se a navegação não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
+- **A navegação superior não funciona**—A navegação superior depende do processamento de ESI (Edge Side Includes) que é habilitado quando você carrega os trechos padrão de VCL do Magento Fastly. Se a navegação não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
 
-- **Geolocalização/GeoIP não funciona**— Os trechos de VCL do Magento Fastly padrão anexam o código do país à URL. Se o código do país não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
+- **Geolocalização/GeoIP não funciona**— Os trechos padrão do Magento Fastly VCL anexam o código do país à URL. Se o código do país não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
 
 - **As páginas não estão sendo armazenadas em cache** — Por padrão, o Fastly não armazena em cache páginas com o cabeçalho `Set-Cookies`. O Adobe Commerce define cookies mesmo em páginas armazenáveis em cache (TTL > 0). O VCL padrão do Magento Fastly remove esses cookies nas páginas que podem ser armazenadas em cache. Se as páginas não estiverem armazenando em cache, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique novamente o site.
 
@@ -88,7 +89,7 @@ Se você receber um erro 503, verifique o log de erros do ambiente de Produção
 
   Procure no log respostas HTTP 200 para o URL que retornou o erro 503. Se você encontrar a resposta 200, significa que o Adobe Commerce retornou a página sem erros. Isso indica que o problema pode ter ocorrido após o intervalo que excede o valor `first_byte_timeout` definido na configuração do serviço Fastly.
 
-Quando ocorre um erro 503, o Fastly retorna o motivo na página de erro e manutenção. Talvez não seja possível ver o motivo se você tiver adicionado o código para uma [página de resposta personalizada](fastly-custom-response.md). Para exibir o código de motivo na página de erro padrão, é possível remover o código de HTML da página de erro personalizada.
+Quando ocorre um erro 503, o Fastly retorna o motivo na página de erro e manutenção. Talvez não seja possível ver o motivo se você tiver adicionado o código para uma [página de resposta personalizada](fastly-custom-response.md). Para exibir o código de motivo na página de erro padrão, é possível remover o código HTML da página de erro personalizada.
 
 **Para verificar a página de erro do Fastly 503**:
 
@@ -153,7 +154,7 @@ As solicitações da API Fastly são transmitidas por meio da extensão Fastly p
 1. Na resposta, verifique os [cabeçalhos](#check-cache-hit-and-miss-response-headers) para garantir que o Fastly esteja funcionando. Você deve ver os seguintes cabeçalhos exclusivos na resposta:
 
    ```http
-   < Fastly-Magento-VCL-Uploaded: yes
+   < Fastly-Magento-VCL-Uploaded: 1.2.222
    < X-Cache: HIT, MISS
    ```
 
@@ -236,7 +237,7 @@ php bin/magento module:status Fastly_Cdn
 
 Com base no status retornado, use as instruções a seguir para atualizar a configuração do Fastly.
 
-- `Module does not exist` — Se o módulo não existir [instale e configure](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) o Módulo CDN Fastly para o Magento 2 em uma ramificação de integração. Após a conclusão da instalação, habilite e configure o módulo. Consulte [Configurar Fastly](fastly-configuration.md).
+- `Module does not exist` — Se o módulo não existir [instale e configure](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) o Módulo CDN Fastly para Magento 2 em uma ramificação de integração. Após a conclusão da instalação, habilite e configure o módulo. Consulte [Configurar Fastly](fastly-configuration.md).
 
 - `Module is disabled` — Se o módulo Fastly estiver desabilitado, atualize a configuração do ambiente em uma ramificação `integration` no ambiente local para habilitá-lo. Em seguida, insira as alterações em Preparo e produção. Consulte [Gerenciar extensões](../store/extensions.md#install-an-extension).
 
@@ -278,7 +279,7 @@ Se o problema persistir, outra extensão provavelmente redefinirá esses cabeça
 
 1. Clique em **Sistema** > **Ferramentas** > **Gerenciamento de Cache**.
 
-1. Clique em **Liberar cache de Magento**.
+1. Clique em **Liberar cache do Magento**.
 
 1. Complete as etapas a seguir para cada extensão que possa causar problemas com os cabeçalhos do Fastly:
 
