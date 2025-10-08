@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Esclarecimento dos sistemas operacionais compatíveis com a ferramenta <code class="language-plaintext highlighter-rouge">magento-cloud</code>instalação<a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview"> da CLI do </a>.</p>
+      <td><p>Esclarecimento dos sistemas operacionais compatíveis com a ferramenta <code class="language-plaintext highlighter-rouge">magento-cloud</code>instalação<a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview"> da CLI do </a>.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">notas de versão</a> para o pacote de Patches da nuvem v1.1.11.</p>
+      <td><p>Adição das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">notas de versão</a> para o pacote de Patches da nuvem v1.1.11.</p>
 </td>
       <td>
         Atualização importante
