@@ -4,9 +4,9 @@ description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: e39b348b02b4edfbe091420c54a20b320387a4b6
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3286'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,15 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.7 {#latest}
+## v2002.2.8 {#latest}
+
+Data de lançamento: 08 de outubro de 2025
+
+- ![novo ícone](../../assets/new.svg) **AtiveMQ** - Suporte adicionado para AtiveMQ.<!-- MCLOUD-13770 -->
+- ![novo ícone](../../assets/new.svg) **AtiveMQ**-Adição de testes funcionais.<!-- MCLOUD-13813 -->
+
+
+## v2002.2.7
 
 Data de lançamento: 07 de agosto de 2025
 

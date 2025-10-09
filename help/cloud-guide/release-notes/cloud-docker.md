@@ -5,9 +5,9 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: c1f5e663716d3c9390e8ffb8bb2da6c7c67996b0
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3790'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,13 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.4.4 {#latest}
+## v1.4.5 {#latest}
+
+Data de lançamento: 08 de outubro de 2025
+
+- ![novo ícone](../../assets/new.svg) **AtiveMQ**—Adicionou suporte a AtiveMQ no Cloud-Docker com testes funcionais.<!-- MCLOUD-13771 -->
+
+## v1.4.4
 
 Data de lançamento: 07 de agosto de 2025
 
