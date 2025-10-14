@@ -3,9 +3,9 @@ title: Configurar o serviço OpenSearch
 description: Saiba como habilitar o serviço OpenSearch para Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Search, Services
 exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
-source-git-commit: a6f927d7931d0fbbf37269cb41b4b6006ac04268
+source-git-commit: 5a190471f4ccc23eb1c311f3082af1948cf1c68d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ O OpenSearch permite extrair dados de qualquer fonte, qualquer formato e pesquis
 
 >[!TIP]
 >
->A menos que você esteja usando o [Live Search](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/overview), a Adobe recomenda que você sempre configure o OpenSearch para seu projeto do Adobe Commerce na infraestrutura na nuvem, mesmo que planeje configurar uma ferramenta de pesquisa de terceiros para seu aplicativo do Adobe Commerce. A configuração do OpenSearch fornece uma opção de fallback se a ferramenta de pesquisa de terceiros falhar.
+>Para projetos do Adobe Commerce na Infraestrutura de Nuvem que não usam o [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview), a Adobe recomenda configurar o [!DNL OpenSearch] para fornecer uma opção de fallback para ferramentas de pesquisa de terceiros. No entanto, [!DNL OpenSearch] e [!DNL Live Search] não podem ser habilitados na mesma instância do Commerce.
 
 **Para habilitar OpenSearch**:
 
@@ -39,7 +39,7 @@ O OpenSearch permite extrair dados de qualquer fonte, qualquer formato e pesquis
        disk: 1024
    ```
 
-   Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a versão do OpenSearch nos ambientes de Preparo e Produção.
+   Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar a versão do OpenSearch nos ambientes de Preparo e Produção.
 
 1. Defina ou verifique a propriedade `relationships` no arquivo `.magento.app.yaml`.
 
@@ -86,13 +86,13 @@ O OpenSearch permite extrair dados de qualquer fonte, qualquer formato e pesquis
 
 ## Compatibilidade de software OpenSearch
 
-Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, sempre verifique a compatibilidade entre a versão do serviço OpenSearch e o cliente PHP[&#x200B; do &#x200B;](https://github.com/opensearch-project/opensearch-php)OpenSearch para Adobe Commerce.
+Ao instalar ou atualizar seu projeto Adobe Commerce na infraestrutura em nuvem, sempre verifique a compatibilidade entre a versão do serviço OpenSearch e o cliente PHP[ do ](https://github.com/opensearch-project/opensearch-php)OpenSearch para Adobe Commerce.
 
 - **Primeira configuração**-Confirme se a versão do OpenSearch especificada no arquivo `services.yaml` é compatível com o cliente OpenSearch PHP configurado para Adobe Commerce.
 
 - **Atualização de projeto**-Verifique se o cliente OpenSearch PHP na nova versão do aplicativo é compatível com a versão do serviço OpenSearch instalada na infraestrutura de nuvem.
 
-O suporte à versão e compatibilidade do serviço é determinado por versões testadas e implantadas na infraestrutura da nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no _Guia de Instalação_ para obter uma lista de versões com suporte.
+O suporte à versão e compatibilidade do serviço é determinado por versões testadas e implantadas na infraestrutura da nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no _Guia de Instalação_ para obter uma lista de versões com suporte.
 
 **Para verificar a compatibilidade do software OpenSearch**:
 
@@ -184,7 +184,7 @@ Como opção, você pode adicionar plug-ins para OpenSearch adicionando a seçã
 
 >[!NOTE]
 >
->Isso se aplica somente aos ambientes Integration e Starter. Para instalar os plug-ins em um cluster Pro Staging ou Production, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Isso se aplica somente aos ambientes Integration e Starter. Para instalar os plug-ins em um cluster Pro Staging ou Production, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 
 ```yaml
@@ -208,7 +208,7 @@ A remoção das entradas de plug-in da seção `opensearch:` do arquivo `.magent
 
 >[!NOTE]
 >
->Essa alteração se aplica somente aos ambientes Integration e Starter. Você terá que [enviar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) para remover o plug-in em um cluster de Preparo ou Produção Pro.
+>Essa alteração se aplica somente aos ambientes Integration e Starter. Você terá que [enviar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) para remover o plug-in em um cluster de Preparo ou Produção Pro.
 
 1. Remova as entradas de plug-in OpenSearch do arquivo `.magento/services.yaml`.
 1. Adicionar, confirmar e enviar por push as alterações de código.
