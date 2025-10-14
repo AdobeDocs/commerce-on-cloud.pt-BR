@@ -23,7 +23,7 @@ Você deve ter uma chave de autenticação para acessar o repositório do Adobe 
 
 A Adobe recomenda usar o método [variável de ambiente](#composer-auth-environment-variable) com seu projeto de nuvem para evitar a exposição acidental de suas credenciais de autorização.
 
-O método de arquivo de autenticação é ideal ao usar o Cloud Docker para Commerce como uma ferramenta de desenvolvimento local, mas tenha cuidado para não carregar o arquivo `auth.json` para um repositório público baseado em Git. Você pode adicionar o arquivo `auth.json` ao arquivo [`.gitignore` ](../project/file-structure.md#ignoring-files).
+O método de arquivo de autenticação é ideal ao usar o Cloud Docker para Commerce como uma ferramenta de desenvolvimento local, mas tenha cuidado para não carregar o arquivo `auth.json` para um repositório público baseado em Git. Você pode adicionar o arquivo `auth.json` ao arquivo [`.gitignore` &#x200B;](../project/file-structure.md#ignoring-files).
 
 >[!ENDSHADEBOX]
 

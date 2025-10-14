@@ -470,7 +470,7 @@ Você deve ter um serviço Redis configurado no arquivo `.magento.app.yaml` e no
 
 [ECE-Tools versão 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) e posterior usa mais configurações tolerantes a falhas. Se o Adobe Commerce não puder ler dados da instância _slave_ do Redis, ele lerá os dados da instância _master_ do Redis.
 
-A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` ](#cache_configuration).
+A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` &#x200B;](#cache_configuration).
 
 ## `VALKEY_BACKEND`
 
@@ -523,7 +523,7 @@ Você deve ter um serviço Redis configurado no arquivo `.magento.app.yaml` e no
 
 [ECE-Tools versão 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) e posterior usa mais configurações tolerantes a falhas. Se o Adobe Commerce não puder ler dados da instância Valkey _slave_, ele lerá dados da instância Redis _master_.
 
-A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` ](#cache_configuration).
+A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` &#x200B;](#cache_configuration).
 
 ## `RESOURCE_CONFIGURATION`
 

@@ -38,7 +38,7 @@ A configuração padrão permite o seguinte:
 - No caminho raiz (`/`), somente a Web e a mídia podem ser acessadas
 - Nos caminhos `~/pub/static` e `~/pub/media`, qualquer arquivo pode ser acessado
 
-O exemplo a seguir mostra a configuração padrão no arquivo `.magento.app.yaml` para um conjunto de locais acessíveis pela Web associados a uma entrada na propriedade [`mounts` ](properties.md#mounts):
+O exemplo a seguir mostra a configuração padrão no arquivo `.magento.app.yaml` para um conjunto de locais acessíveis pela Web associados a uma entrada na propriedade [`mounts` &#x200B;](properties.md#mounts):
 
 ```yaml
  # The configuration of app when it is exposed to the web.

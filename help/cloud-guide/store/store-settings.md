@@ -29,7 +29,7 @@ O gerenciamento de configurações fornece uma maneira de implantar configuraç�
 Todas as configurações do sistema são definidas durante as fases de criação e implantação de acordo com o seguinte esquema de substituição:
 
 1. Se uma variável de ambiente existir, use a configuração personalizada e ignore a configuração padrão.
-1. Se uma variável de ambiente não existir, use a configuração de um par de nome-valor `MAGENTO_CLOUD_RELATIONSHIPS` no arquivo [`.magento.app.yaml` ](../application/configure-app-yaml.md). Ignorar a configuração padrão.
+1. Se uma variável de ambiente não existir, use a configuração de um par de nome-valor `MAGENTO_CLOUD_RELATIONSHIPS` no arquivo [`.magento.app.yaml` &#x200B;](../application/configure-app-yaml.md). Ignorar a configuração padrão.
 1. Se uma variável de ambiente não existir e `MAGENTO_CLOUD_RELATIONSHIPS` não contiver um par nome-valor, remova todas as configurações personalizadas e use os valores da configuração padrão.
 
 Em resumo, as variáveis de ambiente substituem todos os outros valores.
