@@ -1,27 +1,32 @@
 ---
 title: Configurar o serviço RabbitMQ
-description: Saiba como habilitar o serviço RabbitMQ para gerenciar filas de mensagens para o Adobe Commerce na infraestrutura em nuvem.
+description: Saiba como habilitar o serviço RabbitMQ para gerenciar filas de mensagens para Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 64af1dfa-e3f0-4404-a352-659ca47c1121
+source-git-commit: 2df119f1c09b92e45ae30544e5c2ee0e0d21834c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
 
 # Configurar o serviço [!DNL RabbitMQ]
 
-O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=pt-BR) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
+O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
 
-O MQF usa o [RabbitMQ](https://www.rabbitmq.com/) como agente de mensagens, o que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. [!DNL RabbitMQ] é baseado na especificação AMQP (Advanced Message Queuing Protocol) 0.9.1.
+O MQF usa [RabbitMQ](https://www.rabbitmq.com/) como agente de mensagens, o que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. [!DNL RabbitMQ] é baseado na especificação AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
->[!WARNING]
+>[!NOTE]
+>
+>O Adobe Commerce na infraestrutura em nuvem também oferece suporte a [AtiveMQ Artemis](activemq.md) como um serviço alternativo de fila de mensagens usando o protocolo STOMP.
+
+>[!IMPORTANT]
 >
 >Se preferir usar um serviço existente baseado em AMQP, como o [!DNL RabbitMQ], em vez de depender da Adobe Commerce na infraestrutura de nuvem para criá-lo para você, use a variável de ambiente [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) para conectá-lo ao seu site.
 
 {{service-instruction}}
 
-**Para habilitar o RabbitMQ**:
+**Para habilitar RabbitMQ**:
 
 1. Adicione o nome, o tipo e o valor de disco necessários (em MB) ao arquivo `.magento/services.yaml`, juntamente com a versão do RabbitMQ instalada.
 
@@ -56,7 +61,7 @@ O MQF usa o [RabbitMQ](https://www.rabbitmq.com/) como agente de mensagens, o qu
 
 {{service-change-tip}}
 
-## Conectar-se ao RabbitMQ para depuração
+## Conectar ao RabbitMQ para depuração
 
 Para fins de depuração, é útil se conectar diretamente a uma instância de serviço de uma das seguintes maneiras:
 
@@ -84,7 +89,7 @@ Para fins de depuração, é útil se conectar diretamente a uma instância de s
    magento-cloud ssh
    ```
 
-1. Recupere os detalhes de conexão da RabbitMQ e as credenciais de logon da variável [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships):
+1. Recupere os detalhes da conexão RabbitMQ e as credenciais de logon da variável [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships):
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -96,7 +101,7 @@ Para fins de depuração, é útil se conectar diretamente a uma instância de s
    php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"])));'
    ```
 
-   Na resposta, localize as informações do RabbitMQ, por exemplo:
+   Na resposta, localize as informações de RabbitMQ, por exemplo:
 
    ```json
    {
@@ -113,7 +118,7 @@ Para fins de depuração, é útil se conectar diretamente a uma instância de s
    }
    ```
 
-1. Habilitar o encaminhamento de porta local para a RabbitMQ (se o projeto estiver localizado em uma região diferente, como US-3, EU-5 ou AP-3, substitua ``us-3``/``eu-5``/``ap-3`` por ``us``)
+1. Habilitar o encaminhamento de porta local para RabbitMQ (se o projeto estiver localizado em uma região diferente, como US-3, EU-5 ou AP-3, substitua ``us-3``/``eu-5``/``ap-3`` por ``us``)
 
    ```bash
    ssh -L <port-number>:rabbitmq.internal:<port-number> <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
@@ -125,7 +130,7 @@ Para fins de depuração, é útil se conectar diretamente a uma instância de s
    ssh -L 15672:rabbitmq.internal:15672 <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
    ```
 
-1. Enquanto a sessão estiver aberta, você poderá iniciar um cliente RabbitMQ de sua escolha na estação de trabalho local, configurada para se conectar ao `localhost:<portnumber>` usando as informações de número da porta, nome de usuário e senha da variável MAGENTO_CLOUD_RELATIONSHIPS.
+1. Enquanto a sessão estiver aberta, você poderá iniciar um cliente RabbitMQ de sua escolha na estação de trabalho local, configurado para se conectar ao `localhost:<portnumber>` usando o número da porta, o nome de usuário e as informações de senha da variável MAGENTO_CLOUD_RELATIONSHIPS.
 
 ### Conectar a partir do aplicativo
 
@@ -143,4 +148,4 @@ Ao fazer logon no contêiner PHP, digite qualquer comando `amqp-` disponível pa
 
 ### Conectar a partir do aplicativo PHP
 
-Para conectar-se ao RabbitMQ usando seu aplicativo PHP, adicione uma biblioteca PHP à árvore de origem.
+Para conectar ao RabbitMQ usando seu aplicativo PHP, adicione uma biblioteca PHP à sua árvore de origem.

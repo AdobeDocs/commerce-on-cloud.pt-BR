@@ -2,9 +2,10 @@
 title: Configurar serviços
 description: Saiba como configurar serviços usados pelo Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Configuration, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
+source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -31,13 +32,14 @@ Alterar uma configuração de serviço faz com que uma implantação provisione 
 
 A infraestrutura em nuvem é compatível com os seguintes serviços e os implanta:
 
+- [AtiveMQ](activemq.md)
 - [MySQL](mysql.md)
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
-Você pode exibir versões padrão e valores de disco no [arquivo `services.yaml` padrão](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) atual. A amostra a seguir mostra os serviços `mysql`, `redis`, `opensearch` ou `elasticsearch` e `rabbitmq` definidos no arquivo de configuração `services.yaml`:
+Você pode exibir versões padrão e valores de disco no [arquivo `services.yaml` padrão](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) atual. A amostra a seguir mostra os serviços `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` e `activemq-artemis` definidos no arquivo de configuração `services.yaml`:
 
 ```yaml
 mysql:
@@ -53,6 +55,10 @@ opensearch:
 
 rabbitmq:
     type: rabbitmq:3.9
+    disk: 1024
+
+activemq-artemis:
+    type: activemq-artemis:2.42
     disk: 1024
 ```
 
@@ -92,7 +98,7 @@ redis2:
 Renomear um serviço no arquivo `services.yaml` **remove permanentemente** o seguinte:
 
 - O serviço existente antes de criar um serviço com o novo nome especificado.
-- Todos os dados existentes para o serviço são removidos. A Adobe recomenda que você [faça backup de seu ambiente de Início](../storage/snapshots.md) antes de alterar o nome de um serviço existente.
+- Todos os dados existentes para o serviço são removidos. A Adobe recomenda que você [faça backup do seu ambiente de Início](../storage/snapshots.md) antes de alterar o nome de um serviço existente.
 
 ### `type`
 
@@ -171,7 +177,7 @@ Você pode recuperar os dados de configuração de todas as relações de servi�
 
 ## Versões de serviço
 
-O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas e testadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que o Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
+O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas e testadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
 
 ### Verificações de EOL de software
 

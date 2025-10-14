@@ -2,9 +2,9 @@
 title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 50e1a864dcde1148f5ed036b55815442c5986eaf
+source-git-commit: fddbbe499d3a75fdee420fc87cbe1aa5e5c0a918
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '297'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 O Adobe Commerce na infraestrutura em nuvem fornece uma plataforma de hospedagem automatizada com uma abordagem de **autoatendimento** para criar, implantar e gerenciar o aplicativo [!DNL Commerce] em um ambiente nativo em nuvem. A infraestrutura do Adobe Commerce na nuvem vem com recursos adicionais que a diferenciam das plataformas locais do Adobe Commerce e do Magento Open Source:
 
-- Uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis, [!DNL RabbitMQ] e tecnologias de mecanismo de pesquisa compatíveis.
+- Uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis, serviços de fila de mensagens ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) e tecnologias de mecanismo de pesquisa com suporte.
 - Fluxo de trabalho baseado em Git com criação e implantação automáticas para desenvolvimento rápido e implantação contínua eficientes sempre que você envia alterações de código em um ambiente de Plataforma como um serviço (PaaS).
 - Arquivos de configuração de ambiente altamente personalizáveis e ferramentas de gerenciamento e implantação da interface de linha de comando (CLI).
 - Hospedagem do Amazon Web Services (AWS) que oferece um ambiente escalável e seguro para vendas e varejo online.
@@ -23,7 +23,7 @@ O Adobe Commerce na infraestrutura em nuvem fornece uma plataforma de hospedagem
 
 >[!NOTE]
 >
->Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Veja a [Pilha de tecnologia](architecture/tech-stack.md) em detalhes ou saiba mais sobre recursos específicos e produtos com suporte na [Arquitetura de nuvem do Commerce](architecture/cloud-architecture.md).
 
@@ -60,8 +60,10 @@ O guia da infraestrutura do Commerce na nuvem presume que você tenha algum conh
 
 - [Documentação do desenvolvedor do Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site do Adobe Developer) — desenvolva, personalize, integre, estenda e use recursos avançados
 
-- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
+- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
+
 <!-- Last updated from includes: 2025-10-10 20:36:31 -->
+

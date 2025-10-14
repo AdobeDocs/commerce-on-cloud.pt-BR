@@ -2,9 +2,10 @@
 title: Pilha de tecnologia
 description: Consulte a pilha de tecnologia que forma a infraestrutura do Commerce na nuvem.
 feature: Cloud, Iaas, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3fac1ab7-6440-4bf9-8169-9fadf51d70dd
+source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -17,10 +18,10 @@ Considere a Adobe Commerce na infraestrutura em nuvem como cinco camadas funcion
 
 1. [**Infraestrutura em nuvem**](pro-architecture.md): escolha Amazon Web Services (AWS) ou Microsoft Azure como a base da sua Infraestrutura como um Serviço (IaaS) para os projetos do Adobe Commerce no Cloud Infrastructure Pro.
 
-   O Adobe analisa rotineiramente seu uso de recurso de computação virtual (vCPU) e aloca recursos automaticamente para otimizar seu uso a longo prazo e reduzir o risco de exceder sua permissão diária máxima anual de vCPU. Se você espera um aumento no tráfego do site por períodos específicos, continue abrindo um tíquete de Suporte para [solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=pt-BR).
+   A Adobe analisa seu uso de recurso de computação virtual (vCPU) com frequência e aloca recursos automaticamente para otimizar seu uso a longo prazo e reduzir o risco de exceder sua permissão diária máxima anual de vCPU. Se você espera um aumento no tráfego do site por períodos específicos, continue abrindo um tíquete de Suporte para [solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html).
 
 1. [**Platform as a Service**](cloud-architecture.md): cada projeto de infraestrutura do Adobe Commerce na nuvem fornece um ambiente de Integração do Platform as a Service (PaaS) para desenvolvimento, teste e integração de serviços.
-1. [**Adobe Commerce**](../project/overview.md): o Adobe Commerce na infraestrutura em nuvem fornece uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis, [!DNL RabbitMQ] e tecnologias de mecanismo de pesquisa com suporte.
+1. [**Adobe Commerce**](../project/overview.md): o Adobe Commerce na infraestrutura em nuvem fornece uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis, serviços de fila de mensagens ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) e tecnologias de mecanismo de pesquisa com suporte.
 1. [**Ferramentas de Desempenho**](../monitor/new-relic-service.md): as ferramentas de desempenho do New Relic permitem que você depure, monitore e gerencie seus aplicativos e infraestrutura coletando, analisando e exibindo dados da sua Adobe Commerce em projetos de infraestrutura em nuvem.
 1. [**Rede de Entrega de Conteúdo (CDN), Firewall do Aplicativo Web ([!DNL WAF]) e Otimização de Imagem (IO)**](../cdn/fastly.md):
 
