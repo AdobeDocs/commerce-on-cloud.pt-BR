@@ -177,7 +177,7 @@ Você pode recuperar os dados de configuração de todas as relações de servi�
 
 ## Versões de serviço
 
-O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas e testadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
+O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas e testadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
 
 ### Verificações de EOL de software
 

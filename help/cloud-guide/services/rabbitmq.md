@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configurar o serviço [!DNL RabbitMQ]
 
-O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
+O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=pt-BR) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
 
 O MQF usa [RabbitMQ](https://www.rabbitmq.com/) como agente de mensagens, o que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. [!DNL RabbitMQ] é baseado na especificação AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
