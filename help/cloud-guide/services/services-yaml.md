@@ -3,9 +3,9 @@ title: Configurar serviços
 description: Saiba como configurar serviços usados pelo Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 322f7af2c79dd4eeeabafa2ba7e5a32cbd8b1925
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,6 @@ O arquivo `services.yaml` define os serviços com suporte e usados pelo Adobe Co
 >[!NOTE]
 >
 >O arquivo `.magento/services.yaml` é gerenciado localmente no diretório `.magento` do seu projeto. A configuração é acessada durante o processo de criação para definir as versões de serviço necessárias somente no ambiente de integração e é removida após a conclusão da implantação. Portanto, você não as encontrará no servidor.
-
 
 O script de implantação usa os arquivos de configuração no diretório `.magento` para provisionar o ambiente com os serviços configurados. Um serviço ficará disponível para o aplicativo se for incluído na propriedade [`relationships`](../application/properties.md#relationships) do arquivo `.magento.app.yaml`. O arquivo `services.yaml` contém os valores de _tipo_ e _disco_. O tipo de serviço define o serviço _nome_ e _versão_.
 
@@ -38,6 +37,10 @@ A infraestrutura em nuvem é compatível com os seguintes serviços e os implant
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
+
+>[!NOTE]
+>
+>Depois de atualizar para uma nova versão do RabbitMQ, acione uma implantação completa para garantir que suas filas de mensagens personalizadas sejam recriadas no RabbitMQ.
 
 Você pode exibir versões padrão e valores de disco no [arquivo `services.yaml` padrão](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) atual. A amostra a seguir mostra os serviços `mysql`, `redis`, `opensearch` ou `elasticsearch`, `rabbitmq` e `activemq-artemis` definidos no arquivo de configuração `services.yaml`:
 
@@ -177,7 +180,7 @@ Você pode recuperar os dados de configuração de todas as relações de servi�
 
 ## Versões de serviço
 
-O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas e testadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
+O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas e testadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
 
 ### Verificações de EOL de software
 
