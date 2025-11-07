@@ -3,9 +3,9 @@ title: Exibir e gerenciar logs
 description: Entenda os tipos de arquivos de log disponíveis na infraestrutura da nuvem e onde encontrá-los.
 last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: afdc6f2b72d53199634faff7f30fd87ff3b31f3f
+source-git-commit: 445c5162f9d3436d9e5fe3df41af47189e344cfd
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,37 @@ Os registros do sistema são armazenados nos seguintes locais:
 O valor de `<project-ID>` depende do projeto e se o ambiente é de Preparo ou de Produção. Por exemplo, com a ID de projeto `yw1unoukjcawe`, o usuário do ambiente de Preparo é `yw1unoukjcawe_stg` e o usuário do ambiente de Produção é `yw1unoukjcawe`.
 
 Usando esse exemplo, o log de implantação é: `/var/log/platform/yw1unoukjcawe_stg/deploy.log`
+
+### Encontrar registros de log de erros específicos
+
+Ao encontrar um erro com um número de registro de log específico (como `475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9`), você pode localizar o registro consultando os logs do ambiente remoto do servidor de aplicativos da Commerce por meio dos seguintes métodos:
+
+>[!NOTE]
+>
+>Para obter instruções sobre como acessar logs de ambiente remoto para o aplicativo Commerce usando SSH (Secure Shell), consulte [Conexões seguras a ambientes remotos](../development/secure-connections.md).
+
+#### Método 1: pesquisar usando grep
+
+```bash
+# Search for the specific error record in all log files
+magento-cloud ssh -e <environment-ID> "grep -r '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/"
+
+# Search in specific log files
+magento-cloud ssh -e <environment-ID> "grep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/exception.log"
+```
+
+#### Método 2: pesquisar em logs arquivados
+
+Se o erro ocorreu no passado, verifique os arquivos de log arquivados:
+
+```bash
+# Search in compressed log files
+magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' {} \;"
+```
+
+#### Método 3: usar o New Relic (ambientes Pro)
+
+Para ambientes de produção e preparo profissionais, use logs do New Relic para procurar registros de erro específicos. Para obter detalhes, consulte [gerenciamento de logs do New Relic](../monitor/log-management.md).
 
 ### Exibir logs de ambiente remoto
 
@@ -78,7 +109,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Para ambientes Pro Staging e Pro Production, a rotação, compactação e remoção automáticas do registro são ativadas para arquivos de registro com um nome de arquivo fixo. Cada tipo de arquivo de log tem um padrão rotativo e uma duração.
 >Detalhes completos sobre a rotação de logs e a duração de logs compactados do ambiente podem ser encontrados em: `/etc/logrotate.conf` e `/etc/logrotate.d/<various>`.
->Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar alterações na configuração de rotação do log.
+>Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar alterações na configuração de rotação do log.
 
 >[!TIP]
 >
@@ -143,7 +174,7 @@ Exemplo de resposta:
 ```
 Reading log file projectID-branchname-ID--mymagento@ssh.zone.magento.cloud:/var/log/'deploy.log'
 
-[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\n''.
+[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\\n''.
 
 [2023-04-24T18:58:04.129888+00:00] INFO: Starting scenario(s): scenario/deploy.xml (magento/ece-tools version: 2002.1.14, magento/magento2-base version: 2.4.6)
 [2023-04-24T18:58:04.364714+00:00] NOTICE: Starting pre-deploy.
@@ -189,7 +220,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR).
+A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs do aplicativo
 
@@ -227,7 +258,7 @@ Os logs do aplicativo são compactados e arquivados uma vez por dia e mantidos p
 
 Os arquivos de log arquivados são sempre armazenados no diretório onde o arquivo original estava localizado antes da compactação.
 
-Você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support) para solicitar alterações no período de retenção do log ou na configuração de logrotate. Você pode aumentar o período de retenção até um máximo de 365 dias, reduzi-lo para conservar a cota de armazenamento ou adicionar outros caminhos de log à configuração de logrotate. Essas alterações estão disponíveis para clusters Pro de armazenamento temporário e produção.
+Você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar alterações no período de retenção do log ou na configuração de logrotate. Você pode aumentar o período de retenção até um máximo de 365 dias, reduzi-lo para conservar a cota de armazenamento ou adicionar outros caminhos de log à configuração de logrotate. Essas alterações estão disponíveis para clusters Pro de armazenamento temporário e produção.
 
 Por exemplo, se você criar um caminho personalizado para armazenar logs no diretório `var/log/mymodule`, poderá solicitar a rotação de logs para esse caminho. No entanto, a infraestrutura atual requer nomes de arquivos consistentes para que o Adobe configure a rotação de logs adequadamente. A Adobe recomenda manter os nomes de log consistentes para evitar problemas de configuração.
 
