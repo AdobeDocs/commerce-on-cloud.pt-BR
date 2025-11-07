@@ -63,7 +63,7 @@ Para que o SendGrid envie emails transacionais em seu nome de ambientes de Produ
 
 >[!TIP]
 >
->Certifique-se de configurar os **[!UICONTROLSEndereços de email de armazenamento]** com o domínio adequado em **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. A autenticação de domínio é executada no endereço de email do remetente. Se a configuração padrão (`example.com`) estiver definida, os emails de `example.com` serão bloqueados pelo Sendgrid.
+>Certifique-se de configurar os **[!UICONTROL SEndereços de email de armazenamento]** com o domínio adequado em **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. A autenticação de domínio é executada no endereço de email do remetente. Se a configuração padrão (`example.com`) estiver definida, os emails de `example.com` serão bloqueados pelo Sendgrid.
 
 **Para habilitar a autenticação de domínio**:
 
