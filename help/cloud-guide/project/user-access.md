@@ -5,9 +5,10 @@ role: Admin
 feature: Cloud, Roles/Permissions
 last-substantial-update: 2023-06-27T00:00:00Z
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 953593de-f675-49fd-988f-f11306f67fbd
+source-git-commit: c972d9f2029499cf53edc334c1d9a40b155a991d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Você pode adicionar usuários e atribuir funções usando a CLI do `magento-clo
 
 **Pré-requisitos:**
 
-- Um usuário registrado com uma Adobe ID. Um usuário deve [se registrar para uma conta Adobe](https://account.adobe.com) e depois [inicializar sua conta da nuvem](https://console.adobecommerce.com) para poder adicioná-lo a um projeto da nuvem.
+- Um usuário registrado com uma Adobe ID. Um usuário deve [se registrar em uma conta do Adobe](https://account.adobe.com) e inicializar sua [conta da nuvem](https://console.adobecommerce.com) visitando [https://console.adobecommerce.com](https://console.adobecommerce.com) antes de adicioná-lo a um projeto da nuvem.
 - Um usuário com a função de **Administrador** atribuída não pode gerenciar usuários com a CLI `magento-cloud`. Somente usuários com a função **Proprietário da conta** podem gerenciar usuários.
 
 >[!ENDSHADEBOX]
@@ -170,7 +171,7 @@ Depois de adicionar o usuário, o Adobe envia um email para o endereço especifi
 
 ## Requisitos de autenticação do usuário
 
-Para maior segurança, o Adobe fornece imposição de autenticação multifator (MFA) no nível do projeto para exigir autenticação de dois fatores (TFA) para acesso SSH ao código-fonte e aos ambientes do projeto da infraestrutura em nuvem do Adobe Commerce. Consulte [Habilitar MFA para SSH](multi-factor-authentication.md).
+Para maior segurança, a Adobe fornece imposição de autenticação multifator (MFA) no nível do projeto para exigir autenticação de dois fatores (TFA) para acesso SSH ao código-fonte e aos ambientes do projeto da infraestrutura em nuvem do Adobe Commerce. Consulte [Habilitar MFA para SSH](multi-factor-authentication.md).
 
 Quando a imposição de MFA é habilitada em um projeto de infraestrutura do Adobe Commerce na nuvem, todos os usuários com acesso SSH a um ambiente nesse projeto devem habilitar o TFA em sua conta do Adobe Commerce na infraestrutura da nuvem. Para processos automatizados, você pode criar um usuário de máquina e um token de API para autenticar na linha de comando.
 
@@ -213,7 +214,7 @@ As instruções para instalar o aplicativo autenticador e habilitar o TFA estão
 
    - Clique em **[!UICONTROL Verify and save]**.
 
-     Se o código for válido, o Adobe enviará uma notificação ao endereço de email da conta confirmando que a conta agora tem o TFA.
+     Se o código for válido, a Adobe enviará uma notificação ao endereço de email da conta confirmando que a conta agora tem o TFA.
 
 1. Opcional. Habilite as configurações do _Navegador confiável_ para armazenar em cache o código de autenticação no navegador por 30 dias.
 
@@ -231,7 +232,7 @@ As instruções para instalar o aplicativo autenticador e habilitar o TFA estão
 
      >[!WARNING]
      >
-     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para redefinir o aplicativo TFA.
+     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para redefinir o aplicativo TFA.
 
 1. Após concluir a configuração do TFA, clique em **Salvar** para atualizar sua conta.
 
@@ -266,7 +267,7 @@ Em projetos que têm a imposição de MFA habilitada, você deve ter um token de
 
 >[!IMPORTANT]
 >
->Valores de token da API do Protect para sua conta. Não exponha o valor em amostras de código, capturas de tela ou comunicações inseguras entre cliente e servidor. Além disso, não exponha o valor no código-fonte armazenado em repositórios públicos.
+>Proteja valores de token de API para sua conta. Não exponha o valor em amostras de código, capturas de tela ou comunicações inseguras entre cliente e servidor. Além disso, não exponha o valor no código-fonte armazenado em repositórios públicos.
 
 **Para criar um token de API**:
 
