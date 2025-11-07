@@ -2,9 +2,9 @@
 title: Serviço de email SendGrid
 description: Saiba mais sobre o serviço de email SendGrid para Adobe Commerce na infraestrutura em nuvem e como você pode testar sua configuração de DNS.
 exl-id: 06236068-df32-468f-99ec-c379984be136
-source-git-commit: 771fc9d0aed0e3ab6b9d693e7274ce1a7ffcf7ad
+source-git-commit: 0cb86dd5e4fe627b198ac3c1a6b14607f377a9a3
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Você pode ativar ou desativar os emails de saída para cada ambiente do Cloud C
 
 Por padrão, os emails de saída são ativados em ambientes de Produção e Preparo profissionais. No entanto, [!UICONTROL Outgoing emails] pode parecer desabilitado nas configurações do ambiente até que você defina a propriedade `enable_smtp` por meio da [linha de comando](outgoing-emails.md#enable-emails-in-the-cli) ou do [Console da Nuvem](outgoing-emails.md#enable-emails-in-the-cloud-console). Você pode permitir que emails de saída para ambientes de integração e de preparo enviem emails de autenticação de dois fatores ou redefinam senhas para usuários do projeto na nuvem. Consulte [Configurar emails para teste](outgoing-emails.md).
 
-Se os emails de saída precisarem ser desativados ou reativados nos ambientes de Produção Pro ou de Preparo, você poderá enviar um [tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se os emails de saída precisarem ser desativados ou reativados nos ambientes de Produção Pro ou de Preparo, você poderá enviar um [tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Se os emails de saída precisarem ser desativados ou reativados nos ambientes de
 
 Todos os projetos na nuvem são gerenciados em uma conta central, portanto, somente o Suporte tem acesso ao painel SendGrid. O SendGrid não fornece recursos de restrição de subconta.
 
-Para examinar os logs de atividades quanto ao status da entrega ou uma lista de endereços de email rejeitados, rejeitados ou bloqueados, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). A equipe de Suporte **não pode** recuperar logs de atividades com mais de 30 dias.
+Para examinar os logs de atividades quanto ao status da entrega ou uma lista de endereços de email rejeitados, rejeitados ou bloqueados, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). A equipe de Suporte **não pode** recuperar logs de atividades com mais de 30 dias.
 
 Se possível, inclua as seguintes informações na solicitação:
 
@@ -55,7 +55,7 @@ O DKIM é uma tecnologia de autenticação de email que permite aos Provedores d
 
 >[!WARNING]
 >
->O suporte às assinaturas do SendGrid DKIM e à autenticação de domínio só está disponível nos ambientes de Produção e Preparo para projetos Pro, mas não para todos os ambientes de Início. Como resultado, os emails transacionais de saída provavelmente serão sinalizados por filtros de spam. Usar o DKIM melhora a taxa de entrega como um remetente de email autenticado. Para melhorar a taxa de delivery de mensagens, você pode atualizar do Starter para o Pro ou usar seu próprio servidor SMTP ou provedor de serviços de delivery de email. Consulte [Configurar conexões de email](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/communications/email-communications) no _guia de Sistemas de Administração_.
+>O suporte às assinaturas do SendGrid DKIM e à autenticação de domínio só está disponível nos ambientes de Produção e Preparo para projetos Pro, mas não para todos os ambientes de Início. Como resultado, os emails transacionais de saída provavelmente serão sinalizados por filtros de spam. Usar o DKIM melhora a taxa de entrega como um remetente de email autenticado. Para melhorar a taxa de delivery de mensagens, você pode atualizar do Starter para o Pro ou usar seu próprio servidor SMTP ou provedor de serviços de delivery de email. Consulte [Configurar conexões de email](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) no _guia de Sistemas de Administração_.
 
 ### Autenticação de remetente e domínio
 
@@ -63,11 +63,11 @@ Para que o SendGrid envie emails transacionais em seu nome de ambientes de Produ
 
 >[!TIP]
 >
->Certifique-se de configurar os **[!UICONTROL SEndereços de email de armazenamento]** com o domínio adequado em **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. A autenticação de domínio é executada no endereço de email do remetente. Se a configuração padrão (`example.com`) estiver definida, os emails de `example.com` serão bloqueados pelo Sendgrid.
+>Certifique-se de configurar os **[!UICONTROLSEndereços de email de armazenamento]** com o domínio adequado em **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. A autenticação de domínio é executada no endereço de email do remetente. Se a configuração padrão (`example.com`) estiver definida, os emails de `example.com` serão bloqueados pelo Sendgrid.
 
 **Para habilitar a autenticação de domínio**:
 
-1. Envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar a habilitação do DKIM para um domínio específico (**Ambientes de preparo e produção profissionais somente**).
+1. Envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar a habilitação do DKIM para um domínio específico (**Ambientes de preparo e produção profissionais somente**).
 1. Atualize sua configuração de DNS com os registros `TXT` e `CNAME` fornecidos a você no tíquete de suporte.
 
 **Exemplo de registro `TXT` com ID de conta**:
@@ -118,7 +118,7 @@ dig CNAME s2._domainkey.domain_name
 
 O limite de email transacional se refere ao número de mensagens de email transacionais que você pode enviar de ambientes Pro em um período específico, como 12.000 emails por mês de ambientes não relacionados à produção. O limite foi projetado para proteger contra o envio de spam e possíveis danos à reputação do email.
 
-Não há limites rígidos para o número de emails que podem ser enviados no ambiente de Produção, desde que a pontuação da Reputação do remetente seja superior a 95%. A reputação é afetada pelo número de emails devolvidos ou rejeitados e se os registros de spam baseados em DNS sinalizaram seu domínio como uma possível fonte de spam. Consulte [Emails não enviados quando os créditos do SendGrid forem excedidos no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) na _Base de Dados de Conhecimento de Suporte da Commerce_.
+Não há limites rígidos para o número de emails que podem ser enviados no ambiente de Produção, desde que a pontuação da Reputação do remetente seja superior a 95%. A reputação é afetada pelo número de emails devolvidos ou rejeitados e se os registros de spam baseados em DNS sinalizaram seu domínio como uma possível fonte de spam. Consulte [Emails não enviados quando os créditos do SendGrid forem excedidos no Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) na _Base de Dados de Conhecimento de Suporte da Commerce_.
 
 **Para verificar se o máximo de créditos foi excedido**:
 
@@ -132,7 +132,11 @@ Não há limites rígidos para o número de emails que podem ser enviados no amb
 
 1. Verifique `/var/log/mail.log` por `authentication failed : Maxium credits exceeded` entradas.
 
-   Se você vir quaisquer entradas de log `authentication failed` e a **Idoneidade de envio de email** for de no mínimo 95, você pode [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um aumento de alocação de crédito.
+   Se você vir quaisquer entradas de log `authentication failed` e a **Idoneidade de envio de email** for de no mínimo 95, você pode [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um aumento de alocação de crédito.
+
+>[!NOTE]
+>
+>O arquivo `var/log/mail.log` é um *log em execução*. À medida que novas entradas são adicionadas, as entradas mais antigas são removidas do arquivo ao longo do tempo. Somente a atividade de log mais recente está disponível no log. As entradas de log mais antigas não são arquivadas ou retidas depois de removidas do mail.log.
 
 ### Reputação de envio de email
 
@@ -144,6 +148,6 @@ Uma lista de supressão de email é uma lista de recipients para os quais os ema
 
 Para evitar que emails sejam enviados para a pasta de spam, siga o artigo de práticas recomendadas do Sendgrid, [Por que Meus Emails Estão Indo para o Spam?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
 
-Se alguns destinatários não estiverem recebendo seus emails, você poderá [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar uma revisão das listas de supressão e remover os destinatários, se necessário.
+Se alguns destinatários não estiverem recebendo seus emails, você poderá [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar uma revisão das listas de supressão e remover os destinatários, se necessário.
 
 Para obter mais detalhes, consulte [O que é uma Lista de Supressão?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)
