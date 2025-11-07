@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configurar o serviço [!DNL RabbitMQ]
 
-O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
+O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=pt-BR) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
 
 O MQF usa [RabbitMQ](https://www.rabbitmq.com/) como agente de mensagens, o que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. [!DNL RabbitMQ] é baseado na especificação AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
@@ -152,8 +152,8 @@ Para conectar ao RabbitMQ usando seu aplicativo PHP, adicione uma biblioteca PHP
 
 ## Solução de problemas do serviço [!DNL RabbitMQ]
 
-Consulte [Não é possível se conectar ao RabbitMQ na Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+Consulte [Não é possível se conectar ao RabbitMQ na Adobe Commerce Cloud](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27688).
 
 ## Atualizando o serviço [!DNL RabbitMQ]
 
-Para obter instruções de atualização, consulte [Alterar versão do serviço](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+Para obter instruções de atualização, consulte [Alterar versão do serviço](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
