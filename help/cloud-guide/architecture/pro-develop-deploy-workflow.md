@@ -3,9 +3,9 @@ title: Fluxo de trabalho do projeto Pro
 description: Saiba como usar os fluxos de trabalho de desenvolvimento e implantação do Pro.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: 8aacac9ae721bc98cbe29e67ddf23d784e478e55
+source-git-commit: edff4efe0af54542321e887defc27dc96e6ae7f6
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,9 @@ file_put_contents(...): Failed to open stream: Read-only file system
 The disk hosting /app/<cluster_ID> is full
 ```
 
-Para obter mais informações, consulte [Arquitetura Pro](pro-architecture.md) para obter uma visão geral dos ambientes Pro, e consulte [[!DNL Cloud Console]](../project/overview.md#cloud-console) para obter uma visão geral da lista de ambientes Pro na exibição de projeto.
+>[!NOTE]
+>
+>Essa restrição protege a integridade e a segurança do aplicativo. As permissões de pasta nesses sistemas de arquivos somente leitura não podem ser alteradas — até mesmo o suporte não pode modificá-las. Quaisquer alterações devem ser feitas de uma ramificação no ambiente de desenvolvimento local e enviadas para o ambiente de aplicativo. Para obter mais informações, consulte [Arquitetura Pro](pro-architecture.md) para obter uma visão geral dos ambientes Pro, e consulte [[!DNL Cloud Console]](../project/overview.md#cloud-console) para obter uma visão geral da lista de ambientes Pro na exibição de projeto.
 
 ## Fluxo de trabalho de desenvolvimento
 
