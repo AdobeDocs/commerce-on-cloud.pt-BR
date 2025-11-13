@@ -4,9 +4,9 @@ description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 4f96ed89edbbc148c5558050368d8366bd89053a
+source-git-commit: 16d5577da8841c2f65f9b5298beaa7fb84a1ab47
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,14 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.8 {#latest}
+## v2002.2.9 {#latest}
+
+Data de lançamento: 13 de novembro de 2025
+
+- ![Ícone de correção](../../assets/fix.svg) **Pacote Symfony** - Suporte adicionado para os pacotes YAML Symfony mais recentes.<!-- MCLOUD-14020 -->
+- ![ícone de correção](../../assets/fix.svg) **Limpeza de cache corrigida para serviços ativos** - Validação de serviço ativo adicionada.<!-- MCLOUD-14166 -->
+
+## v2002.2.8
 
 Data de lançamento: 08 de outubro de 2025
 
