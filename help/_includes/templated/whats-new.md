@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>O período de retenção para arquivos de log arquivados do Commerce em projetos na nuvem agora é de 30 dias. Consulte <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Exibir e gerenciar logs</a> no Guia do Commerce na Nuvem.</p>
+      <td><p>O período de retenção para arquivos de log arquivados do Commerce em projetos na nuvem agora é de 30 dias. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Exibir e gerenciar logs</a> no Guia do Commerce na Nuvem.</p>
 </td>
       <td>
         Técnico, feedback
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência da CLI</a> após a versão das ECE-Tools v2002.2.8.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência da CLI</a> após a versão das ECE-Tools v2002.2.8.</p>
 </td>
       <td>
         Técnico
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference">referência da CLI</a> após a versão da CLI da nuvem v1.47.0.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference">referência da CLI</a> após a versão da CLI da nuvem v1.47.0.</p>
 </td>
       <td>
         Técnico
