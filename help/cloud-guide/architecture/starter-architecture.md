@@ -2,9 +2,10 @@
 title: Arquitetura inicial
 description: Saiba mais sobre os ambientes compatíveis com a arquitetura Starter.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
+source-git-commit: 2236d0b853e2f2b8d1bafcbefaa7c23ebd5d26b3
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,9 @@ Sua arquitetura inicial do Adobe Commerce na infraestrutura em nuvem aceita até
 
 Todos os ambientes estão em contêineres PaaS (Platform as a service). Esses contêineres são implantados em contêineres altamente restritos em uma grade de servidores. Esses ambientes são somente leitura, aceitando alterações de código implantado de ramificações enviadas do espaço de trabalho local. Cada ambiente fornece um banco de dados e um servidor da Web.
 
-Você pode usar qualquer metodologia de desenvolvimento e ramificação que desejar. Ao obter acesso inicial ao seu projeto, crie um ambiente `staging` do ambiente `master`. Em seguida, crie o ambiente `integration` ramificando de `staging`.
+>[!NOTE]
+>
+>Não é possível alterar as permissões em pastas somente leitura em nenhum dos ambientes Iniciais. Essa restrição protege a integridade e a segurança do aplicativo. As permissões de pasta nesses sistemas de arquivos somente leitura não podem ser alteradas — até mesmo o suporte não pode modificá-las. Quaisquer alterações devem ser feitas de uma ramificação no ambiente de desenvolvimento local e enviadas para o ambiente de aplicativo. Você pode usar qualquer metodologia de desenvolvimento e ramificação que desejar. Ao obter acesso inicial ao seu projeto, crie um ambiente `staging` do ambiente `master`. Em seguida, crie o ambiente `integration` ramificando de `staging`.
 
 ## Arquitetura do ambiente inicial
 
@@ -29,7 +32,7 @@ O ambiente de produção fornece o código-fonte para implantar o Adobe Commerce
 
 Como o ambiente `production` é somente leitura, use o ambiente `integration` para fazer alterações de código, implante na arquitetura do `integration` para o `staging` e, finalmente, no ambiente `production`. Consulte [Implantar armazenamento](../deploy/staging-production.md) e [Inicialização do site](../launch/overview.md).
 
-A Adobe recomenda testar completamente na ramificação `staging` antes de enviar para a ramificação `master`, que é implantada no ambiente `production`.
+A Adobe recomenda testar totalmente na ramificação `staging` antes de enviar para a ramificação `master`, que é implantada no ambiente `production`.
 
 ## Ambiente de preparo
 
@@ -123,7 +126,7 @@ O Adobe Commerce na infraestrutura em nuvem usa o sistema operacional Debian GNU
 
 - [OpenSearch](../services/opensearch.md)
 
-Nos ambientes de preparo e produção, use o Fastly para CDN e armazenamento em cache. A versão mais recente da extensão CDN do Fastly é instalada durante o provisionamento inicial do projeto. Você pode atualizar a extensão do para obter as correções de erros e melhorias mais recentes. Consulte [Módulo Fastly CDN para o Magento 2](https://github.com/fastly/fastly-magento2). Além disso, você tem acesso ao [New Relic](../monitor/account-management.md) para monitoramento de desempenho.
+Nos ambientes de preparo e produção, use o Fastly para CDN e armazenamento em cache. A versão mais recente da extensão CDN do Fastly é instalada durante o provisionamento inicial do projeto. Você pode atualizar a extensão do para obter as correções de erros e melhorias mais recentes. Consulte [Módulo Fastly CDN para Magento 2](https://github.com/fastly/fastly-magento2). Além disso, você tem acesso ao [New Relic](../monitor/account-management.md) para monitoramento de desempenho.
 
 Use os arquivos a seguir para configurar as versões de software que deseja usar na implementação.
 
