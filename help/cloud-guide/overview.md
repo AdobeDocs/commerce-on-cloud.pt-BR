@@ -2,7 +2,7 @@
 title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: fddbbe499d3a75fdee420fc87cbe1aa5e5c0a918
+source-git-commit: 1521b83be787fd7d8e0db302bfaea48f912af572
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -23,7 +23,7 @@ O Adobe Commerce na infraestrutura em nuvem fornece uma plataforma de hospedagem
 
 >[!NOTE]
 >
->Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Veja a [Pilha de tecnologia](architecture/tech-stack.md) em detalhes ou saiba mais sobre recursos específicos e produtos com suporte na [Arquitetura de nuvem do Commerce](architecture/cloud-architecture.md).
 
@@ -60,10 +60,9 @@ O guia da infraestrutura do Commerce na nuvem presume que você tenha algum conh
 
 - [Documentação do desenvolvedor do Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site do Adobe Developer) — desenvolva, personalize, integre, estenda e use recursos avançados
 
-- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
+- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2025-10-10 20:36:31 -->
-
+<!-- Last updated from includes: 2025-11-14 21:34:39 -->
