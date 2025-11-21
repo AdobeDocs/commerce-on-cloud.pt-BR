@@ -3,9 +3,9 @@ title: Adicionar mapa do site e robôs de mecanismo de pesquisa
 description: Saiba como adicionar o mapa do site e os robôs do mecanismo de pesquisa ao Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Configuration, Search, Site Navigation
 exl-id: 060dc1f5-0e44-494e-9ade-00cd274e84bc
-source-git-commit: 8626364ec7bcaaa0e17a3380ec0b9b73110c4574
+source-git-commit: 1ecb820d55faa78e369d63996f11cd4d1d554e26
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Isso requer o ECE-Tools versão 2002.0.12 e posterior com um arquivo `.magento.a
 
 >[!NOTE]
 >
->Se o arquivo `<domain.your.project>/robots.txt` gerar um `404 error`, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para remover o redirecionamento de `/robots.txt` para `/media/robots.txt`.
+>Se o arquivo `<domain.your.project>/robots.txt` gerar um `404 error`, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para remover o redirecionamento de `/robots.txt` para `/media/robots.txt`.
 
 ## Regravar usando o trecho Fastly VCL
 
@@ -117,9 +117,16 @@ Na configuração do administrador `sitemap`, você deve especificar o local do 
 
 ### Configurar indexação por mecanismo de pesquisa
 
-Para ativar as personalizações do `robots.txt` na Produção, você deve habilitar a opção **A indexação por mecanismos de pesquisa está ativada para`<environment-name>`** nas configurações do projeto no Console da Nuvem:
+Para ativar as personalizações do `robots.txt` na Produção, habilite a indexação pelos mecanismos de pesquisa para a opção `<environment-name>`** nas configurações do projeto no Cloud Console:
 
-![Usar o [!DNL Cloud Console] para gerenciar ambientes](../../assets/robots-indexing-by-search-engine.png)
+- Console da Nuvem Herdado — o URL segue o padrão `https://<region-id>.magento.cloud/projects/<project_id>`
+- Adobe Cloud Console — o URL segue o padrão ``https://console.adobecommerce.com/<username>/<project_id>``
+
+1. Alterne a configuração [!UICONTROL Indexing by search engines] para **Em**.
+
+   ![Usar o [!DNL Cloud Console] para gerenciar ambientes](../../assets/robots-indexing-by-search-engine.png)
+
+1. Desmarque a configuração [!UICONTROL Hide from search engines].
 
 Você também pode usar a Magento-Cloud CLI para atualizar esta configuração:
 
@@ -131,5 +138,5 @@ magento-cloud environment:info -p <project_id> -e production restrict_robots fal
 >
 >- A indexação por mecanismos de pesquisa só pode ser ativada na Produção, mas não em nenhum dos ambientes inferiores.
 >
->- Se você estiver usando o PWA Studio Incluir na lista de permissões e não puder acessar o arquivo `robots.txt` configurado, adicione `robots.txt` à [Pesquisa de Nome Principal](https://github.com/magento/magento2-upward-connector#front-name-allowlist) em **Lojas** > Configuração > **Geral** > **Web** > Configuração de PWA ASCENDENTE.
+>- Se você estiver usando o PWA Studio e não puder acessar o arquivo `robots.txt` configurado, adicione `robots.txt` ao [Incluo na lista de permissões de Nome da Frente](https://github.com/magento/magento2-upward-connector#front-name-allowlist) em **Lojas** > Configuração > **Geral** > **Web** > Configuração ASCENDENTE do PWA.
 
