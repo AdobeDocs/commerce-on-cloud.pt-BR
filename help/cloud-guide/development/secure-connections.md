@@ -5,9 +5,9 @@ role: Developer
 feature: Cloud, Security
 topic: Security
 exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
-source-git-commit: c25e5b74ae8105995107860246ecb9ba45910bb1
+source-git-commit: 9c0b4bea11abb2ce5644556ab3dadd361f8ff449
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Crie um par de chaves SSH em cada máquina e espaço de trabalho que exija acess
 
 ## Adicionar uma chave pública SSH à sua conta
 
-Depois de adicionar ou atualizar sua chave pública SSH para sua conta do Adobe Commerce na infraestrutura em nuvem, [reimplante todos os ambientes ativos](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) em sua conta para instalar a chave.
+Depois de adicionar ou atualizar sua chave pública SSH para sua conta do Adobe Commerce na infraestrutura em nuvem, [reimplante todos os ambientes ativos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) em sua conta para instalar a chave.
 
 Você pode adicionar chaves SSH à sua conta usando um dos seguintes métodos: Cloud CLI ou [!DNL Cloud Console].
 
@@ -155,10 +155,10 @@ Dependendo do cliente, opções adicionais podem ser necessárias para concluir 
 
 Para **ambientes iniciais e ambientes de integração Pro**, você também pode considerar [adicionar um `mount`](../application/properties.md#mounts) para acessar um diretório específico. Você adicionaria a montagem ao arquivo `.magento.app.yaml`. Para obter uma lista de diretórios graváveis, consulte [Estrutura de projeto](../project/file-structure.md). Esse ponto de montagem só funciona nesses ambientes.
 
-Para **ambientes de Preparo e Produção Pro**, se você não tiver acesso SSH ao ambiente, deverá [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar acesso sFTP e um ponto de montagem para acesso à pasta específica, por exemplo, `pub/media`.
+Para **ambientes de Preparo e Produção Pro**, se você não tiver acesso SSH ao ambiente, deverá [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar acesso sFTP e um ponto de montagem para acesso à pasta específica, por exemplo, `pub/media`.
 
 >[!NOTE]
->Para Preparo e Produção Profissionais, se a conexão sFTP for para um usuário _genérico_ que **não** precise ser [adicionado ao projeto na nuvem](../project/user-access.md), você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) com a chave **pública** anexada. **Nunca forneça sua chave SSH privada.**
+>Para Preparo e Produção Profissionais, se a conexão sFTP for para um usuário _genérico_ que **não** precise ser [adicionado ao projeto na nuvem](../project/user-access.md), você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) com a chave **pública** anexada. **Nunca forneça sua chave SSH privada.**
 
 ## Tunelamento SSH
 
@@ -219,3 +219,7 @@ Depois de estabelecer um túnel SSH, você pode se conectar a serviços como se 
 ```bash
 mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
 ```
+
+#### Obter credenciais do MySQL
+
+Recupere as credenciais de logon do MySQL das propriedades `database` na variável de ambiente `$MAGENTO_CLOUD_RELATIONSHIPS`. Para obter instruções sobre como recuperar as informações em um ambiente local ou remoto, consulte [Relações de serviço](../services/services-yaml.md#service-relationships).
