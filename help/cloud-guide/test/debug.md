@@ -1,7 +1,8 @@
 ---
 title: Configurar [!DNL Xdebug]
 description: Saiba como configurar a extensão Xdebug para depurar o desenvolvimento de projetos do Adobe Commerce na infraestrutura em nuvem.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
+source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Você pode configurar o [!DNL Xdebug] para ser executado no ambiente do Cloud Docker para depuração local sem alterar a configuração do projeto do Adobe Commerce na infraestrutura em nuvem. Consulte [Configurar Xdebug para Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).
+>Você pode configurar o [!DNL Xdebug] para ser executado no ambiente do Cloud Docker para depuração local sem alterar a configuração do projeto do Adobe Commerce na infraestrutura em nuvem. Consulte [Configurar Xdebug para Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug).
 
 Para habilitar [!DNL Xdebug], você deve configurar um arquivo no repositório Git, configurar o IDE e configurar o encaminhamento de portas. Você pode definir algumas configurações no arquivo `magento.app.yaml`. Após a edição, envie as alterações do Git por push em todos os ambientes de Iniciação e integração Pro para habilitar o [!DNL Xdebug]. O [!DNL Xdebug] já está disponível em ambientes de Preparo e Produção Profissionais.
 
@@ -35,7 +36,7 @@ Para configurar o [!DNL Xdebug], siga estas etapas:
 
 ### Introdução a uma ramificação
 
-Para adicionar [!DNL Xdebug], o Adobe recomenda trabalhar em [uma ramificação de desenvolvimento](../dev-tools/cloud-cli-overview.md#create-an-environment-branch).
+Para adicionar [!DNL Xdebug], a Adobe recomenda trabalhar em [uma ramificação de desenvolvimento](../dev-tools/cloud-cli-overview.md#create-an-environment-branch).
 
 ### Ativar o Xdebug no seu ambiente
 

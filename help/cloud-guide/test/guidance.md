@@ -1,7 +1,8 @@
 ---
 title: Orientação de testes
 description: Leia sobre os tipos de teste e as práticas recomendadas para iniciar o Adobe Commerce na infraestrutura em nuvem.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 70fdfbbd-1763-4b1b-9ffd-9ffdc92f4f91
+source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -16,9 +17,9 @@ Depois de configurar e personalizar seu projeto do Adobe Commerce na infraestrut
 
 Durante o desenvolvimento, é importante realizar testes funcionais completos no projeto de infraestrutura em nuvem do Adobe Commerce. Consulte a seguinte orientação para executar testes funcionais no ambiente do Docker:
 
-- **Teste de aplicativo**—Use a [Estrutura de Teste Funcional (MFTF)](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) do Magento para testar aplicativos no ambiente do Cloud Docker.
+- **Teste de aplicativo**—Use o [Magento Functional Testing Framework (MFTF)](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing) para testes de aplicativos no ambiente do Cloud Docker.
 
-- **Teste de código**—Use a [estrutura de teste de reconciliação do PHP](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/) para validar o código destinado a contribuir com repositórios de pacotes na nuvem.
+- **Teste de código**—Use a [estrutura de teste de reconciliação do PHP](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing) para validar o código destinado a contribuir com repositórios de pacotes na nuvem.
 
 ## Práticas recomendadas antes do lançamento
 
@@ -28,7 +29,7 @@ Considere os seguintes tipos de teste como prática recomendada a ser executada 
 
 - **Teste de esforço**—Desafie os limites superiores de capacidade dentro do sistema para determinar se o sistema tem desempenho suficiente quando a carga atual está bem acima do máximo esperado.
 
-- **Verificação de Segurança**—o Adobe fornece uma [Ferramenta de Verificação de Segurança](../launch/overview.md#set-up-the-security-scan-tool) gratuita para seus sites.
+- **Verificação de Segurança**—A Adobe fornece uma [Ferramenta de Verificação de Segurança](../launch/overview.md#set-up-the-security-scan-tool) gratuita para seus sites.
 
 - **Teste de penetração**—É um ataque cibernético simulado autorizado em um sistema de computador projetado para avaliar a segurança do sistema. O teste de penetração ajuda a identificar deficiências ou vulnerabilidades, incluindo a possibilidade de as partes não autorizadas obterem acesso a dados e características do sistema.
 

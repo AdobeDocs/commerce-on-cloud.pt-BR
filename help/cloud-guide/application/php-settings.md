@@ -3,7 +3,7 @@ title: Configurações do PHP
 description: Saiba mais sobre as configurações ideais do PHP para a configuração de aplicativos do Commerce na infraestrutura de nuvem.
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: de50fda78c28a57d76e5c0a4d5dac0f8d4d844a0
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configurações do PHP
 
-Você pode escolher qual [versão do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) executar em seu arquivo `.magento.app.yaml`:
+Você pode escolher qual [versão do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) executar em seu arquivo `.magento.app.yaml`:
 
 ```yaml
 name: mymagento
@@ -21,7 +21,7 @@ type: php:<version>
 
 >[!TIP]
 >
->Se estiver atualizando para o PHP 8.1 e posterior, remova o JSON da propriedade [`runtime: extensions:` &#x200B;](properties.md#runtime) no arquivo `.magento.app.yaml` e reimplante. A extensão JSON vem instalada no ambiente de nuvem desde o PHP 8.0.
+>Se estiver atualizando para o PHP 8.1 e posterior, remova o JSON da propriedade [`runtime: extensions:` ](properties.md#runtime) no arquivo `.magento.app.yaml` e reimplante. A extensão JSON vem instalada no ambiente de nuvem desde o PHP 8.0.
 
 ## Configurar PHP
 
@@ -63,7 +63,7 @@ Essas configurações permitem que processos PHP armazenem em cache caminhos par
 
 >[!NOTE]
 >
->Para obter uma lista das definições de configuração do PHP recomendadas, consulte [Configurações do PHP necessárias](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=pt-BR) no _Guia de instalação_.
+>Para obter uma lista das definições de configuração do PHP recomendadas, consulte [Configurações do PHP necessárias](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) no _Guia de instalação_.
 
 ### Verificar configurações personalizadas de PHP
 
@@ -81,7 +81,7 @@ register_argc_argv => On => On
 
 >[!WARNING]
 >
->Se você usa o Cloud Docker para Commerce para desenvolvimento local, consulte [Contêineres de serviço do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) para obter informações sobre como usar um arquivo `php.ini` personalizado em um ambiente do Docker.
+>Se você usa o Cloud Docker para Commerce para desenvolvimento local, consulte [Contêineres de serviço do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#fpm-container) para obter informações sobre como usar um arquivo `php.ini` personalizado em um ambiente do Docker.
 
 ## Habilitar extensões
 
@@ -118,7 +118,7 @@ A tabela a seguir mostra as extensões compatíveis do PHP ao implantar o Adobe 
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
-Os requisitos do módulo do PHP estão vinculados à versão do Adobe Commerce. Consulte [requisitos do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=pt-BR).
+Os requisitos do módulo do PHP estão vinculados à versão do Adobe Commerce. Consulte [requisitos do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html).
 
 ### Suporte à extensão
 
@@ -136,7 +136,7 @@ sourceguardian.restrict_unencoded = "1"
 
 Consulte a [seção 3.5 da documentação do SourceGuardian](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _Este é um link para uma PDF_.
 
-[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para obter ajuda sobre como instalar essas extensões PHP em todos os ambientes de Produção e de Pro Staging. Inclua seu arquivo atualizado `.magento/services.yaml`, arquivo `.magento.app.yaml` com a versão atualizada do PHP e quaisquer extensões adicionais do PHP. Para alterações em um ambiente de Produção em tempo real, você deve fornecer um aviso mínimo de 48 horas. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto.
+[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter ajuda sobre como instalar essas extensões PHP em todos os ambientes de Produção e de Pro Staging. Inclua seu arquivo atualizado `.magento/services.yaml`, arquivo `.magento.app.yaml` com a versão atualizada do PHP e quaisquer extensões adicionais do PHP. Para alterações em um ambiente de Produção em tempo real, você deve fornecer um aviso mínimo de 48 horas. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto.
 
 >[!WARNING]
 >
