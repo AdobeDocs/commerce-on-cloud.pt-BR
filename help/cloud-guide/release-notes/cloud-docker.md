@@ -5,7 +5,7 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: bbf11023474cb6ac6b3b881c40897c3260542de9
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '3806'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Data de lançamento: 8 de abril de 2024
 Data de lançamento: 31 de julho de 2023
 
 - ![novo ícone](../../assets/new.svg) **Nova versão de serviço adicionada**—OpenSearch 2.5.
-- ![novo ícone](../../assets/new.svg) **Habilitar cache do Composer**—Agora você pode estender a configuração do Docker para habilitar o cache limpo do Composer ao iniciar o contêiner do Docker. Consulte [Estender a configuração do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/configure) no guia do _Cloud Docker for Commerce_.
+- ![novo ícone](../../assets/new.svg) **Habilitar cache do Composer**—Agora você pode estender a configuração do Docker para habilitar o cache limpo do Composer ao iniciar o contêiner do Docker. Consulte [Estender a configuração do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) no guia do _Cloud Docker for Commerce_.
 
 ## v1.3.5
 
@@ -162,7 +162,7 @@ Data de lançamento: 14 de junho de 2021
 
 - ![novo ícone](../../assets/new.svg) **Adição do PHP 8.0**—Atualização do PHP para a versão 8.0, permitindo que você aproveite todos os novos recursos e otimizações que o PHP 8.0 inclui.<!--MCLOUD-7941-->
 - ![novo ícone](../../assets/new.svg) **Atualizado para o Vernish 6.6 e o Elasticsearch 7.11.2**—Os links a seguir fornecem informações sobre a versão do [Varnish Cache 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) e do Elasticsearch 7.11.2.<!--MCLOUD-7921-->
-- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por &#x200B;](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
+- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por ](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
 - ![novo ícone](../../assets/new.svg) **Adição de uma opção de sincronização de arquivo:`manual-native`**—A opção de sincronização de arquivo `manual-native` fornece controle manual sobre a sincronização, que fornece o melhor desempenho para ambientes macOS e Windows. Leia sobre como usar a opção `manual-native` no [Modo de desenvolvedor](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode) e [Sincronizando dados em um ambiente de desenvolvedor do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data#file-synchronization-options).<!--MCLOUD-7977-->
 - ![novo ícone](../../assets/new.svg) **Remoção de exclusões de volume dos comandos `up` e `down`**—A opção `--volume` foi removida dos comandos `bin/magento-docker up` e `bin/magento-docker down`, substituída pelo novo comando `bin/magento-docker init` com um aviso de perda de dados. Essa alteração ajuda a evitar a perda acidental de dados. *[Enviado por joeshelton-wagento](https://github.com/magento/magento-cloud-docker/pull/319).*<!--PR #319-->
 - ![Ícone de correção](../../assets/fix.svg) **Atualização do valor `CN` para o certificado gerado**—Remoção do valor codificado `CN` do Dockerfile. Este valor criou um erro de certificado (`NET::ERR_CERT_INVALID`) que fez com que a opção `--host` do comando `ece-docker build:compose` fosse ignorada.<!--MCLOUD-7934-->
@@ -241,7 +241,7 @@ Data de lançamento: 9 de novembro de 2020
 
    - ![ícone de correção](../../assets/fix.svg) **Contêiner TLS**—Agora, o [contêiner TLS](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#tls-container) é baseado na imagem do Docker `https://hub.docker.com/r/magento/magento-cloud-docker-nginx` em vez da imagem do CentOS. Essa alteração corrige problemas que causavam erros ao enviar solicitações HTTPS entre contêineres no ambiente do Cloud Docker.<!--MCLOUD-6469-->
 
-   - ![Novo ícone](../../assets/new.svg) **Contêiner de teste**—Adicionou um contêiner de teste para teste de aplicativo e adicionou a opção `--with-test` ao comando Docker `build:compose` para criar o contêiner somente ao testar no ambiente Docker. Consulte [teste de aplicativo](https://developer.adobe.com/commerce/cloud-tools/docker/test-application-testing).<!--MCLOUD-6394-->
+   - ![Novo ícone](../../assets/new.svg) **Contêiner de teste**—Adicionou um contêiner de teste para teste de aplicativo e adicionou a opção `--with-test` ao comando Docker `build:compose` para criar o contêiner somente ao testar no ambiente Docker. Consulte [teste de aplicativo](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing).<!--MCLOUD-6394-->
 
    - ![novo ícone](../../assets/new.svg) **contêiner FPM-XDEBUG**
 
@@ -251,7 +251,7 @@ Data de lançamento: 9 de novembro de 2020
 
 - ![novo ícone](../../assets/new.svg) **Alterações na configuração do Docker**
 
-   - **Configuração de MailHog**—Agora você pode usar as seguintes opções de comando `ece-docker build:compose` para desabilitar MailHog e especificar portas: `--no-mailhog`, `--mailhog-http-port` e `--mailhog-smtp-port`. Consulte [Configurar email](https://developer.adobe.com/commerce/cloud-tools/docker/configure#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
+   - **Configuração de MailHog**—Agora você pode usar as seguintes opções de comando `ece-docker build:compose` para desabilitar MailHog e especificar portas: `--no-mailhog`, `--mailhog-http-port` e `--mailhog-smtp-port`. Consulte [Configurar email](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
 
    - Para o Cloud Docker para Commerce 1.2.0 e posterior, a Adobe agora fornece imagens do Docker para cada versão de patch, e o gerador de configuração do Docker cria a configuração do Docker com uma versão de patch especificada, em vez de usar a mais recente. Anteriormente, o gerador de configuração do Docker criava a configuração usando a versão de patch mais recente, o que poderia quebrar o Cloud Docker para ambientes Commerce criados com uma versão anterior.<!--MCLOUD-7093-->
 
@@ -427,7 +427,7 @@ Data de lançamento: 5 de fevereiro de 2020
 
    - ![novo ícone](../../assets/new.svg) **Suporte para o modo ponte de rede**—Adicionou suporte para o modo ponte de rede para habilitar conexões entre contêineres Docker na rede local.<!--MAGECLOUD-4165-->
 
-   - ![novo ícone](../../assets/new.svg) **Contêiner do Cron desabilitado por padrão**—Para melhorar o desempenho, o contêiner do Cron não é mais configurado por padrão quando você compila o ambiente do Docker. Você pode usar a opção `--with-cron` no comando de compilação do Docker para adicionar um contêiner Cron ao seu ambiente. Consulte [Gerenciamento de trabalhos cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure#manage-cron-jobs).<!--MAGECLOUD-5181-->
+   - ![novo ícone](../../assets/new.svg) **Contêiner do Cron desabilitado por padrão**—Para melhorar o desempenho, o contêiner do Cron não é mais configurado por padrão quando você compila o ambiente do Docker. Você pode usar a opção `--with-cron` no comando de compilação do Docker para adicionar um contêiner Cron ao seu ambiente. Consulte [Gerenciamento de trabalhos cron](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#manage-cron-jobs).<!--MAGECLOUD-5181-->
 
    - ![novo ícone](../../assets/new.svg) **Parar de sincronizar arquivos de backup grandes**—Despejos de BD e arquivos mortos—ZIP, SQL, GZ e BZ2—adicionados à lista de exclusão nos arquivos `dist/docker-sync.yml` e `dist/mutagen.sh`. A sincronização de arquivos grandes (>1 GB) pode causar um período de inatividade e os arquivos de backup normalmente não exigem sincronização, pois você pode gerá-los novamente.<!--MAGECLOUD-3979-->
 

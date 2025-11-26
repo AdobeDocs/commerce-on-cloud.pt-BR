@@ -1,7 +1,8 @@
 ---
 title: Teste de preparo e produção
 description: Saiba como testar em ambientes de preparo e produção.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 39625c97-5eb0-4039-ac5f-ddaeb43156de
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -211,7 +212,7 @@ Para obter melhores resultados, use as seguintes ferramentas:
 
 ## Teste funcional
 
-Você pode usar a Estrutura de teste funcional (MFTF) do Magento para concluir o teste funcional do Adobe Commerce no ambiente do Cloud Docker. Consulte [Teste de aplicativo](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) no _Guia do Cloud Docker for Commerce_.
+Você pode usar a Estrutura de teste funcional (MFTF) do Magento para concluir o teste funcional do Adobe Commerce no ambiente do Cloud Docker. Consulte [Teste de aplicativo](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing) no _Guia do Cloud Docker for Commerce_.
 
 ## Configurar a ferramenta Verificação de segurança
 
