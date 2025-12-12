@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualiza as <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">notas de versão do Cloud Patches 1.1.12</a> para incluir a correção para "Falha de check-out quando a minificação e o agrupamento de JS estão habilitados: problema.</p>
+      <td><p>Atualiza as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">notas de versão do Cloud Patches 1.1.12</a> para incluir a correção para "Falha de check-out quando a minificação e o agrupamento de JS estão habilitados: problema.</p>
 </td>
       <td>
         Técnico
@@ -31,7 +31,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d07be1a20fa95e2a79534e364e7620a2f856fc0d">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência da CLI</a> após a versão das ECE-Tools v2002.2.9.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência da CLI</a> após a versão das ECE-Tools v2002.2.9.</p>
 </td>
       <td>
         Técnico
@@ -53,7 +53,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>O período de retenção para arquivos de log arquivados do Commerce em projetos na nuvem agora é de 30 dias. Consulte <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Exibir e gerenciar logs</a> no Guia do Commerce na Nuvem.</p>
+      <td><p>O período de retenção para arquivos de log arquivados do Commerce em projetos na nuvem agora é de 30 dias. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Exibir e gerenciar logs</a> no Guia do Commerce na Nuvem.</p>
 </td>
       <td>
         Técnico, feedback
