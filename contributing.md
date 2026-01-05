@@ -19,7 +19,7 @@ espera-se que você mantenha esse código. Denuncie comportamento inaceitável p
 
 ## Documentação do guia do colaborador
 
-Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
 
 ## Você tem uma pergunta?
 
@@ -55,11 +55,11 @@ fique à vontade para entrar em contato com os responsáveis existentes e conver
 
 ## Problemas de segurança
 
-Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [registre um problema junto aos nossos especialistas em segurança](https://helpx.adobe.com/security/alertus.html)
+Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [registre um problema junto aos nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html)
 
 ## Destaques das novidades
 
-Se as alterações introduzirem novos tópicos, atualizações significativas ou correções que precisam ser destacadas, você poderá adicionar uma breve descrição à [seção Novidades](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) diretamente do corpo da solicitação de pull.
+Se as alterações introduzirem novos tópicos, atualizações significativas ou correções que precisam ser destacadas, você poderá adicionar uma breve descrição à [seção Novidades](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/overview#whats-new) diretamente do corpo da solicitação de pull.
 
 Para adicionar um destaque de Novidades:
 
@@ -103,4 +103,4 @@ Para adicionar um destaque de Novidades:
 1. A parte `whatsnew` deve começar na tag `whatsnew` e estar no final do corpo da solicitação de pull.
 1. As descrições das alterações devem incluir os links de trabalho. Certifique-se de que os links estejam corretos e levem aos tópicos pretendidos. Se o tópico for novo, verifique se os links estão funcionando após mesclar a solicitação de pull e publicar o novo tópico. Não há problema em corrigir os links após a mesclagem da solicitação de pull.
 
-Por exemplo, pesquise nas solicitações de pull fechadas no repositório para ver como os realces existentes estão formatados e compare-os com a [seção Novidades](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) para ver como eles aparecem na documentação.
+Por exemplo, pesquise nas solicitações de pull fechadas no repositório para ver como os realces existentes estão formatados e compare-os com a [seção Novidades](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/overview#whats-new) para ver como eles aparecem na documentação.
