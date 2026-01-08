@@ -2,7 +2,7 @@
 title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 305df8acb8c41369b34e2c20d9c7df6824222931
+source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -23,7 +23,7 @@ O Adobe Commerce na infraestrutura em nuvem fornece uma plataforma de hospedagem
 
 >[!NOTE]
 >
->Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Veja a [Pilha de tecnologia](architecture/tech-stack.md) em detalhes ou saiba mais sobre recursos específicos e produtos com suporte na [Arquitetura de nuvem do Commerce](architecture/cloud-architecture.md).
 
@@ -60,9 +60,9 @@ O guia da infraestrutura do Commerce na nuvem presume que você tenha algum conh
 
 - [Documentação do desenvolvedor do Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site do Adobe Developer) — desenvolva, personalize, integre, estenda e use recursos avançados
 
-- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
+- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2025-12-12 21:32:21 -->
+<!-- Last updated from includes: 2026-01-05 17:03:22 -->
