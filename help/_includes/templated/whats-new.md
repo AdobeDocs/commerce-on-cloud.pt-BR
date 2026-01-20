@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: c5e52c70c121aa3650acfba8a98b743834a95428
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 4%
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 # Modelo de novidades
@@ -11,7 +11,7 @@ ht-degree: 4%
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
 
-### 17 de novembro de 2025
+### 13 de janeiro de 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,20 +23,12 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualiza as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">notas de versão do Cloud Patches 1.1.12</a> para incluir a correção para "Falha de check-out quando a minificação e o agrupamento de JS estão habilitados: problema.</p>
+      <td><p>Atualização da versão dos exemplos em <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configurar o serviço OpenSearch</a>.</p>
 </td>
       <td>
-        Técnico
+        Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d07be1a20fa95e2a79534e364e7620a2f856fc0d">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência da CLI</a> após a versão das ECE-Tools v2002.2.9.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/5f088df3e7bc35cc1d7fa93d06b5fa9968802572">confirmar</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/f5d325dbb14e5e524c89b41c4d5b82383b5b1ac7">confirmar</a></td>
     </tr>
   </tbody>
 </table>
