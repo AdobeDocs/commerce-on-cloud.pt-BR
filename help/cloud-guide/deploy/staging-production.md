@@ -2,16 +2,17 @@
 title: Implantar para preparo e produção
 description: Saiba como implantar seu Adobe Commerce no código de infraestrutura em nuvem nos ambientes de preparo e produção para testes adicionais.
 feature: Cloud, Console, Deploy, SCD, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
+source-git-commit: fe634412c6de8325faa36c07e9769cde0eb76c48
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
 
 # Implantar para preparo e produção
 
-O processo de implantação e ativação começa com o desenvolvimento, continua com o armazenamento temporário e termina com a ativação na produção. O Adobe oferece uma solução completa de ambiente para garantir configurações consistentes. Todo ambiente suporta acesso direto de URL à loja e acesso de Admin e SSH para comandos da CLI.
+O processo de implantação e ativação começa com o desenvolvimento, continua com o armazenamento temporário e termina com a ativação na produção. A Adobe fornece uma solução completa de ambiente para garantir configurações consistentes. Todo ambiente suporta acesso direto de URL à loja e acesso de Admin e SSH para comandos da CLI.
 
 Quando estiver pronto para implantar seu armazenamento, você deve concluir a implantação e o teste no ambiente de preparo antes de implantar na produção. Esta seção fornece instruções e informações detalhadas sobre o processo de criação e implantação, migração de dados e conteúdo e testes.
 
@@ -23,7 +24,7 @@ Além disso, você pode habilitar o [Rastrear implantações com o New Relic](..
 
 ## Fluxo de implantação inicial
 
-A Adobe recomenda criar uma ramificação `staging` a partir da ramificação `master` para melhor suportar o desenvolvimento e a implantação do seu plano inicial. Você tem dois dos seus quatro ambientes ativos prontos: `master` para produção e `staging` para preparo.
+A Adobe recomenda criar uma ramificação `staging` a partir da ramificação `master` para oferecer melhor suporte ao desenvolvimento e à implantação do seu plano inicial. Você tem dois dos seus quatro ambientes ativos prontos: `master` para produção e `staging` para preparo.
 
 Para obter informações detalhadas do processo, consulte [Iniciar Desenvolvimento e Implantação de Fluxo de Trabalho](../architecture/starter-develop-deploy-workflow.md).
 
@@ -139,7 +140,7 @@ A CLI da nuvem fornece comandos para implantar código. Você precisa de acesso 
 
 ## Migrar arquivos estáticos
 
-[Arquivos estáticos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary) são armazenados em `mounts`. Há dois métodos para migrar arquivos de um local de montagem de origem, como o ambiente local, para um local de montagem de destino. Ambos os métodos usam o utilitário `rsync`, mas o Adobe recomenda o uso da CLI `magento-cloud` para mover arquivos entre os ambientes local e remoto. E o Adobe recomenda usar o método `rsync` ao mover arquivos de uma origem remota para um local remoto diferente.
+[Arquivos estáticos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) são armazenados em `mounts`. Há dois métodos para migrar arquivos de um local de montagem de origem, como o ambiente local, para um local de montagem de destino. Ambos os métodos usam o utilitário `rsync`, mas a Adobe recomenda usar a CLI `magento-cloud` para mover arquivos entre os ambientes local e remoto. E a Adobe recomenda usar o método `rsync` ao mover arquivos de uma origem remota para um local remoto diferente.
 
 ### Migrar arquivos usando a CLI
 
@@ -245,11 +246,11 @@ Consulte a ajuda do [rsync](https://linux.die.net/man/1/rsync).
 >
 >O banco de dados do ambiente de integração é estritamente para teste de desenvolvimento e pode incluir dados que você não deseja migrar para Preparo e Produção.
 
-Para implantações de integração contínua, o Adobe **não recomenda** a migração de dados da Integração para o Armazenamento temporário e a Produção. Você pode passar nos dados de teste ou substituir dados importantes. Todas as configurações vitais são passadas usando o [arquivo de configuração](../store/store-settings.md) e o comando `setup:upgrade` durante a compilação e a implantação.
+Para implantações de integração contínua, a Adobe **não recomenda** migrar dados da Integração para o Preparo e a Produção. Você pode passar nos dados de teste ou substituir dados importantes. Todas as configurações vitais são passadas usando o [arquivo de configuração](../store/store-settings.md) e o comando `setup:upgrade` durante a compilação e a implantação.
 
 >[!ENDSHADEBOX]
 
-O Adobe **recomenda** a migração de dados da Produção para o Armazenamento temporário para testar totalmente seu site e armazená-lo em um ambiente de quase produção com todos os serviços e configurações.
+A Adobe **recomenda** migrar dados da Produção para o Armazenamento temporário para testar totalmente seu site e armazená-lo em um ambiente de quase produção com todos os serviços e configurações.
 
 >[!NOTE]
 >
@@ -319,16 +320,10 @@ Ao importar dados, você deve eliminar e criar um banco de dados.
    drop database main;
    ```
 
-   Para produção:
+   Para ambientes de produção e de preparo:
 
    ```shell
-   drop database <cluster-id>;
-   ```
-
-   Para Preparo:
-
-   ```shell
-   drop database <cluster-ID_stg>;
+   drop database <database_name>;
    ```
 
 1. Recrie o banco de dados.
