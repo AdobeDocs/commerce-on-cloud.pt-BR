@@ -140,7 +140,7 @@ A CLI da nuvem fornece comandos para implantar código. Você precisa de acesso 
 
 ## Migrar arquivos estáticos
 
-[Arquivos estáticos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) são armazenados em `mounts`. Há dois métodos para migrar arquivos de um local de montagem de origem, como o ambiente local, para um local de montagem de destino. Ambos os métodos usam o utilitário `rsync`, mas a Adobe recomenda usar a CLI `magento-cloud` para mover arquivos entre os ambientes local e remoto. E a Adobe recomenda usar o método `rsync` ao mover arquivos de uma origem remota para um local remoto diferente.
+[Arquivos estáticos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary) são armazenados em `mounts`. Há dois métodos para migrar arquivos de um local de montagem de origem, como o ambiente local, para um local de montagem de destino. Ambos os métodos usam o utilitário `rsync`, mas a Adobe recomenda usar a CLI `magento-cloud` para mover arquivos entre os ambientes local e remoto. E a Adobe recomenda usar o método `rsync` ao mover arquivos de uma origem remota para um local remoto diferente.
 
 ### Migrar arquivos usando a CLI
 
