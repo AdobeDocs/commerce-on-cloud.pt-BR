@@ -1,16 +1,17 @@
 ---
 title: Pacote [!DNL ECE-Tools]
 description: Saiba mais sobre o pacote  [!DNL ECE-Tools]  e como ele ajuda a gerenciar e implantar o Adobe Commerce.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 15d762ef-bca7-480b-b719-caf131dc9180
+source-git-commit: db34528be490f92cc61c609ca143c01ef3284157
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # Pacote de ferramentas ECE
 
-O pacote [!DNL ECE-Tools] é um conjunto de scripts e ferramentas criado para gerenciar e implantar o aplicativo [!DNL Commerce]. O pacote `ece-tools` simplifica muitos processos, como o gerenciamento de trabalhos cron, a verificação da configuração do projeto e a aplicação de patches de Adobe e hot fixes. Você pode exibir e contribuir com o [repositório de código aberto [!DNL ECE-Tools] no GitHub][ece-repo].
+O pacote [!DNL ECE-Tools] é um conjunto de scripts e ferramentas criado para gerenciar e implantar o aplicativo [!DNL Commerce]. O pacote `ece-tools` simplifica muitos processos, como o gerenciamento de trabalhos cron, a verificação da configuração do projeto e a aplicação de patches e hot fixes do Adobe. Você pode exibir e contribuir com o [repositório de código aberto [!DNL ECE-Tools] no GitHub](https://github.com/magento/ece-tools).
 
 {{ece-tools-package}}
 
@@ -30,7 +31,7 @@ Por padrão, estes `ece-tools` comandos estão na [propriedade de ganchos](../ap
 
 ## Gerador de configuração do Docker
 
-O pacote `ece-tools` inclui uma dependência para o pacote [magento/magento-cloud-docker], que fornece arquivos de funcionalidade e configuração para imagens do Docker para iniciar um ambiente de desenvolvimento do Docker para Adobe Commerce na infraestrutura em nuvem. Você também pode executar o Cloud Docker para Commerce como um pacote independente. Consulte [Desenvolvimento do Docker](../dev-tools/cloud-docker.md).
+O pacote `ece-tools` inclui uma dependência para o pacote [magento/magento-cloud-docker](https://github.com/magento/magento-cloud-docker), que fornece arquivos de funcionalidade e configuração para imagens do Docker para iniciar um ambiente de desenvolvimento do Docker para Adobe Commerce na infraestrutura em nuvem. Você também pode executar o Cloud Docker para Commerce como um pacote independente. Consulte [Desenvolvimento do Docker](../dev-tools/cloud-docker.md).
 
 ## Serviços, rotas e variáveis
 
@@ -90,12 +91,7 @@ Ideal state is configured
 
 Consulte as [Notas de versão para ece-tools](../release-notes/cloud-tools-suite.md).
 
-## Patches de Adobe e patches personalizados
+## Patches do Adobe e patches personalizados
 
-O pacote `ece-tools` inclui uma dependência para o pacote [magento/magento-cloud-patches], que fornece patches de Adobe e hot fixes que melhoram a integração de todas as versões do Adobe Commerce com ambientes na nuvem e oferecem suporte à entrega rápida de correções críticas. O &quot;também fornece patches personalizados que você adiciona ao projeto de infraestrutura do Adobe Commerce na nuvem. Consulte [Aplicar patches](../development/apply-patches.md).
+O pacote `ece-tools` inclui uma dependência para o pacote [magento/magento-cloud-patches](https://github.com/magento/magento-cloud-patches), que fornece patches e hot fixes do Adobe que melhoram a integração de todas as versões do Adobe Commerce com ambientes na nuvem e oferecem suporte à entrega rápida de correções críticas. O &quot;também fornece patches personalizados que você adiciona ao projeto de infraestrutura do Adobe Commerce na nuvem. Consulte [Aplicar patches](../development/apply-patches.md).
 
-<!-- link definitions -->
-
-[ece-repo]: https://github.com/magento/ece-tools
-[magento/magento-cloud-docker]: https://github.com/magento/magento-cloud-docker
-[magento/magento-cloud-patches]: https://github.com/magento/magento-cloud-patches
