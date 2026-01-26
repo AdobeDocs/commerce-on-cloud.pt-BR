@@ -21,7 +21,7 @@ Para integrar rapidamente seu projeto e começar a desenvolver seu site para imp
 
 ## Cadastrar-se em uma conta na nuvem
 
-Se você não tiver uma conta do Adobe Commerce na infraestrutura em nuvem, contate [Vendas](https://business.adobe.com/products/magento/get-demo.html). Ao se inscrever, a Adobe cria sua conta e envia um email de boas-vindas que fornece instruções sobre como acessar a interface do projeto. O email contém um link para que você possa fazer logon em sua conta e concluir a configuração inicial do projeto.
+Se você não tiver uma conta do Adobe Commerce na infraestrutura em nuvem, contate [Vendas](https://business.adobe.com/br/products/magento/get-demo.html). Ao se inscrever, a Adobe cria sua conta e envia um email de boas-vindas que fornece instruções sobre como acessar a interface do projeto. O email contém um link para que você possa fazer logon em sua conta e concluir a configuração inicial do projeto.
 
 ## Acessar projeto e adicionar usuários
 
@@ -33,7 +33,7 @@ Você só pode adicionar usuários registrados à sua Adobe Commerce em projetos
 
 ### Acesso à conta compartilhada
 
-O Proprietário da licença pode configurar o acesso compartilhado para a conta. O acesso compartilhado permite que funcionários confiáveis e provedores de serviços usem a central de ajuda para enviar e rastrear tíquetes de suporte relacionados à sua Adobe Commerce em projetos de infraestrutura em nuvem. Para obter instruções de configuração, consulte o artigo [Acesso compartilhado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) na Central de ajuda.
+O Proprietário da licença pode configurar o acesso compartilhado para a conta. O acesso compartilhado permite que funcionários confiáveis e provedores de serviços usem a central de ajuda para enviar e rastrear tíquetes de suporte relacionados à sua Adobe Commerce em projetos de infraestrutura em nuvem. Para obter instruções de configuração, consulte o artigo [Acesso compartilhado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#shared-access) na Central de ajuda.
 
 ### [!DNL Cloud Console]
 
