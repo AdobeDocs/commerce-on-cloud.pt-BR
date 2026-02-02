@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: ee2ed3a78939af36572f0baa6672b2e9f9a2557f
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Esse diretório contém ganchos de pré-confirmação que otimizam automaticamen
 
 ## O que os ganchos fazem
 
-- **Detectar automaticamente** arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
+- **Detectar automaticamente** arquivos de imagem preparados (PNG, JPG, JPEG, GIF)
 - **Execute`image_optim`** para compactar e otimizar imagens
 - **Repreparar imagens otimizadas** automaticamente
 - **Verifique se todas as imagens confirmadas** estão corretamente otimizadas
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Diretrizes de imagem
 
 - **PNG**: usar para capturas de tela e elementos da interface do usuário (será otimizado automaticamente)
-- **SVG**: usar para ícones e elementos gráficos simples (otimização desabilitada por padrão)
 - **JPEG**: usar para fotografias (será otimizado automaticamente)
 - **GIF**: usar para animações (será otimizado automaticamente)
+- **SVG**: usar para ícones e elementos gráficos simples (não processado por ganchos, confirmar como está)
 
-Os ganchos de pré-confirmação otimizarão automaticamente todas as imagens na confirmação.
+Os ganchos de pré-confirmação otimizarão automaticamente imagens PNG, JPEG e GIF na confirmação.
 
 ## Otimização manual
 
@@ -107,7 +107,7 @@ Os ganchos usam o arquivo de configuração `_jekyll/.image_optim.yml` para pers
 - **PNG**: usa `advpng`, `optipng` e `pngquant`
 - **JPEG**: Usa `jhead`, `jpegoptim` e `jpegtran`
 - **GIF**: Usa `gifsicle`
-- **SVG**: a otimização para SVG está desabilitada por padrão (pode quebrar animações e gráficos vetoriais complexos)
+- **SVG**: não processado (excluído da detecção para preservar animações e gráficos vetoriais)
 
 ## Solução de problemas
 
@@ -141,7 +141,7 @@ Os ganchos usam o arquivo de configuração `_jekyll/.image_optim.yml` para pers
 - **PNG** (`.png`) - Compactação sem perdas e com perdas
 - **JPEG** (`.jpg`, `.jpeg`) - Compactação com perda com limpeza de metadados
 - **GIF** (`.gif`) - Otimização de animação e estática
-- **SVG** (`.svg`) - Otimização de vetor (desabilitada por padrão)
+- **SVG** (`.svg`) - Não processado por ganchos (confirme como está para preservar a qualidade)
 
 ## Práticas recomendadas
 
