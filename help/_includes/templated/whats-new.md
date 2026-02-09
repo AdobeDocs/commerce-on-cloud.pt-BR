@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das seguintes informações sobre o encobrimento de origem à <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly">visão geral do Fastly services</a>.<br />- Definição e fluxo de tráfego<br />- Status de habilitação (habilitado em todos os projetos na nuvem desde 2021) Exemplos de URL de origem bloqueada<br />- Exemplos de uso da API REST</p>
+      <td><p>Adição das seguintes informações sobre o encobrimento de origem à <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly">visão geral do Fastly services</a>.<br />- Definição e fluxo de tráfego<br />- Status de habilitação (habilitado em todos os projetos na nuvem desde 2021) Exemplos de URL de origem bloqueada<br />- Exemplos de uso da API REST</p>
 </td>
       <td>
         Técnico
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da versão dos exemplos em <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configurar o serviço OpenSearch</a>.</p>
+      <td><p>Atualização da versão dos exemplos em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configurar o serviço OpenSearch</a>.</p>
 </td>
       <td>
         Feedback
