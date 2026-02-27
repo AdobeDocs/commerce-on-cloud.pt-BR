@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist">Lista de verificação de inicialização</a> do Commerce em projetos na nuvem para adicionar registros Fastly AAAA às instruções de configuração do DNS.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist">Lista de verificação de inicialização</a> do Commerce em projetos na nuvem para adicionar registros Fastly AAAA às instruções de configuração do DNS.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adicionadas instruções para <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">alterar o proprietário da conta do New Relic</a> para o <em>Guia de Infraestrutura do Commerce na Nuvem</em>.</p>
+      <td><p>Adicionadas instruções para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">alterar o proprietário da conta do New Relic</a> para o <em>Guia de Infraestrutura do Commerce na Nuvem</em>.</p>
 </td>
       <td>
         Técnico
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das seguintes informações sobre o encobrimento de origem à <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly">Visão geral dos serviços do Fastly</a>.<br />- Definição e fluxo de tráfego<br />- Status de habilitação (habilitado em todos os projetos na nuvem desde 2021) Exemplos de URL de origem bloqueada<br />- Exemplos de uso da API REST</p>
+      <td><p>Adição das seguintes informações sobre o encobrimento de origem à <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly">Visão geral dos serviços do Fastly</a>.<br />- Definição e fluxo de tráfego<br />- Status de habilitação (habilitado em todos os projetos na nuvem desde 2021) Exemplos de URL de origem bloqueada<br />- Exemplos de uso da API REST</p>
 </td>
       <td>
         Técnico
@@ -89,7 +89,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da versão dos exemplos em <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configurar o serviço OpenSearch</a>.</p>
+      <td><p>Atualização da versão dos exemplos em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Configurar o serviço OpenSearch</a>.</p>
 </td>
       <td>
         Feedback
