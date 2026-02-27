@@ -1,9 +1,10 @@
 ---
 title: Lista de verificação de inicialização
 description: Revise os itens da lista de verificação para o lançamento do site.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
+source-git-commit: ca2d94364787695398b2b8af559733fe52ec2949
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Consulte [Implantação de teste](../test/staging-and-production.md) para testar
 
 ## TLS e Fastly
 
-O Adobe fornece um certificado Let&#39;s Encrypt SSL/TLS para cada ambiente. Este certificado é necessário para que o Fastly forneça tráfego seguro via HTTPS.
+A Adobe fornece um certificado Let&#39;s Encrypt SSL/TLS para cada ambiente. Este certificado é necessário para que o Fastly forneça tráfego seguro via HTTPS.
 
 Para usar esse certificado, você deve atualizar a configuração de DNS para que o Adobe possa concluir a validação do domínio e aplicar o certificado ao seu ambiente. Cada ambiente tem um certificado exclusivo que cobre os domínios da Adobe Commerce em sites de infraestrutura em nuvem implantados nesse ambiente. Recomendamos concluir e atualizar as configurações durante o [processo de instalação rápida](../cdn/fastly-configuration.md).
 
@@ -38,7 +39,7 @@ Quando estiver pronto para iniciar o site, você deverá atualizar a configuraç
 
 - Certificado SSL/TLS provisionado para seus ambientes de produção.
 
-  Se você adicionou os registros de desafio ACME para seus domínios de produção durante o processo de configuração do Fastly, o Adobe faz upload do certificado SSL/TLS para o ambiente de produção automaticamente ao atualizar a configuração do DNS para direcionar o tráfego para o serviço Fastly. Se você não pré-provisionou o certificado ou se atualizou seus domínios, o Adobe deve concluir a validação do domínio e provisionar o certificado, o que pode levar até 12 horas.
+  Se você adicionou os registros de desafio ACME para seus domínios de produção durante o processo de configuração do Fastly, a Adobe faz upload do certificado SSL/TLS para o ambiente de produção automaticamente ao atualizar a configuração do DNS para direcionar o tráfego para o serviço Fastly. Se você não pré-provisionou o certificado ou se atualizou seus domínios, a Adobe deve concluir a validação do domínio e provisionar o certificado, o que pode levar até 12 horas.
 
 ### Para atualizar a configuração DNS para a inicialização do site:
 
@@ -60,14 +61,14 @@ Quando estiver pronto para iniciar o site, você deverá atualizar a configuraç
    | `www.<domain-name>.com` | prod.magentocloud.map.fastly.net |
    | `mystore.<domain-name>.com` | prod.magentocloud.map.fastly.net |
 
-1. Se necessário, adicione registros A para mapear o domínio apex (`<domain-name>.com`) para os seguintes endereços IP Fastly:
+1. Se necessário, adicione registros A e AAAA para mapear o domínio apex (`<domain-name>.com`) para os seguintes endereços IP Fastly:
 
-   | Domínio apex | NOME |
-   | --------------- | ----------------- |
-   | `<domain-name>.com` | `151.101.1.124` |
-   | `<domain-name>.com` | `151.101.65.124` |
-   | `<domain-name>.com` | `151.101.129.124` |
-   | `<domain-name>.com` | `151.101.193.124` |
+   | Domínio apex | NOME | AAANAME |
+   | --------------- | ----------------- | -------- |
+   | `<domain-name>.com` | `151.101.1.124` | 2a04:4e42:200::380 |
+   | `<domain-name>.com` | `151.101.65.124` | 2a04:4e42:400::380 |
+   | `<domain-name>.com` | `151.101.129.124` | 2a04:4e42:600::380 |
+   | `<domain-name>.com` | `151.101.193.124` | 2a04:4e42::380 |
 
 >[!IMPORTANT]
 >
@@ -90,7 +91,7 @@ Quando estiver pronto para iniciar o site, você deverá atualizar a configuraç
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **OBSERVAÇÃO**: você também pode atualizar a URL base do Administrador. Consulte [Armazenar URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=pt-BR) no _Guia de Experiência de Compras e Lojas da Adobe Commerce_.
+   **OBSERVAÇÃO**: você também pode atualizar a URL base do Administrador. Consulte [Armazenar URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) no _Guia de Experiência de Compras e Lojas da Adobe Commerce_.
 
 1. Aguarde alguns minutos para que o site seja atualizado.
 
@@ -104,7 +105,7 @@ Os itens a seguir são alterações e verificações recomendadas:
 
 - [Teste de email de saída concluído](../project/outgoing-emails.md)
 
-- [Configuração segura para credenciais de Administrador e URL de Administrador Base](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-admin)
+- [Configuração segura para credenciais de Administrador e URL de Administração Base](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
 - [Otimizar todas as imagens para a Web](../cdn/fastly-image-optimization.md)
 
@@ -136,9 +137,9 @@ Você também pode testar usando as seguintes opções de terceiros:
 
 - [Configurar a verificação de segurança](overview.md#set-up-the-security-scan-tool)
 
-- [Configuração segura para o usuário administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-admin)
+- [Configuração segura para o usuário administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
-- [Configuração segura para a URL do Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+- [Configuração segura do URL do administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 - [Remova os usuários que não estão mais no projeto Adobe Commerce na infraestrutura em nuvem](../project/user-access.md)
 
