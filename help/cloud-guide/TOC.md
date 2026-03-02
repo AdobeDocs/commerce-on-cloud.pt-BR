@@ -3,9 +3,9 @@ user-guide-title: Guia do Commerce na nuvem
 user-guide-description: Saiba como gerenciar o aplicativo do Adobe Commerce na infraestrutura em nuvem.
 product: magento
 feature: Cloud
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 2311b8e5c0216c01d0189c8f8e669dcddfcd1dcc
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '387'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 8%
    + [Fluxo de trabalho Pro](architecture/pro-develop-deploy-workflow.md)
    + [Arquitetura dimensionada](architecture/scaled-architecture.md)
    + [Dimensionamento automático](architecture/autoscaling.md)
-+ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=pt-BR)
++ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Notas de versão {#release-notes}
    + [Conjunto de ferramentas da nuvem](release-notes/cloud-tools-suite.md)
    + [Pacote ECE-Tools](release-notes/ece-tools-package.md)
@@ -89,6 +89,7 @@ ht-degree: 8%
    + [Restaurar ambiente](development/restore-environment.md)
    + Armazenamento {#storage}
       + [Gerenciar espaço em disco](storage/manage-disk-space.md)
+      + [Verificar limite de espaço em disco para o Adobe Commerce na infraestrutura em nuvem](storage/check-disk-space-limit-on-cloud.md)
       + [Consultas ao banco de dados de perfil](storage/profile-database-queries.md)
       + [Fazer backup do banco de dados](storage/database-dump.md)
       + [Gerenciamento de backup](storage/snapshots.md)
@@ -150,7 +151,7 @@ ht-degree: 8%
       + [Introdução](cdn/fastly-vcl-custom-snippets.md)
       + [Redirecionar solicitações para um back-end do CMS](cdn/fastly-vcl-wordpress.md)
       + [Bloquear spam de referência](cdn/fastly-vcl-badreferer.md)
-      + [INCLUIR NA LISTA DE PERMISSÕES IP](cdn/fastly-vcl-allowlist.md)
+      + [INCLUO NA LISTA DE PERMISSÕES IP](cdn/fastly-vcl-allowlist.md)
       + [INCLUIR NA LISTA DE BLOQUEIOS IP](cdn/fastly-vcl-blocking.md)
       + [Ignorar cache Fastly](cdn/fastly-vcl-bypass-to-origin.md)
    + [Solução de problemas rápida](cdn/fastly-troubleshooting.md)
