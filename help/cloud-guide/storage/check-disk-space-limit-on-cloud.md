@@ -20,5 +20,5 @@ Para verificar a quantidade de espaço disponível para cada Adobe Commerce no a
 
 ## Leitura relacionada
 
-[Gerencie o espaço em disco](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) na documentação do desenvolvedor.
+[Gerencie o espaço em disco](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) na documentação do desenvolvedor.
 
