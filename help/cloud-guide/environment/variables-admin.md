@@ -3,9 +3,10 @@ title: Variáveis de ADMINISTRAÇÃO
 description: Consulte uma lista de variáveis de ambiente usadas ao instalar o Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Configuration, Install, Roles/Permissions
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: d2746185-bc59-4d30-a088-73df1bd2c0b2
+source-git-commit: 4e751f02b92f954cd41d5523237da295a068661a
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Os usuários que têm acesso administrativo ao projeto Adobe Commerce na infraes
 
 Você pode substituir as credenciais de usuário Admin durante a instalação do Commerce pelas variáveis ADMIN na tabela a seguir.
 
-Se quiser alterar os valores após a instalação, conecte-se ao seu ambiente usando SSH e use o comando [`admin:user` da Adobe Commerce CLI &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=pt-BR) para criar ou editar as credenciais de usuário do Administrador.
+Se quiser alterar os valores após a instalação, conecte-se ao seu ambiente usando SSH e use o comando [`admin:user` da Adobe Commerce CLI ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) para criar ou editar as credenciais de usuário do Administrador.
 
 | Variável | Padrão | Descrição |
 | -------------- | --------------------------- | ----------- |
@@ -29,43 +30,62 @@ Se quiser alterar os valores após a instalação, conecte-se ao seu ambiente us
 
 ## URL do administrador
 
-Use a variável de ambiente a seguir para proteger o acesso à interface do usuário do administrador. Se especificado, esse valor substitui o URL padrão durante a instalação.
+Use a variável de ambiente a seguir para proteger o acesso à interface do usuário do administrador. Se especificado, esse valor substitui o URL padrão durante a instalação. No [!DNL Adobe Commerce] na infraestrutura em nuvem, você deve definir ou alterar a URL do Administrador usando a variável `ADMIN_URL` no ([!DNL Cloud Console] ou [!DNL Cloud CLI]). A modificação da configuração de [!DNL Admin] é aplicável somente para instalações locais.
 
-`ADMIN_URL` — O URL relativo para acessar a interface do usuário do Administrador. A URL padrão é `/admin`. Por motivos de segurança, a Adobe recomenda alterar o padrão para um URL de administrador exclusivo e personalizado, o que não é fácil de adivinhar.
+`ADMIN_URL` — O URL relativo para acessar a interface do usuário do Administrador. A URL padrão é `/admin`.
 
 ### Alterar o URL do administrador
 
-O Adobe recomenda alterar a variável de nível de ambiente para o URL do administrador após a instalação. Defina esta configuração por motivos de segurança antes de ramificar a partir do ambiente `master` clonado. Todas as ramificações criadas a partir da ramificação `master` herdam as variáveis de nível de ambiente e seus valores.
+Por padrão, a URL do [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin.html) está definida como *&lt;nome_do_domínio>/admin*. Por motivos de segurança, a Adobe recomenda alterá-lo para um URL de administrador exclusivo e personalizado, o que não é fácil de adivinhar.
 
-Use o comando `magento-cloud variable:update` para atualizar o valor da variável. (O comando `variable:set` foi descontinuado e não está disponível.) O exemplo a seguir atualiza o ADMIN_URL para `newAdmin_A8v10`:
+**Em [!DNL Adobe Commerce] na infraestrutura de nuvem**, você deve alterar a URL do Administrador usando a variável de ambiente `ADMIN_URL` em ([!DNL Cloud Console] ou [!DNL Cloud CLI]). A modificação da configuração de [!DNL Admin] é aplicável somente para instalações locais. Para instalações locais, siga [usar uma URL de administrador personalizada](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url).
+
+A Adobe recomenda alterar a variável de nível de ambiente para o URL do administrador após a instalação. Defina esta configuração por motivos de segurança antes de ramificar a partir do ambiente `master` clonado. Todas as ramificações criadas a partir da ramificação `master` herdam as variáveis de nível de ambiente e seus valores, a menos que você defina a herança como false.
+
+Use [!DNL Cloud Console] ou [!DNL Cloud CLI] para definir ou atualizar `ADMIN_URL`.
+
+#### Opção A: Alterar a URL do Administrador usando o [!DNL Cloud Console]
+
+##### Ambiente de integração
+
+No [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html), adicione uma nova variável com:
+
+- **Nome:** `ADMIN_URL`
+- **Valor:** sua nova URL de Administrador (por exemplo, `magento_A8v10`)
+
+- Para obter etapas detalhadas, consulte [adicionar variáveis de ambiente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment) ou [variáveis de ambiente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html) na documentação do desenvolvedor.
+
+##### Definir a URL do Administrador no [!DNL Cloud Console]
+
+1. Faça logon no [Cloud Console](https://console.adobecommerce.com/).
+2. Selecione um projeto na lista **[!UICONTROL All projects]**.
+3. Na visão geral do projeto, selecione o ambiente e clique no ícone de configuração.
+4. Selecione a guia **[!UICONTROL Variables]**.
+5. Clique em **[!UICONTROL Create Variable]** (ou edite a variável `ADMIN_URL` existente, se presente).
+6. Insira o seguinte:
+   - **Nome da variável:** `ADMIN_URL`
+   - **Valor:** seu novo caminho de Administrador (por exemplo, `magento_A8v10`).
+
+   Por padrão, **[!UICONTROL Available during runtime]** e **[!UICONTROL Make inheritable]** estão selecionados. Para impedir que ambientes filhos herdem esse valor, desmarque **[!UICONTROL Make inheritable]** para essa variável.
+7. Clique em **[!UICONTROL Create variable]** (ou **[!UICONTROL Save]**) e aguarde até que a implantação seja concluída. O botão só estará visível quando os campos obrigatórios contiverem valores.
+
+##### Quando Preparo e Produção não estão disponíveis no [!DNL Cloud Console]
+
+[Envie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando a adição da variável `ADMIN_URL` para o ambiente de preparo ou produção. Se o ambiente de Preparo e Produção estiver acessível no [!DNL Cloud Console], adicione a variável conforme descrito em [Ambiente de integração](#integration-environment).
+
+#### Opção B: Alterar a URL do Administrador usando o [!DNL Cloud CLI]
+
+Use o comando `magento-cloud variable:update` para atualizar a variável. (O comando `variable:set` foi descontinuado e não está disponível.)
+
+O exemplo a seguir atualiza o ambiente `master` `ADMIN_URL` para `newAdmin_A8v10` e impede que ambientes filho herdem o valor:
 
 ```bash
-magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
+magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master --inheritable false
 ```
+
+- **Reimplantação:** alterar a variável `ADMIN_URL` em [!DNL Cloud CLI] aciona uma reimplantação do ambiente.
+- **Herança:** As variáveis são herdáveis por padrão. Para impedir que o valor seja herdado por ambientes filhos, use a opção `--inheritable false` como mostrado. Para obter mais detalhes, consulte [visibilidade do nível de variável](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility).
 
 >[!NOTE]
 >
->O valor `ADMIN_URL` aceita letras (a-z ou A-Z), números (0-9) e o caractere de sublinhado (_) para um caminho de administrador personalizado. Espaços ou outros caracteres **não** aceitos.
-
-**Para alterar a URL usando o[!DNL Cloud Console]**:
-
-1. Faça logon no [[!DNL Cloud Console]](https://console.adobecommerce.com).
-
-1. Selecione um projeto na lista _Todos os projetos_.
-
-1. Na visão geral do projeto, selecione o ambiente e clique no ícone de configuração.
-
-   ![Configuração do projeto](../../assets/icon-configure.png){width="36"}
-
-1. Selecione a guia **Variáveis**.
-
-1. Clique em **Criar Variável**.
-
-1. Insira o seguinte:
-
-   - **Nome da variável** = `ADMIN_URL`
-   - **value** = Nova URL. Por exemplo, defina a URL do Administrador como `magento_A8v10`.
-
-   Por padrão, `Available during runtime` e `Make inheritable` estão selecionados.
-
-1. Clique em **Criar variável** e aguarde até que a implantação seja concluída. Esse botão só estará visível quando os campos obrigatórios contiverem valores.
+>O valor `ADMIN_URL` aceita letras (a-z, A-Z), números (0-9) e o caractere de sublinhado (_). Espaços ou outros caracteres não são aceitos.
