@@ -153,7 +153,7 @@ Data de lançamento: 16 de outubro de 2023
 Data de lançamento: 31 de julho de 2023
 
 - ![ícone de correção](../../assets/fix.svg) **Códigos de erro**—Esquema de código de erro atualizado e gerador de documento de código de erro.
-- ![Ícone de correção](../../assets/fix.svg) **Validador do modelo Redis personalizado** - Atualizado o validador dos modelos back-end Redis personalizados. [Veja o exemplo da configuração de cache ](../environment/variables-deploy.md#cache_configuration).
+- ![Ícone de correção](../../assets/fix.svg) **Validador do modelo Redis personalizado** - Atualizado o validador dos modelos back-end Redis personalizados. [Veja o exemplo da configuração de cache &#x200B;](../environment/variables-deploy.md#cache_configuration).
 - ![Ícone de correção](../../assets/fix.svg) **Validador para RabbitMQ** - suporte adicionado para RabbitMQ 3.11
 - ![ícone de correção](../../assets/fix.svg) **Corrigido o link errado**-Corrigido o link errado para a documentação de integração no modelo de email de boas-vindas.
 
