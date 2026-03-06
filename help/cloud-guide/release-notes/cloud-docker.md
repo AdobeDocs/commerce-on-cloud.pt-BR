@@ -5,9 +5,9 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
+source-git-commit: c668b984ae4353757adfde23fd5c028c80b9d2a7
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '4437'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,15 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.4.6 {#latest}
+## v1.4.7 {#latest}
+
+Data de lançamento: 05 de março de 2026
+
+- ![novo ícone](../../assets/new.svg) **PHP 8.5**—Suporte adicionado para PHP 8.5.<!-- MCLOUD-14180 -->
+- ![novo ícone](../../assets/new.svg) **Adição de `php-cli`e `php-fpm` imagens 8.5**—Adição de novas imagens do Cloud Docker (CLI e FPM) com suporte ao PHP 8.5.<!-- MCLOUD-14178 -->
+- ![novo ícone](../../assets/new.svg) **Adição dos comandos de geração de imagem docker PHP 8.5 e Opensearch 3.0**-Solução do isolamento de rede Docker (incluindo ARM64), testes de integração corrigidos e adição do suporte a PHP 8.5 e OpenSearch 3.0 para comandos de geração de imagem Docker.<!-- MCLOUD-14523 -->
+
+## v1.4.6
 
 Data de lançamento: 13 de novembro de 2025
 
@@ -78,7 +86,7 @@ Data de lançamento: 7 de outubro de 2024
 Data de lançamento: 8 de abril de 2024
 
 - ![novo ícone](../../assets/new.svg) **PHP** — Adição de suporte para imagens do PHP 8.3 e PHP 8.3.
-- ![novo ícone](../../assets/new.svg) **Nginx** — imagem nginx v. 1.24 adicionada.
+- ![novo ícone](../../assets/new.svg) **Nginx** — imagem nginx v adicionada. 1.24.
 - ![novo ícone](../../assets/new.svg) **Opensearch** - Imagem adicionada OpenSearch v. 2.12, 1.3.
 - ![novo ícone](../../assets/new.svg) **Composer** - Versão do Composer atualizada para 2.2.23.
 
@@ -162,7 +170,7 @@ Data de lançamento: 14 de junho de 2021
 
 - ![novo ícone](../../assets/new.svg) **Adição do PHP 8.0**—Atualização do PHP para a versão 8.0, permitindo que você aproveite todos os novos recursos e otimizações que o PHP 8.0 inclui.<!--MCLOUD-7941-->
 - ![novo ícone](../../assets/new.svg) **Atualizado para o Vernish 6.6 e o Elasticsearch 7.11.2**—Os links a seguir fornecem informações sobre a versão do [Varnish Cache 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) e do Elasticsearch 7.11.2.<!--MCLOUD-7921-->
-- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por &#x200B;](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
+- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por mattskr](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
 - ![novo ícone](../../assets/new.svg) **Adição de uma opção de sincronização de arquivo:`manual-native`**—A opção de sincronização de arquivo `manual-native` fornece controle manual sobre a sincronização, que fornece o melhor desempenho para ambientes macOS e Windows. Leia sobre como usar a opção `manual-native` no [Modo de desenvolvedor](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode) e [Sincronizando dados em um ambiente de desenvolvedor do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data#file-synchronization-options).<!--MCLOUD-7977-->
 - ![novo ícone](../../assets/new.svg) **Remoção de exclusões de volume dos comandos `up` e `down`**—A opção `--volume` foi removida dos comandos `bin/magento-docker up` e `bin/magento-docker down`, substituída pelo novo comando `bin/magento-docker init` com um aviso de perda de dados. Essa alteração ajuda a evitar a perda acidental de dados. *[Enviado por joeshelton-wagento](https://github.com/magento/magento-cloud-docker/pull/319).*<!--PR #319-->
 - ![Ícone de correção](../../assets/fix.svg) **Atualização do valor `CN` para o certificado gerado**—Remoção do valor codificado `CN` do Dockerfile. Este valor criou um erro de certificado (`NET::ERR_CERT_INVALID`) que fez com que a opção `--host` do comando `ece-docker build:compose` fosse ignorada.<!--MCLOUD-7934-->
@@ -314,7 +322,7 @@ Data de lançamento: 25 de junho de 2020
 
    - ![novo ícone](../../assets/new.svg) **PHP-FPM**
 
-      - Adição de suporte ao PHP 7.4. [Correção enviada por Mohanela Murugan da Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/198)<!--MCLOUD-198-->
+      - Suporte adicionado para PHP 7.4. [Correção enviada por Mohanela Murugan da Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/198)<!--MCLOUD-198-->
 
       - Adição da capacidade de copiar um arquivo `php.ini` no diretório do projeto raiz para o ambiente do Cloud Docker e aplicar configurações personalizadas de PHP aos contêineres PHP-FPM e CLI. Consulte [Personalizar configurações do PHP](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#customize-php-settings). [Correção enviada por Mathew Beane da Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/130).<!--MCLOUD-6012-->
 
@@ -409,7 +417,7 @@ Data de lançamento: 5 de fevereiro de 2020
 
          - **`TimeOut`** — Define o valor de tempo limite de Tempo até o Primeiro Byte (TTFB). O valor padrão é de 300 segundos.
 
-         - **`RewriteLocation`** — Determina se o proxy Libra reescreve o local no URL da solicitação por padrão. O padrão é `0`, para evitar que a regravação interrompa os redirecionamentos para sites externos, como um site SSO externo. [Correção enviada por Sorin Sugar](https://github.com/magento/magento-cloud-docker/pull/37)<!--MAGECLOUD-4061-->
+         - **`RewriteLocation`** — Determina se o proxy Libra reescreve o local no URL da solicitação por padrão. O padrão é `0`, para evitar que a regravação interrompa os redirecionamentos para sites externos, como um site SSO externo. [Correção enviada por Açúcar Sorin](https://github.com/magento/magento-cloud-docker/pull/37)<!--MAGECLOUD-4061-->
 
       - ![novo ícone](../../assets/new.svg) Aumento do valor de tempo limite na configuração do contêiner TLS de 15 para 300 segundos. [Correção enviada por Mathew Beane da Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/78)<!--MAGECLOUD-4460-->
 

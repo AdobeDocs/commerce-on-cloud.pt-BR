@@ -4,9 +4,9 @@ description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 16d5577da8841c2f65f9b5298beaa7fb84a1ab47
+source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3491'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,16 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.9 {#latest}
+## v2002.2.10 {#latest}
+
+Data de lançamento: 05 de março de 2026
+
+- ![novo ícone](../../assets/new.svg) **PHP 8.5**—Suporte adicionado para PHP 8.5.<!-- MCLOUD-14179 -->
+- ![Ícone de correção](../../assets/fix.svg) **Teste funcional atualizado**-Testes Valkey 8.1, 8.2 e Redis 8.4 atualizados<!-- MCLOUD-13983 -->
+- ![Ícone de correção](../../assets/fix.svg) **Validadores MariaDB,PHP e Opensearch atualizados**-O script de validação foi atualizado.<!-- MCLOUD-14574/MCLOUD-14466 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de EOL** - Datas atualizadas do fim da vida útil (EOL).<!-- MCLOUD-14272 -->
+
+## v2002.2.9
 
 Data de lançamento: 13 de novembro de 2025
 
@@ -144,7 +153,7 @@ Data de lançamento: 16 de outubro de 2023
 Data de lançamento: 31 de julho de 2023
 
 - ![ícone de correção](../../assets/fix.svg) **Códigos de erro**—Esquema de código de erro atualizado e gerador de documento de código de erro.
-- ![Ícone de correção](../../assets/fix.svg) **Validador do modelo Redis personalizado** - Atualizado o validador dos modelos back-end Redis personalizados. [Consulte o exemplo para a configuração de cache](../environment/variables-deploy.md#cache_configuration).
+- ![Ícone de correção](../../assets/fix.svg) **Validador do modelo Redis personalizado** - Atualizado o validador dos modelos back-end Redis personalizados. [Veja o exemplo da configuração de cache ](../environment/variables-deploy.md#cache_configuration).
 - ![Ícone de correção](../../assets/fix.svg) **Validador para RabbitMQ** - suporte adicionado para RabbitMQ 3.11
 - ![ícone de correção](../../assets/fix.svg) **Corrigido o link errado**-Corrigido o link errado para a documentação de integração no modelo de email de boas-vindas.
 
@@ -177,7 +186,7 @@ Data de lançamento: 4 de agosto de 2022
 
 - ![ícone de correção](../../assets/fix.svg) **ElasticSuite Validator e OpenSearch**—Corrigiu o problema do validador de verificação de integridade do ElasticSuite quando OpenSearch está instalado.<!-- MCLOUD-8767 -->
 - ![Ícone de correção](../../assets/fix.svg) **Tipos de retorno para comandos de implantação**—Tipos de retorno corrigidos para comandos de implantação.<!-- AC-3208 -->
-- ![ícone de correção](../../assets/fix.svg) **[!DNL RabbitMQ]problema com a nova instalação do Commerce 2.4.5**—Corrigido [!DNL RabbitMQ] problema de falha na nova instalação do Commerce 2.4.5.<!-- MCLOUD-9059 -->
+- ![ícone de correção](../../assets/fix.svg) **[!DNL RabbitMQ]problema com a nova instalação do Commerce 2.4.5**—Corrigido [!DNL RabbitMQ] problema de falha no novo Commerce 2.4.5. instalação.<!-- MCLOUD-9059 -->
 
 ## v2002.1.10
 
@@ -361,7 +370,7 @@ Data de lançamento: 25 de junho de 2020
 
    - ![novo ícone](../../assets/new.svg) **verificações de compatibilidade do Elasticsearch 7.x**—Validação do Elasticsearch atualizada para verificações de compatibilidade de software do Elasticsearch 7.x.<!--MCLOUD-5542-->
 
-   - ![novo ícone](../../assets/new.svg) **Verificações de versão de serviço e validação de EOL atualizadas**—Validação atualizada para verificar as versões de serviço instaladas em relação aos requisitos do Adobe Commerce 2.4.<!--MCLOUD-6144-->
+   - ![novo ícone](../../assets/new.svg) **Verificações de versão de serviço atualizada e validação de EOL**—Validação atualizada para verificar versões de serviço instaladas em relação ao Adobe Commerce 2.4. requisitos.<!--MCLOUD-6144-->
 
    - ![ícone de correção](../../assets/fix.svg) Corrigido um problema de validação para que a seguinte mensagem de aviso de pós-implantação fosse exibida somente se a configuração de gancho `post-deploy` estivesse ausente do arquivo `.magento.app.yaml`:
 

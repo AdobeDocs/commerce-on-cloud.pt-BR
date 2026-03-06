@@ -4,9 +4,9 @@ description: Consulte uma lista das melhorias mais recentes no pacote de compone
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,13 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.1.3 {#latest}
+## v1.1.4 {#latest}
+
+Data de lançamento: 05 de março de 2026
+
+- ![novo ícone](../../assets/new.svg) **PHP 8.5**—Suporte adicionado para PHP 8.5.<!-- MCLOUD-14182-->
+
+## v1.1.3
 
 Data de lançamento: 07 de agosto de 2025
 
@@ -67,7 +73,7 @@ Data de lançamento: 10 de março de 2023
 
 Data de lançamento: 13 de setembro de 2022
 
-- ![Ícone de correção](../../assets/fix.svg) **Erros no warmup**—Corrigiu um problema que tentava [warmup](../environment/variables-post-deploy.md#warm_up_pages) quando a visibilidade da página estava definida como [**Não Visível Individualmente**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) no Administrador, resultando em `ERROR: Warming up failed: <link to page>` erros no log de implantação.<!-- MCLOUD-9134 -->
+- ![Ícone de correção](../../assets/fix.svg) **Erros no warmup**—Corrigiu um problema que tentava [warmup](../environment/variables-post-deploy.md#warm_up_pages) quando a visibilidade da página estava definida como [**Não Visível Individualmente**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) no Administrador, resultando em `ERROR: Warming up failed: <link to page>` erros no log de implantação.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
