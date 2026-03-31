@@ -1,7 +1,7 @@
 ---
-source-git-commit: d06c2d5abbf49e16862b2f01ff6568b85204adf6
+source-git-commit: aae9f01d5b92d8067624953e3c959ec8dce3b108
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
+>Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
 
 ## Opções de mesclagem {#merge-options}
 
@@ -38,31 +38,39 @@ Defina a opção `_merge` como uma das opções a seguir:
 
 >[!WARNING]
 >
->Alguns **projetos profissionais** exigem um tíquete de suporte para atualizar a configuração de rota no arquivo `routes.yaml` e a configuração cron no arquivo `.magento.app.yaml`. A Adobe recomenda atualizar e testar arquivos de configuração YAML em um ambiente de Integração e, em seguida, implantar alterações no ambiente de preparo. Se suas alterações não forem aplicadas aos sites de Preparo após a reimplantação e não houver mensagens de erro relacionadas no log, você **DEVE** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) que descreva as tentativas de alterações de configuração. Inclua quaisquer arquivos de configuração YAML atualizados no ticket.
+>Alguns **projetos profissionais** exigem a assistência do Suporte da Adobe para atualizar as configurações de rota no arquivo `routes.yaml` e as configurações cron no arquivo `.magento.app.yaml`. A Adobe recomenda fazer e validar primeiro todas as alterações de configuração do YAML em um ambiente de integração e, em seguida, implantá-las no ambiente de preparo.
+>
+>
+>Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e nenhuma mensagem de erro relacionada no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
 
 ## Suporte a serviços profissionais {#pro-update-service}
 
 >[!BEGINSHADEBOX]
 
-- Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html?lang=pt-BR) somente em ambientes `Staging` e `Production`.
+- Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html) somente em ambientes `Staging` e `Production`.
 
-- Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html?lang=pt-BR) em _Configuração do aplicativo_.
+- Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) em _Configuração do aplicativo_.
+
+>[!IMPORTANT]
+>
+>Ao selecionar o campo Ambiente no novo formulário de tíquete, use a nomenclatura de ambiente do Adobe. Por exemplo, selecione Preparo mesmo se você chamar esse ambiente de **Desenvolvimento** internamente. Você pode mencionar seu nome interno na descrição, mas o próprio campo Environment deve usar a nomenclatura do Adobe.
 
 - Para alterações em um ambiente de Produção em tempo real (**Somente profissionais**), é necessário um aviso de no mínimo 48 horas. Isso permite que a equipe de infraestrutura da nuvem tenha tempo suficiente para empacotar recursos e realizar uma atualização segura. O período de aviso começa quando a equipe de infraestrutura reconhece a solicitação e programa a atualização, exceto nos finais de semana. Por exemplo, para que os upgrades de serviço sejam concluídos na segunda-feira, uma confirmação do upgrade agendado deve ser recebida até quarta-feira. Durante períodos de pico de demanda, pode levar mais tempo para processar sua solicitação.
 
 >[!NOTE]
 >
 >Todas as janelas de manutenção programadas devem ser fornecidas em formato UTC para garantir clareza e consistência em todas as comunicações. As atualizações de serviço não podem ser agendadas no ambiente de preparo; na maioria dos casos, as atualizações em preparo são executadas no mesmo dia que a solicitação.
-
+>
+>Se você solicitar uma atualização do RabbitMQ, certifique-se de reimplantar o ambiente após a conclusão da atualização para que as filas de mensagens sejam reinicializadas.
 >[!ENDSHADEBOX]
 
 ## Backups Pro {#pro-backups}
 
 >[!TIP]
 >
->Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
+>Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
 >
->O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=pt-BR) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
+>O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
 
 ## Aviso de reimplantação {#redeploy-warning}
 
@@ -100,7 +108,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
+>[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
 
 ## Alteração de serviço {#service-change-tip}
 
@@ -112,7 +120,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!TIP]
 >
->Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR) na _Central de Ajuda do Commerce_.
+>Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) na _Central de Ajuda do Commerce_.
 
 ## Atualização para ECE-Tools {#ece-tools-package}
 
