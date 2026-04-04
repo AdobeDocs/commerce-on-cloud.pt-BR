@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
+>Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
 
 ## Opções de mesclagem {#merge-options}
 
@@ -41,15 +41,15 @@ Defina a opção `_merge` como uma das opções a seguir:
 >Alguns **projetos profissionais** exigem a assistência do Suporte da Adobe para atualizar as configurações de rota no arquivo `routes.yaml` e as configurações cron no arquivo `.magento.app.yaml`. A Adobe recomenda fazer e validar primeiro todas as alterações de configuração do YAML em um ambiente de integração e, em seguida, implantá-las no ambiente de preparo.
 >
 >
->Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e nenhuma mensagem de erro relacionada no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
+>Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e nenhuma mensagem de erro relacionada no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
 
 ## Suporte a serviços profissionais {#pro-update-service}
 
 >[!BEGINSHADEBOX]
 
-- Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html) somente em ambientes `Staging` e `Production`.
+- Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html?lang=pt-BR) somente em ambientes `Staging` e `Production`.
 
-- Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) em _Configuração do aplicativo_.
+- Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html?lang=pt-BR) em _Configuração do aplicativo_.
 
   >[!IMPORTANT]
   >
@@ -78,9 +78,9 @@ A atualização não é considerada programada até que a equipe de infraestrutu
 
 >[!TIP]
 >
->Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
+>Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
 >
->O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
+>O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=pt-BR) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
 
 ## Aviso de reimplantação {#redeploy-warning}
 
@@ -118,7 +118,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
+>[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
 
 ## Alteração de serviço {#service-change-tip}
 
@@ -130,7 +130,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!TIP]
 >
->Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) na _Central de Ajuda do Commerce_.
+>Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR) na _Central de Ajuda do Commerce_.
 
 ## Atualização para ECE-Tools {#ece-tools-package}
 
