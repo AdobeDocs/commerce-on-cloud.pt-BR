@@ -4,9 +4,9 @@ description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
+source-git-commit: b3d634838e562ceba4221a69e87eda377d8f9363
 workflow-type: tm+mt
-source-wordcount: '3491'
+source-wordcount: '3485'
 ht-degree: 0%
 
 ---
@@ -85,18 +85,14 @@ Data de lançamento: 27 de maio de 2025
 
 Data de lançamento: 24 de abril de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Corrigiu um problema relacionado ao suporte para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
+- ![ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Corrigiu um problema relacionado ao suporte para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
 Data de lançamento: 9 de abril de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Corrigir Valkey** Corrigiu um problema com a configuração personalizada valkey.<!-- MCLOUD-13569 -->
-- ![ícone de correção](../../assets/fix.svg) **Validador de correção**-Validador corrigido para RabbitMQ 4.0.<!-- MCLOUD-13560 -->
-
-## v2002.2.2
-
-Data de lançamento: 7 de abril de 2025
+- ![ícone de correção](../../assets/fix.svg) **Corrigir Valkey** Corrigiu um problema com a configuração personalizada valkey. <!-- MCLOUD-13569 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de correção**-Validador corrigido para RabbitMQ 4.0. <!-- MCLOUD-13560 -->
 
 ## v2002.2.2
 
@@ -153,7 +149,7 @@ Data de lançamento: 16 de outubro de 2023
 Data de lançamento: 31 de julho de 2023
 
 - ![ícone de correção](../../assets/fix.svg) **Códigos de erro**—Esquema de código de erro atualizado e gerador de documento de código de erro.
-- ![Ícone de correção](../../assets/fix.svg) **Validador do modelo Redis personalizado** - Atualizado o validador dos modelos back-end Redis personalizados. [Veja o exemplo da configuração de cache &#x200B;](../environment/variables-deploy.md#cache_configuration).
+- ![Ícone de correção](../../assets/fix.svg) **Validador do modelo Redis personalizado** - Atualizado o validador dos modelos back-end Redis personalizados. [Consulte o exemplo para a configuração de cache](../environment/variables-deploy.md#cache_configuration).
 - ![Ícone de correção](../../assets/fix.svg) **Validador para RabbitMQ** - suporte adicionado para RabbitMQ 3.11
 - ![ícone de correção](../../assets/fix.svg) **Corrigido o link errado**-Corrigido o link errado para a documentação de integração no modelo de email de boas-vindas.
 
