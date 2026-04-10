@@ -2,9 +2,10 @@
 title: propriedade da Web
 description: Veja exemplos de como configurar a propriedade da Web no arquivo de configuração do aplicativo  [!DNL Commerce] .
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
+source-git-commit: 94a7748348ba590bb4fed740df658c5bac4c31e9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -31,14 +32,18 @@ Você pode ajustar a configuração do `locations` usando os seguintes valores d
 | `rules` | Especifique substituições para um local. Use uma expressão regular para corresponder a uma solicitação. Se uma solicitação recebida corresponder à regra, o manuseio regular da solicitação será substituído pelas chaves usadas na regra. |
 | `passthru` | Defina o URL usado caso um arquivo estático ou PHP não possa ser encontrado. Normalmente, esta URL é o controlador frontal para seus aplicativos, como o `/index.php` ou o `/app.php`. |
 | `root` | Defina o caminho relativo à raiz do aplicativo que está exposto na Web. O diretório público (local &quot;/&quot;) de um projeto na nuvem é definido como &quot;pub&quot; por padrão. |
-| `scripts` | Permitir o carregamento de scripts neste local. Defina o valor como `true` para permitir scripts. |
+| `scripts` | Permitir o carregamento de scripts neste local. Defina o valor como `true` para permitir scripts. Para os diretórios `pub/media` e `pub/static`, a configuração padrão é definida como `scripts: false` para impedir a execução de arquivos carregados. |
+
+>[!IMPORTANT]
+>
+>**Observação de segurança:** a configuração de propriedade `web` padrão do Adobe Commerce na Nuvem define `scripts: false` para locais de mídia a fim de impedir a execução de arquivos carregados. Não substitua essa configuração, a menos que você entenda totalmente as implicações de segurança para a implementação.
 
 A configuração padrão permite o seguinte:
 
 - No caminho raiz (`/`), somente a Web e a mídia podem ser acessadas
-- Nos caminhos `~/pub/static` e `~/pub/media`, qualquer arquivo pode ser acessado
+- Nos caminhos `~/pub/media` e `~/pub/static`, qualquer arquivo pode ser acessado
 
-O exemplo a seguir mostra a configuração padrão no arquivo `.magento.app.yaml` para um conjunto de locais acessíveis pela Web associados a uma entrada na propriedade [`mounts` &#x200B;](properties.md#mounts):
+O exemplo a seguir mostra a configuração padrão no arquivo `.magento.app.yaml` para um conjunto de locais acessíveis pela Web associados a uma entrada na propriedade [`mounts` ](properties.md#mounts):
 
 ```yaml
  # The configuration of app when it is exposed to the web.
