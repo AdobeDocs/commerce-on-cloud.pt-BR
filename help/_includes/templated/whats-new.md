@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de uma observação de segurança à referência de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">configuração de propriedade da Web</a> para o Adobe Commerce na infraestrutura de nuvem para esclarecer que a configuração padrão da propriedade da Web usa <code class="language-plaintext highlighter-rouge">scripts:false</code> para locais de mídia a fim de impedir a execução de arquivos carregados.</p>
+      <td><p>Adição de uma observação de segurança à referência de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">configuração de propriedade da Web</a> para o Adobe Commerce na infraestrutura de nuvem para esclarecer que a configuração padrão da propriedade da Web usa <code class="language-plaintext highlighter-rouge">scripts:false</code> para locais de mídia a fim de impedir a execução de arquivos carregados.</p>
 </td>
       <td>
         Técnico, feedback
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Versão <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a>, v2002.2.10.</p>
+      <td><p>Versão <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a>, v2002.2.10.</p>
 </td>
       <td>
         Técnico
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Foi adicionado um esclarecimento sobre como <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">alterar a URL do administrador</a> no Adobe Commerce na nuvem em vez de no local.</p>
+      <td><p>Foi adicionado um esclarecimento sobre como <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url">alterar a URL do administrador</a> no Adobe Commerce na nuvem em vez de no local.</p>
 </td>
       <td>
         Atualização importante, feedback
@@ -89,7 +89,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de documentação para <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">verificar o limite de espaço em disco para projetos do Adobe Commerce na nuvem</a> no Cloud Console.</p>
+      <td><p>Adição de documentação para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">verificar o limite de espaço em disco para projetos do Adobe Commerce na nuvem</a> no Cloud Console.</p>
 </td>
       <td>
         Novo tópico, técnico
@@ -111,7 +111,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist">Lista de verificação de inicialização</a> do Commerce em projetos na nuvem para adicionar registros Fastly AAAA às instruções de configuração do DNS.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist">Lista de verificação de inicialização</a> do Commerce em projetos na nuvem para adicionar registros Fastly AAAA às instruções de configuração do DNS.</p>
 </td>
       <td>
         Feedback
@@ -133,7 +133,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adicionadas instruções para <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">alterar o proprietário da conta do New Relic</a> para o <em>Guia de Infraestrutura do Commerce na Nuvem</em>.</p>
+      <td><p>Adicionadas instruções para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">alterar o proprietário da conta do New Relic</a> para o <em>Guia de Infraestrutura do Commerce na Nuvem</em>.</p>
 </td>
       <td>
         Técnico
