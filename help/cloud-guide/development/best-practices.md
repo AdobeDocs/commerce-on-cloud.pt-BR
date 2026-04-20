@@ -2,9 +2,10 @@
 title: Práticas recomendadas para atualizar seu projeto
 description: Consulte uma lista de práticas recomendadas para atualizar os arquivos do projeto.
 feature: Cloud, Best Practices, Upgrade
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 64f92739-9170-4cbf-90ef-aab6593a37ca
+source-git-commit: 31494a956babaf15320d0ffa86fcba9e845d53a1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Siga as práticas recomendadas para compilações e implantações e use o fluxo
 
    - Verifique se todos os temas personalizados são compatíveis com a nova versão do Adobe Commerce
 
-   - Depois de atualizar extensões personalizadas e de terceiros, use o comando `magento-cloud local:build` para validar as dependências do Composer antes de implantar.
+   - Depois de atualizar extensões personalizadas e de terceiros, use o comando `magento-cloud local:build` para validar as dependências do Composer antes de implantar e execute a [Ferramenta de Compatibilidade de Atualização](#use-the-upgrade-compatibility-tool) para identificar incompatibilidades de nível de código entre as versões atual e de destino. Em seguida, use a [Ferramenta de Compatibilidade de Atualização](https://fluffyjaws.adobe.com/#use-the-upgrade-compatibility-tool) para identificar e priorizar incompatibilidades de nível de código antes de implantar em Integração, Preparo ou Produção.
 
    - Revise as notas de versão e a documentação de extensão do Adobe Commerce para garantir que você implementou qualquer solução alternativa ou alteração de configuração necessária para resolver problemas funcionais conhecidos e bugs relacionados à versão e extensões atualizadas do Adobe Commerce.
 
@@ -49,9 +50,24 @@ Siga as práticas recomendadas para compilações e implantações e use o fluxo
 
    - Use o SSH para fazer logon no servidor remoto e verifique o seguinte:
 
-      - Verifique o status do indexador e reindexe conforme necessário. Consulte [Gerenciar os indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR) no _Guia de configuração_.
+      - Verifique o status do indexador e reindexe conforme necessário. Consulte [Gerenciar os indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) no _Guia de configuração_.
 
       - Verifique os logs do `cron` e a tabela `cron_schedule` no banco de dados do Adobe Commerce para verificar o status do cron e execute novamente os trabalhos do cron, conforme necessário.
-Consulte [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR#logging) no _Guia de Configuração_.
+Consulte [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) no _Guia de Configuração_.
 
    - Conclua o UAT de teste de aceitação do usuário pós-atualização em ambientes de preparo e produção e corrija quaisquer problemas relacionados a atualizações de extensões personalizadas e de terceiros.
+
+## Usar a Ferramenta de compatibilidade de atualização
+
+Execute a Ferramenta de compatibilidade de atualização (UCT) como parte de sua análise pré-atualização para entender o escopo e o impacto de uma atualização.
+
+- A UCT compara sua instância atual a uma versão de destino do Adobe Commerce, retornando uma lista de problemas críticos, erros e avisos que devem ser corrigidos antes da atualização.
+- Use o `--coming-version (-c)` para comparar com sua versão de destino planejada e o `--ignore-current-version-compatibility-issues` para focalizar apenas os novos problemas introduzidos pela atualização.
+- Trate o relatório do UCT HTML como uma entrada para sua lista de verificação de atualização junto com a compatibilidade de extensão, versões de serviço e verificações de banco de dados.
+
+Para obter detalhes sobre configuração e uso, consulte:
+
+- [Visão Geral da Ferramenta de Compatibilidade de Atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)
+- [Executar a Ferramenta de Compatibilidade de Atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
+
+Para comerciantes da nuvem que usam a Ferramenta de análise do site, você também pode acionar o UCT no painel e baixar o relatório do HTML diretamente do widget. Consulte Integrar a [Ferramenta de Análise do Site](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).
