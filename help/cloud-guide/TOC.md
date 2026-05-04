@@ -1,9 +1,11 @@
 ---
+cloud: Experience Cloud
+solution-title: Commerce
 user-guide-title: Guia do Commerce na nuvem
 user-guide-description: Saiba como gerenciar o aplicativo do Adobe Commerce na infraestrutura em nuvem.
 product: magento
 feature: Cloud
-source-git-commit: 2311b8e5c0216c01d0189c8f8e669dcddfcd1dcc
+source-git-commit: 14964492bc82a50b1eea0636d01b8f7f2583755b
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 8%
@@ -24,7 +26,7 @@ ht-degree: 8%
    + [Fluxo de trabalho Pro](architecture/pro-develop-deploy-workflow.md)
    + [Arquitetura dimensionada](architecture/scaled-architecture.md)
    + [Dimensionamento automático](architecture/autoscaling.md)
-+ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=pt-BR)
++ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Notas de versão {#release-notes}
    + [Conjunto de ferramentas da nuvem](release-notes/cloud-tools-suite.md)
    + [Pacote ECE-Tools](release-notes/ece-tools-package.md)
@@ -123,7 +125,7 @@ ht-degree: 8%
          + [Implantar](environment/variables-deploy.md)
          + [Pós-implantação](environment/variables-post-deploy.md)
       + Configurar notificações {#log}
-         + [Notificação](environment/set-up-notifications.md)
+         + [Notificações](environment/set-up-notifications.md)
          + [Manipuladores de log](environment/log-handlers.md)
    + Rotas {#routes}
       + [Configurar rotas](routes/routes-yaml.md)
