@@ -4,7 +4,7 @@ description: Saiba mais sobre o serviço do New Relic disponível com seu projet
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00Z
 exl-id: 10966241-311d-4b68-804d-4c9569bf933d
-source-git-commit: 3784e7b2ddc8f6ae20fd2c6fd557f2408d870cf2
+source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -35,7 +35,7 @@ O [New Relic for application performance management (APM)](https://docs.newrelic
 - **Monitoramento de consulta de banco de dados** — Localize e monitore consultas de banco de dados que afetam o desempenho.
 - **Mapa de Aplicativos** — Exiba todas as dependências de aplicativos no site, nas extensões e nos serviços externos.
 - **[!DNL Apdex]pontuações** — Avalie o desempenho e crie alertas que identificam problemas e o notificam quando ocorrem, como o desempenho do site afetado por uma promoção rápida ou um evento da web. Consulte [Pontuação do Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
-- **Alertas gerenciados para Adobe Commerce** - Use esta política de alerta do New Relic para monitorar o desempenho do aplicativo e da infraestrutura com base nas práticas recomendadas do setor. Consulte [Monitorar o desempenho com a diretiva de alertas Gerenciados da Adobe Commerce](investigate-performance.md/#monitor-performance-with-managed-alerts).
+- **Alertas gerenciados para Adobe Commerce** - Use esta política de alerta do New Relic para monitorar o desempenho do aplicativo e da infraestrutura com base nas práticas recomendadas do setor. Consulte [Monitorar o desempenho com a diretiva de alertas Gerenciados da Adobe Commerce](investigate-performance.md#monitor-performance-with-managed-alerts).
 - **Rastrear implantações** — Monitore eventos de implantação e analise o impacto da implantação no desempenho geral. Consulte [Rastrear implantações](track-deployments.md).
 
 Seu projeto de infraestrutura do Adobe Commerce na nuvem inclui o software para o serviço de APM da New Relic, juntamente com uma chave de licença. Não é necessário adquirir ou instalar nenhum software adicional.

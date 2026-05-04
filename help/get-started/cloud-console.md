@@ -3,13 +3,13 @@ title: Fazer logon em  [!DNL Cloud Console]
 description: Saiba mais sobre o [!DNL Cloud Console] for Adobe Commerce na infraestrutura em nuvem.
 recommendations: noDisplay, catalog
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4c68508a-f25a-457b-be6d-36dc8ac428f1
+source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Fazer logon em [!DNL Cloud Console]
 
@@ -39,12 +39,14 @@ Os recursos novos ou aprimorados são os seguintes:
 | -------------- | ----------------------------------- |
 | [Fluxo de atividade](../cloud-guide/project/activity-stream.md) | Interaja com uma lista classificável de ações em execução, pendentes ou históricas. Selecione uma atividade e visualize logs ou cancele um build em execução. |
 | [Visões gerais do projeto e do ambiente](../cloud-guide/project/overview.md#project-overview) | Abra o projeto e veja a visão geral dos detalhes do projeto e a lista de ambientes. A visão geral do ambiente fornece mais detalhes sobre o status do ambiente, o acesso ao aplicativo e as atividades recentes. |
-| [Formulários de integração](../cloud-guide/integrations/overview.md) | Use formulários simples e orientações para adicionar integrações, como notificações de Bitbucket ou Slack. |
+| [Formulários de integração](../cloud-guide/integrations/overview.md) | Use formulários simples e orientação para adicionar integrações, como notificações do Bitbucket ou do Slack. |
 | [Lista de projetos](../cloud-guide/project/overview.md#cloud-console) | A exibição _Todos os projetos_ lista todos os projetos aos quais você tem permissão de acesso. Você pode clicar em **[!UICONTROL Show filters]** e filtrar sua lista de projetos por tipo, região ou plano. |
 | [Opções de visibilidade de variáveis](../cloud-guide/environment/variable-levels.md) | Limitar a visibilidade de uma variável de nível de projeto ou de ambiente durante a compilação ou o tempo de execução. |
 
-<!-- The following are features yet to be activated:
-| **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | -->
+<!--
+The following are features yet to be activated:
+| **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | 
+-->
 
 ## Perguntas sobre o console
 

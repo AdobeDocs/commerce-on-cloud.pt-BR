@@ -1,23 +1,27 @@
 ---
-source-git-commit: 50e1a864dcde1148f5ed036b55815442c5986eaf
+source-git-commit: bd353c3d100dee7fd0a1846b582a8af44448ff1b
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '3168'
 ht-degree: 0%
 
 ---
 # Pacotes na nuvem do Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!--
+The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!--
+The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
- -->
+<!--
+The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
+-->
 
-<!-- The edition variable contains `cloud` value from the _data/names.yml file
- -->
+<!--
+The edition variable contains `cloud` value from the _data/names.yml file
+-->
 
 O Adobe Commerce na infraestrutura em nuvem usa o Composer para gerenciar pacotes PHP.
 
