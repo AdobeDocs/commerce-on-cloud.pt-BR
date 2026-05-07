@@ -2,11 +2,11 @@
 title: Notas de versão do ECE-Tools
 description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07T00:00:00Z
+last-substantial-update: 2026-05-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
+source-git-commit: 0781fdfe8b0dbc6312848572ff4b996e51270a3f
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3563'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,18 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.10 {#latest}
+## v2002.2.11 {#latest}
+
+Data de lançamento: 06 de maio de 2026
+
+- ![novo ícone](../../assets/new.svg) **RabbitMQ**—Suporte a RabbitMQ 4.2 adicionado.<!-- MCLOUD-14374 -->
+- ![novo ícone](../../assets/new.svg) **Opensearch** — Adição do suporte ao Opensearch 2.19 e 3.5 para várias versões do Magento. <!-- MCLOUD-14682 -->
+- ![novo ícone](../../assets/new.svg) **Valkey**—Adição do suporte ao Valkey 8.1 e 9.<!-- MCLOUD-14784/MCLOUD-14625 -->
+- ![novo ícone](../../assets/new.svg) **AtiveMQ**—Suporte ao AtiveMQ 2.5.1 adicionado.<!-- MCLOUD-14683 -->
+- ![novo ícone](../../assets/new.svg) **MariaDB**—Adição do suporte para MariaDB 11.8 e 12.2.<!-- MCLOUD-14628 -->
+- ![Ícone de correção](../../assets/fix.svg) **Configuração e implantação**—Corrigidos avisos de implantação de nuvem, substituições de teste de compositor atualizadas e visibilidade corrigida da versão de ferramentas ECE na implantação.<!-- MCLOUD-14822 -->
+
+## v2002.2.10
 
 Data de lançamento: 05 de março de 2026
 
@@ -85,14 +96,18 @@ Data de lançamento: 27 de maio de 2025
 
 Data de lançamento: 24 de abril de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Corrigiu um problema relacionado ao suporte para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13607 -->
+- ![ícone de correção](../../assets/fix.svg) **Opensearch2 para 2.4.4/2.4.5**—Corrigiu um problema relacionado ao suporte para `opensearch2` nas versões do Adobe Commerce 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
 Data de lançamento: 9 de abril de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Corrigir Valkey** Corrigiu um problema com a configuração personalizada valkey. <!-- MCLOUD-13569 -->
-- ![ícone de correção](../../assets/fix.svg) **Validador de correção**-Validador corrigido para RabbitMQ 4.0. <!-- MCLOUD-13560 -->
+- ![ícone de correção](../../assets/fix.svg) **Corrigir Valkey** Corrigiu um problema com a configuração personalizada valkey.<!-- MCLOUD-13569 -->
+- ![ícone de correção](../../assets/fix.svg) **Validador de correção**-Validador corrigido para RabbitMQ 4.0.<!-- MCLOUD-13560 -->
+
+## v2002.2.2
+
+Data de lançamento: 7 de abril de 2025
 
 ## v2002.2.2
 
@@ -256,9 +271,7 @@ Data de lançamento: 1 de fevereiro de 2021
 
 - ![novo ícone](../../assets/new.svg) **Nova variável de ambiente SCD_NO_PARENT** — Adicionada a variável de ambiente `SCD_NO_PARENT` (para Adobe Commerce >=2.4.2) para gerenciar a geração de conteúdo estático para temas pai.<!--MCLOUD-7284-->
 
-- ![ícone de correção](../../assets/fix.svg) **Limites e comandos de memória**—Correção de um problema em que os comandos `php vendor/bin/ece-tools` não funcionariam se o tamanho do arquivo `cloud.log` excedesse o limite de memória do PHP. Em vez de ler todo o arquivo `cloud.log` na memória, agora lemos apenas um subconjunto menor de dados do arquivo de log.
-  <!--MCLOUD-7275-->
-  <!--MCLOUD-7400-->
+- ![ícone de correção](../../assets/fix.svg) **Limites e comandos de memória**—Correção de um problema em que os comandos `php vendor/bin/ece-tools` não funcionariam se o tamanho do arquivo `cloud.log` excedesse o limite de memória do PHP. Em vez de ler todo o arquivo `cloud.log` na memória, agora lemos apenas um subconjunto menor de dados do arquivo de log.<!--MCLOUD-7275--><!--MCLOUD-7400-->
 
 - ![Ícone de correção](../../assets/fix.svg) **Conexões de banco de dados personalizadas**—Corrigido um problema de configuração `.magento.env.yaml` no qual as conexões de banco de dados personalizadas definidas para `DATABASE_CONFIGURATION` não eram usadas. As configurações de conexão não foram adicionadas a `app/etc/env.php`.<!--MCLOUD-7426-->
 
