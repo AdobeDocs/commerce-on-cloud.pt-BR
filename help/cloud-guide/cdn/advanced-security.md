@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O [!DNL Adobe Commerce Advanced Security] é um produto que funciona com o [!DNL Adobe Commerce on Cloud Infrastructure] para manter sua loja online rápida, disponível e segura. Isso pode ajudar a proteger a receita, reduzir o tempo de inatividade e manter a confiança do cliente durante eventos de pico de tráfego e ataques automatizados.
 
-[!DNL Adobe Commerce on Cloud Infrastructure] inclui proteção de DDoS [Camada 3 e 4](./fastly.md#ddos-protection) interna e um [Firewall de Aplicativo Web (WAF)](./fastly-waf-service.md). No [modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), a detecção de DDoS da Camada 7, a proteção de bot e o bloqueio pró-ativo de IP são responsabilidades de comerciante, que o [!DNL Adobe Commerce Advanced Security] foi projetado para resolver.
+[!DNL Adobe Commerce on Cloud Infrastructure] inclui proteção de DDoS [Camada 3 e 4](./fastly.md#ddos-protection) interna e um [Firewall de Aplicativo Web (WAF)](./fastly-waf-service.md). No [modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility), a detecção de DDoS da Camada 7, a proteção de bot e o bloqueio pró-ativo de IP são responsabilidades de comerciante, que o [!DNL Adobe Commerce Advanced Security] foi projetado para resolver.
 
 O [!DNL Advanced Security] estende a proteção da vitrine por meio dos recursos de segurança de borda do Fastly, que oferece gerenciamento de bot, limitação de taxa avançada e proteção de DDoS de Camada 7 como parte de uma plataforma de borda unificada que combina escala, desempenho e segurança na borda da rede.
 
@@ -141,7 +141,7 @@ O [!DNL Advanced Security] fornece mais proteção além das proteções interna
 - **Ferramentas de conformidade** — verificação PCI, relatório de conformidade SOC e ferramentas de auditoria normativa.
 - **Fortalecimento em nível de aplicativo**—Autenticação de API baseada em token, normalização de parâmetros de consulta e design de estratégia de cache.
 
-Para obter uma visão geral completa das responsabilidades da Adobe e de segurança do cliente, consulte o [modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
+Para obter uma visão geral completa das responsabilidades da Adobe e de segurança do cliente, consulte o [modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility).
 
 ## Padrões e proteções de ataque comuns
 
@@ -179,7 +179,7 @@ Para solicitar [!DNL Advanced Security]:
 
 1. Entre em contato com sua equipe de conta da Adobe ou representante de vendas da Adobe para discutir o [!DNL Advanced Security] para o seu projeto.
 
-1. Após comprar o [!DNL Advanced Security], [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando a habilitação do [!DNL Advanced Security]. Inclua a ID do projeto [!DNL Adobe Commerce on Cloud Infrastructure] e os ambientes que exigem ativação (por exemplo, Produção e Preparo).
+1. Após comprar o [!DNL Advanced Security], [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) solicitando a habilitação do [!DNL Advanced Security]. Inclua a ID do projeto [!DNL Adobe Commerce on Cloud Infrastructure] e os ambientes que exigem ativação (por exemplo, Produção e Preparo).
 
 1. O Adobe ativa o [!DNL Advanced Security] no serviço Fastly e configura as políticas de proteção iniciais. A ativação geralmente é concluída em alguns dias úteis após o envio do tíquete.
 
@@ -187,7 +187,7 @@ Para solicitar [!DNL Advanced Security]:
 
 >[!NOTE]
 >
->Atualmente, as alterações de configuração de [!DNL Advanced Security] exigem [envio de um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). A configuração de autoatendimento por meio da interface do administrador está planejada para uma versão futura.
+>Atualmente, as alterações de configuração de [!DNL Advanced Security] exigem [envio de um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket). A configuração de autoatendimento por meio da interface do administrador está planejada para uma versão futura.
 
 ## Limitação
 
