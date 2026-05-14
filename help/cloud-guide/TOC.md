@@ -5,7 +5,7 @@ user-guide-title: Guia do Commerce na nuvem
 user-guide-description: Saiba como gerenciar o aplicativo do Adobe Commerce na infraestrutura em nuvem.
 product: magento
 feature: Cloud
-source-git-commit: 5475b65cb9606b200ff6ac3096ed0d0cf3168cf9
+source-git-commit: 6f70f167bbd29c6a83f4feaf14e5b642cd39e87f
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
    + [Fluxo de trabalho Pro](architecture/pro-develop-deploy-workflow.md)
    + [Arquitetura dimensionada](architecture/scaled-architecture.md)
    + [Dimensionamento automático](architecture/autoscaling.md)
-+ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=pt-BR)
++ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Notas de versão {#release-notes}
    + [Conjunto de ferramentas da nuvem](release-notes/cloud-tools-suite.md)
    + [Pacote ECE-Tools](release-notes/ece-tools-package.md)
@@ -35,7 +35,7 @@ ht-degree: 8%
    + [Componentes da nuvem](release-notes/cloud-components.md)
    + [Pacotes na nuvem](release-notes/cloud-packages.md)
    + [Alterações incompatíveis com versões anteriores](release-notes/backward-incompatible-changes.md)
-   + [Arquivo de notas de versão](release-notes/cloud-release-archive.md)
+   + {hide-from-toc}[Arquivo morto das notas de versão](release-notes/cloud-release-archive.md)
 + Projeto na nuvem {#project}
    + [Visão geral do projeto](project/overview.md)
    + [Estrutura de projeto](project/file-structure.md)
