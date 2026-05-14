@@ -4,7 +4,7 @@ description: Consulte uma lista das melhorias mais recentes no pacote ECE-Tools.
 recommendations: noDisplay, catalog
 last-substantial-update: 2026-05-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 0781fdfe8b0dbc6312848572ff4b996e51270a3f
+source-git-commit: 84f9a4ba4d3942fc0461b18aeda2405ab2fbf67e
 workflow-type: tm+mt
 source-wordcount: '3563'
 ht-degree: 0%
@@ -271,7 +271,9 @@ Data de lançamento: 1 de fevereiro de 2021
 
 - ![novo ícone](../../assets/new.svg) **Nova variável de ambiente SCD_NO_PARENT** — Adicionada a variável de ambiente `SCD_NO_PARENT` (para Adobe Commerce >=2.4.2) para gerenciar a geração de conteúdo estático para temas pai.<!--MCLOUD-7284-->
 
-- ![ícone de correção](../../assets/fix.svg) **Limites e comandos de memória**—Correção de um problema em que os comandos `php vendor/bin/ece-tools` não funcionariam se o tamanho do arquivo `cloud.log` excedesse o limite de memória do PHP. Em vez de ler todo o arquivo `cloud.log` na memória, agora lemos apenas um subconjunto menor de dados do arquivo de log.<!--MCLOUD-7275--><!--MCLOUD-7400-->
+- ![ícone de correção](../../assets/fix.svg) **Limites e comandos de memória**—Correção de um problema em que os comandos `php vendor/bin/ece-tools` não funcionariam se o tamanho do arquivo `cloud.log` excedesse o limite de memória do PHP. Em vez de ler todo o arquivo `cloud.log` na memória, agora lemos apenas um subconjunto menor de dados do arquivo de log.
+  <!--MCLOUD-7275-->
+  <!--MCLOUD-7400-->
 
 - ![Ícone de correção](../../assets/fix.svg) **Conexões de banco de dados personalizadas**—Corrigido um problema de configuração `.magento.env.yaml` no qual as conexões de banco de dados personalizadas definidas para `DATABASE_CONFIGURATION` não eram usadas. As configurações de conexão não foram adicionadas a `app/etc/env.php`.<!--MCLOUD-7426-->
 
