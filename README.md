@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARQUIVADO
 
-Este repositório foi migrado para <https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en>.
+Este repositório foi migrado para <https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.pt-BR>.
