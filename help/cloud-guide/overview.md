@@ -2,7 +2,7 @@
 title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 7ce4f9905bc276b723de3a81f03f3b7cf1b6c3a6
+source-git-commit: ede5f6b3f222d97bc5dfd8a5eb45535cb4ed2765
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -63,6 +63,5 @@ O guia da infraestrutura do Commerce na nuvem presume que você tenha algum conh
 - [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
-
 
 <!-- Last updated from includes: 2026-05-07 12:29:15 -->
