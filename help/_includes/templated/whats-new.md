@@ -1,5 +1,5 @@
 ---
-source-git-commit: e22b5b3508105aa17d397ac299df12f07004383f
+source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de uma observação de segurança à referência de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">configuração de propriedade da Web</a> para o Adobe Commerce na infraestrutura de nuvem para esclarecer que a configuração padrão da propriedade da Web usa <code class="language-plaintext highlighter-rouge">scripts:false</code> para locais de mídia a fim de impedir a execução de arquivos carregados.</p>
+      <td><p>Adição de uma observação de segurança à referência de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">configuração de propriedade da Web</a> para o Adobe Commerce na infraestrutura de nuvem para esclarecer que a configuração padrão da propriedade da Web usa <code>scripts:false</code> para locais de mídia a fim de impedir a execução de arquivos carregados.</p>
 </td>
       <td>
         Técnico, feedback
