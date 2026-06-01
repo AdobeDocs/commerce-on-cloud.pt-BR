@@ -2,7 +2,7 @@
 title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
+source-git-commit: 37505db0488204c40ca37356c4d496bba73c537f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -40,7 +40,7 @@ As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do 
 
 ## Regiões do AWS
 
-![Diagrama mostrando regiões do AWS](../assets/aws-regions.svg){zoomable="yes"}
+![Diagrama mostrando regiões do AWS](../assets/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do 
 
 ## Regiões do Azure
 
-![Diagrama mostrando regiões do Azure](../assets/azure-regions.svg){zoomable="yes"}
+![Diagrama mostrando regiões do Azure](../assets/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
