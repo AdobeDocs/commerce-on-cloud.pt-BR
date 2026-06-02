@@ -3,9 +3,15 @@ title: Chaves de autenticação
 description: Saiba como aplicar chaves de autenticação a um projeto de desenvolvimento no Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: b5a24fcd-9b43-4ec9-8a0c-52956a74e45e
+TQID: https://experienceleague.adobe.com/nYBr0uvw1SZPSQqAU6uHTiitjZ0kcudsLdWagiWRLP8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: 318
 ht-degree: 0%
 
 ---
@@ -14,7 +20,7 @@ ht-degree: 0%
 
 Você deve ter uma chave de autenticação para acessar o repositório do Adobe Commerce e habilitar os comandos instalar e atualizar para o projeto do Adobe Commerce na infraestrutura em nuvem. Há dois métodos para especificar credenciais de autorização do Composer.
 
-- **arquivo de autenticação** — Um arquivo que contém suas [credenciais de autorização](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=pt-BR) do Adobe Commerce no diretório raiz da infraestrutura em nuvem do Adobe Commerce.
+- **arquivo de autenticação** — Um arquivo que contém suas [credenciais de autorização](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) do Adobe Commerce no diretório raiz da infraestrutura em nuvem do Adobe Commerce.
 - **Variável de ambiente** — Uma variável de ambiente para configurar chaves de autenticação no projeto Adobe Commerce na infraestrutura em nuvem para evitar exposição acidental.
 
 >[!BEGINSHADEBOX]
@@ -23,7 +29,7 @@ Você deve ter uma chave de autenticação para acessar o repositório do Adobe 
 
 A Adobe recomenda usar o método [variável de ambiente](#composer-auth-environment-variable) com seu projeto de nuvem para evitar a exposição acidental de suas credenciais de autorização.
 
-O método de arquivo de autenticação é ideal ao usar o Cloud Docker para Commerce como uma ferramenta de desenvolvimento local, mas tenha cuidado para não carregar o arquivo `auth.json` para um repositório público baseado em Git. Você pode adicionar o arquivo `auth.json` ao arquivo [`.gitignore` &#x200B;](../project/file-structure.md#ignoring-files).
+O método de arquivo de autenticação é ideal ao usar o Cloud Docker para Commerce como uma ferramenta de desenvolvimento local, mas tenha cuidado para não carregar o arquivo `auth.json` para um repositório público baseado em Git. Você pode adicionar o arquivo `auth.json` ao arquivo [`.gitignore` ](../project/file-structure.md#ignoring-files).
 
 >[!ENDSHADEBOX]
 

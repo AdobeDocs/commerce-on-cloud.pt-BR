@@ -3,16 +3,21 @@ title: Manipuladores de log
 description: Saiba como configurar manipuladores de log para o Adobe Commerce na infraestrutura da nuvem.
 feature: Cloud, Logs, Configuration
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
+TQID: https://experienceleague.adobe.com/4dowk2oMMCROVmEc8muHE7CzaZ-T3SaQi4sANVnMeWQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: 235
 ht-degree: 0%
 
 ---
 
 # Manipuladores de log
 
-Você pode configurar manipuladores de log para enviar mensagens a um servidor de log remoto. Um manipulador de log envia registros de criação e implantação para outros sistemas, de forma semelhante à maneira como você envia registros para o Slack e email. Você pode habilitar um manipulador _syslog_, que é ideal para registrar mensagens relacionadas ao hardware, ou um manipulador GELF (Formato de Log Estendido) Graylog, que é ideal para registrar mensagens de aplicativos de software.
+Você pode configurar manipuladores de log para enviar mensagens a um servidor de log remoto. Um manipulador de log envia logs de criação e implantação para outros sistemas, de forma semelhante à maneira como você envia logs para o Slack e email. Você pode habilitar um manipulador _syslog_, que é ideal para registrar mensagens relacionadas ao hardware, ou um manipulador GELF (Formato de Log Estendido) Graylog, que é ideal para registrar mensagens de aplicativos de software.
 
 O exemplo a seguir configura esses dois manipuladores adicionando a configuração ao arquivo `.magento.env.yaml`. Para obter os valores de nível de log mínimo (`min_level`), consulte [Níveis de log](#log-levels).
 

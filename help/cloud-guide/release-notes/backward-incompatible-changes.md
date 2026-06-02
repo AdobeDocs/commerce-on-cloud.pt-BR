@@ -4,9 +4,13 @@ description: Saiba mais sobre compatibilidade com versões anteriores ao atualiz
 feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
 exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
-source-git-commit: de50fda78c28a57d76e5c0a4d5dac0f8d4d844a0
+TQID: https://experienceleague.adobe.com/ekS7f5swOsG2xgXP6ybN6hzwYm2xBbPWvl5oabv7Crc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: 822
 ht-degree: 0%
 
 ---
@@ -58,7 +62,7 @@ Em versões anteriores do ECE-Tools, você poderia usar os comandos `m2-ece-buil
 
 ## Alterações nos patches de nuvem
 
-- **Remover patches baixados**-O pacote `magento/magento-cloud-patches` agrupa todos os patches disponíveis na página [downloads de software](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=pt-BR) e os aplica automaticamente ao implantar na Nuvem. Para evitar conflitos de patch depois de atualizar para ECE-Tools 2002.1.0 ou posterior, remova todos os patches fornecidos pela Adobe que você baixou e adicionou ao projeto manualmente.
+- **Remover patches baixados**-O pacote `magento/magento-cloud-patches` agrupa todos os patches disponíveis na página [downloads de software](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) e os aplica automaticamente ao implantar na Nuvem. Para evitar conflitos de patch depois de atualizar para ECE-Tools 2002.1.0 ou posterior, remova todos os patches fornecidos pela Adobe que você baixou e adicionou ao projeto manualmente.
 
 - **Atualizando o comando aplicar patches** - Movemos o comando para aplicar patches do diretório `vendor/bin/ece-tools` para o diretório `vendor/bin/ece-patches`. Se você usar este comando para aplicar patches manualmente, use o novo caminho.
 

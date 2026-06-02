@@ -2,9 +2,15 @@
 title: Fluxo de trabalho do projeto inicial
 description: Saiba como usar os workflows de desenvolvimento e implantação do Starter.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 75d170b6-1ec2-4099-82c8-5c4df3442843
+TQID: https://experienceleague.adobe.com/ohBEYApu-9AJmxBvtoxGxpQcmK67ppeACPl7xNvycsQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: 2168
 ht-degree: 0%
 
 ---
@@ -104,9 +110,9 @@ Quando estiver pronto para configurar o armazenamento, envie todo o código para
 Para obter as melhores informações sobre configurações, consulte a documentação do Adobe Commerce e as extensões instaladas. Estes são alguns links e ideias que ajudam você a começar:
 
 - [Práticas recomendadas para configuração de armazenamento](../store/best-practices.md) para práticas recomendadas específicas na nuvem
-- [Configuração básica](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/store-details) para acesso de administrador de loja, nome, idiomas, moedas, identidade visual, sites, exibições de loja e muito mais
-- [Tema](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/content-menu#design-features) para a aparência do site e lojas, incluindo CSS e layouts
-- [Configuração do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/guide-overview) para funções, ferramentas, notificações e sua chave de criptografia para o banco de dados
+- [Configuração básica](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) para acesso de administrador de loja, nome, idiomas, moedas, identidade visual, sites, exibições de loja e muito mais
+- [Tema](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) para a aparência do site e lojas, incluindo CSS e layouts
+- [Configuração do sistema](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) para funções, ferramentas, notificações e sua chave de criptografia para o banco de dados
 - Configurações de extensão usando a documentação
 
 Além das configurações de loja, você pode configurar vários sites e lojas, serviços configurados e muito mais. Consulte [Configurar armazenamento](../store/overview.md).
@@ -126,7 +132,7 @@ Gere o arquivo no ambiente de integração em que você configurou o Adobe Comme
 
 **Observações importantes** sobre o Gerenciamento de Configurações:
 
-- Qualquer configuração incluída no arquivo gerado pelo comando `app:config:dump` está bloqueada para edição, ou é somente leitura, no ambiente implantado. Essa é uma razão pela qual o Adobe recomenda o uso do comando `.vendor/bin/ece-tools config:dump`.
+- Qualquer configuração incluída no arquivo gerado pelo comando `app:config:dump` está bloqueada para edição, ou é somente leitura, no ambiente implantado. Essa é uma das razões pelas quais a Adobe recomenda o uso do comando `.vendor/bin/ece-tools config:dump`.
 
   Por exemplo, você instala um módulo para o Fastly no ambiente de desenvolvimento. Você só pode configurar esse módulo no ambiente de preparo e produção. O uso do comando `.vendor/bin/ece-tools config:dump` mantém esses campos padrão editáveis ao implantar suas alterações de desenvolvimento no ambiente de preparo e produção.
 
@@ -162,9 +168,9 @@ Adicione todos os seus produtos, catálogos, conteúdo do site e assim por diant
 
 Para ajudar a exportar dados de produção como dados de teste para uso em ambientes de preparo e integração:
 
-- [Execute os utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=pt-BR) comandos da CLI (Recomendado) ao exportar um backup protegido do cliente e armazenar dados usando sua chave de criptografia do Adobe Commerce
+- [Execute os utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) comandos da CLI (Recomendado) ao exportar um backup protegido do cliente e armazenar dados usando sua chave de criptografia do Adobe Commerce
 
-- Ferramenta [Coleta de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/support#data-collector) para gerar e exportar dados
+- Ferramenta [Coleta de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) para gerar e exportar dados
 
 Para migrar esses dados, consulte [Migrar e implantar arquivos e dados estáticos](../deploy/staging-production.md#migrate-static-files).
 
@@ -172,7 +178,7 @@ Para migrar esses dados, consulte [Migrar e implantar arquivos e dados estático
 
 >[!NOTE]
 >
->Antes de enviar os dados para outro ambiente, você deve considerar a limpeza dos dados. Você tem algumas opções, incluindo [usar utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=pt-BR) ou desenvolver um script para limpar os dados do cliente.
+>Antes de enviar os dados para outro ambiente, você deve considerar a limpeza dos dados. Você tem algumas opções, incluindo [usar utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) ou desenvolver um script para limpar os dados do cliente.
 
 >[!WARNING]
 >

@@ -5,9 +5,15 @@ feature: Cloud, Iaas, Paas
 topic: Architecture
 recommendations: noDisplay
 exl-id: 7c1e895d-0f88-4f11-919a-b3b5748ca5f0
-source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
+TQID: https://experienceleague.adobe.com/01S8Fhs8J-qy3nc0lXGg3u17h66rF2Qgs2bRG135tVE
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: df5e974b-6742-4873-a687-a6bedaafdaa2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: 807
 ht-degree: 0%
 
 ---
@@ -20,13 +26,13 @@ Para comparação, cada plano inclui os seguintes recursos de infraestrutura e p
 
 |          | Início | Pro |
 | -------- | --------------------| ------------------ |
-| Recursos principais | <ul><li>[Todos os recursos do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html?lang=pt-BR)</li><li>Ferramenta de integração do PayPal</li><li>[Relatórios do Commerce](https://business.adobe.com/br/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[Todos os recursos do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html?lang=pt-BR)</li><li>Ferramenta de integração do PayPal</li><li>[Relatórios do Commerce](https://business.adobe.com/br/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[Módulo B2B](https://business.adobe.com/br/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
+| Recursos principais | <ul><li>[Todos os recursos do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>Ferramenta de integração do PayPal</li><li>[Relatórios do Commerce](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li></ul> | <ul><li>[Todos os recursos do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)</li><li>Ferramenta de integração do PayPal</li><li>[Relatórios do Commerce](https://business.adobe.com/products/magento/business-intelligence.html?_ga=2.85288604.442698376.1665067470-1322106587.1655147209)</li><li>[Módulo B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html?_ga=2.105948422.442698376.1665067470-1322106587.1655147209)</li></ul> |
 | Infraestrutura e implantação | <ul><li>Ferramentas de integração contínua na nuvem com usuários ilimitados</li><li>Fastly Content Delivery Network (CDN), Image Otimization (IO) e segurança adicional com amplas concessões de largura de banda. O serviço Web Application Firewall (WAF) está disponível somente em ambientes de produção.</li><li>[New Relic](../monitor/new-relic-service.md) APM (Monitoramento de desempenho) em 3 ramificações: `master` e 2 de sua escolha<br>Ambientes de produção, preparo e desenvolvimento da Platform as a service (PaaS) (4 ambientes ativos totais) otimizados para o Adobe Commerce</li><li>Filtragem de saída (firewall de saída)</li></ul> | <ul><li>Ferramentas de integração contínua na nuvem com usuários ilimitados</li><li>Fastly Content Delivery Network (CDN), Image Otimization (IO) e segurança adicional com amplas concessões de largura de banda. O serviço Web Application Firewall (WAF) está disponível somente em ambientes de produção.</li><li>[New Relic](../monitor/new-relic-service.md) Infraestrutura em Produção + APM (Monitoramento de Desempenho) em preparo e produção. A [política de alertas gerenciados](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts) para Adobe Commerce implementa as práticas recomendadas de monitoramento para notificá-lo proativamente sobre problemas de aplicativo e infraestrutura que afetam o desempenho do site.</li><li>Ambientes [de desenvolvimento de integração](pro-architecture.md#integration-environment) baseados em PaaS (2 ambientes ativos totais) otimizados para o Adobe Commerce</li><li>Infraestrutura como um serviço (IaaS) — infraestrutura virtual dedicada para ambientes de preparo e produção</li></ul> |
 | Infraestrutura de alta disponibilidade | | [Arquitetura de alta disponibilidade](pro-architecture.md#redundant-hardware) com uma configuração de três servidores na Infraestrutura como um serviço (IaaS) subjacente para fornecer confiabilidade e disponibilidade de nível empresarial |
 | Hardware dedicado | | Hardware isolado e dedicado na infraestrutura subjacente como um serviço (IaaS) para fornecer níveis ainda mais altos de confiabilidade e disponibilidade |
 | Suporte por email 24 horas por dia, 7 dias por semana | Suporte de e-mail e monitoramento 24 horas por dia, 7 dias por semana, para o aplicativo principal e a infraestrutura em nuvem | Suporte de e-mail e monitoramento 24 horas por dia, 7 dias por semana, para o aplicativo principal e a infraestrutura em nuvem |
 | Um consultor técnico dedicado ao cliente (CTA) | | Gerenciamento de conta técnica dedicado para o período de lançamento inicial, começando com sua assinatura até o lançamento inicial do site |
-| Complementos\* | <ul><li>[Módulo B2B](https://business.adobe.com/br/products/magento/b2b-ecommerce.html)</li></ul> | |
+| Complementos\* | <ul><li>[Módulo B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html)</li></ul> | |
 
 \* _Disponível por uma taxa adicional_
 
@@ -77,7 +83,7 @@ Você pode configurar os seguintes serviços:
 
 >[!NOTE]
 >
->Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no _Guia de instalação_ para obter as versões recomendadas.
+>Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no _Guia de instalação_ para obter as versões recomendadas.
 
 O módulo Fastly CDN é usado para serviços de CDN e cache em ambientes de preparo e produção. Consulte [Configurar serviços do Fastly](../cdn/fastly.md).
 

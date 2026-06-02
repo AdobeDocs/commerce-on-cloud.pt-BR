@@ -3,9 +3,16 @@ title: Arquitetura Pro
 description: Saiba mais sobre os ambientes compatíveis com a arquitetura Pro.
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
+TQID: https://experienceleague.adobe.com/Es-cmVlUrzd4xMf9unOJD-Z-h0OvL-ycoullKVO-yRA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8id: df5e974b-6742-4873-a687-a6bedaafdaa2
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: 1587
 ht-degree: 0%
 
 ---
@@ -53,7 +60,7 @@ Em projetos Pro, a ramificação `master` fornece um ambiente PaaS ativo com seu
 
 ### Ambiente de integração
 
-O ambiente de integração é executado em um container Linux (LXC) em uma grade de servidores conhecida como PaaS. Cada ambiente inclui um servidor da Web e um banco de dados para testar o site. Consulte [Endereços IP Regionais](../project/regional-ip-addresses.md) para obter uma lista de endereços IP do AWS e do Azure.
+O ambiente de integração é executado em um container Linux (LXC) em uma grade de servidores conhecida como PaaS. Cada ambiente inclui um servidor da Web e um banco de dados para testar o site. Consulte [Endereços IP Regionais](../project/regional-ip-addresses.md) para obter uma lista de endereços IP AWS e Azure.
 
 **Casos de uso recomendados:**
 
@@ -161,7 +168,7 @@ A figura a seguir mostra as tecnologias usadas no ambiente de produção:
 
 Em vez de executar uma configuração tradicional, ativa-passiva `master` ou uma configuração primária-secundária, o Adobe Commerce na infraestrutura em nuvem executa uma _arquitetura redundante_, em que todas as três instâncias aceitam leituras e gravações. Essa arquitetura oferece tempo de inatividade zero durante o dimensionamento e garante a integridade transacional.
 
-Devido ao hardware único e redundante, o Adobe pode fornecer três servidores gateway. A maioria dos serviços externos do permite adicionar vários endereços IP a um incluo na lista de permissões, portanto, ter mais de um endereço IP fixo não é um problema. Os três gateways são mapeados para os três servidores em seu cluster de ambiente de produção e mantêm endereços IP estáticos. Ele é totalmente redundante e altamente disponível em todos os níveis:
+Devido ao hardware exclusivo e redundante, a Adobe pode fornecer três servidores de gateway. A maioria dos serviços externos do permite adicionar vários endereços IP a um incluo na lista de permissões, portanto, ter mais de um endereço IP fixo não é um problema. Os três gateways são mapeados para os três servidores em seu cluster de ambiente de produção e mantêm endereços IP estáticos. Ele é totalmente redundante e altamente disponível em todos os níveis:
 
 - DNS
 - Rede de entrega de conteúdo (CDN)
@@ -170,13 +177,13 @@ Devido ao hardware único e redundante, o Adobe pode fornecer três servidores g
 
 ## Backup e recuperação de desastres
 
-O Adobe Commerce na infraestrutura em nuvem usa uma arquitetura de alta disponibilidade que replica cada projeto Pro em três zonas de disponibilidade do AWS ou do Azure separadas, cada zona com um data center separado. Além dessa redundância, os ambientes de preparo e produção Pro recebem backups dinâmicos e regulares projetados para uso em casos de _falha catastrófica_.
+O Adobe Commerce na infraestrutura em nuvem usa uma arquitetura de alta disponibilidade que replica cada projeto Pro em três zonas de disponibilidade separadas do AWS ou do Azure, cada zona com um data center separado. Além dessa redundância, os ambientes de preparo e produção Pro recebem backups dinâmicos e regulares projetados para uso em casos de _falha catastrófica_.
 
 **Os backups automáticos** incluem dados persistentes de todos os serviços em execução, como o banco de dados MySQL e os arquivos armazenados nos volumes montados. Os backups são salvos no EBS (Elastic Block Storage, armazenamento em bloco elástico) criptografado na mesma região do ambiente de produção. Os backups automáticos não são acessíveis publicamente porque são armazenados em um sistema separado.
 
 >[!NOTE]
 >
->Os volumes montados incluem/referem-se apenas a [montagens graváveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) e não incluirão todo o diretório `app/`. Quanto aos outros arquivos, eles são criados/gerados pelo [processo de compilação e implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), e você também terá que verificar se há arquivos restantes no repositório Git.
+>Os volumes montados incluem/referem-se apenas a [montagens graváveis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) e não incluirão todo o diretório `app/`. Quanto aos outros arquivos, eles são criados/gerados pelo [processo de compilação e implantação](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), e você também terá que verificar se há arquivos restantes no repositório Git.
 
 {{pro-backups}}
 
@@ -184,7 +191,7 @@ Você pode criar um **backup manual** do banco de dados para seus ambientes de P
 
 ### Objetivo de ponto de recuperação
 
-Entre em contato com o Gerente de sucesso do cliente do Adobe para obter detalhes sobre o tempo do objetivo do ponto de recuperação até o último backup. A frequência dos backups depende da programação de backup do seu plano e do volume de alterações a serem gravadas no serviço de armazenamento.
+Entre em contato com o Gerente de sucesso do cliente da Adobe para obter detalhes sobre o tempo do objetivo do ponto de recuperação até o último backup. A frequência dos backups depende da programação de backup do seu plano e do volume de alterações a serem gravadas no serviço de armazenamento.
 
 ### Política de retenção
 
@@ -202,12 +209,12 @@ Essa política pode variar dependendo do seu plano de infraestrutura em nuvem.
 
 ### Meta de tempo de recuperação
 
-O RTO depende do tamanho do armazenamento. Grandes volumes de EBS demoram mais tempo para restaurar. Os tempos de restauração podem variar dependendo do tamanho do banco de dados. Entre em contato com o Gerente de sucesso do cliente do Adobe para obter mais detalhes.
+O RTO depende do tamanho do armazenamento. Grandes volumes de EBS demoram mais tempo para restaurar. Os tempos de restauração podem variar dependendo do tamanho do banco de dados. Entre em contato com o Gerente de sucesso do cliente da Adobe para obter mais detalhes.
 
 ## Escalabilidade de cluster Pro
 
-O dimensionamento do cluster Pro e as configurações de _computação_ variam dependendo do provedor de nuvem escolhido (AWS, Azure), da região e das dependências do serviço. A infraestrutura em nuvem de Adobe pode dimensionar clusters Pro para acomodar as expectativas de tráfego e os requisitos de serviço à medida que as demandas mudam.
+O dimensionamento do cluster Pro e as configurações de _computação_ variam dependendo do provedor de nuvem escolhido (AWS, Azure), da região e das dependências do serviço. A infraestrutura em nuvem da Adobe pode dimensionar clusters Pro para acomodar as expectativas de tráfego e os requisitos de serviço conforme as demandas mudam.
 
-A arquitetura redundante capacita a infraestrutura em nuvem do Adobe a fazer upscaling sem tempo de inatividade. Ao fazer o upscaling, cada uma das três instâncias gira para atualizar a capacidade sem afetar a operação do site. Por exemplo, você pode adicionar servidores web extras a um cluster existente se a restrição estiver no nível do PHP em vez do nível do banco de dados. Isso fornece _dimensionamento horizontal_ para complementar o dimensionamento vertical fornecido por CPUs extras no nível do banco de dados. Consulte [Arquitetura em escala](scaled-architecture.md).
+A arquitetura redundante capacita a infraestrutura em nuvem da Adobe a fazer upscaling sem tempo de inatividade. Ao fazer o upscaling, cada uma das três instâncias gira para atualizar a capacidade sem afetar a operação do site. Por exemplo, você pode adicionar servidores web extras a um cluster existente se a restrição estiver no nível do PHP em vez do nível do banco de dados. Isso fornece _dimensionamento horizontal_ para complementar o dimensionamento vertical fornecido por CPUs extras no nível do banco de dados. Consulte [Arquitetura em escala](scaled-architecture.md).
 
-Se você esperar um aumento significativo no tráfego por um evento ou outro motivo, poderá solicitar um aumento temporário na capacidade. Consulte [Como solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=pt-BR) na _Central de Ajuda do Commerce_.
+Se você esperar um aumento significativo no tráfego por um evento ou outro motivo, poderá solicitar um aumento temporário na capacidade. Consulte [Como solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) na _Central de Ajuda do Commerce_.

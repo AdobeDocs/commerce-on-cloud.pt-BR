@@ -3,9 +3,14 @@ title: Implantação de conteúdo estático
 description: Saiba mais sobre as estratégias para implantar conteúdo estático, como imagens, scripts e CSS, no Adobe Commerce em projetos de infraestrutura em nuvem.
 feature: Cloud, Build, Deploy, SCD
 exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
-source-git-commit: 325b7584daa38ad788905a6124e6d037cf679332
+TQID: https://experienceleague.adobe.com/bl2z1YM8u-HNuBYuQH3uqoRwiU4lfHGOQyr8Vbwyef8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: 768
 ht-degree: 0%
 
 ---
@@ -41,9 +46,9 @@ Gerar conteúdo estático durante a fase de compilação com HTML minificado é 
 A geração de conteúdo estático requer acesso a temas e localidades. O Adobe Commerce armazena temas no sistema de arquivos, que é acessível durante a fase de criação; no entanto, o Adobe Commerce armazena localidades no banco de dados. O banco de dados _não_ está disponível durante a fase de compilação. Para gerar o conteúdo estático durante a fase de compilação, você deve usar o comando `config:dump` no pacote `ece-tools` para mover localidades para o sistema de arquivos. Ele lê as localidades e as salva no arquivo `app/etc/config.php`.
 
 >[!NOTE]
->Após executar o comando `config:dump` no pacote `ece-tools`, as configurações despejadas no arquivo [&#x200B; do `config.php` são bloqueadas (esmaecidas) no painel Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). a única maneira de atualizar essas configurações no Administrador é excluí-las do arquivo localmente e reimplantar o projeto.
->&#x200B;>Além disso, sempre que você adicionar um novo site/grupo de armazenamento à sua instância, lembre-se de executar o comando `config:dump` para garantir que o banco de dados esteja sincronizado. Você também pode escolher [quais configurações devem ser despejadas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) no arquivo `config.php`.
->&#x200B;>Se você excluir a configuração de armazenamento/grupo de armazenamento/site do arquivo `config.php` porque os campos estão esmaecidos, mas não executam essa etapa, as novas entidades que não foram despejadas serão excluídas do banco de dados na próxima implantação.
+>Depois de executar o comando `config:dump` no pacote `ece-tools`, as configurações despejadas no arquivo [ do `config.php` são bloqueadas (esmaecidas) no painel Administrador](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). A única maneira de atualizar essas configurações no Administrador é excluí-las localmente do arquivo e reimplantar o projeto.
+>Além disso, sempre que você adicionar um novo site/grupo de armazenamento à sua instância, lembre-se de executar o comando `config:dump` para garantir que o banco de dados esteja sincronizado. Você também pode escolher [quais configurações devem ser despejadas](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) no arquivo `config.php`.
+>Se você excluir a configuração de armazenamento/grupo de armazenamento/site do arquivo `config.php` porque os campos estão esmaecidos, mas não executam essa etapa, as novas entidades que não foram despejadas serão excluídas do banco de dados na próxima implantação.
 
 **Para configurar seu projeto para gerar o SCD na compilação**:
 

@@ -4,9 +4,15 @@ description: Consulte a lista de variáveis de ambiente que controlam ações no
 feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
+TQID: https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: 774
 ht-degree: 0%
 
 ---
@@ -33,7 +39,7 @@ Para obter mais informações sobre como personalizar o processo de criação e 
 
 Quando definido como `true`, habilita o cron para executar consumidores da fila de mensagens. O Adobe I/O Events para Adobe Commerce usa filas de mensagens para acelerar a entrega de eventos críticos.
 
-A Adobe recomenda que você também adicione a variável [`CRON_CONSUMERS_RUNNER`](./variables-deploy.md#cron_consumers_runner) ao estágio `deploy` do arquivo `.magento.env.yaml` com `cron_run` definido como `true`.
+A Adobe recomenda adicionar também a variável [`CRON_CONSUMERS_RUNNER`](./variables-deploy.md#cron_consumers_runner) ao estágio `deploy` do arquivo `.magento.env.yaml` com `cron_run` definido como `true`.
 
 O exemplo a seguir mostra uma variável `ENABLE_EVENTING` totalmente configurada.
 
@@ -159,10 +165,10 @@ stage:
    - `false`—para versões anteriores do `ece-tools`
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Habilita ou desabilita a cópia de arquivos de exibição estáticos para o diretório `<magento_root>/init/` no final do estágio de compilação. Se definido como `true`, os arquivos não serão copiados e a minificação de HTML estará disponível mediante solicitação. Defina esse valor como `true` para reduzir o tempo de inatividade ao implantar em ambientes de Preparo e Produção.
+Habilita ou desabilita a cópia de arquivos de exibição estáticos para o diretório `<magento_root>/init/` no final do estágio de compilação. Se definido como `true`, os arquivos não serão copiados e a minificação do HTML estará disponível mediante solicitação. Defina esse valor como `true` para reduzir o tempo de inatividade ao implantar em ambientes de Preparo e Produção.
 
 - **`false`**—Copia o diretório `view_preprocessed` para o diretório `<magento_root>/init/` no final da fase de compilação e restaura o diretório no diretório `<magento_root>/var` no início da fase de implantação.
-- **`true`** — Habilita a minificação de HTML sob demanda; _não_ copia `<magento_root>var/view_preprocessed` para o diretório `<magento_root>/init/` no final da fase de compilação.
+- **`true`** — Habilita minificação de HTML sob demanda; _não_ copia `<magento_root>var/view_preprocessed` para o diretório `<magento_root>/init/` no final da fase de compilação.
 
 Adicione a variável de ambiente `SKIP_HTML_MINIFICATION` ao estágio `global` no arquivo `.magento.env.yaml`:
 
@@ -177,7 +183,7 @@ stage:
 - **Padrão**—_Não definido_
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=pt-BR) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
+Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
 
 - `DENY`—A página não pode ser exibida em um quadro.
 - `SAMEORIGIN`—(A configuração padrão do Adobe Commerce.) A página pode ser exibida somente em um quadro na mesma origem da própria página.

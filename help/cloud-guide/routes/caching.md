@@ -3,9 +3,13 @@ title: Armazenamento em cache
 description: Saiba como habilitar o armazenamento em cache de seu Adobe Commerce em ambientes de infraestrutura em nuvem.
 feature: Cloud, Cache, Routes
 exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
-source-git-commit: a1ed2818cbaf5adf8b673df0ee9b9218e6f700a2
+TQID: https://experienceleague.adobe.com/dCr0px-0XWXIznsg1w8tUnBaAeXvanY1h-mwiu6GfzU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: 430
 ht-degree: 0%
 
 ---
@@ -131,7 +135,7 @@ Existe um caso especial se a chave `cookies` tiver o valor `["*"]`. Esse valor s
 
 Os cookies têm as seguintes restrições:
 
-- Há um máximo definido de **50 cookies** no sistema. Caso contrário, o aplicativo acionará uma exceção `Unable to send the cookie. Maximum number of cookies would be exceeded`. Para aumentar o número de cookies para 200, aplique o [patch MDVA-12304](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=pt-BR) usando a [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Há um máximo definido de **50 cookies** no sistema. Caso contrário, o aplicativo acionará uma exceção `Unable to send the cookie. Maximum number of cookies would be exceeded`. Para aumentar o número de cookies para 200, aplique o [patch MDVA-12304](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) usando a [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Um tamanho máximo de cookie é de **4096 bytes**. Caso contrário, o aplicativo acionará uma exceção `Unable to send the cookie. Size of '%name' is %size bytes`.
 
 ### `default_ttl`

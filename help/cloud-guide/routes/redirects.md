@@ -2,9 +2,15 @@
 title: Redirecionamentos
 description: Saiba como gerenciar regras de redirecionamento para seu projeto do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f70a9035-bbae-4d23-bb7c-c0de6a7ccf6c
+TQID: https://experienceleague.adobe.com/53acuGMa93oysIKX-agqJCttbxCdIFgyRpmeZh-G9gI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: 705
 ht-degree: 0%
 
 ---
@@ -23,7 +29,7 @@ A seguir, é mostrado como gerenciar regras de redirecionamento no Adobe Commerc
 
 >[!WARNING]
 >
->Para projetos de infraestrutura em nuvem do Adobe Commerce, a configuração de vários redirecionamentos e regravações não regex no arquivo `routes.yaml` pode causar problemas de desempenho. Se o arquivo do `routes.yaml` tiver 32 KB ou mais, descarregue os redirecionamentos não regex e substitua no Fastly. Consulte [Descarregar redirecionamentos não regex para Fastly em vez de Nginx (rotas)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=pt-BR) na _Central de Ajuda do Adobe Commerce_.
+>Para projetos de infraestrutura em nuvem do Adobe Commerce, a configuração de vários redirecionamentos e regravações não regex no arquivo `routes.yaml` pode causar problemas de desempenho. Se o arquivo do `routes.yaml` tiver 32 KB ou mais, descarregue os redirecionamentos não regex e substitua no Fastly. Consulte [Descarregar redirecionamentos não regex para Fastly em vez de Nginx (rotas)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html) na _Central de Ajuda do Adobe Commerce_.
 
 ## Redirecionamentos de rota inteira
 

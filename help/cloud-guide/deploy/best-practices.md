@@ -2,9 +2,15 @@
 title: Práticas recomendadas de implantação
 description: Descubra as práticas recomendadas para implantar o Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Deploy, Best Practices
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 87aabee7-4629-4a3c-9587-dbde4cf268e1
+TQID: https://experienceleague.adobe.com/sXtq-V7nDHm5IvDX0CqpxLcO3eQXem-YlMPG-kxTsmc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: 1979
 ht-degree: 0%
 
 ---
@@ -61,7 +67,7 @@ Revise estas práticas recomendadas e considerações para seu processo de impla
 
 - **Verifique as versões e relações do serviço e a capacidade de conexão**
 
-  Verifique os serviços disponíveis para seu aplicativo e certifique-se de que você esteja usando a versão mais atual e compatível. Consulte [Relacionamentos de serviço](../services/services-yaml.md#service-relationships) e [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no _Guia de instalação_ para obter as versões recomendadas.
+  Verifique os serviços disponíveis para seu aplicativo e certifique-se de que você esteja usando a versão mais atual e compatível. Consulte [Relacionamentos de serviço](../services/services-yaml.md#service-relationships) e [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no _Guia de instalação_ para obter as versões recomendadas.
 
 - **Testar localmente e no ambiente de integração antes de implantar em Preparo e Produção**
 
@@ -117,7 +123,7 @@ Esta fase também executa `composer install` para recuperar dependências.
 Esta fase cria a base de código e executa ganchos na seção `build` de `.magento.app.yaml`. O gancho de compilação padrão é o comando `php ./vendor/bin/ece-tools` e executa o seguinte:
 
 - Aplica patches em `vendor/magento/ece-patches` e patches opcionais específicos do projeto em `m2-hotfixes`
-- Regenera o código e a configuração de [injeção de dependência](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary) (ou seja, o diretório `generated/`, que inclui `generated/code` e `generated/metapackage`) usando `bin/magento setup:di:compile`.
+- Regenera o código e a configuração de [injeção de dependência](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) (ou seja, o diretório `generated/`, que inclui `generated/code` e `generated/metapackage`) usando `bin/magento setup:di:compile`.
 - Verifica se o arquivo [`app/etc/config.php`](../store/store-settings.md) existe na base de código. O Adobe Commerce gera automaticamente esse arquivo se ele não for detectado durante a fase de criação e incluir uma lista de módulos e extensões. Se existir, a fase de criação continua normalmente, compacta arquivos estáticos usando GZIP e implanta, o que reduz o tempo de inatividade na fase de implantação. Consulte as [opções de compilação](../environment/variables-build.md) para saber mais sobre como personalizar ou desabilitar a compactação de arquivos.
 
 >[!WARNING]
@@ -144,7 +150,7 @@ O slug inclui todos os arquivos e pastas **excluindo as seguintes** montagens co
 
 ### Fase 4: implantação de slugs e cluster
 
-Seus aplicativos e todos os serviços de [back-end](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary) são provisionados da seguinte maneira:
+Seus aplicativos e todos os serviços de [back-end](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) são provisionados da seguinte maneira:
 
 - Monta cada serviço em um contêiner, como servidor Web, OpenSearch, [!DNL RabbitMQ]
 - Monta o sistema de arquivos de leitura e gravação (montado em uma grade de armazenamento distribuída altamente disponível)
@@ -170,13 +176,13 @@ Se o arquivo `app/etc/config.php` não existir na base de código, os arquivos e
 
 Há dois ganchos de implantação. O gancho `pre-deploy.php` conclui a limpeza e a recuperação necessárias dos recursos e do código gerados no gancho de compilação. O gancho `php ./vendor/bin/ece-tools deploy` executa uma série de comandos e scripts:
 
-- Se o Adobe Commerce estiver **não instalado**, ele será instalado com `bin/magento setup:install`, atualizará a configuração de implantação, `app/etc/env.php`, e o banco de dados para seu ambiente especificado, como Redis e URLs de sites. **Importante:** quando você concluiu a [Primeira implantação](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=pt-BR) durante a instalação, o Adobe Commerce foi instalado e implantado em todos os ambientes.
+- Se o Adobe Commerce estiver **não instalado**, ele será instalado com `bin/magento setup:install`, atualizará a configuração de implantação, `app/etc/env.php`, e o banco de dados para seu ambiente especificado, como Redis e URLs de sites. **Importante:** quando você concluiu a [Primeira implantação](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) durante a instalação, o Adobe Commerce foi instalado e implantado em todos os ambientes.
 
 - Se o Adobe Commerce **estiver instalado**, faça as atualizações necessárias. O script de implantação executa o `bin/magento setup:upgrade` para atualizar o esquema e os dados do banco de dados (o que é necessário após atualizações de extensão ou de código principal) e também atualiza a configuração de implantação, `app/etc/env.php`, e o banco de dados para o seu ambiente. Finalmente, o script de implantação limpa o cache do Adobe Commerce.
 
 - O script gera opcionalmente conteúdo estático da Web usando o comando `magento setup:static-content:deploy`.
 
-- Usa escopos (`-s` sinalizador em scripts de compilação) com uma configuração padrão de `quick` para estratégia de implantação de conteúdo estático. Você pode personalizar a estratégia usando a variável de ambiente [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Para obter detalhes sobre essas opções e recursos, consulte [Estratégias de implantação de arquivos estáticos](../deploy/static-content.md) e o sinalizador `-s` para [Implantar arquivos de exibição estáticos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=pt-BR).
+- Usa escopos (`-s` sinalizador em scripts de compilação) com uma configuração padrão de `quick` para estratégia de implantação de conteúdo estático. Você pode personalizar a estratégia usando a variável de ambiente [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Para obter detalhes sobre essas opções e recursos, consulte [Estratégias de implantação de arquivos estáticos](../deploy/static-content.md) e o sinalizador `-s` para [Implantar arquivos de exibição estáticos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 >[!NOTE]
 >

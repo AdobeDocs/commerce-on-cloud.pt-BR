@@ -2,26 +2,32 @@
 title: Práticas recomendadas para configuração de loja
 description: Leia sobre as práticas recomendadas para configurar sua loja na Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Best Practices
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ae7da73b-f874-4623-bf29-821ee0a00eb9
+TQID: https://experienceleague.adobe.com/dhZ3IlMZ-8xCdbEQzjDNWoFALPxUIaIFN1ch0w6O6R0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: 1178
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas para configuração de loja
 
-Para obter informações detalhadas sobre como configurar sua loja, sites e sites, consulte o [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR). Esta página fornece práticas recomendadas, informações úteis e diretrizes para configurar suas lojas, sites e muito mais com conteúdo adicional a ser publicado ao longo do tempo e entre versões.
+Para obter informações detalhadas sobre como configurar sua loja, sites e sites, consulte o [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html). Esta página fornece práticas recomendadas, informações úteis e diretrizes para configurar suas lojas, sites e muito mais com conteúdo adicional a ser publicado ao longo do tempo e entre versões.
 
 ## Campanhas e promoções de marketing
 
 Essas informações são úteis para o Adobe Commerce na infraestrutura em nuvem 2.1.X e 2.2.X.
 
-Para criar campanhas e promoções, crie as opções e configurações em [Preparo de conteúdo](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=pt-BR). Esse recurso permite criar e pré-visualizar suas campanhas antes de torná-las públicas para vendas ao cliente. As informações a seguir fornecem informações úteis. Para obter instruções exatas, consulte o conteúdo vinculado do Guia do usuário do Adobe Commerce.
+Para criar campanhas e promoções, crie as opções e configurações em [Preparo de conteúdo](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html). Esse recurso permite criar e pré-visualizar suas campanhas antes de torná-las públicas para vendas ao cliente. As informações a seguir fornecem informações úteis. Para obter instruções exatas, consulte o conteúdo vinculado do Guia do usuário do Adobe Commerce.
 
 _Campanhas_ são eventos de marketing para vendas sazonais, novas linhas de produtos e muito mais. Cada campanha pode incluir temas personalizados, blocos de conteúdo, widgets para controlar e exibir conteúdo e promoções associadas a regras de preço. Devido à natureza abrangente de uma campanha, você as cria com uma data de início e término para o armazenamento temporário de conteúdo.
 
-_As promoções_ oferecem descontos, ofertas únicas, cupons, incentivos para compradores pela primeira vez e muito mais. Você cria essas promoções como _Regras de Preço_ que definem os termos, descontos e opções para incentivar os clientes a comprar. Você pode criar regras de preço no [carrinho de compras](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=pt-BR) ou [catálogo](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html?lang=pt-BR), com opções adicionais para banners, pontos de premiação e muito mais. Você pode programar campanhas para suas promoções, aplicando regras de preço para eventos importantes, como uma nova linha de produtos ou vendas sazonais.
+_As promoções_ oferecem descontos, ofertas únicas, cupons, incentivos para compradores pela primeira vez e muito mais. Você cria essas promoções como _Regras de Preço_ que definem os termos, descontos e opções para incentivar os clientes a comprar. Você pode criar regras de preço no [carrinho de compras](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) ou [catálogo](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html), com opções adicionais para banners, pontos de premiação e muito mais. Você pode programar campanhas para suas promoções, aplicando regras de preço para eventos importantes, como uma nova linha de produtos ou vendas sazonais.
 
 Veja a seguir dicas para ajudar a criar, atualizar e gerenciar promoções e campanhas:
 
@@ -34,7 +40,7 @@ Veja a seguir dicas para ajudar a criar, atualizar e gerenciar promoções e cam
 
 Essas informações são úteis para o Adobe Commerce na infraestrutura em nuvem 2.1.X e 2.2.X.
 
-Normalmente, você pode definir o [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=pt-BR) para produtos por meio da área **Produtos** > **Catálogos** do Administrador. Com o conteúdo dividido, conclua algumas etapas adicionais para adicionar os preços a uma promoção e campanha.
+Normalmente, você pode definir o [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) para produtos por meio da área **Produtos** > **Catálogos** do Administrador. Com o conteúdo dividido, conclua algumas etapas adicionais para adicionar os preços a uma promoção e campanha.
 
 Para editar o Advanced Pricing e atualizar a Preparação de Conteúdo:
 
@@ -47,17 +53,17 @@ Para editar o Advanced Pricing e atualizar a Preparação de Conteúdo:
 1. Salve a promoção. Uma campanha inicial inativa é criada.
 1. É possível Visualizar para revisar o preço especial, o nome da promoção, o preço normal e o intervalo de datas programado para a campanha.
 
-Para obter etapas adicionais, continue com as instruções em [Agendar Alterações para Regras de Preço de Catálogo](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html?lang=pt-BR). Clique em **Avançar** para percorrer as etapas.
+Para obter etapas adicionais, continue com as instruções em [Agendar Alterações para Regras de Preço de Catálogo](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html). Clique em **Avançar** para percorrer as etapas.
 
 ## Regras de preço
 
 As regras de preço podem incluir lógica e condições tão ilimitadas quanto sua imaginação de marketing. Alguns exemplos populares incluem Buy One Get One Free, Buy One Get One 50% Off, $25 dólares fora em pedidos acima de $100 dólares e muito mais.
 
-Para criar uma Regra de Preço, consulte [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html?lang=pt-BR).
+Para criar uma Regra de Preço, consulte [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
 
 A seguir, há um exemplo de criação de uma Regra de Preço para um desconto Somente na Primeira Ordem. Para esse desconto, você gostaria de:
 
-* Crie uma regra de preço com um [segmento de cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/segments/customer-segment-price-rule) com uma condição: Número Total de Pedidos menor que 1
+* Crie uma regra de preço com um [segmento de cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segment-price-rule) com uma condição: Número Total de Pedidos menor que 1
 * Adicionar este segmento de cliente como uma condição à regra do carrinho
 * Opcional - Adicione condições e regras para aplicar os descontos a SKUs ou categorias de produtos específicos para compras direcionadas
 
@@ -89,4 +95,4 @@ Veja a seguir exemplos para explicar melhor:
 
 >[!WARNING]
 >
->Os dados do catálogo se expandem à medida que você aumenta o número de sites e lojas. Dependendo da arquitetura do projeto, os armazenamentos adicionais podem levar a um processo de indexação mais longo e tempos de resposta mais lentos para páginas de catálogo não armazenadas em cache. A Adobe recomenda que você monitore o desempenho do site com cuidado.
+>Os dados do catálogo se expandem à medida que você aumenta o número de sites e lojas. Dependendo da arquitetura do projeto, os armazenamentos adicionais podem levar a um processo de indexação mais longo e tempos de resposta mais lentos para páginas de catálogo não armazenadas em cache. A Adobe recomenda que você monitore o desempenho do site de perto.

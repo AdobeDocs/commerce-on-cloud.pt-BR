@@ -4,11 +4,16 @@ description: Prepare-se para o desenvolvimento local com um projeto do Adobe Com
 role: Developer
 feature: Cloud, Install
 topic: Development
-last-substantial-update: 2024-02-06T00:00:00Z
+last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 14fb0b41-1c3a-4abc-8726-cea16ab00ba8
-source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
+TQID: https://experienceleague.adobe.com/VrOBK4bPYTxzRz10ZaHYDOdISw0lSl6WPAHcnEI1J-w
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: 580
 ht-degree: 0%
 
 ---

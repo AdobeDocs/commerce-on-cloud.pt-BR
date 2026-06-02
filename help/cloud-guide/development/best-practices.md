@@ -3,9 +3,13 @@ title: Práticas recomendadas para atualizar seu projeto
 description: Consulte uma lista de práticas recomendadas para atualizar os arquivos do projeto.
 feature: Cloud, Best Practices, Upgrade
 exl-id: 64f92739-9170-4cbf-90ef-aab6593a37ca
-source-git-commit: 31494a956babaf15320d0ffa86fcba9e845d53a1
+TQID: https://experienceleague.adobe.com/Nnr9fNMT210WTnaLTWyRM-YCWRXrZuOv0m-EZYpzKVw
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: 696
 ht-degree: 0%
 
 ---
@@ -50,10 +54,10 @@ Siga as práticas recomendadas para compilações e implantações e use o fluxo
 
    - Use o SSH para fazer logon no servidor remoto e verifique o seguinte:
 
-      - Verifique o status do indexador e reindexe conforme necessário. Consulte [Gerenciar os indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR) no _Guia de configuração_.
+      - Verifique o status do indexador e reindexe conforme necessário. Consulte [Gerenciar os indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) no _Guia de configuração_.
 
       - Verifique os logs do `cron` e a tabela `cron_schedule` no banco de dados do Adobe Commerce para verificar o status do cron e execute novamente os trabalhos do cron, conforme necessário.
-Consulte [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR#logging) no _Guia de Configuração_.
+Consulte [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) no _Guia de Configuração_.
 
    - Conclua o UAT de teste de aceitação do usuário pós-atualização em ambientes de preparo e produção e corrija quaisquer problemas relacionados a atualizações de extensões personalizadas e de terceiros.
 
@@ -67,7 +71,7 @@ Execute a Ferramenta de compatibilidade de atualização (UCT) como parte de sua
 
 Para obter detalhes sobre configuração e uso, consulte:
 
-- [Visão Geral da Ferramenta de Compatibilidade de Atualização](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)
-- [Executar a Ferramenta de Compatibilidade de Atualização](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
+- [Visão Geral da Ferramenta de Compatibilidade de Atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)
+- [Executar a Ferramenta de Compatibilidade de Atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
 
-Para comerciantes da nuvem que usam a Ferramenta de análise do site, você também pode acionar o UCT no painel e baixar o relatório do HTML diretamente do widget. Consulte Integrar a [Ferramenta de Análise do Site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).
+Para comerciantes da nuvem que usam a Ferramenta de análise do site, você também pode acionar o UCT no painel e baixar o relatório do HTML diretamente do widget. Consulte Integrar a [Ferramenta de Análise do Site](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).

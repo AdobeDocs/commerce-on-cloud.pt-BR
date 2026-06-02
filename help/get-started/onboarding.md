@@ -4,9 +4,13 @@ description: Acesse sua conta da nuvem e configure um projeto do Adobe Commerce 
 role: Admin
 recommendations: noDisplay, catalog
 exl-id: 9b48212a-2560-4090-b483-a8b04471de95
-source-git-commit: db34528be490f92cc61c609ca143c01ef3284157
+TQID: https://experienceleague.adobe.com/y1WQfRLHOhgyZfCISQEsIRju7g79oq-ikJH1Tl7z420
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: 517
 ht-degree: 0%
 
 ---
@@ -21,7 +25,7 @@ Para integrar rapidamente seu projeto e começar a desenvolver seu site para imp
 
 ## Cadastrar-se em uma conta na nuvem
 
-Se você não tiver uma conta do Adobe Commerce na infraestrutura em nuvem, contate [Vendas](https://business.adobe.com/br/products/magento/get-demo.html). Ao se inscrever, a Adobe cria sua conta e envia um email de boas-vindas que fornece instruções sobre como acessar a interface do projeto. O email contém um link para que você possa fazer logon em sua conta e concluir a configuração inicial do projeto.
+Se você não tiver uma conta do Adobe Commerce na infraestrutura em nuvem, contate [Vendas](https://business.adobe.com/products/magento/get-demo.html). Ao se inscrever, a Adobe cria sua conta e envia um email de boas-vindas que fornece instruções sobre como acessar a interface do projeto. O email contém um link para que você possa fazer logon em sua conta e concluir a configuração inicial do projeto.
 
 ## Acessar projeto e adicionar usuários
 
@@ -33,7 +37,7 @@ Você só pode adicionar usuários registrados à sua Adobe Commerce em projetos
 
 ### Acesso à conta compartilhada
 
-O Proprietário da licença pode configurar o acesso compartilhado para a conta. O acesso compartilhado permite que funcionários confiáveis e provedores de serviços usem a central de ajuda para enviar e rastrear tíquetes de suporte relacionados à sua Adobe Commerce em projetos de infraestrutura em nuvem. Para obter instruções de configuração, consulte o artigo [Acesso compartilhado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#shared-access) na Central de ajuda.
+O Proprietário da licença pode configurar o acesso compartilhado para a conta. O acesso compartilhado permite que funcionários confiáveis e provedores de serviços usem a central de ajuda para enviar e rastrear tíquetes de suporte relacionados à sua Adobe Commerce em projetos de infraestrutura em nuvem. Para obter instruções de configuração, consulte o artigo [Acesso compartilhado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) na Central de ajuda.
 
 ### [!DNL Cloud Console]
 
@@ -41,7 +45,7 @@ Você pode usar o [[!DNL Cloud Console]](cloud-console.md) para gerenciar seu pr
 
 ## Inscrever-se para obter o status do Adobe
 
-Obtenha atualizações sobre o Adobe Commerce em ambientes de plataforma de infraestrutura em nuvem e serviços relacionados na [página Status](https://status.adobe.com/br/products/503473).
+Obtenha atualizações sobre o Adobe Commerce em ambientes de plataforma de infraestrutura em nuvem e serviços relacionados na [página Status](https://status.adobe.com/products/503473).
 
 A página fornece um status para componentes e serviços do Adobe Commerce, seguido de notificações sobre relatórios de incidentes, atualizações de serviço, interrupções planejadas e manutenção programada. Qualquer pessoa que trabalhe no seu projeto pode assinar o site de status da Adobe Commerce para receber notificações e atualizações de eventos por email ou pela Slack. Você pode personalizar sua assinatura do status do Adobe para rastrear produtos específicos por regiões e eventos.
 
@@ -49,5 +53,5 @@ A página fornece um status para componentes e serviços do Adobe Commerce, segu
 >
 > Abra o novo [!DNL Cloud Console] e exiba as atividades do projeto e do ambiente.
 >
->**Próxima etapa**: [Fazer logon no Console Cloud](cloud-console.md)
+>**Próxima etapa**: [Fazer logon no Console Cl[!DNL ]oud](cloud-console.md)
 

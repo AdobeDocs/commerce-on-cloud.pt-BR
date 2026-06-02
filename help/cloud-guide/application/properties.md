@@ -3,9 +3,13 @@ title: Propriedades
 description: Use a lista de propriedades como referência ao configurar o aplicativo  [!DNL Commerce]  para compilação e implantação na infraestrutura de nuvem.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
-source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
+TQID: https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: 855
 ht-degree: 0%
 
 ---
@@ -21,7 +25,7 @@ O arquivo `.magento.app.yaml` usa propriedades para gerenciar o suporte ao ambie
 | [`dependencies`](#dependencies) | Habilitar dependências adicionais | `php:composer/composer: '2.2.4'` | Não |
 | [`disk`](#disk) | Definir o tamanho do disco persistente | `5120` | Sim |
 | [`firewall`](firewall-property.md) | (Somente iniciador) Controlar tráfego de saída | — | Não |
-| [`hooks`](hooks-property.md) | Personalize comandos shell para fases de build, implantar e postagem-implantar | — | Não |
+| [`hooks`](hooks-property.md) | Personalizar comandos do shell para as fases de criação, implantação e pós-implantação | — | Não |
 | [`mounts`](#mounts) | Definir caminhos | Caminhos:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Não |
 | [`name`](#name) | Definir o nome do aplicativo | `mymagento` | Sim |
 | [`relationships`](#relationships) | Serviços de mapa | Serviços:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Não |
@@ -140,7 +144,7 @@ O tamanho de disco mínimo recomendado é de 256 MB. Se você vir o erro `UserEr
 
 >[!NOTE]
 >
->Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
+>Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
 >
 >Não é possível aumentar temporariamente o armazenamento em disco no armazenamento temporário ou na produção; esse processo não é reversível.
 
@@ -155,7 +159,7 @@ relationships:
     <name>: "<service-name>:<endpoint-name>"
 ```
 
-Veja a seguir um exemplo das relações padrão:
+Veja a seguir um exemplo dos relacionamentos padrão:
 
 ```yaml
 relationships:
@@ -165,11 +169,11 @@ relationships:
     rabbitmq: "rabbitmq:rabbitmq"
 ```
 
-Consulte [Serviços](../services/services-yaml.md) para obter uma lista completa de tipos e endpoints de serviços suportados no momento.
+Consulte [Serviços](../services/services-yaml.md) para obter uma lista completa dos tipos de serviços e pontos de extremidade atualmente com suporte.
 
 ## `mounts`
 
-Um objeto cujas chaves são caminhos relativos à raiz do aplicativo. O monte é uma área gravável no disco para arquivos. A seguir, uma lista padrão de montagens configuradas no `magento.app.yaml` arquivo usando a `volume_id[/subpath]` sintaxe:
+Um objeto cujas chaves são caminhos relativos à raiz do aplicativo. A montagem é uma área gravável no disco para arquivos. Esta é uma lista padrão de montagens configuradas no arquivo `magento.app.yaml` usando a sintaxe `volume_id[/subpath]`:
 
 ```yaml
  # The mounts that will be performed when the package is deployed.
@@ -186,18 +190,18 @@ O formato para adicionar sua montagem a esta lista é o seguinte:
 "/public/sites/default/files": "shared:files/files"
 ```
 
-- `shared`—Compartilha um volume entre seus aplicativos dentro de uma ambiente.
-- `disk`— Define o tamanho disponível para o volume compartilhado.
+- `shared` — Compartilha um volume entre seus aplicativos dentro de um ambiente.
+- `disk` — Define o tamanho disponível para o volume compartilhado.
 
 >[!NOTE]
 >
->Nos ambientes Pro Staging e Production, você deve [enviar uma Adobe Systems Comércio tíquete](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) de Suporte para atualizar a configuração e `disk` a `mounts` configuração do seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml` .
+>Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
 
-Você pode tornar a Web de montagem acessível adicionando-a ao [`web`](web-property.md) bloco de locais.
+Você pode tornar a montagem da Web acessível adicionando-a ao bloco de locais [`web`](web-property.md).
 
 >[!WARNING]
 >
->Depois que o site tiver dados, não altere a `subpath` parte do nome de montagem. Esse valor é o identificador exclusivo da `files` área. Se você alterar esse nome, perderá todos os dados do site armazenados no local antigo.
+>Depois que o site tiver dados, não altere a parte `subpath` do nome de montagem. Este valor é o identificador exclusivo da área `files`. Se você alterar esse nome, perderá todos os dados do site armazenados no local antigo.
 
 ## `access`
 

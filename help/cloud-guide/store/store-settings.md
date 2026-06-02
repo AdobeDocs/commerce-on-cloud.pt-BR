@@ -2,9 +2,15 @@
 title: Gerenciamento de configuração de armazenamento
 description: Saiba como gerenciar e sincronizar configurações de armazenamento em todos os ambientes de infraestrutura em nuvem do Adobe Commerce.
 feature: Cloud, Configuration, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 01850a7b-2c03-45e8-8051-b24ae95c5f87
+TQID: https://experienceleague.adobe.com/TF-K8g48q2fnuldOLdnwxjAJrxGzsRJlongd7cRqV9U
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: 1507
 ht-degree: 0%
 
 ---
@@ -15,28 +21,28 @@ As configurações padrão da loja são armazenadas em um `config.xml` para o m�
 
 As configurações de armazenamento, que se referem às configurações na seção Admin **Lojas** > **Configurações** > **Configuração**, são armazenadas nos arquivos de configuração de implantação com base no tipo de configuração:
 
-- `app/etc/config.php` — definições de configuração para armazenamentos, sites, módulos ou extensões, otimização de arquivo estático e valores de sistema relacionados à implantação de conteúdo estático. Consulte a [referência do config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html?lang=pt-BR) no _Guia de Configuração_.
-- `app/etc/env.php` — valores para substituições específicas do sistema e configurações confidenciais que deveriam _NÃO_ ser armazenadas no controle de origem. Consulte a [referência do arquivo env.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html?lang=pt-BR) no _Guia de Configuração_.
+- `app/etc/config.php` — definições de configuração para armazenamentos, sites, módulos ou extensões, otimização de arquivo estático e valores de sistema relacionados à implantação de conteúdo estático. Consulte a [referência do config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) no _Guia de Configuração_.
+- `app/etc/env.php` — valores para substituições específicas do sistema e configurações confidenciais que deveriam _NÃO_ ser armazenadas no controle de origem. Consulte a [referência do arquivo env.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) no _Guia de Configuração_.
 
 >[!NOTE]
 >
 >Como a infraestrutura do Adobe Commerce na nuvem oferece suporte apenas aos modos de produção e manutenção, a seção **Avançado** > **Desenvolvedor** não está acessível no Administrador. Você deve ter [privilégios de Administrador do ambiente](../project/user-access.md) para concluir tarefas de gerenciamento de configuração. Você pode definir configurações adicionais usando [variáveis de ambiente](../environment/configure-env-yaml.md).
 
-O gerenciamento de configurações fornece uma maneira de implantar configurações de armazenamento consistentes em seus ambientes com tempo de inatividade mínimo usando a implantação de pipeline. O projeto de infraestrutura do Adobe Commerce na nuvem inclui o servidor de compilação, scripts de compilação e implantação e ambientes de implantação criados com a [estratégia de implantação de pipeline](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=pt-BR) em mente.
+O gerenciamento de configurações fornece uma maneira de implantar configurações de armazenamento consistentes em seus ambientes com tempo de inatividade mínimo usando a implantação de pipeline. O projeto de infraestrutura do Adobe Commerce na nuvem inclui o servidor de compilação, scripts de compilação e implantação e ambientes de implantação criados com a [estratégia de implantação de pipeline](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) em mente.
 
 ## Esquema de substituição de configuração
 
 Todas as configurações do sistema são definidas durante as fases de criação e implantação de acordo com o seguinte esquema de substituição:
 
 1. Se uma variável de ambiente existir, use a configuração personalizada e ignore a configuração padrão.
-1. Se uma variável de ambiente não existir, use a configuração de um par de nome-valor `MAGENTO_CLOUD_RELATIONSHIPS` no arquivo [`.magento.app.yaml` &#x200B;](../application/configure-app-yaml.md). Ignorar a configuração padrão.
+1. Se uma variável de ambiente não existir, use a configuração de um par de nome-valor `MAGENTO_CLOUD_RELATIONSHIPS` no arquivo [`.magento.app.yaml` ](../application/configure-app-yaml.md). Ignorar a configuração padrão.
 1. Se uma variável de ambiente não existir e `MAGENTO_CLOUD_RELATIONSHIPS` não contiver um par nome-valor, remova todas as configurações personalizadas e use os valores da configuração padrão.
 
 Em resumo, as variáveis de ambiente substituem todos os outros valores.
 
 >[!TIP]
 >
->Consulte [Gerenciamento de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=pt-BR) no _Guia de configuração_ para obter mais informações sobre o esquema de substituição para implantação de pipeline.
+>Consulte [Gerenciamento de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) no _Guia de configuração_ para obter mais informações sobre o esquema de substituição para implantação de pipeline.
 
 Se a mesma configuração for definida em vários locais, a aplicação dependerá da seguinte hierarquia de configuração para determinar qual valor aplicar ao ambiente:
 
@@ -69,7 +75,7 @@ Os dados &quot;despejados&quot; para o arquivo `app/etc/config.php` ficam _bloqu
 
 Todas as configurações confidenciais são exportadas para o arquivo `app/etc/env.php` quando você usa o comando `bin/magento app:config:dump`. Você pode definir valores confidenciais usando o comando da CLI: `bin/magento config:sensitive:set`. Consulte [Configurações sensíveis e específicas do ambiente](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/) no guia _Commerce PHP Extensions_ para saber como designar configurações sensíveis ou específicas do sistema.
 
-Consulte uma lista de [Configurações sensíveis ou específicas do sistema](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html?lang=pt-BR) no _Guia de Configuração_.
+Consulte uma lista de [Configurações sensíveis ou específicas do sistema](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html) no _Guia de Configuração_.
 
 ### Desempenho do SCD
 

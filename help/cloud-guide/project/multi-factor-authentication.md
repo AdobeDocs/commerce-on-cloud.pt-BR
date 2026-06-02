@@ -3,9 +3,15 @@ title: Habilitar autenticação multifator para acesso SSH
 description: Saiba como gerenciar requisitos de autenticação para acesso SSH ao Adobe Commerce em ambientes de infraestrutura em nuvem.
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 90458fa8-42b0-4825-948e-56ef7884eb82
+TQID: https://experienceleague.adobe.com/KWGl-ZyF5aKZ-XxOOmL85ip8arBeH-G1pN5ckUdAqNw
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: 1080
 ht-degree: 0%
 
 ---
@@ -18,7 +24,7 @@ Quando o MFA é ativado em um projeto, todas as contas de usuário com acesso SS
 
 >[!NOTE]
 >
->O MFA não está habilitado em projetos na nuvem por padrão. O proprietário da conta do projeto Adobe Commerce na infraestrutura em nuvem deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para habilitá-lo. Quando o MFA é habilitado, todos os usuários devem ter a autenticação de dois fatores (TFA) habilitada em sua conta do Adobe Commerce na infraestrutura em nuvem para obter acesso SSH aos ambientes do projeto.
+>O MFA não está habilitado em projetos na nuvem por padrão. O proprietário da conta do projeto Adobe Commerce na infraestrutura em nuvem deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para habilitá-lo. Quando o MFA é habilitado, todos os usuários devem ter a autenticação de dois fatores (TFA) habilitada em sua conta do Adobe Commerce na infraestrutura em nuvem para obter acesso SSH aos ambientes do projeto.
 
 ## Certificados para acesso SSH
 

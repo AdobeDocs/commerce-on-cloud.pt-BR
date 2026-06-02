@@ -2,9 +2,13 @@
 title: Atualize o pacote ECE-Tools
 description: Saiba como atualizar o pacote ECE-Tools para aproveitar as correções e os recursos mais recentes aplicados ao Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Upgrade
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: acb4fd0d-6ffb-4094-8dd4-83bb7735d64f
+TQID: https://experienceleague.adobe.com/WqcVa0BJN0ot6yg2unhzeEB8nkjKXM7o26tOwmrg5mU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: 172
 ht-degree: 0%
 
 ---

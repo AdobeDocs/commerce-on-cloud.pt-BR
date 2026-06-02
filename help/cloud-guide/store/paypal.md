@@ -2,9 +2,14 @@
 title: Configurar métodos de pagamento do PayPal
 description: Configurar métodos de pagamento do PayPal para Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Checkout, Payments
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 577639f8-74a1-4bb2-96fc-72135252cbd1
+TQID: https://experienceleague.adobe.com/wGyqg7fnVgAglBAqnaA0ak-JaBLHGn5-Bkj-jx8qwoo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: 697
 ht-degree: 0%
 
 ---
@@ -58,7 +63,7 @@ Para configurar o Check-out do PayPal Express:
    * **Modo de sandbox** selecione Sim ou Não para indicar se as credenciais inseridas são para sandbox. Se você tiver informado credenciais de produção, selecione Não.
    * **API Usa Proxy** selecione Sim ou Não para definir se o sistema usa um servidor proxy para estabelecer uma conexão entre o Adobe Commerce e o sistema de pagamento PayPal. Se Sim, insira o host e a porta do proxy.
 
-1. Para obter informações detalhadas e etapas para configurar sua conta, consulte [Finalização expressa do PayPal](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout), começando com a Etapa 2, Concluir as configurações necessárias.
+1. Para obter informações detalhadas e etapas para configurar sua conta, consulte [Finalização expressa do PayPal](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout), começando com a Etapa 2, Concluir as configurações necessárias.
 
 Com a conta configurada e autenticada, você pode ativar e desativar as opções de pagamento do PayPal em Configurações obrigatórias do PayPal:
 

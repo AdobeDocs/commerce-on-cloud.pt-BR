@@ -2,9 +2,14 @@
 title: Variáveis de ambiente
 description: Consulte uma lista de variáveis de ambiente específicas do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Build, Configuration, Deploy
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 38b2cdc2-1a98-48bd-90b2-13ef179da26f
+TQID: https://experienceleague.adobe.com/qRdv72nxgkwRjRz0lXqs33rSmZKc3akq2W0pJK4CM7k
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: 266
 ht-degree: 0%
 
 ---
@@ -18,7 +23,7 @@ As variáveis de ambiente no arquivo `.magento.env.yaml` personalizam o ambiente
 Os tipos de variáveis de ambiente incluem:
 
 - [ADMIN](variables-admin.md) — as variáveis substituem as variáveis ADMIN do projeto
-- [MAGENTO_CLOUD](variables-cloud.md)—variáveis específicas para a infraestrutura em nuvem
+- [MAGENTO_CLOUD](variables-cloud.md) — variáveis específicas para a infraestrutura em nuvem
 - Variáveis usadas no arquivo `.magento.env.yaml`:
    - [Global](variables-global.md)—as variáveis afetam os estágios de compilação, implantação e pós-implantação
    - [Build](variables-build.md) — as variáveis controlam ações de compilação

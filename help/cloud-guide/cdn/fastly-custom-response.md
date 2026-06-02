@@ -2,9 +2,15 @@
 title: Personalizar páginas de erro e manutenção
 description: Saiba como personalizar a página de erro padrão que é exibida quando as solicitações para o servidor de origem do Fastly falham.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 960195c7-5ee9-4134-8b0a-a251c5e6adf9
+TQID: https://experienceleague.adobe.com/EhK04rgGdkT3Tvd6wbefYjY9Yqozkzra4-ELdkH8sMo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: 803
 ht-degree: 0%
 
 ---
@@ -24,13 +30,13 @@ Atualmente, você pode personalizar as seguintes páginas de resposta do Fastly 
 - [Erros do servidor - Erro interno do servidor, tempo limite ou paralisações de manutenção do site (código de erro 500 ou superior)](#customize-the-503-error-page)
 - [O WAF bloqueia eventos que ocorrem quando o WAF detecta tráfego de solicitação suspeito (403 Proibido)](#customize-the-waf-error-page)
 
-**requisitos de codificação de HTML:**
+**Requisitos de codificação do HTML:**
 
-O código de HTML da página personalizada deve atender aos seguintes requisitos:
+O código HTML da página personalizada deve atender aos seguintes requisitos:
 
 - O conteúdo pode conter até 65.535 caracteres.
 - Especifique todos os CSS em linha na origem do HTML.
-- Agrupe imagens na página de HTML usando base64 para que elas sejam exibidas mesmo se o Fastly estiver offline. Consulte [URIs de dados no site de dicas em css](https://css-tricks.com/data-uris/).
+- Agrupe imagens na página do HTML usando base64 para que elas sejam exibidas mesmo se o Fastly estiver offline. Consulte [URIs de dados no site de dicas em css](https://css-tricks.com/data-uris/).
 
 ## Personalizar a página de erro 503
 
@@ -39,7 +45,7 @@ Os clientes veem a página de erro 503 padrão nos seguintes casos:
 - Quando uma solicitação para a origem Fastly retorna um status de resposta maior que 500
 - Quando a origem do Fastly está inativa, como tempo limite, atividade de manutenção ou problemas de integridade
 
-Você pode personalizar a página padrão adaptando o seguinte código de HTML para incluir o estilo para corresponder ao tema da loja do Adobe Commerce e modificando o título e as mensagens conforme necessário.
+Você pode personalizar a página padrão adaptando o seguinte código HTML para incluir o estilo para corresponder ao tema da loja do Adobe Commerce e modificando o título e as mensagens conforme necessário.
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +59,7 @@ Você pode personalizar a página padrão adaptando o seguinte código de HTML p
    </body></html>
 ```
 
-Verifique se a origem modificada é exibida corretamente no navegador. Em seguida, adicione o código de HTML personalizado à configuração do Fastly.
+Verifique se a origem modificada é exibida corretamente no navegador. Em seguida, adicione o código HTML personalizado à configuração do Fastly.
 
 Para adicionar a página de resposta personalizada à configuração do Fastly:
 
@@ -71,7 +77,7 @@ Para adicionar a página de resposta personalizada à configuração do Fastly:
 
    ![Página de erro da Atualização 503](../../assets/cdn/fastly-customize-503-response.png)
 
-1. Selecione **Fazer upload** na parte superior da página para fazer upload da origem de HTML personalizada para o servidor Fastly.
+1. Selecione **Carregar** na parte superior da página para carregar a origem personalizada do HTML no servidor Fastly.
 
 1. Selecione **Salvar configuração** na parte superior da página para salvar o arquivo de configuração atualizado.
 
@@ -79,7 +85,7 @@ Para adicionar a página de resposta personalizada à configuração do Fastly:
 
    - Na notificação na parte superior da página, selecione o link *Gerenciamento de Cache*.
 
-   - Na página Gerenciamento de cache, selecione **Liberar cache de Magento**.
+   - Na página Gerenciamento de cache, selecione **Liberar cache do Magento**.
 
 ## Personalizar a página de erro do WAF
 
@@ -87,7 +93,7 @@ Os clientes veem a seguinte página de erro padrão do WAF quando uma solicitaç
 
 ![Página de erro do WAF](../../assets/cdn/fastly-waf-403-error.png)
 
-O código de amostra a seguir mostra a fonte do HTML para a página padrão:
+O código de amostra a seguir mostra o código-fonte do HTML para a página padrão:
 
 ```html
 <html>
@@ -125,15 +131,15 @@ Você pode usar a opção **Páginas Sintéticas Personalizadas** > **Editar pá
 
 1. Selecione **Editar página do WAF**.
 
-1. Preencha os campos para atualizar o HTML.
+1. Preencha os campos para atualizar a HTML.
 
    ![Atualizar página de erro do WAF](../../assets/cdn/fastly-edit-waf-html.png)
 
    - **Status** — Selecione o status `403 Forbidden`.
    - **Tipo MIME** — Tipo `text/html`.
-   - **Conteúdo** — Edite a resposta de HTML padrão para adicionar CSS personalizado e atualize o título e as mensagens conforme necessário.
+   - **Conteúdo** — Edite a resposta padrão do HTML para adicionar CSS personalizado e atualize o título e as mensagens conforme necessário.
 
-1. Selecione **Fazer upload** na parte superior da página para fazer upload da origem de HTML personalizada para o servidor Fastly.
+1. Selecione **Carregar** na parte superior da página para carregar a origem personalizada do HTML no servidor Fastly.
 
 1. Selecione **Salvar configuração** na parte superior da página para salvar o arquivo de configuração atualizado.
 
@@ -141,7 +147,7 @@ Você pode usar a opção **Páginas Sintéticas Personalizadas** > **Editar pá
 
    - Na notificação na parte superior da página, selecione o link **Gerenciamento de Cache**.
 
-   - Na página Gerenciamento de cache, selecione **Liberar cache de Magento**.
+   - Na página Gerenciamento de cache, selecione **Liberar cache do Magento**.
 
 ## Exibir número do relatório de erros
 

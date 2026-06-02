@@ -3,9 +3,15 @@ title: Configurar ambiente
 description: Saiba como configurar ações de criação e implantação em toda a Commerce em ambientes de infraestrutura em nuvem, incluindo preparo e produção profissionais, usando variáveis de ambiente.
 feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
+TQID: https://experienceleague.adobe.com/Ub0FWkUN9uOVzLhVbNbPhUV5kj808ODlbjVrRDDA-4E
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: 706
 ht-degree: 0%
 
 ---
@@ -28,7 +34,7 @@ O arquivo `.magento.env.yaml` contém duas seções: `stage` e `log`. A seção 
    - `deploy` — Controla ações somente na fase de implantação. Se você não especificar configurações nesta seção, a fase de implantação usará configurações da seção global.
    - `post-deploy` — Controla as ações _após_ a implantação do aplicativo e _após_ o contêiner começa a aceitar conexões.
 - `log`—Use a seção de log para configurar [notificações](set-up-notifications.md), incluindo tipos de notificação e nível de detalhes.
-   - `slack` — Configurar uma mensagem para enviar a um bot de Slack.
+   - `slack` — Configurar uma mensagem para enviar a um bot do Slack.
    - `email` — Configure um email para enviar a um ou mais destinatários de email.
    - [manipuladores de log](log-handlers.md) — Configure as mensagens de aplicativos de hardware e software enviadas a um servidor de log remoto.
 

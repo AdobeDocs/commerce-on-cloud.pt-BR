@@ -1,11 +1,16 @@
 ---
 title: Exibir e gerenciar logs
 description: Entenda os tipos de arquivos de log disponíveis na infraestrutura da nuvem e onde encontrá-los.
-last-substantial-update: 2023-05-23T00:00:00Z
+last-substantial-update: 2023-05-23T00:00:00.000Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: 445c5162f9d3436d9e5fe3df41af47189e344cfd
+TQID: https://experienceleague.adobe.com/VAsmOv6sBa37A2IAubUnWd4UAMRIuKTNt8JGKNJlrCI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: 1287
 ht-degree: 0%
 
 ---
@@ -109,12 +114,12 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Para ambientes Pro Staging e Pro Production, a rotação, compactação e remoção automáticas do registro são ativadas para arquivos de registro com um nome de arquivo fixo. Cada tipo de arquivo de log tem um padrão rotativo e uma duração.
 >Detalhes completos sobre a rotação de logs e a duração de logs compactados do ambiente podem ser encontrados em: `/etc/logrotate.conf` e `/etc/logrotate.d/<various>`.
->Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar alterações na configuração de rotação do log.
+>Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar alterações na configuração de rotação do log.
 
 >[!TIP]
 >
 >A rotação de logs não pode ser configurada em ambientes Pro Integration.
->Para a Integração Pro, você deve implementar uma solução/script personalizado e [configurar seu cron](../application/crons-property.md) para executar o script conforme necessário.
+>Para Integração Pro, você deve implementar uma solução/script personalizado e [configurar seu cron](../application/crons-property.md) para executar o script conforme necessário.
 
 >[!NOTE]
 >
@@ -220,7 +225,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR).
+A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Logs do aplicativo
 
@@ -258,7 +263,7 @@ Os logs do aplicativo são compactados e arquivados uma vez por dia e mantidos p
 
 Os arquivos de log arquivados são sempre armazenados no diretório onde o arquivo original estava localizado antes da compactação.
 
-Você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support) para solicitar alterações no período de retenção do log ou na configuração de logrotate. Você pode aumentar o período de retenção até um máximo de 365 dias, reduzi-lo para conservar a cota de armazenamento ou adicionar outros caminhos de log à configuração de logrotate. Essas alterações estão disponíveis para clusters Pro de armazenamento temporário e produção.
+Você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar alterações no período de retenção do log ou na configuração de logrotate. Você pode aumentar o período de retenção até um máximo de 365 dias, reduzi-lo para conservar a cota de armazenamento ou adicionar outros caminhos de log à configuração de logrotate. Essas alterações estão disponíveis para clusters Pro de armazenamento temporário e produção.
 
 Por exemplo, se você criar um caminho personalizado para armazenar logs no diretório `var/log/mymodule`, poderá solicitar a rotação de logs para esse caminho. No entanto, a infraestrutura atual requer nomes de arquivos consistentes para que o Adobe configure a rotação de logs adequadamente. A Adobe recomenda manter os nomes de log consistentes para evitar problemas de configuração.
 

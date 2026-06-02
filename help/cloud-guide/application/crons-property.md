@@ -2,9 +2,15 @@
 title: Propriedade Crons
 description: Veja exemplos de como configurar a propriedade "crons" no arquivo de configuração do aplicativo  [!DNL Commerce] .
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
+TQID: https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: 1172
 ht-degree: 0%
 
 ---
@@ -13,9 +19,9 @@ ht-degree: 0%
 
 O Adobe Commerce usa a propriedade `crons` para agendar atividades repetitivas. É ideal para agendar uma tarefa específica para execução em determinados horários do dia. Somente um trabalho cron pode ser executado de cada vez na instância da Web para projetos do Adobe Commerce na infraestrutura em nuvem devido à natureza dos ambientes somente leitura. É uma prática recomendada dividir tarefas de longa duração em tarefas menores em fila. Como alternativa, você pode criar uma [instância do trabalhador](workers-property.md).
 
-A Adobe recomenda que você execute `crons` como o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR). _não_ execute `crons` como `root` ou como o usuário do servidor Web.
+A Adobe recomenda que você execute `crons` como o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html). _não_ execute `crons` como `root` ou como o usuário do servidor Web.
 
-Essa configuração é diferente das implantações locais do Adobe Commerce, que têm vários trabalhos cron padrão. Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR) no _Guia de configuração_.
+Essa configuração é diferente das implantações locais do Adobe Commerce, que têm vários trabalhos cron padrão. Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) no _Guia de configuração_.
 
 ## Configurar trabalhos cron
 
@@ -55,7 +61,7 @@ Embora você possa usar o `crontab` para revisar a configuração em projetos Pr
 
    >[!NOTE]
    >
-   >Se o comando `crontab -l` retornar um erro `Command not found` (somente em ambientes de Preparo e Produção Pro), você deverá [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para habilitar a opção de configuração de autoatendimento de cronograma automático em seu projeto.
+   >Se o comando `crontab -l` retornar um erro `Command not found` (somente em ambientes de Preparo e Produção Pro), você deverá [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para habilitar a opção de configuração de autoatendimento de cronograma automático em seu projeto.
 
 O exemplo a seguir mostra a saída `crontab` para um ambiente que tem apenas a configuração `crons` padrão:
 
@@ -86,8 +92,8 @@ O Adobe Commerce usa uma expressão de cinco valores para uma especificação `c
 
 Alguns exemplos:
 
-- O `00 */3 * * *` é executado a cada três horas no primeiro minuto (12h, 3h, 6h)
-- O `20 */8 * * *` é executado a cada 8 horas aos minutos 20 (12:20, 8:20, 16:20)
+- `00 */3 * * *` é executado a cada três horas no primeiro minuto (12:00 am, 3:00 am, 6:00 am)
+- `20 */8 * * *` é executado a cada 8 horas aos minutos 20 (12:20 am, 8:20 am, 4:20 pm)
 - `00 00 * * *` é executado uma vez por dia à meia-noite
 - O `00 * * * 1` é executado uma vez por semana, às segundas-feiras à meia-noite.
 
@@ -123,7 +129,7 @@ Na plataforma Adobe Commerce na infraestrutura em nuvem, é possível adicionar 
 >
 >Para ambientes Starter e Pro `integration`, o intervalo mínimo é uma vez a cada cinco minutos. Para ambientes de preparo e produção profissionais, o intervalo mínimo é de uma vez por minuto. Você não pode configurar intervalos mais frequentes do que os mínimos padrão.
 
-Em projetos do Adobe Commerce Pro, o [recurso de autcrons](#set-up-cron-jobs) deve estar habilitado no seu projeto antes que você possa adicionar trabalhos cron personalizados a ambientes de Preparo e Produção usando o arquivo `.magento.app.yaml`. Se este recurso não estiver habilitado, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para habilitar o autocronismo.
+Em projetos do Adobe Commerce Pro, o [recurso de autcrons](#set-up-cron-jobs) deve estar habilitado no seu projeto antes que você possa adicionar trabalhos cron personalizados a ambientes de Preparo e Produção usando o arquivo `.magento.app.yaml`. Se este recurso não estiver habilitado, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para habilitar o autocronismo.
 
 **Para adicionar trabalhos cron personalizados**:
 
@@ -191,12 +197,12 @@ Você pode desabilitar manualmente os trabalhos cron antes de concluir as tarefa
 
 ## Solução de problemas de trabalhos cron
 
-o Adobe atualizou o pacote Adobe Commerce na infraestrutura em nuvem para otimizar o processamento de cron na plataforma Adobe Commerce na infraestrutura em nuvem e para corrigir problemas relacionados ao cron. Se você encontrar problemas com o processamento CRON, verifique se seu projeto está usando a versão mais recente do pacote `ece-tools`. Consulte [Atualizar ECE-Tools](../dev-tools/update-package.md).
+A Adobe atualizou o pacote Adobe Commerce na infraestrutura em nuvem para otimizar o processamento do cron na plataforma Adobe Commerce na infraestrutura em nuvem e corrigir problemas relacionados ao cron. Se você encontrar problemas com o processamento CRON, verifique se seu projeto está usando a versão mais recente do pacote `ece-tools`. Consulte [Atualizar ECE-Tools](../dev-tools/update-package.md).
 
 Você pode revisar as informações de processamento do CRON nos arquivos de log no nível do aplicativo para cada ambiente. Consulte [Logs do aplicativo](../test/log-locations.md#application-logs).
 
 Consulte os seguintes artigos de suporte da Adobe Commerce para obter ajuda com a solução de problemas relacionados ao cron:
 
-- [Tarefas do Cron bloqueiam tarefas de outros grupos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=pt-BR)
+- [Cron tarefas bloqueiam tarefas de outros grupos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html)
 
-- [Redefinir trabalhos cron travados manualmente na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=pt-BR)
+- [Reinicializa trabalhos cron travados manualmente na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html)

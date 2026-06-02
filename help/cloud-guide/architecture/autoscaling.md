@@ -3,9 +3,15 @@ title: Dimensionamento automático
 description: Saiba como o Adobe Commerce na infraestrutura em nuvem pode ser dimensionado para atender às demandas de recursos.
 feature: Cloud, Auto Scaling
 topic: Architecture
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 11bfde40-79d1-4d51-9233-150c4cfb80fd
+TQID: https://experienceleague.adobe.com/uL--0lHHJ-4SN3BkFU8reAefWhpMQOLBRVG7fX3jTM8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -58,25 +64,25 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Ativar dimensionamento automático
 
-Para habilitar ou desabilitar o dimensionamento automático para o projeto de infraestrutura em nuvem do Adobe Commerce, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket). Escolha os seguintes motivos no ticket:
+Para habilitar ou desabilitar o dimensionamento automático para o projeto de infraestrutura em nuvem do Adobe Commerce, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Escolha os seguintes motivos no ticket:
 
 - **Motivo do contato**: Solicitação de Alteração de Infraestrutura
 - **Motivo do Contato do Adobe Commerce Infrastructure**: Outra Solicitação de Alteração de Infraestrutura
 
 >[!IMPORTANT]
 >
->O recurso de dimensionamento automático captura eventos imprevistos. Mesmo que o dimensionamento automático esteja habilitado, a Adobe recomenda que você continue a [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) se esperar um evento futuro.
+>O recurso de dimensionamento automático captura eventos imprevistos. Mesmo que o dimensionamento automático esteja habilitado, a Adobe recomenda que você continue a [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) se esperar um evento futuro.
 
 ### Teste de carga
 
-O Adobe habilita o dimensionamento automático no cluster _de preparo_ do projeto de nuvem primeiro. Depois de executar e concluir o teste de carga em seu ambiente, o Adobe habilita o dimensionamento automático em seu cluster de produção. Para obter orientação sobre teste de carga, consulte [Teste de desempenho](../launch/checklist.md#performance-testing).
+O Adobe habilita o dimensionamento automático primeiro no cluster _preparo_ do projeto na nuvem. Depois de executar e concluir o teste de carga em seu ambiente, o Adobe habilita o dimensionamento automático em seu cluster de produção. Para obter orientação sobre teste de carga, consulte [Teste de desempenho](../launch/checklist.md#performance-testing).
 
-### INCLUIR NA LISTA DE PERMISSÕES IP
+### INCLUO NA LISTA DE PERMISSÕES IP
 
-Após ativar o dimensionamento automático, o tráfego do nó da Web de saída é originado dos endereços IP dos nós de serviço. Se você usar uma inclui na lista de permissões com um serviço de terceiros que não esteja incluído no seu projeto do Adobe Commerce incluir na lista de permissões na infraestrutura em nuvem, verifique os endereços IP no arquivo de verificação de serviço de terceiros.
+Após ativar o dimensionamento automático, o tráfego do nó da Web de saída é originado dos endereços IP dos nós de serviço. Se você usar um incluo na lista de permissões com um serviço de terceiros que não esteja incluído no seu projeto do Adobe Commerce na infraestrutura em nuvem, verifique os endereços IP no incluo na lista de permissões de serviços de terceiros.
 
 Por exemplo:
 
-- Se a inclui na lista de permissões tiver os endereços IP dos nós de serviço (1, 2 e 3), nenhuma ação será necessária.
-- Se a inclui na lista de permissões contém os endereços IP dos nós de serviço (1, 2 e 3) e dos nós da Web (4, 5 e 6) — neste caso, todos os seis nós —, nenhuma ação é necessária.
-- Se a incluir na lista de permissões inclui na lista de permissões ➡ contiver os endereços IP _only_ para os nós da Web (4, 5 e 6), será necessário atualizar a pesquisa para incluir os endereços IP dos nós de serviço.
+- Se o incluo na lista de permissões contiver os endereços IP dos nós de serviço (1, 2 e 3), nenhuma ação será necessária.
+- Se o incluo na lista de permissões contiver os endereços IP dos nós de serviço (1, 2 e 3) e dos nós da Web (4, 5 e 6), nesse caso, todos os seis nós, nenhuma ação será necessária.
+- Se o incluo na lista de permissões contiver os endereços IP _only_ dos nós da Web (4, 5 e 6), você deverá atualizar o incluo na lista de permissões para incluir os endereços IP dos nós de serviço.

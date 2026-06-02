@@ -1,10 +1,17 @@
 ---
 title: Segurança da infraestrutura em nuvem
-description: Saiba mais sobre como o Adobe mantém segura a infraestrutura em nuvem do Adobe Commerce.
+description: Saiba mais sobre como a Adobe mantém a infraestrutura em nuvem do Adobe Commerce segura.
 feature: Cloud, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ae934401-2c32-427a-8162-98df9a047cd4
+TQID: https://experienceleague.adobe.com/3qXIdZWVJ-jxSodN8YGSzE2TOvMzlMKXHgRizgLVoHk
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7id: f2261633-201d-46c5-8a66-999e70527a83id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: 1724
 ht-degree: 0%
 
 ---
@@ -45,7 +52,7 @@ O aplicativo Adobe Commerce não oferece suporte à criptografia no nível da co
 
 ## Detecção e resposta do endpoint
 
-[!DNL CrowdStrike Falcon], um agente leve de EDR (Detecção e Resposta de Ponto de Extremidade) de próxima geração está instalado em todos os pontos de extremidade (incluindo servidores) no Adobe. Os agentes EDR protegem dados e sistemas de Adobe com monitoramento e coleta contínuos em tempo real, o que permite a identificação e resposta rápidas às ameaças.
+[!DNL CrowdStrike Falcon], um agente leve de EDR (Detecção e Resposta de Ponto de Extremidade) de próxima geração está instalado em todos os pontos de extremidade (incluindo servidores) no Adobe. Os agentes EDR protegem os dados e sistemas da Adobe com monitoramento e coleta contínuos em tempo real, o que permite identificação e resposta rápidas às ameaças.
 
 ## Teste de penetração
 
@@ -66,9 +73,9 @@ O Adobe testa regularmente o código principal do aplicativo em busca de vulnera
 - OWASPZAP
 - andSqlMap
 
-A base de código completa é verificada com essas ferramentas quinzenalmente. Os clientes são notificados sobre patches de segurança por emails diretos, notificações no aplicativo e na [Central de Segurança](https://helpx.adobe.com/br/security.html).
+A base de código completa é verificada com essas ferramentas quinzenalmente. Os clientes são notificados sobre patches de segurança por emails diretos, notificações no aplicativo e na [Central de Segurança](https://helpx.adobe.com/security.html).
 
-Os clientes devem garantir que esses patches sejam aplicados em seus aplicativos personalizados dentro de 30 dias do lançamento, de acordo com as diretrizes de PCI. O Adobe também fornece uma [Ferramenta de Verificação de Segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-scan) que permite aos comerciantes monitorar regularmente seus sites e receber atualizações sobre riscos de segurança conhecidos, malware e acesso não autorizado. A Ferramenta de verificação de segurança é um serviço gratuito e pode ser executada em qualquer versão do Adobe Commerce.
+Os clientes devem garantir que esses patches sejam aplicados em seus aplicativos personalizados dentro de 30 dias do lançamento, de acordo com as diretrizes de PCI. A Adobe também fornece uma [Ferramenta de Verificação de Segurança](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) que permite aos comerciantes monitorar regularmente seus sites e receber atualizações sobre riscos de segurança conhecidos, malware e acesso não autorizado. A Ferramenta de verificação de segurança é um serviço gratuito e pode ser executada em qualquer versão do Adobe Commerce.
 
 Para incentivar os pesquisadores de segurança a identificar e relatar vulnerabilidades, a Adobe Commerce tem um [programa de retribuição de bugs](https://hackerone.com/magento), além de testes internos. Além disso, o cliente recebe o código fonte completo do aplicativo para sua própria análise, se desejado.
 
@@ -88,7 +95,7 @@ Consulte [Exibir e gerenciar logs](../test/log-locations.md).
 
 ## Dados sensíveis
 
-Os dados confidenciais podem abranger informações pessoais de consumidores ou dados confidenciais de clientes da Managed Services. A proteção de dados confidenciais de clientes e consumidores é uma obrigação essencial para o Adobe Commerce Managed Services. Os clientes da Managed Services e do Adobe têm obrigações legais em relação a informações de identificação pessoal. Além dos recursos de segurança da arquitetura, há outros controles para limitar a distribuição e o acesso a dados confidenciais.
+Os dados confidenciais podem abranger informações pessoais de consumidores ou dados confidenciais de clientes da Managed Services. A proteção de dados confidenciais de clientes e consumidores é uma obrigação essencial para o Adobe Commerce Managed Services. Os clientes da Managed Services e da Adobe têm obrigações legais com relação a informações de identificação pessoal. Além dos recursos de segurança da arquitetura, há outros controles para limitar a distribuição e o acesso a dados confidenciais.
 
 Os clientes são proprietários de seus dados e têm controle sobre onde esses dados estão localizados. O cliente especifica o local onde residem suas instâncias de produção e desenvolvimento. Eles também especificam qual local é usado para o ambiente de relatórios do Adobe Commerce com o Commerce e se esse aplicativo de relatórios do Adobe Commerce tem ou não acesso a informações de identificação pessoal. As instâncias de Produção podem estar na maioria das regiões do AWS, enquanto os ambientes de desenvolvimento e de Relatórios do Adobe Commerce podem ser encontrados atualmente nos Estados Unidos ou na União Europeia.
 
@@ -108,7 +115,7 @@ O GDPR solicita que todas as informações de identificação pessoal (como nome
 
 >[!NOTE]
 >
->Esta página fornece uma visão geral do que deve ser considerado para o GDPR. Consulte o _[Guia de Segurança e Conformidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/overview)_ para obter detalhes sobre como a Adobe Commerce armazena informações pessoais. Para determinar como sua empresa deve cumprir quaisquer obrigações legais, consulte seu advogado ou consulte o [texto oficial](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Esta página fornece uma visão geral do que deve ser considerado para o GDPR. Consulte o _[Guia de Segurança e Conformidade](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ para obter detalhes sobre como a Adobe Commerce armazena informações pessoais. Para determinar como sua empresa deve cumprir quaisquer obrigações legais, consulte seu advogado ou consulte o [texto oficial](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Backups
 

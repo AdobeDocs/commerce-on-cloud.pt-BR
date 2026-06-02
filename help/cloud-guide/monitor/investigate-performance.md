@@ -3,9 +3,15 @@ title: Monitoramento do New Relic
 description: Saiba como acessar o painel do New Relic e analisar dados do seu projeto do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Observability
 topic: Performance
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: b9d806c4-f659-4e10-8dcb-b320a61de5e1
+TQID: https://experienceleague.adobe.com/Ih9Y5JqsurZqdXK-vpPGxVe2erbexdQxAlLpDjCBTCg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: 901
 ht-degree: 0%
 
 ---
@@ -30,13 +36,13 @@ Todos os dados coletados detalham o tempo gasto em ações que transmitem dados,
 
 >[!TIP]
 >
->Para obter detalhes sobre como usar esses dados para solucionar problemas de desempenho do aplicativo, consulte [Solução de problemas de desempenho usando o New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=pt-BR) na _Central de Ajuda do Adobe Commerce_.
+>Para obter detalhes sobre como usar esses dados para solucionar problemas de desempenho do aplicativo, consulte [Solução de problemas de desempenho usando o New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) na _Central de Ajuda do Adobe Commerce_.
 
 ## Monitorar o desempenho com alertas gerenciados
 
-O Adobe fornece a _Política de alerta de Alertas Gerenciados para Adobe Commerce_ para rastrear métricas de desempenho. A política inclui uma coleção de alertas que definem limites e acionam avisos e notificações críticas quando problemas de infraestrutura ou aplicativos afetam o desempenho do local. A política rastreia as seguintes métricas em ambientes de produção:
+A Adobe fornece a política de alerta _Alertas gerenciados para Adobe Commerce_ para acompanhar métricas de desempenho. A política inclui uma coleção de alertas que definem limites e acionam avisos e notificações críticas quando problemas de infraestrutura ou aplicativos afetam o desempenho do local. A política rastreia as seguintes métricas em ambientes de produção:
 
-| Métrica | Coleta de dados | Disponibilidade |
+| Métrica | Coleção de dados | Disponibilidade |
 |:-------------------|:----------------|:----------------|
 | [!DNL Apdex] pontuação | APM | Pro e Starter |
 | Uso do CPU | NRI | Pro |
@@ -46,7 +52,7 @@ O Adobe fornece a _Política de alerta de Alertas Gerenciados para Adobe Commerc
 | Carga de consulta MariaDB | NRI | Pro |
 | Memória Redis | NRI | Pro |
 
-Quando a infraestrutura do site ou as condições do aplicativo acionam um limite de alerta, o New Relic envia notificações de alerta para que você possa resolver o problema de forma proativa. Consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes sobre limites de alerta e etapas de solução de problemas para resolver os problemas que dispararam o alerta.
+Quando a infraestrutura do site ou as condições do aplicativo acionam um limite de alerta, o New Relic envia notificações de alerta para que você possa resolver o problema de forma proativa. Consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes sobre limites de alerta e etapas de solução de problemas para resolver os problemas que dispararam o alerta.
 
 >[!TIP]
 >
@@ -76,7 +82,7 @@ Quando a infraestrutura do site ou as condições do aplicativo acionam um limit
 
      >[!NOTE]
      >
-     >Se a política _Alertas Gerenciados para Adobe Commerce_ não estiver disponível, consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_.
+     >Se a política _Alertas Gerenciados para Adobe Commerce_ não estiver disponível, consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) na _Central de Ajuda da Adobe Commerce_.
 
 1. Clique na guia **[!UICONTROL Alert conditions]** para revisar as condições de alerta definidas na política.
 
@@ -124,4 +130,4 @@ Consulte a documentação do New Relic sobre [Workflows](https://docs.newrelic.c
 
 >[!WARNING]
 >
->Os alertas na política Alertas gerenciados para Adobe Commerce têm fluxos de trabalho padrão configurados para notificar equipes Adobe que oferecem suporte a clientes de infraestrutura em nuvem da Adobe Commerce. Não modifique a configuração desses canais padrão e não remova as políticas de alerta atribuídas a eles.
+>Os alertas na política Alertas gerenciados para Adobe Commerce têm fluxos de trabalho padrão configurados para notificar as equipes da Adobe que oferecem suporte ao Adobe Commerce em clientes de infraestrutura em nuvem. Não modifique a configuração desses canais padrão e não remova as políticas de alerta atribuídas a eles.

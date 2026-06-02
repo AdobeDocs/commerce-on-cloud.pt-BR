@@ -2,9 +2,15 @@
 title: Preparação para o desenvolvimento
 description: Obtenha credenciais e saiba mais sobre as ferramentas disponíveis para configurar um espaço de trabalho de desenvolvimento para uso com seu projeto do Commerce na infraestrutura em nuvem.
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: adb7f74f-8007-4f23-bc07-46b0f7d0ebd9
+TQID: https://experienceleague.adobe.com/al-kKS6wmNpCQt5tDRMIO2L10UEShSC2kOf66eThcfw
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: cc250cf1-34eb-4863-80d0-d170d45ea067id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: 498
 ht-degree: 0%
 
 ---
@@ -27,7 +33,7 @@ Antes de configurar um espaço de trabalho, colete as seguintes chaves e acesso 
 
 - **Chave de Criptografia do Adobe Commerce**
 
-  Ao importar somente um sistema existente, capture a chave de criptografia usada para proteger seu acesso e seus dados para o banco de dados. Para obter detalhes sobre esta chave, consulte [Resolver problemas com a chave de criptografia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html?lang=pt-BR)
+  Ao importar somente um sistema existente, capture a chave de criptografia usada para proteger seu acesso e seus dados para o banco de dados. Para obter detalhes sobre esta chave, consulte [Resolver problemas com a chave de criptografia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
 
 ## Ferramentas do desenvolvedor
 
@@ -65,4 +71,4 @@ Uma conexão segura é essencial para interagir com os ambientes remotos. Para u
 
 >[!TIP]
 >
->O Adobe provisiona o ambiente inicial do projeto usando um repositório de modelo que inclui instruções de pacote para uma versão específica do Adobe Commerce. Revise o tópico [estrutura de arquivo do projeto](../cloud-guide/project/file-structure.md) e saiba mais sobre arquivos de projeto importantes e modelos na nuvem.
+>O Adobe provisiona seu ambiente de projeto inicial usando um repositório de modelo que inclui instruções de pacote para uma versão específica do Adobe Commerce. Revise o tópico [estrutura de arquivo do projeto](../cloud-guide/project/file-structure.md) e saiba mais sobre arquivos de projeto importantes e modelos na nuvem.

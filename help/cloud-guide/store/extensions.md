@@ -2,9 +2,15 @@
 title: Gerenciar extensões
 description: Saiba como instalar e gerenciar extensões no Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Extensions, Upgrade
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 88c5ea06-fe79-4105-8b67-f16e9ef06210
+TQID: https://experienceleague.adobe.com/7ZNXOai-hYkUS4ff3bNW32Ny63DfJLMBG2Zti5OVxRM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: 672
 ht-degree: 0%
 
 ---
@@ -19,11 +25,11 @@ ht-degree: 0%
 
 ## Nome do compositor de uma extensão
 
-Embora esta seção discuta como obter o nome e a versão de uma extensão do Composer do Commerce Marketplace, você pode encontrar o nome e a versão do módulo _any_ no arquivo do Composer do módulo. Abra o arquivo `composer.json` em um editor de texto e anote os valores `"name"` e `"version"`.
+Embora esta seção discuta como obter o nome do Compositor e a versão de uma extensão do Commerce Marketplace, você pode encontrar o nome e a versão do módulo _any_ no arquivo Compositor do módulo. Abra o arquivo `composer.json` em um editor de texto e anote os valores `"name"` e `"version"`.
 
-**Para obter o nome do Compositor de um módulo do Commerce Marketplace**:
+**Para obter o nome do Compositor de um módulo da Commerce Marketplace**:
 
-1. Faça logon em [Commerce Marketplace](https://marketplace.magento.com) com o nome de usuário e a senha que você usou para comprar o componente.
+1. Faça logon no [Commerce Marketplace](https://marketplace.magento.com) com o nome de usuário e a senha que você usou para comprar o componente.
 
 1. No canto superior direito, clique no seu nome de usuário e selecione **Meu perfil**.
 
@@ -49,7 +55,7 @@ Embora esta seção discuta como obter o nome e a versão de uma extensão do Co
 
 ## Instalar uma extensão
 
-A Adobe recomenda trabalhar em uma ramificação de desenvolvimento ao adicionar uma extensão à implementação. Ao instalar uma extensão, o nome da extensão (`<VendorName>_<ComponentName>`) é inserido automaticamente no arquivo [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=pt-BR). Não há necessidade de editar o arquivo diretamente.
+A Adobe recomenda trabalhar em uma ramificação de desenvolvimento ao adicionar uma extensão à implementação. Ao instalar uma extensão, o nome da extensão (`<VendorName>_<ComponentName>`) é inserido automaticamente no arquivo [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html). Não há necessidade de editar o arquivo diretamente.
 
 **Para instalar uma extensão**:
 
@@ -155,7 +161,7 @@ Nunca ative ou desative uma extensão enquanto estiver conectado em ambientes re
 
 ## Atualizar uma extensão
 
-Antes de continuar, é necessário o nome e a versão do Composer para a extensão. Além disso, confirme se a extensão é compatível com o projeto e a versão do Adobe Commerce. Em particular, [verifique a versão necessária do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) antes de começar.
+Antes de continuar, é necessário o nome e a versão do Composer para a extensão. Além disso, confirme se a extensão é compatível com o projeto e a versão do Adobe Commerce. Em particular, [verifique a versão necessária do PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) antes de começar.
 
 **Para atualizar uma extensão**:
 
@@ -189,4 +195,4 @@ Antes de continuar, é necessário o nome e a versão do Composer para a extens�
    git push origin <branch-names>
    ```
 
-Se você encontrar erros, consulte [Recuperar de falha de componente](../deploy/recover-failed-deployment.md). Para saber mais sobre o uso de extensões com o Adobe Commerce, consulte [Extensões](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html?lang=pt-BR) no _Guia do Administrador_.
+Se você encontrar erros, consulte [Recuperar de falha de componente](../deploy/recover-failed-deployment.md). Para saber mais sobre o uso de extensões com o Adobe Commerce, consulte [Extensões](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) no _Guia do Administrador_.

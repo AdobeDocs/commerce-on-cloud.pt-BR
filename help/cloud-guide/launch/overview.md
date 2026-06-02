@@ -2,9 +2,14 @@
 title: Lançamento do site
 description: Saiba como iniciar a preparação para a inicialização do site.
 exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
-source-git-commit: 38ac38d4edd0f317155d0d4537021a29a21d5761
+TQID: https://experienceleague.adobe.com/-aWGtM8yXIMPfKihDMD6LS1r2-UIuceyf9X4TTIFTf0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -43,7 +48,7 @@ Como parte da assinatura do Adobe Commerce na infraestrutura em nuvem, a Adobe f
 
 >[!NOTE]
 >
->Se você quiser implantar seu próprio certificado SSL de Validação Estendida para sua empresa, em vez de usar o certificado Vamos Criptografar, contate sua CTA ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket).
+>Se você quiser implantar seu próprio certificado SSL de Validação Estendida para sua empresa, em vez de usar o certificado Vamos Criptografar, contate sua CTA ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Configurar a ferramenta Verificação de segurança
 
@@ -57,7 +62,7 @@ Como parte da assinatura do Adobe Commerce na infraestrutura em nuvem, a Adobe f
 >3.218.25.102
 >```
 >
->Incluir na lista de permissões Adicione esses endereços IP a uma pesquisa no arquivo de regras de firewall da rede para permitir que a ferramenta verifique seu site. A ferramenta publica solicitações somente para as portas 80 e 443.
+>Adicione esses endereços IP a um incluo na lista de permissões em suas regras de firewall de rede para permitir que a ferramenta verifique seu site. A ferramenta publica solicitações somente para as portas 80 e 443.
 
 A Ferramenta de Verificação de Segurança permite que você monitore regularmente os sites da loja e receba atualizações de riscos de segurança conhecidos, malware e software desatualizado. Essa ferramenta é um serviço gratuito disponível para todas as implementações e versões do Adobe Commerce na infraestrutura em nuvem. Você acessa a ferramenta por meio de sua [conta do Commerce Marketplace](https://account.magento.com/customer/account/login).
 
@@ -69,7 +74,7 @@ A Ferramenta de Verificação de Segurança permite que você monitore regularme
 >
 >A Adobe recomenda usar a Ferramenta de verificação de segurança em vez de outras ferramentas de terceiros para garantir a melhor qualidade do serviço durante a investigação de descobertas.
 
-Consulte o [Guia do Usuário](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-scan) para obter informações sobre a configuração e o uso da ferramenta de verificação de segurança. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação de usuários (UAT).
+Consulte o [Guia do Usuário](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) para obter informações sobre a configuração e o uso da ferramenta de verificação de segurança. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação de usuários (UAT).
 
 Cada site examinado deve ser registrado por meio da guia Security Scan (Verificação de segurança). Durante o processo de registro, você deve aceitar a isenção de responsabilidade antes de começar a verificar. Você controla o agendamento e autoriza o usuário a receber notificações quando cada verificação é concluída. Você pode programar varreduras para uma data e hora específicas e recorrentes, ou executar uma varredura sob demanda, conforme necessário.
 
