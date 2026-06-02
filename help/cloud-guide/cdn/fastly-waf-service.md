@@ -44,7 +44,7 @@ O serviço WAF oferece os seguintes benefícios:
 
 >[!TIP]
 >
->Para obter informações adicionais sobre como manter a conformidade com o PCI para sua Adobe Commerce em lojas de infraestrutura em nuvem, consulte [conformidade com o PCI](https://business.adobe.com/products/magento/pci-compliance.html).
+>Para obter informações adicionais sobre como manter a conformidade com o PCI para sua Adobe Commerce em lojas de infraestrutura em nuvem, consulte [conformidade com o PCI](https://business.adobe.com/br/products/magento/pci-compliance.html).
 
 ## Habilitação do WAF
 
@@ -68,7 +68,7 @@ Quando o serviço WAF está ativado, ele inspeciona todo o tráfego da Web e adm
 
 Você pode personalizar esta página de resposta de erro no Admin. Consulte [Personalizar a página de resposta do WAF](fastly-custom-response.md#customize-the-waf-error-page).
 
-Se a sua página de administrador ou loja do Adobe Commerce retornar uma página de erro `403 Forbidden` em resposta a uma solicitação de URL legítima, envie um [tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Copie a ID de referência da página de resposta de erro e cole-a na descrição do ticket.
+Se a sua página de administrador ou loja do Adobe Commerce retornar uma página de erro `403 Forbidden` em resposta a uma solicitação de URL legítima, envie um [tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Copie a ID de referência da página de resposta de erro e cole-a na descrição do ticket.
 
 Para identificar a resposta do WAF para uma solicitação específica usando o New Relic, consulte o seguinte:
 
