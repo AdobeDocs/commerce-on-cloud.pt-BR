@@ -3,10 +3,18 @@ title: Serviço de email SendGrid
 description: Saiba mais sobre o serviço de email SendGrid para Adobe Commerce na infraestrutura em nuvem e como você pode testar sua configuração de DNS.
 exl-id: 06236068-df32-468f-99ec-c379984be136
 TQID: https://experienceleague.adobe.com/I4giHpOngkQ0KZYBXZoGJGBXLWme2fxE39uIOGnON-k
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: beb7a3c1-66ab-4786-b879-7621375b3c40id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1702
@@ -80,7 +88,7 @@ Para que o SendGrid envie emails transacionais em seu nome de ambientes de Produ
 
 >[!TIP]
 >
->Certifique-se de configurar os **[!UICONTROLSEndereços de email de armazenamento]** com o domínio adequado em **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. A autenticação de domínio é executada no endereço de email do remetente. Se a configuração padrão (`example.com`) estiver definida, os emails de `example.com` serão bloqueados pelo Sendgrid.
+>Certifique-se de configurar os **[!UICONTROL SEndereços de email de armazenamento]** com o domínio adequado em **[!UICONTROL Stores > Configuration > General > Store Email Addresses]**. A autenticação de domínio é executada no endereço de email do remetente. Se a configuração padrão (`example.com`) estiver definida, os emails de `example.com` serão bloqueados pelo Sendgrid.
 
 **Para habilitar a autenticação de domínio**:
 

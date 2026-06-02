@@ -4,9 +4,13 @@ description: Saiba como configurar notificações para o Adobe Commerce em ambie
 feature: Cloud, Configuration, Logs
 exl-id: dfbe1084-ad30-4489-af2d-d6f6b5eae1c4
 TQID: https://experienceleague.adobe.com/YWCv3iFJDvmDTCSaB9cWGmR0WVAEd4ckJdd5MFb8XOo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 413

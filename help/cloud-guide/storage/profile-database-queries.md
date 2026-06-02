@@ -4,8 +4,11 @@ description: Saiba como habilitar a criação de perfil para entender o impacto 
 feature: Cloud, Storage
 exl-id: 8eaa2dea-80b7-4f53-9f9d-734e811f91c0
 TQID: https://experienceleague.adobe.com/ZQZh5c7ts4osFU8oGoW3CeEIt7X1qASguPzyIm-e9-A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 73
