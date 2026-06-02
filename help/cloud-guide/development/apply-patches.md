@@ -2,9 +2,16 @@
 title: Aplicar patches
 description: Saiba como aplicar patches no projeto Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Upgrade
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
+TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: 910
 ht-degree: 0%
 
 ---
@@ -22,7 +29,7 @@ Ambos os pacotes melhoram a integração de todas as versões do Adobe Commerce 
 
 >[!TIP]
 >
->Você pode usar a [Ferramenta de patches de qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) e Patches na nuvem para Commerce como pacotes autônomos para projetos Magento Open Source e Adobe Commerce. Recomendamos o uso da Ferramenta de correções de qualidade para projetos que não estejam na nuvem.
+>Você pode usar a [Ferramenta de patches de qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) e Patches na nuvem para o Commerce como pacotes autônomos para projetos Magento Open Source e Adobe Commerce. Recomendamos o uso da Ferramenta de correções de qualidade para projetos que não estejam na nuvem.
 
 Quando você implanta alterações no ambiente remoto, o pacote `ece-tools` usa `magento/magento-cloud-patches` e `magento/quality-patches` para verificar patches pendentes e os aplica automaticamente na seguinte ordem:
 
@@ -112,7 +119,7 @@ Você pode aplicar patches manualmente em um ambiente local e testá-los antes d
 
 **Para aplicar patches individuais em um ambiente de desenvolvimento local**:
 
-1. Adicione a variável &#39;QUALITY_PATCH&#39; ao arquivo `.magento.env.yaml` e liste os patches necessários abaixo de.
+1. Adicione a variável &#39;QUALITY_PATCHES&#39; ao arquivo `.magento.env.yaml` e liste os patches necessários abaixo de.
 
    ```yaml
    stage:
@@ -179,7 +186,7 @@ Você pode aplicar patches manualmente em um ambiente local e testá-los antes d
 
 ## Aplicar um patch personalizado
 
-Ao implantar, o ECE-Tools aplica todos os patches de Adobe e qualquer patch personalizado que você adicionar ao diretório `/m2-hotfixes` na raiz do projeto.
+Ao implantar, o ECE-Tools aplica todos os patches do Adobe e qualquer patch personalizado que você adicionar ao diretório `/m2-hotfixes` na raiz do projeto.
 
 >[!NOTE]
 >
@@ -239,7 +246,7 @@ Para reverter ou desinstalar um patch personalizado aplicado anteriormente:
 
 ## Aplicar patches a um projeto que não esteja na nuvem
 
-Use a [Ferramenta de correções de qualidade](https://github.com/magento/quality-patches) para projetos Magento Open Source e Adobe Commerce.
+Use a [Ferramenta de correções de qualidade](https://github.com/magento/quality-patches) para projetos do Magento Open Source e do Adobe Commerce.
 
 ## Reverter um patch em um ambiente local
 

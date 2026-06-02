@@ -2,9 +2,22 @@
 title: Fluxo de trabalho do projeto inicial
 description: Saiba como usar os workflows de desenvolvimento e implantação do Starter.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 75d170b6-1ec2-4099-82c8-5c4df3442843
+TQID: https://experienceleague.adobe.com/ohBEYApu-9AJmxBvtoxGxpQcmK67ppeACPl7xNvycsQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: 2168
 ht-degree: 0%
 
 ---
@@ -126,7 +139,7 @@ Gere o arquivo no ambiente de integração em que você configurou o Adobe Comme
 
 **Observações importantes** sobre o Gerenciamento de Configurações:
 
-- Qualquer configuração incluída no arquivo gerado pelo comando `app:config:dump` está bloqueada para edição, ou é somente leitura, no ambiente implantado. Essa é uma razão pela qual o Adobe recomenda o uso do comando `.vendor/bin/ece-tools config:dump`.
+- Qualquer configuração incluída no arquivo gerado pelo comando `app:config:dump` está bloqueada para edição, ou é somente leitura, no ambiente implantado. Essa é uma das razões pelas quais a Adobe recomenda o uso do comando `.vendor/bin/ece-tools config:dump`.
 
   Por exemplo, você instala um módulo para o Fastly no ambiente de desenvolvimento. Você só pode configurar esse módulo no ambiente de preparo e produção. O uso do comando `.vendor/bin/ece-tools config:dump` mantém esses campos padrão editáveis ao implantar suas alterações de desenvolvimento no ambiente de preparo e produção.
 

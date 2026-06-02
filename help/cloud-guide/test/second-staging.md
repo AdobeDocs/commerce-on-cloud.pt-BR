@@ -1,18 +1,27 @@
 ---
 title: Segundo ambiente de preparo
 description: Saiba mais sobre os benefícios e usos de ter um segundo ambiente de preparo para testes paralelos, isolamento de problemas, controle de versão e muito mais.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 300019bd-07cb-4efb-8740-a49a5a3cf01b
+TQID: https://experienceleague.adobe.com/GFIisldCx779874WoAb0gmXHlE52dN-3COiIsfYDYCU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: 719
 ht-degree: 0%
 
 ---
 
 # Segundo ambiente de preparo
 
-Na infraestrutura do Adobe Commerce Cloud, o ambiente de preparo garante testes e validação abrangentes em uma configuração que pode espelhar o ambiente de produção. Esse ambiente permite identificar e resolver bugs com segurança, ao mesmo tempo em que garante que qualquer novo recurso ou alteração seja perfeitamente integrado antes que afete seu site ativo.
+Na infraestrutura da Adobe Commerce Cloud, o ambiente de preparo garante testes e validação abrangentes em uma configuração que pode espelhar o ambiente de produção. Esse ambiente permite identificar e resolver bugs com segurança, ao mesmo tempo em que garante que qualquer novo recurso ou alteração seja perfeitamente integrado antes que afete seu site ativo.
 
-Alguns projetos exigem um fluxo de trabalho de desenvolvimento mais sofisticado. Para atender a essa necessidade, o Adobe oferece um ambiente de preparo adicional como uma opção complementar à sua infraestrutura de nuvem. Ter dois ambientes de preparo é vantajoso para projetos complexos e colaboração simultânea entre equipes.
+Alguns projetos exigem um fluxo de trabalho de desenvolvimento mais sofisticado. Para atender a essa necessidade, a Adobe oferece um ambiente de preparo adicional como opção complementar à sua infraestrutura de nuvem. Ter dois ambientes de preparo é vantajoso para projetos complexos e colaboração simultânea entre equipes.
 
 Ter um ambiente de preparo secundário oferece os seguintes benefícios:
 
@@ -40,7 +49,7 @@ Ter dois ambientes de preparo pode melhorar muito a eficiência do fluxo de trab
 
 Se seu projeto já tiver um ambiente de preparo adicional ou se você estiver considerando atualizar seu projeto atual, considere as seguintes linhas do tempo e responsabilidades de provisionamento:
 
-- O processo de provisionamento pode levar até duas semanas após você confirmar a solicitação com o representante de vendas da Adobe.
+- O processo de provisionamento pode levar até duas semanas depois que você confirmar a solicitação com o representante de vendas da Adobe.
 
 - Os novos ambientes de preparo só estão disponíveis na mesma região dos ambientes de preparo e produção atuais.
 
@@ -62,7 +71,7 @@ Para facilitar sua solicitação, siga as etapas:
 
 1. Confirme os detalhes.
 
-   Depois de confirmar os detalhes com seu representante de vendas, aguarde a confirmação deles de que a solicitação de provisionamento foi recebida e está sendo processada. Quando o processo de provisionamento estiver concluído, a equipe do Adobe enviará uma confirmação.
+   Depois de confirmar os detalhes com seu representante de vendas, aguarde a confirmação deles de que a solicitação de provisionamento foi recebida e está sendo processada. Quando o processo de provisionamento estiver concluído, a equipe da Adobe enviará uma confirmação.
 
 1. Implante em seu novo ambiente.
 

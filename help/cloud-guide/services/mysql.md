@@ -2,9 +2,21 @@
 title: Configurar o serviço MySQL
 description: Saiba como gerenciar o serviço MySQL para armazenamento de dados persistente com o Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Services, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 37b893ef-43cf-466b-9d18-ee3b80fdf2d8
+TQID: https://experienceleague.adobe.com/xPikS7qhOEhhWDRuUYBJEqL7EUPObzPDxJEZ4xjKkuE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: 921
 ht-degree: 1%
 
 ---
@@ -17,7 +29,7 @@ A reindexação no MariaDB 10.4 leva mais tempo em comparação com outras vers�
 
 >[!WARNING]
 >
->Tenha cuidado ao atualizar o MariaDB da versão 10.1 para 10.2. O MariaDB 10.1 é a última versão que oferece suporte ao _XtraDB_ como mecanismo de armazenamento. MariaDB 10.2 usa _InnoDB_ para o mecanismo de armazenamento. Depois de atualizar da versão 10.1 para a 10.2, não é possível reverter a alteração. O Adobe Commerce é compatível com ambos os mecanismos de armazenamento; no entanto, você deve verificar as extensões e outros sistemas usados pelo seu projeto para garantir que eles sejam compatíveis com o MariaDB 10.2. Consulte [Alterações Incompatíveis Entre 10.1 e 10.2](https://mariadb.com/kb/en/upgrading-from-mariadb-101-to-mariadb-102/#incompatible-changes-between-101-and-102).
+>Tenha cuidado ao atualizar o MariaDB da versão 10.1 para 10.2. MariaDB 10.1 é a última versão que dá suporte a _XtraDB_ como mecanismo de armazenamento. MariaDB 10.2 usa _InnoDB_ para o mecanismo de armazenamento. Depois de atualizar da versão 10.1 para a 10.2, não é possível reverter a alteração. O Adobe Commerce é compatível com ambos os mecanismos de armazenamento; no entanto, você deve verificar as extensões e outros sistemas usados pelo seu projeto para garantir que eles sejam compatíveis com o MariaDB 10.2. Consulte [Alterações Incompatíveis Entre 10.1 e 10.2](https://mariadb.com/kb/en/upgrading-from-mariadb-101-to-mariadb-102/#incompatible-changes-between-101-and-102).
 
 {{service-instruction}}
 
@@ -219,6 +231,6 @@ O acesso direto ao banco de dados do MariaDB requer que você use um SSH para fa
 Consulte os seguintes artigos de suporte da Adobe Commerce para obter ajuda com a solução de problemas do MySQL:
 
 - [Verificando consultas e processos lentos MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=pt-BR)
-- [Criar despejo de banco de dados na Nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=pt-BR)
-- [Solução de problemas da Ferramenta de Migração de Dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
-- [Atualização do Adobe Commerce: compacta para tabelas dinâmicas 2.2.x, 2.3.x para 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=pt-BR)
+- [Criar despejo de banco de dados na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=pt-BR)
+- [Solução de problemas da Ferramenta de migração de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+- [Atualização do Adobe Commerce: tabelas compactas para dinâmicas 2.2.x, 2.3.x para 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=pt-BR)

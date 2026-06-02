@@ -5,9 +5,18 @@ role: Developer
 feature: Cloud, Security
 topic: Security
 exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
-source-git-commit: 9c0b4bea11abb2ce5644556ab3dadd361f8ff449
+TQID: https://experienceleague.adobe.com/-4Ag5M7x3edpbquUy6Rr--rcghGk7r745jKV883IFFA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: 1071
 ht-degree: 0%
 
 ---
@@ -25,7 +34,7 @@ Crie um par de chaves SSH em cada máquina e espaço de trabalho que exija acess
 
 >[!CAUTION]
 >
->**Nunca compartilhe sua chave privada.** Não adicione-o a um tíquete, copie-o em um chat ou anexe-o a emails.
+>**Nunca compartilhe sua chave privada.** Não adicione-o a um tíquete, copie-o em um bate-papo ou anexe-o a emails.
 
 ## Adicionar uma chave pública SSH à sua conta
 

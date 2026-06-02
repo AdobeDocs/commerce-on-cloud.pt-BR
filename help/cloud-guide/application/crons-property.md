@@ -2,9 +2,20 @@
 title: Propriedade Crons
 description: Veja exemplos de como configurar a propriedade "crons" no arquivo de configuração do aplicativo  [!DNL Commerce] .
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
+TQID: https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: 1172
 ht-degree: 0%
 
 ---
@@ -86,8 +97,8 @@ O Adobe Commerce usa uma expressão de cinco valores para uma especificação `c
 
 Alguns exemplos:
 
-- O `00 */3 * * *` é executado a cada três horas no primeiro minuto (12h, 3h, 6h)
-- O `20 */8 * * *` é executado a cada 8 horas aos minutos 20 (12:20, 8:20, 16:20)
+- `00 */3 * * *` é executado a cada três horas no primeiro minuto (12:00 am, 3:00 am, 6:00 am)
+- `20 */8 * * *` é executado a cada 8 horas aos minutos 20 (12:20 am, 8:20 am, 4:20 pm)
 - `00 00 * * *` é executado uma vez por dia à meia-noite
 - O `00 * * * 1` é executado uma vez por semana, às segundas-feiras à meia-noite.
 
@@ -191,12 +202,12 @@ Você pode desabilitar manualmente os trabalhos cron antes de concluir as tarefa
 
 ## Solução de problemas de trabalhos cron
 
-o Adobe atualizou o pacote Adobe Commerce na infraestrutura em nuvem para otimizar o processamento de cron na plataforma Adobe Commerce na infraestrutura em nuvem e para corrigir problemas relacionados ao cron. Se você encontrar problemas com o processamento CRON, verifique se seu projeto está usando a versão mais recente do pacote `ece-tools`. Consulte [Atualizar ECE-Tools](../dev-tools/update-package.md).
+A Adobe atualizou o pacote Adobe Commerce na infraestrutura em nuvem para otimizar o processamento do cron na plataforma Adobe Commerce na infraestrutura em nuvem e corrigir problemas relacionados ao cron. Se você encontrar problemas com o processamento CRON, verifique se seu projeto está usando a versão mais recente do pacote `ece-tools`. Consulte [Atualizar ECE-Tools](../dev-tools/update-package.md).
 
 Você pode revisar as informações de processamento do CRON nos arquivos de log no nível do aplicativo para cada ambiente. Consulte [Logs do aplicativo](../test/log-locations.md#application-logs).
 
 Consulte os seguintes artigos de suporte da Adobe Commerce para obter ajuda com a solução de problemas relacionados ao cron:
 
-- [Tarefas do Cron bloqueiam tarefas de outros grupos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=pt-BR)
+- [Cron tarefas bloqueiam tarefas de outros grupos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=pt-BR)
 
-- [Redefinir trabalhos cron travados manualmente na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=pt-BR)
+- [Reinicializa trabalhos cron travados manualmente na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=pt-BR)

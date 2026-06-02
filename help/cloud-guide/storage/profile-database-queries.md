@@ -2,9 +2,16 @@
 title: Consultas ao banco de dados de perfil
 description: Saiba como habilitar a criação de perfil para entender o impacto das alterações no banco de dados.
 feature: Cloud, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8eaa2dea-80b7-4f53-9f9d-734e811f91c0
+TQID: https://experienceleague.adobe.com/ZQZh5c7ts4osFU8oGoW3CeEIt7X1qASguPzyIm-e9-A
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: 73
 ht-degree: 0%
 
 ---

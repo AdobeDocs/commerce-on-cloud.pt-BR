@@ -3,9 +3,17 @@ title: Redirecionar solicitações para um back-end do CMS
 description: Saiba como redirecionar solicitações recebidas de uma loja do Adobe Commerce para um site do WordPress separado usando o módulo Fastly edge.
 feature: Cloud, Configuration, Routes
 exl-id: ef024c68-395b-4d47-9362-a8404a93dbbe
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+TQID: https://experienceleague.adobe.com/zRM-iTFGNPgSmT5xu1B9Lo3-onUtCHh-tVY-WPPiVC8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: 322
 ht-degree: 0%
 
 ---

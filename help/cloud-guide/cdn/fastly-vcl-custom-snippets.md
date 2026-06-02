@@ -3,9 +3,20 @@ title: Introdução a trechos de VCL personalizados
 description: Saiba mais sobre como usar trechos de código da Linguagem de controle do Vernish para personalizar a configuração do serviço Fastly para o Adobe Commerce.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+TQID: https://experienceleague.adobe.com/1grH8E6w-CgPS2ANraTxdM1NZ6Jjb8G4i7tgSswcuJE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: 2179
 ht-degree: 0%
 
 ---
@@ -88,7 +99,7 @@ A tabela a seguir fornece detalhes sobre os dados principais para trechos de VCL
 | `content` | O trecho de código VCL a ser executado. O Fastly não é compatível com todos os recursos de linguagem de VCL. Além disso, o Fastly fornece extensões com funcionalidade personalizada. Para obter detalhes sobre os recursos com suporte, consulte a [Referência de programação do Fastly VCL](https://docs.fastly.com/vcl/reference/). |
 | `dynamic` | Status dinâmico de um trecho. Retorna `false` para [trechos regulares](https://docs.fastly.com/en/guides/about-vcl-snippets) incluídos no VCL com versão para a configuração do serviço Fastly. Retorna `true` para um [trecho dinâmico](https://docs.fastly.com/vcl/vcl-snippets/using-dynamic-vcl-snippets/) que pode ser modificado e implantado sem a necessidade de uma nova versão de VCL. |
 | `number` | Número da versão do VCL em que o trecho está incluído. O Fastly usa a *Versão Editável nº* em seus valores de exemplo. Se você adicionar trechos personalizados da API, inclua o número da versão na solicitação da API. Se você adicionar um VCL personalizado do Administrador, a versão será fornecida para você. |
-| `priority` | Valor numérico de `1` a `100` que especifica quando o código de trecho de VCL personalizado é executado. Os trechos com valores de prioridade mais baixos são executados primeiro. Se não for especificado, o valor de `priority` assumirá `100` como padrão.<p>Incluir na lista de permissões Qualquer trecho de VCL personalizado com valor de prioridade `5` é executado imediatamente, o que é melhor para o código de VCL que implementa o roteamento de solicitações (bloqueia e alerta e redireciona). A prioridade `100` é melhor para substituir o código de trecho de VCL padrão.<p>Todos os [trechos de VCL padrão](fastly-configuration.md#upload-vcl-snippets) incluídos no módulo Magento-Fastly têm `priority=50`.<ul><li>Atribua uma prioridade alta como `100` para executar o código VCL personalizado após todas as outras funções VCL e substituir o código VCL padrão.</li></ul> |
+| `priority` | Valor numérico de `1` a `100` que especifica quando o código de trecho de VCL personalizado é executado. Os trechos com valores de prioridade mais baixos são executados primeiro. Se não for especificado, o valor de `priority` assumirá `100` como padrão.<p>Qualquer trecho de VCL personalizado com valor de prioridade `5` é executado imediatamente, o que é melhor para o código de VCL que implementa o roteamento de solicitações (bloqueia e inclui na lista de permissões e redireciona). A prioridade `100` é melhor para substituir o código de trecho de VCL padrão.<p>Todos os [trechos de VCL padrão](fastly-configuration.md#upload-vcl-snippets) incluídos no módulo Magento-Fastly têm `priority=50`.<ul><li>Atribua uma prioridade alta como `100` para executar o código VCL personalizado após todas as outras funções VCL e substituir o código VCL padrão.</li></ul> |
 | `service_id` | A ID de serviço do Fastly para um ambiente específico de Preparo ou Produção. Essa ID é atribuída quando seu projeto é adicionado à conta de serviço do Adobe Commerce na infraestrutura em nuvem [Fastly](fastly.md#fastly-service-account-and-credentials). |
 | `type` | Especifica o local para inserir o trecho gerado, como `init` (acima das sub-rotinas) e `recv` (dentro das sub-rotinas). Para obter detalhes, consulte a referência do Fastly [VCL snippets](https://docs.fastly.com/api/config#api-section-snippet). |
 
@@ -105,7 +116,7 @@ Os seguintes exemplos mostram como criar e gerenciar trechos de VCL personalizad
 - [Redirecionar solicitações para um back-end do CMS](fastly-vcl-wordpress.md)
 - [Bloquear spam de referência](fastly-vcl-badreferer.md)
 - [Bloquear spam de referência](fastly-vcl-badreferer.md)
-- [VCL Personalizado para inclui na lista de permissões de IP](fastly-vcl-allowlist.md)
+- [VCL personalizado para incluo na lista de permissões IP](fastly-vcl-allowlist.md)
 - [VCL Personalizado para inclui na lista de bloqueios de IP](fastly-vcl-blocking.md)
 - [Ignorar cache Fastly](fastly-vcl-bypass-to-origin.md)
 

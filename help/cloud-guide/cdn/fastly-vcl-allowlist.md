@@ -3,9 +3,20 @@ title: VCL personalizado para permitir solicitações
 description: Filtre solicitações recebidas e permita o acesso por endereço IP para sites do Adobe Commerce com uma lista ACL do Fastly Edge e um trecho VCL personalizado.
 feature: Cloud, Configuration, Security
 exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+TQID: https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: 873
 ht-degree: 0%
 
 ---
@@ -14,7 +25,7 @@ ht-degree: 0%
 
 Você pode usar uma lista de ACL do Fastly Edge com um trecho de código de VCL personalizado para filtrar solicitações recebidas e permitir o acesso pelo endereço IP. A lista de ACL especifica os endereços IP permitidos.
 
-Crie um incluo na lista de permissões de atualização para limitar o acesso ao ambiente de preparo, de modo que somente as solicitações de endereços IP especificados para desenvolvedores internos e serviços externos aprovados sejam permitidos. Você também pode criar uma inclui na lista de permissões para proteger o acesso do Administrador aos ambientes de Preparo e Produção.
+Crie um incluo na lista de permissões para limitar o acesso ao ambiente de preparo, para que somente as solicitações de endereços IP especificados para desenvolvedores internos e serviços externos aprovados sejam permitidos. Você também pode criar um incluo na lista de permissões para proteger o acesso do Administrador aos ambientes de Preparo e Produção.
 
 O exemplo a seguir mostra como usar um trecho de VCL personalizado com uma [Lista de Controle de Acesso (ACL) do Fastly](https://docs.fastly.com/guides/access-control-lists/about-acls) para proteger o acesso ao Administrador para um ambiente de projeto do Adobe Commerce na infraestrutura em nuvem. Quando você adiciona o trecho VCL personalizado ao ambiente na nuvem, o Fastly permite somente solicitações de endereços IP incluídos na ACL.
 
@@ -27,7 +38,7 @@ O exemplo a seguir mostra como usar um trecho de VCL personalizado com uma [List
 
 {{$include /help/_includes/vcl-snippet-prerequisites.md}}
 
-- Lista de endereços IP de clientes a serem incluídos no arquivo de inclui na lista de permissões
+- Lista de endereços IP de clientes a serem incluídos no incluo na lista de permissões
 
 ## Criar ACL do Edge para permitir endereços IP de clientes
 

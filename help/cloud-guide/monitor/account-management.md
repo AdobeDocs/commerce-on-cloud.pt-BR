@@ -4,9 +4,23 @@ description: Saiba como acessar sua conta do New Relic e gerenciar o acesso, as 
 feature: Cloud, Observability
 role: Admin
 exl-id: 7aeedd12-7a81-47eb-a82f-3079e16ecb06
-source-git-commit: 83fde1f9771c0b3c7ad557233d76dfff91fa7a6c
+TQID: https://experienceleague.adobe.com/JUx2wo00f8bfp-XZ-eaTGlHjYL6gUH-M0BtNWEg9MgU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2:
+  - id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: 945
 ht-degree: 0%
 
 ---

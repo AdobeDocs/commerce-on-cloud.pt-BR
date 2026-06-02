@@ -3,9 +3,20 @@ title: VCL personalizado para solicitações de bloqueio
 description: Bloqueie solicitações recebidas pelo endereço IP usando uma lista de controle de acesso (ACL) do Edge com um trecho de VCL personalizado.
 feature: Cloud, Configuration, Security
 exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+TQID: https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: 1026
 ht-degree: 0%
 
 ---
@@ -35,11 +46,11 @@ Gerencie o acesso para sites de Preparo e Produção criando a ACL do Edge com o
 
 Você faz referência à ACL do Edge pelo nome em seu código de trecho de VCL.
 
-## Incluir na lista de bloqueios Criar o VCL personalizado para o arquivo de pesquisa
+## Criar o VCL personalizado para o arquivo de pesquisa
 
 >[!NOTE]
 >
->Este exemplo mostra aos usuários avançados como criar um trecho de código VCL para configurar regras de bloqueio personalizadas para fazer upload no serviço Fastly. Você pode configurar um incluo na lista de bloqueios de classificação ou de inclui na lista de permissões com base no país do Administrador da Adobe Commerce usando o recurso [Bloqueio](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) disponível no módulo Fastly CDN para Magento 2.
+>Este exemplo mostra aos usuários avançados como criar um trecho de código VCL para configurar regras de bloqueio personalizadas para fazer upload no serviço Fastly. Você pode configurar um incluo na lista de permissões ou uma inclui na lista de bloqueios com base no país do Administrador do Adobe Commerce usando o recurso [Bloqueio](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) disponível no módulo Fastly CDN para Magento 2.
 
 Depois de definir a ACL do Edge, você pode usá-la para criar o trecho VCL para bloquear o acesso aos endereços IP especificados na ACL. Você pode usar o mesmo trecho de VCL em ambientes de Preparo e Produção, mas deve fazer upload do trecho para cada ambiente separadamente.
 

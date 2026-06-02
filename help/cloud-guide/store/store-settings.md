@@ -2,9 +2,20 @@
 title: Gerenciamento de configuração de armazenamento
 description: Saiba como gerenciar e sincronizar configurações de armazenamento em todos os ambientes de infraestrutura em nuvem do Adobe Commerce.
 feature: Cloud, Configuration, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 01850a7b-2c03-45e8-8051-b24ae95c5f87
+TQID: https://experienceleague.adobe.com/TF-K8g48q2fnuldOLdnwxjAJrxGzsRJlongd7cRqV9U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: 1507
 ht-degree: 0%
 
 ---
