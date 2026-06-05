@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3a36ada0dd3bdb4952b71f9ff851af20766c91ed
+source-git-commit: a15ae4e0e11a84662c980ad351e32362f14e69e1
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '442'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 4 de junho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>O tópico <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Segurança avançada</a> foi atualizado com informações sobre limitações e observabilidade.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/54fcde91fb6fd159edadf85146da375692cce0d6">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2 de junho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Esclarecimento da configuração de bloqueio padrão e de como as variáveis de ambiente <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a> afetam os ambientes Pro e Starter.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/17ecf47f8cad5dcb53ef92b32377a7074e16bb52">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 1 de junho de 2026
 
