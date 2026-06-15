@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: e0e1d3994a6b9ceef9e45b55cc9946bc62203ddb
 workflow-type: tm+mt
-source-wordcount: 1637
+source-wordcount: 1667
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ No provisionamento inicial ou na atualização de seu projeto do Adobe Commerce,
 
 ## Conta de serviço e credenciais do Fastly
 
-A Adobe Commerce em projetos de infraestrutura em nuvem não recebe uma conta dedicada do Fastly. O serviço Fastly é gerenciado em uma conta centralizada registrada no Adobe, e o painel de gerenciamento é acessível somente para a equipe de Suporte da Nuvem.
+A Adobe Commerce em projetos de infraestrutura em nuvem não recebe uma conta dedicada do Fastly. O serviço Fastly é gerenciado em uma conta centralizada registrada no Adobe, e o acesso ao painel é limitado à equipe de Suporte na Nuvem. Por esse motivo, o suporte não pode fornecer acesso ao painel do Fastly em resposta às solicitações do cliente. Use o administrador do Adobe Commerce e suas credenciais específicas do ambiente Fastly para tarefas de configuração e gerenciamento compatíveis com o Fastly.
 
 Em vez disso, cada ambiente de preparo e produção tem credenciais exclusivas do Fastly (token da API e ID de serviço) para configurar e gerenciar os serviços do Fastly no Administrador do Commerce. A API Fastly está disponível para executar o gerenciamento avançado do serviço Fastly, que exigirá as credenciais para enviar essas solicitações.
 
