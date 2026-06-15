@@ -4,26 +4,14 @@ description: Saiba como os serviços do Fastly incluídos com o Adobe Commerce n
 feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
 exl-id: 429b6762-0b01-438b-a962-35376306895b
 TQID: https://experienceleague.adobe.com/Lq2rzR14xlcj5y3ycfAWGHEKAIxboekZX8YtyOJPQXA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: f2261633-201d-46c5-8a66-999e70527a83
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: e0e1d3994a6b9ceef9e45b55cc9946bc62203ddb
 workflow-type: tm+mt
-source-wordcount: 1637
+source-wordcount: 1667
 ht-degree: 0%
 
 ---
@@ -114,7 +102,7 @@ No provisionamento inicial ou na atualização de seu projeto do Adobe Commerce,
 
 ## Conta de serviço e credenciais do Fastly
 
-A Adobe Commerce em projetos de infraestrutura em nuvem não recebe uma conta dedicada do Fastly. O serviço Fastly é gerenciado em uma conta centralizada registrada no Adobe, e o painel de gerenciamento é acessível somente para a equipe de Suporte da Nuvem.
+A Adobe Commerce em projetos de infraestrutura em nuvem não recebe uma conta dedicada do Fastly. O serviço Fastly é gerenciado em uma conta centralizada registrada no Adobe, e o acesso ao painel é limitado à equipe de Suporte na Nuvem. Por esse motivo, o suporte não pode fornecer acesso ao painel do Fastly em resposta às solicitações do cliente. Use o administrador do Adobe Commerce e suas credenciais específicas do ambiente Fastly para tarefas de configuração e gerenciamento compatíveis com o Fastly.
 
 Em vez disso, cada ambiente de preparo e produção tem credenciais exclusivas do Fastly (token da API e ID de serviço) para configurar e gerenciar os serviços do Fastly no Administrador do Commerce. A API Fastly está disponível para executar o gerenciamento avançado do serviço Fastly, que exigirá as credenciais para enviar essas solicitações.
 
@@ -122,13 +110,13 @@ Durante o provisionamento do projeto, a Adobe adiciona o projeto à conta de ser
 
 ### Alterar o token da API do Fastly
 
-Envie um tíquete de Suporte da Adobe Commerce para emitir uma nova credencial de token da API do Fastly [se houver falha na validação/tiver expirado](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ou se você acreditar que ele foi comprometido.
+Envie um tíquete de Suporte da Adobe Commerce para emitir uma nova credencial de token da API do Fastly [se houver falha na validação/tiver expirado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ou se você acreditar que ele foi comprometido.
 
 Ao receber o novo token, atualize o ambiente de preparo ou produção para usar o novo token.
 
 **Para alterar a credencial do token da API do Fastly**:
 
-1. [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) solicitando novas credenciais da API do Fastly.
+1. [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando novas credenciais da API do Fastly.
 
    Inclua sua ID de projeto do Adobe Commerce na infraestrutura em nuvem e os ambientes que exigem uma nova credencial.
 
@@ -176,18 +164,18 @@ A proteção DDOS é integrada ao serviço Fastly CDN. Depois de ativar os servi
 
 >[!NOTE]
 >
->A proteção contra ataques de Camada 7 não é coberta pelo serviço Fastly CDN integrado ao Adobe Commerce. Para obter dicas sobre proteção contra ataques da Camada 7, consulte [Verificação de ataques de DDoS](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) e [Como bloquear ataques mal-intencionados](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) na *Base de Dados de Conhecimento Adobe Commerce*.
+>A proteção contra ataques de Camada 7 não é coberta pelo serviço Fastly CDN integrado ao Adobe Commerce. Para obter dicas sobre proteção contra ataques da Camada 7, consulte [Verificação de ataques de DDoS](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) e [Como bloquear ataques mal-intencionados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) na *Base de Dados de Conhecimento Adobe Commerce*.
 
 <!--Link definitions-->
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=pt-BR
+[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
 
 [Módulo Fastly CDN para Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Tíquete de suporte do Fastly]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=pt-BR
+[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
 
 [Trabalhar com domínios]: https://docs.fastly.com/en/guides/working-with-domains
