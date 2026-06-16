@@ -5,12 +5,17 @@ role: Admin
 feature: Cloud, Roles/Permissions
 level: Beginner
 short-description: Adicione usuários e atribua funções de projeto e ambiente no Cloud Console ou na CLI.
-last-substantial-update: 2026-06-11T00:00:00Z
+last-substantial-update: 2026-06-11
 topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
-source-git-commit: de324897e87232393f20d95b2867d8a95605fa23
+TQID: https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 30e6d068126e2713dcaa23292db5704c23c272ad
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: 1690
 ht-degree: 0%
 
 ---
@@ -246,7 +251,7 @@ As instruções para instalar o aplicativo autenticador e habilitar o TFA estão
 
      >[!WARNING]
      >
-     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para redefinir o aplicativo TFA.
+     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para redefinir o aplicativo TFA.
 
 1. Após concluir a configuração do TFA, clique em **Salvar** para atualizar sua conta.
 
@@ -299,4 +304,4 @@ Em projetos que têm a imposição de MFA habilitada, você deve ter um token de
 
 ## Mais ajuda sobre este tópico
 
-- [Não é possível adicionar usuário ao projeto de nuvem do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — solução de problemas ao adicionar um usuário.
+- [Não é possível adicionar usuário ao projeto de nuvem do Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — solução de problemas ao adicionar um usuário.
