@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3006f8f7b3eb54f44cf2bda06403441d304b4b81
+source-git-commit: 020a2699befa042a37170a638ded9657a72933e8
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
+>Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
 
 ## Opções de mesclagem {#merge-options}
 
@@ -143,6 +143,16 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 >[!TIP]
 >
 >Antes de iniciar uma atualização ou um processo de patch, crie uma ramificação ativa do ambiente de integração e faça check-out da nova ramificação para a estação de trabalho local. Dedicar uma ramificação à atualização ou ao processo de patch ajuda a evitar interferência com o trabalho em andamento.
+
+## Valkey no New Relic {#valkey-newrelic}
+
+>[!NOTE]
+>
+>O New Relic ainda pode mostrar o Redis mesmo após a migração para o Valkey
+>
+>Espera-se que o New Relic continue se referindo ao serviço de cache como Redis mesmo após o ambiente ter sido migrado para o Valkey.
+>
+>Valkey é uma bifurcação de código aberto da Redis, e algumas ferramentas e integrações continuam a identificar o serviço usando a nomenclatura Redis em vez de um rótulo distinto da Valkey. Isso não indica necessariamente que o Redis ainda está instalado.
 
 <!-- Fastly-related snippets begin -->
 
