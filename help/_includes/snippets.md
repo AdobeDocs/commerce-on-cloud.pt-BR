@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
+>Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
 
 ## Opções de mesclagem {#merge-options}
 
