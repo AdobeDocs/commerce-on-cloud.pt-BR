@@ -4,14 +4,10 @@ description: Saiba como reduzir o tempo de inatividade geral ao implantar o Adob
 feature: Cloud, Deploy, SCD, Themes
 exl-id: c216c5e9-d787-4428-b67a-b6aee814ded5
 TQID: https://experienceleague.adobe.com/wYFZNd42AoVZxdlWWG6Jr-K6FV2XhTdWp-9HFoof4rE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 502
 ht-degree: 0%
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 # Implantação sem tempo de inatividade
 
-O Adobe Commerce na infraestrutura em nuvem executa o aplicativo no modo de [_manutenção_](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=pt-BR#production-mode) durante a fase de implantação, o que coloca o site offline até que a implantação seja concluída. O tempo em que o site de produção está no modo de manutenção depende do tamanho do site, do número de alterações aplicadas durante a implantação e da configuração para implantação de conteúdo estático. É possível configurar seu projeto para que ele seja implantado com um efeito de tempo de inatividade **zero**.
+O Adobe Commerce na infraestrutura em nuvem executa o aplicativo no modo de [_manutenção_](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) durante a fase de implantação, o que coloca o site offline até que a implantação seja concluída. O tempo em que o site de produção está no modo de manutenção depende do tamanho do site, do número de alterações aplicadas durante a implantação e da configuração para implantação de conteúdo estático. É possível configurar seu projeto para que ele seja implantado com um efeito de tempo de inatividade **zero**.
 
 Durante o processo de implantação, todas as conexões ficam em fila por até 5 minutos, preservando quaisquer sessões ativas e ações pendentes, como adicionar ao carrinho ou fazer checkout. Após a implantação, a fila é liberada e as conexões continuam sem interrupção. Para usar essa _suspensão de conexão_ a seu favor e reduzir a implantação para _zero_ tempo de inatividade, você deve configurar seu projeto para usar a estratégia de implantação mais eficiente.
 
@@ -54,3 +50,4 @@ Você pode acelerar o processo de implantação atualizando a variável de ambie
 >[!NOTE]
 >
 >Você pode validar a configuração do seu projeto para implantação ideal [executando o assistente de estado ideal](smart-wizards.md#verifying-an-ideal-configuration).
+

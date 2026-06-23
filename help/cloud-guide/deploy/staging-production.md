@@ -4,21 +4,12 @@ description: Saiba como implantar seu Adobe Commerce no código de infraestrutur
 feature: Cloud, Console, Deploy, SCD, Storage
 exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
 TQID: https://experienceleague.adobe.com/SJZ2BuPEe6QsgkPyODiZx6118qd6vxh72r3nVuPrLnM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: b01a71b7-d17a-42b2-a9ac-af4b8d9d2ef5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: b01a71b7-d17a-42b2-a9ac-af4b8d9d2ef5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1374
 ht-degree: 0%
@@ -155,7 +146,7 @@ A CLI da nuvem fornece comandos para implantar código. Você precisa de acesso 
 
 ## Migrar arquivos estáticos
 
-[Arquivos estáticos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary) são armazenados em `mounts`. Há dois métodos para migrar arquivos de um local de montagem de origem, como o ambiente local, para um local de montagem de destino. Ambos os métodos usam o utilitário `rsync`, mas a Adobe recomenda usar a CLI `magento-cloud` para mover arquivos entre os ambientes local e remoto. E a Adobe recomenda usar o método `rsync` ao mover arquivos de uma origem remota para um local remoto diferente.
+[Arquivos estáticos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) são armazenados em `mounts`. Há dois métodos para migrar arquivos de um local de montagem de origem, como o ambiente local, para um local de montagem de destino. Ambos os métodos usam o utilitário `rsync`, mas a Adobe recomenda usar a CLI `magento-cloud` para mover arquivos entre os ambientes local e remoto. E a Adobe recomenda usar o método `rsync` ao mover arquivos de uma origem remota para um local remoto diferente.
 
 ### Migrar arquivos usando a CLI
 
@@ -364,3 +355,4 @@ Ao importar dados, você deve eliminar e criar um banco de dados.
    ```
 
    Esses comandos descompactam o arquivo de despejo do banco de dados, removem as instruções `DEFINER` e importam o banco de dados usando as credenciais especificadas.
+

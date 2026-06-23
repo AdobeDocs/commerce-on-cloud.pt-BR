@@ -4,14 +4,10 @@ description: Veja exemplos de como configurar a propriedade da Web no arquivo de
 feature: Cloud, Configuration
 exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
 TQID: https://experienceleague.adobe.com/IFmzGyuOpqIc9Fq4vLp1JEgrfSWORDtERWdisL4dyT8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 462
 ht-degree: 0%
@@ -51,7 +47,7 @@ A configuração padrão permite o seguinte:
 - No caminho raiz (`/`), somente a Web e a mídia podem ser acessadas
 - Nos caminhos `~/pub/media` e `~/pub/static`, qualquer arquivo pode ser acessado
 
-O exemplo a seguir mostra a configuração padrão no arquivo `.magento.app.yaml` para um conjunto de locais acessíveis pela Web associados a uma entrada na propriedade [`mounts` &#x200B;](properties.md#mounts):
+O exemplo a seguir mostra a configuração padrão no arquivo `.magento.app.yaml` para um conjunto de locais acessíveis pela Web associados a uma entrada na propriedade [`mounts` ](properties.md#mounts):
 
 ```yaml
  # The configuration of app when it is exposed to the web.
@@ -92,3 +88,4 @@ web:
 >[!NOTE]
 >
 >Este exemplo mostra a configuração da Web padrão para um projeto na nuvem configurado para oferecer suporte a um único domínio. Para um projeto que requer suporte para vários sites ou lojas, a configuração `web` deve ser definida para dar suporte a domínios compartilhados. Consulte [Configurar locais para domínios compartilhados](../store/multiple-sites.md#configure-locations-for-shared-domains).
+

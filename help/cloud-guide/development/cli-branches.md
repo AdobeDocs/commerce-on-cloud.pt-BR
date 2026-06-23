@@ -5,14 +5,10 @@ role: Developer
 feature: Cloud, Install
 exl-id: d67e8802-8137-451f-b468-8b788afb01ea
 TQID: https://experienceleague.adobe.com/hCfTF-Vl9LLKgUet4hS3JZN3kX7ZF6BDJ4tsYnr44Fs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 688
 ht-degree: 0%
@@ -39,7 +35,7 @@ As instruções a seguir usam uma combinação de comandos da CLI do `magento-cl
 
 **Para clonar um ambiente `master` do projeto**:
 
-1. Faça logon na estação de trabalho local com uma conta do [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR).
+1. Faça logon na estação de trabalho local com uma conta do [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Altere para o diretório do servidor Web ou host virtual _docroot_.
 
@@ -205,3 +201,4 @@ Ao excluir um ambiente, ele é definido como _inativo_. O código ainda está di
 ## Interagir com ambientes remotos
 
 Depois de [configurar chaves SSH](../development/secure-connections.md), você pode [se conectar do espaço de trabalho local a um ambiente remoto](../development/secure-connections.md#connect-to-a-remote-environment) e interagir com os serviços do projeto e modificar as configurações.
+
