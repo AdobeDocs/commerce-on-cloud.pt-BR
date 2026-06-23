@@ -23,7 +23,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1724
 ht-degree: 0%
@@ -140,3 +140,4 @@ O serviço cria um backup independente no armazenamento redundante. Como os volu
 Sua abordagem de backup e recuperação da Managed Services usa uma arquitetura de alta disponibilidade combinada com backups completos do sistema. Cada projeto é replicado — todos os dados, código e ativos — em três zonas de disponibilidade da AWS separadas; cada zona com um data center separado.
 
 Consulte [Gerenciamento de instantâneos e backup](../storage/snapshots.md).
+

@@ -11,7 +11,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 605
 ht-degree: 0%
@@ -151,3 +151,4 @@ Consulte a [seção 3.5 da documentação do SourceGuardian](https://sourceguard
 >Não há suporte para o PHP compilado com depuração e a Investigação pode entrar em conflito com [!DNL XDebug] ou [!DNL XHProf]. Desative essas extensões ao ativar o teste. O Probe está em conflito com algumas extensões PHP como [!DNL Pinba] ou IonCube.
 
 <!-- Last updated from includes: 2026-04-24 14:50:02 -->
+

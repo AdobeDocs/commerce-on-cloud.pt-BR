@@ -21,7 +21,7 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: efe0f95c16d9aab9af6a9c263034b08dce4d7c93
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 405
 ht-degree: 0%
@@ -50,3 +50,4 @@ Considere a Adobe Commerce na infraestrutura em nuvem como cinco camadas funcion
 Os aplicativos monolíticos consomem muitos recursos e são difíceis de dimensionar e atender rapidamente. Com a infraestrutura em nuvem, os clientes da Commerce obtêm acesso inigualável a microsserviços baseados em SaaS, que são avançados, inteligentes e eficientes. Consulte [Software e serviços com suporte](cloud-architecture.md#supported-software-and-services).
 
 Use o [Guia de Introdução do Commerce](../../get-started/overview.md) para configurar seu novo programa na Nuvem e começar a gerenciar seu aplicativo do [!DNL Commerce] em um ambiente nativo da nuvem.
+
