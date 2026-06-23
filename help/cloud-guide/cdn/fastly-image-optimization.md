@@ -4,10 +4,15 @@ description: Saiba como otimizar a entrega de imagens e simplificar o gerenciame
 feature: Cloud, Configuration, Media
 exl-id: 3457ebb0-dbb4-4cb0-b6ab-837b15dce03e
 TQID: https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1211
@@ -84,7 +89,7 @@ Revise e atualize as definições de configuração de E/S padrão para otimiza�
 
    - **Redimensionar filtro**—deixe a configuração padrão (`Lancsoz3`) ou selecione uma alternativa. Essa configuração especifica o filtro usado para fornecer uma imagem redimensionada. Dependendo do filtro selecionado, a imagem redimensionada pode ter um número de pixels maior ou menor.
 
-      - `Lanczos3` (padrão) — Fornece a imagem de melhor qualidade. Ele aumenta a capacidade de detectar bordas e recursos lineares em uma imagem e usa a reamostragem de _[!DNL sinc]_para fornecer a melhor reconstrução possível.
+      - `Lanczos3` (padrão) — Fornece a imagem de melhor qualidade. Ele aumenta a capacidade de detectar bordas e recursos lineares em uma imagem e usa a reamostragem de _[!DNL sinc]_&#x200B;para fornecer a melhor reconstrução possível.
       - `Lanczos2` — Usa o mesmo filtro que `Lancsoz3`, mas com uma aproximação menos precisa da função de reamostragem _[!DNL sinc]_.
       - `Bicubic` — Tem um efeito de nitidez natural ao tornar uma imagem menor.
       - `Bilinear` — Tem um efeito de suavização natural ao tornar uma imagem maior.
