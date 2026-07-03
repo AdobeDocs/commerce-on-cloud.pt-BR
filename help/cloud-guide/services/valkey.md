@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [Valkey](https://valkey.io) é uma solução de cache de back-end opcional que substitui o `Zend Framework Zend_Cache_Backend_File`, que a Adobe Commerce usa por padrão.
 
-Consulte [Configurar Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} no _Guia de práticas recomendadas do manual de implementação_.
+Consulte [Configurar Valkey](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} no _Guia de práticas recomendadas do manual de implementação_.
 
 {{service-instruction}}
 
