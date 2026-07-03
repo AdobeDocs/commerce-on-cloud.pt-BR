@@ -4,26 +4,20 @@ description: Saiba como habilitar o serviço RabbitMQ para gerenciar filas de me
 feature: Cloud, Services
 exl-id: 64af1dfa-e3f0-4404-a352-659ca47c1121
 TQID: https://experienceleague.adobe.com/oweBbN2F8xg9ISmnP-31-ymXpHIdBzQsDbYHDPK-SSM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: c43a709ee9c3b974cef08e36170dbb2ab240564f
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 572
 ht-degree: 0%
 
 ---
 
 # Configurar o serviço [!DNL RabbitMQ]
 
-O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=pt-BR) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
+O [MQF (Estrutura da Fila de Mensagens)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) é um sistema do Adobe Commerce que permite que um [módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona.
 
 O MQF usa [RabbitMQ](https://www.rabbitmq.com/) como agente de mensagens, o que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. [!DNL RabbitMQ] é baseado na especificação AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
@@ -163,7 +157,7 @@ Para conectar ao RabbitMQ usando seu aplicativo PHP, adicione uma biblioteca PHP
 
 ## Solução de problemas do serviço [!DNL RabbitMQ]
 
-Consulte [Não é possível se conectar ao RabbitMQ na Adobe Commerce Cloud](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27688).
+Consulte [Não é possível se conectar ao RabbitMQ na Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
 
 ## Atualizando o serviço [!DNL RabbitMQ]
 
@@ -171,4 +165,6 @@ Consulte [Não é possível se conectar ao RabbitMQ na Adobe Commerce Cloud](htt
 >
 >Ao atualizar [!DNL RabbitMQ] em um ambiente de Integração, não ignore as versões. Somente [atualizações sequenciais](https://www.rabbitmq.com/docs/upgrade#rabbitmq-version-upgradability) são suportadas (por exemplo, 3.8 → 3.9 → 3.10 → 3.11 → 3.12 → 3.13 → 4.0 → 4.1), e cada aumento de versão deve corresponder a uma implantação real e bem-sucedida do seu ambiente na nuvem.
 >
->Para obter instruções de atualização de serviço geral, consulte [Alterar versão do serviço](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+>Depois de alterar a versão do serviço RabbitMQ, incluindo uma atualização ou downgrade, reimplante o ambiente. Durante a implantação, o Adobe Commerce executa as tarefas de configuração que recriam as filas, trocas e vinculações do RabbitMQ necessárias.
+>
+>Para obter instruções de atualização de serviço geral, consulte [Alterar versão do serviço](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
