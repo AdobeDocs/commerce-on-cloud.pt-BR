@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access">Gerenciar acesso do usuário</a> com pré-requisitos mais claros, estados de convite do Console da Nuvem, orientação de reimplantação e solução de problemas relacionada.</p>
+      <td><p>Atualização do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access">Gerenciar acesso do usuário</a> com pré-requisitos mais claros, estados de convite do Console da Nuvem, orientação de reimplantação e solução de problemas relacionada.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>O tópico <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Segurança avançada</a> foi atualizado com informações sobre limitações e observabilidade.</p>
+      <td><p>O tópico <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Segurança avançada</a> foi atualizado com informações sobre limitações e observabilidade.</p>
 </td>
       <td>
         Atualização importante
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Esclarecimento da configuração de bloqueio padrão e de como as variáveis de ambiente <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a> afetam os ambientes Pro e Starter.</p>
+      <td><p>Esclarecimento da configuração de bloqueio padrão e de como as variáveis de ambiente <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a> afetam os ambientes Pro e Starter.</p>
 </td>
       <td>
         Técnico
@@ -89,7 +89,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Removida a instrução de suporte do Elasticsearch para No Local no <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">aviso de suporte do Elasticsearch</a>.</p>
+      <td><p>Removida a instrução de suporte do Elasticsearch para No Local no <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/opensearch">aviso de suporte do Elasticsearch</a>.</p>
 </td>
       <td>
         Técnico
