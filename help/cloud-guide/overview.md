@@ -3,20 +3,12 @@ title: Commerce na infraestrutura em nuvem
 description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
 TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: efe0f95c16d9aab9af6a9c263034b08dce4d7c93
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: bcac8986e748f6e513d4db22ee7eb7f64bac1a3a
 workflow-type: tm+mt
 source-wordcount: 323
 ht-degree: 3%
@@ -36,7 +28,7 @@ O Adobe Commerce na infraestrutura em nuvem fornece uma plataforma de hospedagem
 
 >[!NOTE]
 >
->Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Para obter mais informações sobre segurança, consulte a [lista de verificação de inicialização de segurança](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Veja a [Pilha de tecnologia](architecture/tech-stack.md) em detalhes ou saiba mais sobre recursos específicos e produtos com suporte na [Arquitetura de nuvem do Commerce](architecture/cloud-architecture.md).
 
@@ -73,8 +65,8 @@ O guia da infraestrutura do Commerce na nuvem presume que você tenha algum conh
 
 - [Documentação do desenvolvedor do Adobe Commerce](https://developer.adobe.com/commerce/docs/) (site do Adobe Developer) — desenvolva, personalize, integre, estenda e use recursos avançados
 
-- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
+- [Documentação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) — planeje, implemente, opere, atualize e mantenha seus projetos do [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-05-13 23:38:24 -->
+<!-- Last updated from includes: 2026-07-13 20:49:04 -->
