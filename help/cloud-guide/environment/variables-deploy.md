@@ -6,10 +6,16 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 980ec809-8c68-450a-9db5-29c5674daa16
 TQID: https://experienceleague.adobe.com/TNuUxXzCiXnKefww0DmKbjfJygEz2HFG-0PjCsCy2nA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: c16f4ad68bb3d57f021c552f7aca2d2ee2e8c365
 workflow-type: tm+mt
 source-wordcount: 2798
@@ -484,7 +490,7 @@ Você deve ter um serviço Redis configurado no arquivo `.magento.app.yaml` e no
 
 [ECE-Tools versão 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) e posterior usa mais configurações tolerantes a falhas. Se o Adobe Commerce não puder ler dados da instância _slave_ do Redis, ele lerá os dados da instância _master_ do Redis.
 
-A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` ](#cache_configuration).
+A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` &#x200B;](#cache_configuration).
 
 ## `VALKEY_BACKEND`
 
@@ -533,7 +539,7 @@ Você deve ter um serviço Redis configurado no arquivo `.magento.app.yaml` e no
 
 [ECE-Tools versão 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) e posterior usa mais configurações tolerantes a falhas. Se o Adobe Commerce não puder ler dados da instância Valkey _slave_, ele lerá dados da instância Redis _master_.
 
-A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` ](#cache_configuration).
+A conexão somente leitura não está disponível para uso no ambiente de integração ou se você usar a variável [`CACHE_CONFIGURATION` &#x200B;](#cache_configuration).
 
 ## `RESOURCE_CONFIGURATION`
 
