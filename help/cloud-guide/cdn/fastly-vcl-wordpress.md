@@ -11,7 +11,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: bcac8986e748f6e513d4db22ee7eb7f64bac1a3a
 workflow-type: tm+mt
 source-wordcount: 322
 ht-degree: 0%
@@ -59,4 +59,3 @@ Use os Módulos do Fastly Edge para criar e carregar o código de VCL personaliz
 1. Depois de atualizar a configuração do serviço Fastly, teste seu armazenamento no Adobe Commerce para garantir que as solicitações de URL especificadas para o WordPress sejam roteadas novamente corretamente.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
-

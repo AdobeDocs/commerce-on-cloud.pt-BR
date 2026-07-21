@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: bcac8986e748f6e513d4db22ee7eb7f64bac1a3a
 workflow-type: tm+mt
 source-wordcount: 2179
 ht-degree: 0%
@@ -345,4 +345,3 @@ Esses exemplos de solicitação de API usam variáveis de ambiente exportadas pa
   Crie um trecho com valores atualizados e atribua uma prioridade de `100`.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
-
