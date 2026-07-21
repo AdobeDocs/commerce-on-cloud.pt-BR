@@ -4,14 +4,10 @@ description: Saiba como configurar e otimizar o Valkey como uma solução de cac
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 TQID: https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: f1e6c9da5dacb144dc3e1a09885c1a9b11ce54ee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 988a098ec800616898a4ad0ab460a09ec64c4fc3
 workflow-type: tm+mt
 source-wordcount: 259
 ht-degree: 0%
@@ -20,9 +16,9 @@ ht-degree: 0%
 
 # Configurar o serviço Valkey
 
-[Valkey](https://valkey.io) é uma solução de cache de back-end opcional que substitui o `Zend Framework Zend_Cache_Backend_File`, que a Adobe Commerce usa por padrão. Se você substituir o padrão na versão 2.4.9+ do Commerce ou versões de patch posteriores a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e as linhas de versão 2.4.8-p5, deverá usar Valkey.
+[Valkey](https://valkey.io) é uma solução de cache de back-end opcional que substitui o `Zend Framework Zend_Cache_Backend_File`, que a Adobe Commerce usa por padrão. Se você substituir o padrão na versão 2.4.9+ do Commerce ou versões de patch posteriores a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e as linhas de versão 2.4.8-p4, deverá usar Valkey.
 
-Consulte [Configurar Valkey](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} no _Guia de práticas recomendadas do manual de implementação_.
+Consulte [Configurar Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} no _Guia de práticas recomendadas do manual de implementação_.
 
 {{service-instruction}}
 
