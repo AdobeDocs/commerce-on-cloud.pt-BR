@@ -1,7 +1,7 @@
 ---
-source-git-commit: ee2ed3a78939af36572f0baa6672b2e9f9a2557f
+source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,11 @@ Esse diretório contém ganchos de pré-confirmação que otimizam automaticamen
 
 ## O que os ganchos fazem
 
-- **Detectar automaticamente** arquivos de imagem preparados (PNG, JPG, JPEG, GIF)
-- **Execute`image_optim`** para compactar e otimizar imagens
+- **Detectar automaticamente** arquivos de imagem preparados (PNG, JPEG, GIF, SVG)
+- **Execute`image_optim`** para compactar e otimizar imagens rasterizadas (PNG, JPEG, GIF)
 - **Repreparar imagens otimizadas** automaticamente
-- **Verifique se todas as imagens confirmadas** estão corretamente otimizadas
+- **Verifique se todas as imagens rasterizadas confirmadas** estão corretamente otimizadas
+- **Verificar SVGs** preparados em relação a um limite de tamanho e anular a confirmação se qualquer SVG excedê-lo
 
 ## Benefícios
 
@@ -87,9 +88,16 @@ Image optimization complete!
 - **PNG**: usar para capturas de tela e elementos da interface do usuário (será otimizado automaticamente)
 - **JPEG**: usar para fotografias (será otimizado automaticamente)
 - **GIF**: usar para animações (será otimizado automaticamente)
-- **SVG**: usar para ícones e elementos gráficos simples (não processado por ganchos, confirmar como está)
+- **SVG**: usar para ícones e elementos gráficos simples (não otimizado, mas verificado em relação a um limite de tamanho; a confirmação falhará se o limite for excedido)
 
-Os ganchos de pré-confirmação otimizarão automaticamente imagens PNG, JPEG e GIF na confirmação.
+Os ganchos de pré-confirmação otimizarão automaticamente imagens PNG, JPEG e GIF na confirmação e verificarão SVGs preparados em relação a um limite de tamanho (140 KB).
+
+Se uma SVG em etapas exceder o limite, a confirmação será anulada. Em vez disso, converta-o em PNG:
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=path/to/image.svg
+```
 
 ## Otimização manual
 
@@ -107,7 +115,7 @@ Os ganchos usam o arquivo de configuração `_jekyll/.image_optim.yml` para pers
 - **PNG**: usa `advpng`, `optipng` e `pngquant`
 - **JPEG**: Usa `jhead`, `jpegoptim` e `jpegtran`
 - **GIF**: Usa `gifsicle`
-- **SVG**: não processado (excluído da detecção para preservar animações e gráficos vetoriais)
+- **SVG**: não otimizado (excluído de `image_optim` para preservar animações e gráficos vetoriais), mas verificado em relação a um limite de tamanho de 140 KB
 
 ## Solução de problemas
 
@@ -123,6 +131,12 @@ Os ganchos usam o arquivo de configuração `_jekyll/.image_optim.yml` para pers
 - Verificar se a gem `adobe-comdox-exl-rake-tasks` está instalada (fornece `image_optim`)
 - Revise o arquivo de configuração `.image_optim.yml`
 
+### O SVG excede o limite de tamanho
+
+- A confirmação será anulada se um SVG preparado exceder 140 KB
+- Converter o SVG em PNG: `cd _jekyll && bundle exec rake images:svg_to_png path=path/to/image.svg`
+- Em seguida, prepare o PNG no lugar do SVG e confirme novamente
+
 ### Problemas de desempenho
 
 - Ajustar contagem de threads em `_jekyll/.image_optim.yml`
@@ -132,16 +146,17 @@ Os ganchos usam o arquivo de configuração `_jekyll/.image_optim.yml` para pers
 
 1. **Acionador de pré-confirmação**: quando você executa o `git commit`, o gancho é executado automaticamente
 2. **Detecção de imagem**: verifica arquivos preparados em busca de extensões de imagem
-3. **Otimização**: Executa `image_optim` em cada imagem preparada
+3. **Otimização**: executa `image_optim` em cada PNG, JPEG ou GIF preparado
 4. **Repreparo**: adiciona automaticamente imagens otimizadas de volta à área de preparo
-5. **Continuação da confirmação**: se a otimização tiver êxito, a confirmação continuará normalmente
+5. **Verificação de tamanho do SVG**: verifica cada SVG preparado em relação ao limite de tamanho de 140 KB
+6. **Continuação da confirmação**: se a otimização tiver êxito e nenhum SVG exceder o limite de tamanho, a confirmação continuará normalmente; caso contrário, a confirmação será anulada
 
 ## Formatos de imagem compatíveis
 
 - **PNG** (`.png`) - Compactação sem perdas e com perdas
 - **JPEG** (`.jpg`, `.jpeg`) - Compactação com perda com limpeza de metadados
 - **GIF** (`.gif`) - Otimização de animação e estática
-- **SVG** (`.svg`) - Não processado por ganchos (confirme como está para preservar a qualidade)
+- **SVG** (`.svg`) - Não otimizado (confirme como está para preservar a qualidade), mas verificado em relação a um limite de tamanho de 140 KB; a confirmação será anulada se o limite for excedido
 
 ## Práticas recomendadas
 
