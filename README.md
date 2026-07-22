@@ -1,7 +1,7 @@
 ---
-source-git-commit: 55206749cd121ef6d6139a71af6ff905d4109859
+source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Este projeto adotou o [Código de conduta do Adobe Open Source](code-of-conduct.
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/pt-br/docs/contributor/contributor-guide/introduction).
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 A forma como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
@@ -40,7 +40,7 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/pt-br/docs/contributor/contributor-guide/introduction) para obter mais detalhes.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) para obter mais detalhes.
 
 ## Como usar marcação para formatar seu tópico
 
@@ -134,7 +134,9 @@ Consulte a documentação do Jekyll para obter mais detalhes sobre [Arquivos de 
 
 ## Tarefas do rake disponíveis
 
-Este repositório usa tarefas do rake fornecidas pela gem `adobe-comdox-exl-rake-tasks`. Para ver todas as tarefas disponíveis, execute:
+Este repositório usa tarefas do rake fornecidas pelo
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Para ver todas as tarefas disponíveis, execute:
 
 ```bash
 cd _jekyll
@@ -155,10 +157,11 @@ Após clonar o repositório, execute:
 
 ### O que os ganchos fazem
 
-- Detectar automaticamente arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
-- Executar `image_optim` para compactar e otimizar imagens
+- Detectar automaticamente arquivos de imagem preparados (PNG, JPEG, GIF, SVG)
+- Executar `image_optim` para compactar e otimizar imagens rasterizadas (PNG, JPEG, GIF)
 - Transferir imagens otimizadas automaticamente
-- Garantir que todas as imagens confirmadas estejam corretamente otimizadas
+- Garantir que todas as imagens rasterizadas confirmadas estejam corretamente otimizadas
+- Verificar SVGs preparados em relação a um limite de tamanho e anular a confirmação se qualquer SVG o exceder
 
 ### Benefícios
 
