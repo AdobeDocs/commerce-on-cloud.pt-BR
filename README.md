@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
+source-git-commit: 3d3df68ab5e1781974348190b30372c0b8169d1d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Este site contém a documentação mais recente para o desenvolvedor do Commerce na Infraestrutura em nuvem.
 
-- [Guia da infraestrutura do Commerce na nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview)
-- [Introdução ao Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/start/overview) na infraestrutura em nuvem
+- [Guia da infraestrutura do Commerce na nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Introdução ao Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) na infraestrutura em nuvem
 
 ## Código de conduta do Adobe Open Source
 
@@ -34,7 +34,7 @@ Se você fizer parte da comunidade da Adobe e quiser criar um novo artigo ou env
 
 ### Grandes mudanças de funcionários da Adobe
 
-Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for contribuir com ou criar artigos técnicos, deverá usar o repositório privado em `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.pt-BR`.
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for contribuir com ou criar artigos técnicos, deverá usar o repositório privado em `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en`.
 
 ## Ferramentas e configuração
 
@@ -70,7 +70,7 @@ Em geral, a maioria dos autores só precisa adicionar uma versão de lançamento
 >**OBSERVAÇÃO:**
 >
 >- A geração de conteúdo de modelo requer o trabalho na linha de comando em um terminal.
->- É necessário ter o Ruby instalado para executar o script de renderização. Consulte [_jekyll/.ruby-version] (_jekyll/.ruby-version) para obter a versão necessária.
+>- É necessário ter o Ruby instalado para executar o script de renderização. Consulte [_jekyll/.ruby-version](_jekyll/.ruby-version) para obter a versão necessária.
 
 Consulte o seguinte para obter uma descrição da estrutura do arquivo para conteúdo de modelos:
 
@@ -157,11 +157,11 @@ Após clonar o repositório, execute:
 
 ### O que os ganchos fazem
 
-- Detectar automaticamente arquivos de imagem preparados (PNG, JPEG, GIF, SVG)
-- Executar `image_optim` para compactar e otimizar imagens rasterizadas (PNG, JPEG, GIF)
+- Detectar automaticamente arquivos de imagem preparados (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Executar `image_optim` para compactar e otimizar imagens rasterizadas (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Transferir imagens otimizadas automaticamente
 - Garantir que todas as imagens rasterizadas confirmadas estejam corretamente otimizadas
-- Verificar SVGs preparados em relação a um limite de tamanho e anular a confirmação se qualquer SVG o exceder
+- Verificar SVGs preparados em relação a um limite de tamanho e anular a confirmação se um SVG superdimensionado for referenciado de `help/` (caso contrário, apenas avisar)
 
 ### Benefícios
 
