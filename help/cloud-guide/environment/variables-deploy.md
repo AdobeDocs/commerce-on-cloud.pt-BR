@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: c16f4ad68bb3d57f021c552f7aca2d2ee2e8c365
+source-git-commit: 1aaf04500648a72b061db67af39a732871f4e886
 workflow-type: tm+mt
-source-wordcount: 2798
+source-wordcount: 3031
 ht-degree: 0%
 
 ---
@@ -495,17 +495,21 @@ A conexão somente leitura não está disponível para uso no ambiente de integr
 ## `VALKEY_BACKEND`
 
 - **Padrão**—`Cm_Cache_Backend_Redis`
-- **Versão** — Adobe Commerce 2.8.0 e posterior
+- **Versão** — Adobe Commerce 2.4.8 e posterior
 
 `VALKEY_BACKEND` especifica a configuração do modelo de back-end para o cache Valkey.
 
-O Adobe Commerce versão 2.8.0 e posterior inclui os seguintes modelos de back-end:
+O Adobe Commerce versão 2.4.8 e posterior inclui os seguintes modelos de back-end:
 
 - `Cm_Cache_Backend_Redis`
 - `\Magento\Framework\Cache\Backend\Redis`
 - `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
 
-O exemplo a seguir descreve como definir `VALKEY_BACKEND`:
+O Adobe Commerce 2.4.9 e versões posteriores também oferecem suporte ao modelo de back-end `symfony_l2`, que permite a implementação moderna do cache L2 baseado no Symfony Cache.
+
+### Configurar cache remoto sincronizado
+
+Para o Adobe Commerce 2.4.8, o exemplo a seguir descreve como definir `VALKEY_BACKEND` para o cache sincronizado remoto:
 
 ```yaml
 stage:
@@ -514,9 +518,23 @@ stage:
   VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
+A especificação do cache sincronizado remoto como o modelo de back-end Valkey habilita o [cache L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR) e o `ece-tools` gera a configuração do cache automaticamente. Consulte o [exemplo de arquivo de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR#configuration-example). Para substituir a configuração, use a variável de implantação [CACHE_CONFIGURATION](#cache_configuration).
+
+### Configurar a implementação moderna do cache L2 do Symfony
+
+Para o Adobe Commerce 2.4.9 e versões posteriores, o exemplo a seguir descreve como definir `VALKEY_BACKEND` para a implementação moderna do cache Symfony L2:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+```
+
+Especificar `symfony_l2` como o modelo de back-end Valkey habilita o [cache L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR){target="_blank"}, e `ece-tools` gera a configuração de cache L2 automaticamente a partir dos detalhes de conexão do serviço Valkey, incluindo um front-end `default` e um front-end `stale_cache_enabled`. A definição de `CACHE_CONFIGURATION` é opcional e necessária apenas para personalizar opções específicas de back-end, como o diretório de cache local. Consulte [Modern Symfony L2 cache implementation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR#modern-symfony-l2-cache-implementation){target="_blank"} no _Adobe Commerce Configuration Guide_ e [Configure Symfony L2 cache](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"} no _Implementation Playbook_ para obter um exemplo de personalização.
+
 >[!NOTE]
 >
->Se você especificar `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` como o modelo de back-end Valkey para habilitar o [cache L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR), o `ece-tools` gerará a configuração de cache automaticamente. Veja um exemplo de [arquivo de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR#configuration-example) no _Guia de Configuração do Adobe Commerce_. Para substituir a configuração de cache gerada, use a variável de implantação [CACHE_CONFIGURATION](#cache_configuration).
+>O Adobe Commerce 2.4.9 inclui melhorias no cache L2 do Symfony — incluindo armazenamento, invalidação e compactação de tags de cache — com patch ACP2E-5132, reduzindo a E/S de disco, eliminando entradas de cache obsoletas e reduzindo a sobrecarga da memória e da rede. Consulte [Desempenho e confiabilidade aprimorados do cache Symfony L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=pt-BR#enhanced-symfony-l2-cache-performance-and-reliability) no _Guia de Configuração do Adobe Commerce_.
 
 ## `VALKEY_USE_SLAVE_CONNECTION`
 

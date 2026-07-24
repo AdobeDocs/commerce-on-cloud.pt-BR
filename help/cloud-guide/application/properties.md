@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: de2e5072775d032d46f91394ed870768271fa9a1
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: 849
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ O arquivo `.magento.app.yaml` usa propriedades para gerenciar o suporte ao ambie
 | [`crons`](crons-property.md) | Atualizar especificações e agendar trabalhos cron | — | Não |
 | [`dependencies`](#dependencies) | Habilitar dependências adicionais | `php:composer/composer: '2.2.4'` | Não |
 | [`disk`](#disk) | Definir o tamanho do disco persistente | `5120` | Sim |
-| [`firewall`](firewall-property.md) | (Somente iniciador) Controlar tráfego de saída | — | Não |
 | [`hooks`](hooks-property.md) | Personalizar comandos do shell para as fases de criação, implantação e pós-implantação | — | Não |
 | [`mounts`](#mounts) | Definir caminhos | Caminhos:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Não |
 | [`name`](#name) | Definir o nome do aplicativo | `mymagento` | Sim |
