@@ -4,7 +4,7 @@ description: Veja um exemplo de como gerenciar e sincronizar as configurações 
 hidefromtoc: true
 source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Por exemplo, talvez você queira definir as seguintes configurações:
 * Permitir otimização de arquivos estáticos em ambientes de preparo e produção
 * Configure o Fastly no Preparo e na Produção com credenciais específicas para cada
 
-_Otimização de arquivo estático_ significa mesclar e minificar folhas de estilos em cascata e JavaScript e minificar modelos de HTML. Consulte [Estratégias de implantação de conteúdo estático](../deploy/static-content.md).
+_Otimização de arquivo estático_ significa mesclar e minificar folhas de estilos em cascata e do JavaScript e minificar modelos do HTML. Consulte [Estratégias de implantação de conteúdo estático](../deploy/static-content.md).
 
 ## Pré-requisitos
 
