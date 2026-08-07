@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência CLI</a> após a versão ECE-Tools v2002.2.12. Nenhuma outra alteração foi feita além do número da versão.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">referência CLI</a> após a versão ECE-Tools v2002.2.12. Nenhuma outra alteração foi feita além do número da versão.</p>
 </td>
       <td>
         Técnico
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access">Gerenciar acesso do usuário</a> com pré-requisitos mais claros, estados de convite do Console da Nuvem, orientação de reimplantação e solução de problemas relacionada.</p>
+      <td><p>Atualização do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access">Gerenciar acesso do usuário</a> com pré-requisitos mais claros, estados de convite do Console da Nuvem, orientação de reimplantação e solução de problemas relacionada.</p>
 </td>
       <td>
         Feedback
