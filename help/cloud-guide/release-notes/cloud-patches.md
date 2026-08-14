@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 643134d5bf2ab03b0c9cace884e9a020a2aebdb7
+source-git-commit: 1a0261c2c7ca9c058e18af5cbc86319501d75e57
 workflow-type: tm+mt
-source-wordcount: 3054
+source-wordcount: 3086
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 Data de lançamento: 11 de agosto de 2026
 
 - ![Ícone de correção](../../assets/fix.svg) **Tratamento de patch aprimorado**—Agora os patches ignoram blocos de módulos de direcionamento removidos via `composer.json` `replace` e continuam aplicando as partes restantes instaladas.<!-- MCLOUD-15325 -->
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Aplicação dos patches de segurança mais recentes.<!--MCLOUD-15035 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/br/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -68,7 +68,7 @@ Data de lançamento: 23 de julho de 2026
 
 Data de lançamento: 14 de julho de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Aplicação dos patches de segurança mais recentes.<!--MCLOUD-15066 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-73](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
 
 ## v1.1.14
 
@@ -252,7 +252,7 @@ Patch crítico para o Adobe Commerce 2.3.3-p1 e versões posteriores:
 
 Patches atualizados para resolver uma vulnerabilidade **crítica**, resultando na execução de código remoto não autenticado.<!-- MCLOUD-8479 -->
 
-Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/br/security/products/magento/apsb22-12.html).
+Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -269,7 +269,7 @@ Patch crítico para o Adobe Commerce 2.3.3-p1 e versões posteriores:
 
 Adição de um patch para resolver uma vulnerabilidade **crítica**, resultando na execução de código remoto não autenticado.<!-- MCLOUD-8461 -->
 
-Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/br/security/products/magento/apsb22-12.html).
+Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
