@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1aaf04500648a72b061db67af39a732871f4e886
+source-git-commit: f09934f41676922dc4b4001f24ee94062a5e9c0a
 workflow-type: tm+mt
-source-wordcount: 3031
+source-wordcount: 3035
 ht-degree: 0%
 
 ---
@@ -357,7 +357,7 @@ stage:
 
 ## `LOCK_PROVIDER`
 
-- **Padrão**— Em ambientes de Produção e de Preparo, o padrão é `file`. Para ambientes iniciais e de integração Pro, o padrão é `db`.
+- **Padrão**— Em ambientes de Produção e de Preparo, o padrão é `file` e não pode ser alterado. Para ambientes iniciais e de integração Pro, o padrão é `db`.
 - **Versão** — Adobe Commerce 2.2.5 e posterior
 
 O provedor de bloqueio impede a inicialização de trabalhos cron duplicados e grupos cron. O Commerce na Nuvem oferece suporte somente a `file` e `db` provedores de bloqueio.
@@ -367,7 +367,7 @@ Para ambientes de Produção e de Preparo, o valor padrão `file` é definido po
 ```yaml
 stage:
   deploy:
-    LOCK_PROVIDER: "db"
+    LOCK_PROVIDER: "file"
 ```
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
