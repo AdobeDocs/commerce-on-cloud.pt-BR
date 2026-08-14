@@ -49,7 +49,7 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 Data de lançamento: 11 de agosto de 2026
 
 - ![Ícone de correção](../../assets/fix.svg) **Tratamento de patch aprimorado**—Agora os patches ignoram blocos de módulos de direcionamento removidos via `composer.json` `replace` e continuam aplicando as partes restantes instaladas.<!-- MCLOUD-15325 -->
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/br/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -68,7 +68,7 @@ Data de lançamento: 23 de julho de 2026
 
 Data de lançamento: 14 de julho de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-73](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-73](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
 
 ## v1.1.14
 
@@ -90,7 +90,7 @@ Data de lançamento: 05 de março de 2026
 Data de lançamento: 13 de novembro de 2025
 
 - ![Ícone de correção](../../assets/fix.svg) **Pacote Symfony** - Suporte adicionado para os pacotes YAML Symfony mais recentes.<!-- MCLOUD-14020 -->
-- ![Ícone de correção](../../assets/fix.svg) **Patch** - Correção para o [Check-out falha quando a minificação e o agrupamento JS estão habilitados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) problema descrito na *Base de Conhecimento Commerce*.
+- ![Ícone de correção](../../assets/fix.svg) **Patch** - Correção para o [Check-out falha quando a minificação e o agrupamento JS estão habilitados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27997) problema descrito na *Base de Conhecimento Commerce*.
 - ![ícone de correção](../../assets/fix.svg) **Exibição de Categoria Aprimorada** - MCLOUD-13752: Melhorar exibição de categoria.<!-- MCLOUD-13752 | MCLOUD-14139  -->
 
 ## v1.1.11
@@ -122,13 +122,13 @@ Data de lançamento: 03 de junho de 2025
 
 Data de lançamento: 05 de maio de 2025
 
-- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.8**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), que foi lançado em 1.1.7<!-- MCLOUD-13619 -->
+- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.8**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), que foi lançado em 1.1.7<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
 Data de lançamento: 24 de abril de 2025
 
-- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.7**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), que foi lançado em 1.1.4<!-- MCLOUD-13240 -->
+- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.7**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), que foi lançado em 1.1.4<!-- MCLOUD-13240 -->
 
 ## v1.1.5
 
@@ -140,7 +140,7 @@ Data de lançamento: 15 de abril de 2025
 
 Data de lançamento: 13 de fevereiro de 2025
 
-- ![novo ícone](../../assets/new.svg) **Adição de patch para Commerce 2.4.4 a 2.4.7**—Esta atualização patches [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+- ![novo ícone](../../assets/new.svg) **Adição de patch para Commerce 2.4.4 a 2.4.7**—Esta atualização patches [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
 
 ## v1.1.3
 
@@ -152,13 +152,13 @@ Data de lançamento: 6 de fevereiro de 2025
 
 Data de lançamento: 5 de novembro de 2024
 
-- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica [CVE-2024-45115](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) para Adobe Commerce ao usar o módulo B2B.<!-- MCLOUD-12980 - -->
+- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica [CVE-2024-45115](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) para Adobe Commerce ao usar o módulo B2B.<!-- MCLOUD-12980 - -->
 
 ## v1.1.1
 
 Data de lançamento: 5 de novembro de 2024
 
-- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para o Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica do [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting.<!-- MCLOUD-12980 - -->
+- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para o Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica do [CVE-2024-34102](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting.<!-- MCLOUD-12980 - -->
 
 ## v1.1.0
 
@@ -236,7 +236,7 @@ Patch crítico para o Adobe Commerce 2.4.5:
 
 - **Problema com pedidos usando pagamentos do Braintree**—Este patch resolve um problema crítico que impedia os administradores de fazer novos pedidos ou repedidos.<!-- MCLOUD-9137 -->
 
-Consulte [O administrador não pode criar pedido/reordenação quando o pagamento do Braintree está habilitado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
+Consulte [O administrador não pode criar pedido/reordenação quando o pagamento do Braintree está habilitado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html?lang=pt-BR).
 
 ## v1.0.17
 
@@ -285,7 +285,7 @@ Data de lançamento: 12 de agosto de 2021
 
 Patch crítico para Adobe Commerce 2.4.3 e 2.3.7-p1:
 
-- **Problema com limitação de taxa de API** — Este patch corrige um limite de taxa padrão que impedia que APIs da Web processassem solicitações com mais de 20 itens em uma matriz. Este patch aumenta o valor padrão do limite de taxa. Consulte as [notas de versão do Adobe Commerce 2.4.3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
+- **Problema com limitação de taxa de API** — Este patch corrige um limite de taxa padrão que impedia que APIs da Web processassem solicitações com mais de 20 itens em uma matriz. Este patch aumenta o valor padrão do limite de taxa. Consulte as [notas de versão do Adobe Commerce 2.4.3](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
 
 ## v1.0.11
 
