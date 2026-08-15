@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 1a0261c2c7ca9c058e18af5cbc86319501d75e57
+source-git-commit: 956405dea6be29d239b663f5eebb19a8e043354d
 workflow-type: tm+mt
-source-wordcount: 3086
+source-wordcount: 2927
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 O pacote [Patches da Nuvem](https://github.com/magento/magento-cloud-patches) fornece um conjunto de patches necessários que melhoram a integração de todas as versões do Adobe Commerce com ambientes na Nuvem e oferecem suporte à entrega rápida de correções críticas.
 
-O pacote Cloud Patches for Commerce é uma dependência do pacote ECE-Tools e é instalado e atualizado quando você instala ou atualiza o pacote ECE-Tools. Você também pode usar e gerenciar Patches da nuvem para o Commerce como um pacote independente para aplicar patches a um projeto do Adobe Commerce que não esteja na plataforma de nuvem. Estas notas de versão descrevem as melhorias mais recentes neste pacote.
+O pacote Cloud Patches for Commerce é uma dependência do pacote ECE-Tools e é instalado e atualizado quando você instala ou atualiza o pacote ECE-Tools. Você também pode usar e gerenciar Patches da nuvem para o Commerce como um pacote independente para aplicar patches a um projeto do Adobe Commerce que não esteja na Plataforma de nuvem. Estas notas de versão descrevem as melhorias mais recentes neste pacote.
 
 >[!TIP]
 >
@@ -49,7 +49,7 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 Data de lançamento: 11 de agosto de 2026
 
 - ![Ícone de correção](../../assets/fix.svg) **Tratamento de patch aprimorado**—Agora os patches ignoram blocos de módulos de direcionamento removidos via `composer.json` `replace` e continuam aplicando as partes restantes instaladas.<!-- MCLOUD-15325 -->
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/br/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/br/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 --> aplicadas
 
 ## v1.1.17
 
@@ -62,20 +62,20 @@ Data de lançamento: 29 de julho de 2026
 
 Data de lançamento: 23 de julho de 2026
 
-- ![ícone de correção](../../assets/fix.svg) **Desempenho e confiabilidade aprimorados do cache L2 do Symfony**—Armazenamento otimizado de marcas de cache para symfony_l2, invalidação aprimorada do cache com bloqueios de regeneração baseados em TTL e limpeza adequada de marcas L1 para eliminar entradas de cache obsoletas, e compactação Redis/Valkey (compress_data) habilitada por padrão para reduzir o consumo de memória e o tráfego de rede ao alinhar-se com a implementação do cache herdado.<!-- ACP2E-5132 -->
+- ![ícone de correção](../../assets/fix.svg) **Desempenho e confiabilidade aprimorados do cache L2 do Symfony**—Armazenamento otimizado de marcas de cache para symfony_l2, invalidação aprimorada do cache e compactação Redis/Valkey (compress_data) habilitada por padrão para reduzir o consumo de memória e o tráfego de rede.<!-- ACP2E-5132 -->
 
 ## v1.1.15
 
 Data de lançamento: 14 de julho de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**-Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-73](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança** — Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-73](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
 
 ## v1.1.14
 
 Data de lançamento: 06 de maio de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Visibilidade de versão de patch**-Corrigida a visibilidade de versão de patch de nuvem em ambientes de nuvem.<!--MCLOUD-14221 -->
-- ![ícone de correção](../../assets/fix.svg) **limpeza de PHPUnit**-Avisos de PHPUnit corrigidos<!--MCLOUD-14717 -->
+- ![Ícone de correção](../../assets/fix.svg) **Visibilidade de versão de patch**—Visibilidade de versão de patch de nuvem corrigida em ambientes de nuvem.<!--MCLOUD-14221 -->
+- ![ícone de correção](../../assets/fix.svg) **limpeza do PHPUnit**—Avisos do PHPUnit corrigidos<!--MCLOUD-14717 -->
 - ![novo ícone &#x200B;](../../assets/new.svg)**Correções cosméticas**—Melhorias cosméticas adicionadas.<!--MCLOUD-14686 -->
 
 ## v1.1.13
@@ -89,15 +89,15 @@ Data de lançamento: 05 de março de 2026
 
 Data de lançamento: 13 de novembro de 2025
 
-- ![Ícone de correção](../../assets/fix.svg) **Pacote Symfony** - Suporte adicionado para os pacotes YAML Symfony mais recentes.<!-- MCLOUD-14020 -->
-- ![Ícone de correção](../../assets/fix.svg) **Patch** - Correção para o [Check-out falha quando a minificação e o agrupamento JS estão habilitados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27997) problema descrito na *Base de Conhecimento Commerce*.
-- ![ícone de correção](../../assets/fix.svg) **Exibição de Categoria Aprimorada** - MCLOUD-13752: Melhorar exibição de categoria.<!-- MCLOUD-13752 | MCLOUD-14139  -->
+- ![Ícone de correção](../../assets/fix.svg) **Pacote do Symfony**—Suporte adicionado para os pacotes YAML do Symfony mais recentes.<!-- MCLOUD-14020 -->
+- ![Ícone de correção](../../assets/fix.svg) **Patch**—A correção para o [Check-out falha quando a minificação e o agrupamento JS estão habilitados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27997) problema descrito na *Base de Dados de Conhecimento Commerce*.
+- ![ícone de correção](../../assets/fix.svg) **Exibição de Categoria Aprimorada**—MCLOUD-13752: Melhorar exibição de categoria.<!-- MCLOUD-13752 | MCLOUD-14139  -->
 
 ## v1.1.11
 
 Data de lançamento: 09 de setembro de 2025
 
-- ![Ícone de correção](../../assets/fix.svg) **WebAPI**-Fix para CVE-2025-54236.<!-- MCLOUD-14016 -->
+- ![ícone de correção](../../assets/fix.svg) **WebAPI** — Correção para CVE-2025-54236.<!-- MCLOUD-14016 -->
 
 ## v1.1.10
 
@@ -109,56 +109,56 @@ Data de lançamento: 07 de agosto de 2025
 
 Data de lançamento: 09 de junho de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Exibição de Categoria Aprimorada**-Melhorar exibição de categoria.<!-- MCLOUD-13752	 - -->
-- ![ícone de correção](../../assets/fix.svg) **Cache de Administração Aprimorado**-Improve-admin-cache-efficiency CVE-2025-47110.<!-- MCLOUD-13753	 - -->
+- ![ícone de correção](../../assets/fix.svg) **Modo de Exibição de Categoria Aprimorado**—Melhorar modo de exibição de categoria.<!-- MCLOUD-13752     - -->
+- ![ícone de correção](../../assets/fix.svg) **Cache de Administração Aprimorado**—Melhore a eficiência do cache de administração CVE-2025-47110.<!-- MCLOUD-13753     - -->
 
 ## v1.1.8
 
 Data de lançamento: 03 de junho de 2025
 
-- ![ícone de correção](../../assets/fix.svg) **Compatibilidade aprimorada com 2.4.8**-Bibliotecas de terceiros atualizadas para melhor compatibilidade com 2.4.8<!-- MCLOUD-13707	 - -->
+- ![ícone de correção](../../assets/fix.svg) **Compatibilidade aprimorada com 2.4.8**—Foram atualizadas bibliotecas de terceiros para melhor compatibilidade com 2.4.8<!-- MCLOUD-13707     - -->
 
 ## v1.1.7
 
 Data de lançamento: 05 de maio de 2025
 
-- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.8**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), que foi lançado em 1.1.7<!-- MCLOUD-13619 -->
+- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.8**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27148), que foi lançado em 1.1.7<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
 Data de lançamento: 24 de abril de 2025
 
-- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.7**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), que foi lançado em 1.1.4<!-- MCLOUD-13240 -->
+- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.7**—Esta atualização é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27149), que foi lançado em 1.1.4<!-- MCLOUD-13240 -->
 
 ## v1.1.5
 
 Data de lançamento: 15 de abril de 2025
 
-- ![novo ícone](../../assets/new.svg) **Adição de correção para B2B 1.5.2**—Correção para o problema ACP2E-3833 com B2B módulo 1.5.2 e MariaDB 10.6<!-- MCLOUD-13605	-->
+- ![novo ícone](../../assets/new.svg) **Adição de correção para B2B 1.5.2**—Correção para o problema ACP2E-3833 com B2B módulo 1.5.2 e MariaDB 10.6<!-- MCLOUD-13605    -->
 
 ## v1.1.4
 
 Data de lançamento: 13 de fevereiro de 2025
 
-- ![novo ícone](../../assets/new.svg) **Adição de patch para Commerce 2.4.4 a 2.4.7**—Esta atualização patches [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+- ![novo ícone](../../assets/new.svg) **Adição de patch para Commerce 2.4.4 a 2.4.7**—Esta atualização patches [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27149).<!-- MCLOUD-13240     - -->
 
 ## v1.1.3
 
 Data de lançamento: 6 de fevereiro de 2025
 
-- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13149	 - -->
+- ![novo ícone](../../assets/new.svg) **PHP 8.4**—Suporte adicionado para PHP 8.4.<!-- MCLOUD-13149     - -->
 
 ## v1.1.2
 
 Data de lançamento: 5 de novembro de 2024
 
-- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica [CVE-2024-45115](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) para Adobe Commerce ao usar o módulo B2B.<!-- MCLOUD-12980 - -->
+- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica [CVE-2024-45115](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27151) para Adobe Commerce ao usar o módulo B2B.<!-- MCLOUD-12980 - -->
 
 ## v1.1.1
 
 Data de lançamento: 5 de novembro de 2024
 
-- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para o Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica do [CVE-2024-34102](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting.<!-- MCLOUD-12980 - -->
+- ![Ícone de correção](../../assets/fix.svg) **Adição de correção para o Commerce 2.4.4 para 2.4.7**—Esta atualização corrige uma vulnerabilidade crítica do [CVE-2024-34102](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27136) CosmicSting.<!-- MCLOUD-12980 - -->
 
 ## v1.1.0
 
@@ -172,7 +172,7 @@ Data de lançamento: 7 de outubro de 2024
 
 Data de lançamento: 21 de maio de 2024
 
-- **Suporte para PHP 8.3**—Este patch resolve erros de compatibilidade entre o php 8.3 e a versão do pacote compositor.
+- **Suporte para PHP 8.3**—Este patch resolve erros de compatibilidade entre o PHP 8.3 e a versão do pacote compositor.
 
 ## v1.0.26
 
@@ -184,20 +184,20 @@ Data de lançamento: 8 de abril de 2024
 
 Data de lançamento: 16 de janeiro de 2024
 
-- **Melhorias de cache**-Este patch melhora a eficiência do cache de layout, reduzindo significativamente o uso de memória, para as versões 2.4.4 e posteriores do Adobe Commerce.<!-- MCLOUD-11514 -->
-- **Melhorias nos trabalhos do CRON**-Este patch corrige o problema em que os trabalhos perdidos aguardam desnecessariamente bloqueios de trabalhos do CRON para as versões 2.4.4 e posteriores do Adobe Commerce.<!-- MCLOUD-11329 -->
+- **Melhorias de cache**—Este patch melhora a eficiência do cache de layout, reduzindo o uso de memória, para as versões 2.4.4 e posteriores do Adobe Commerce.<!-- MCLOUD-11514 -->
+- **Melhorias nos trabalhos do CRON** — Este patch corrige o problema em que os trabalhos perdidos aguardam desnecessariamente bloqueios de trabalhos do CRON para as versões 2.4.4 e posteriores do Adobe Commerce.<!-- MCLOUD-11329 -->
 
 ## v1.0.24
 
 Data de lançamento: 15 de setembro de 2023
 
-- **Aprimoramento de desempenho**-Este patch corrige um problema que afeta o desempenho reduzindo o número de vezes que as mesmas configurações de implantação são carregadas para o Adobe Commerce 2.4.6 para 2.4.6-p1<!-- MCLOUD-10604 -->
+- **Aprimoramento de desempenho**—Este patch corrige um problema que afeta o desempenho reduzindo o número de vezes que as mesmas configurações de implantação são carregadas para o Adobe Commerce 2.4.6 para 2.4.6-p1<!-- MCLOUD-10604 -->
 
 ## v1.0.23
 
 Data de lançamento: 31 de julho de 2023
 
-- **Remoção do patch MCLOUD-10604** - Este patch foi movido para QPT.<!-- MCLOUD-10736 -->
+- **Remoção do patch MCLOUD-10604**—Este patch foi movido para QPT.<!-- MCLOUD-10736 -->
 
 ## v1.0.22
 
@@ -236,7 +236,7 @@ Patch crítico para o Adobe Commerce 2.4.5:
 
 - **Problema com pedidos usando pagamentos do Braintree**—Este patch resolve um problema crítico que impedia os administradores de fazer novos pedidos ou repedidos.<!-- MCLOUD-9137 -->
 
-Consulte [O administrador não pode criar pedido/reordenação quando o pagamento do Braintree está habilitado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html?lang=pt-BR).
+Consulte [O administrador não pode criar pedido/reordenação quando o pagamento do Braintree está habilitado](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27169).
 
 ## v1.0.17
 
@@ -252,7 +252,7 @@ Patch crítico para o Adobe Commerce 2.3.3-p1 e versões posteriores:
 
 Patches atualizados para resolver uma vulnerabilidade **crítica**, resultando na execução de código remoto não autenticado.<!-- MCLOUD-8479 -->
 
-Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/br/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -269,7 +269,7 @@ Patch crítico para o Adobe Commerce 2.3.3-p1 e versões posteriores:
 
 Adição de um patch para resolver uma vulnerabilidade **crítica**, resultando na execução de código remoto não autenticado.<!-- MCLOUD-8461 -->
 
-Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/br/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -277,7 +277,7 @@ Data de lançamento: 25 de outubro de 2021
 
 - **Atualizar Monólogo** — Atualizou a versão mínima necessária para o pacote `monolog` para `^2.3`.<!-- ACMP-1263 -->
 - **Método PHP Incompatível**—Corrigido método PHP incompatível para Adobe Commerce versões 2.4.3 e 2.3.7-p1.<!-- AC-384 -->
-- **Erro de PHP**—Corrigido um erro `PHP error 'Undefined variable: errorMessage' ...` que ocorreu durante a tentativa de aplicar um patch.<!-- ACP2E-138 -->
+- **Erro de PHP**—Corrigiu um erro `PHP error 'Undefined variable: errorMessage' ...`. Erro ao tentar aplicar um patch.<!-- ACP2E-138 -->
 
 ## v1.0.12
 
@@ -291,7 +291,7 @@ Patch crítico para Adobe Commerce 2.4.3 e 2.3.7-p1:
 
 Data de lançamento: 29 de julho de 2021
 
-- **Correção de um problema causado pela aplicação do patch de navegação em Camadas B2B**—Para clientes que aplicaram o patch de navegação em Camadas B2B, essa correção resolve um erro `Undefined offset` que é exibido na página Pesquisa após alternar o modo de exibição Loja.<!--MCLOUD-5287-->
+- **Correção de um problema causado pela aplicação do patch de navegação em Camadas B2B**—Essa correção resolve um erro `Undefined offset` que aparece na página Pesquisa após alternar o modo de exibição Loja.<!--MCLOUD-5287-->
 
 - **Patch de Finalização do Paypal**—Corrige um problema do Adobe Commerce 2.3.7 com o PayPal Express, no qual o preço do pedido inserido anteriormente é exibido.<!--MC-42674-->
 
@@ -302,7 +302,7 @@ Data de lançamento: 29 de julho de 2021
 Data de lançamento: 10 de maio de 2021
 
 - **Compatibilidade com o Adobe Commerce 2.3.7**—Conflito resolvido de dependências do compositor para instalação no Adobe Commerce 2.3.7.<!--MC-42131-->
-- **Correção de um problema causado pela aplicação de um patch agrupado várias vezes**. A aplicação de um patch agrupado (um que inclui outros patches obsoletos) mais de uma vez poderia reverter os pacotes obsoletos incluídos. Agora, todos os patches são aplicados apenas uma vez. Tentar aplicar o mesmo pacote novamente mostra uma mensagem de que o patch já foi aplicado.<!--MC-41912-->
+- **Correção de um problema causado pela aplicação de um patch agrupado várias vezes**—A aplicação de um patch agrupado (um que inclui outros patches obsoletos) mais de uma vez reverte os pacotes obsoletos incluídos. Agora, todos os patches são aplicados apenas uma vez. Tentar aplicar o mesmo pacote novamente mostra uma mensagem de que o patch já foi aplicado.<!--MC-41912-->
 - **Patch de navegação em camadas B2B**—Corrigido outro problema que impedia a navegação em camadas de mostrar todas as opções do produto quando o usuário habilita o Catálogo Compartilhado B2B.<!--MCLOUD-7742-->
 
 ## v1.0.9
@@ -311,7 +311,7 @@ Data de lançamento: 1 de fevereiro de 2021
 
 - **Patch de navegação em camadas B2B**—Corrigido o problema que impedia que a navegação em camadas mostrasse todas as opções de produto quando o Catálogo Compartilhado B2B estava habilitado.<!--MCLOUD-6923-->
 - **Compatibilidade com o PHP 7.4**—Correção de um problema de compatibilidade de patches de nuvem com o PHP 7.4.<!--MCLOUD-7367-->
-- **Patches obsoletos tornam-se visíveis**—Corrigido um problema de patches de nuvem em que os patches obsoletos tornam-se visíveis na tabela de patches após a aplicação de um patch de substituição que contém todo o conteúdo do patch obsoleto. Isso pode acontecer se você aplicar um patch que combinou vários outros patches.<!--MC-40626-->
+- **Patches obsoletos tornam-se visíveis**—Corrigido um problema de patches de nuvem em que os patches obsoletos tornam-se visíveis na tabela de patches após a aplicação de um patch de substituição que contém todo o conteúdo do patch obsoleto. Isso acontece se você aplicar um patch que combinou vários outros patches.<!--MC-40626-->
 - **Falhas silenciosas ao aplicar patches**—Corrigiu um problema de patches de nuvem no qual o comando `git apply` silenciosamente falhou ao aplicar patches em alguns ambientes.<!--MC-40529-->
 
 ## v1.0.8
@@ -393,7 +393,7 @@ Esta versão inclui os seguintes patches e correções críticas:
 
   - Restrições atualizadas no `composer.json` para compatibilidade com as versões do `ece-tools` 2002.0.22 e posteriores 2002.0.x.
 
-- **Check-out do PayPal Express**—Publicado em 12 de fevereiro de 2020, este patch resolve um problema que afeta pedidos feitos com o Check-out do PayPal Express, onde o endereço de envio do pedido especifica uma região do país que foi inserida manualmente no campo de texto em vez de ser selecionada no menu suspenso na página Envio. Consulte a descrição completa do patch na página de download de patches.
+- **Check-out do PayPal Express**—Este patch resolve um problema no qual a região do país do endereço de entrega é inserida manualmente em vez de selecionada no menu suspenso. Consulte a descrição completa do patch na página de download de patches.
 
 - **Correção de implantação de aplicativo**—Adicionou um patch para corrigir um problema que desabilitava o cache de página inteira durante o processo de implantação. Este patch se aplica ao Adobe Commerce 2.3.2 e versões posteriores.
 
@@ -403,21 +403,21 @@ Esta versão inclui os seguintes patches e correções críticas:
 
 Data de lançamento: 6 de fevereiro de 2020
 
-Incluímos todos os patches do Magento Open Source 2.x da página de downloads de software na versão magento/magento-cloud-patches v1.0.1. Se você tiver copiado patches no projeto anteriormente, remova-os para evitar conflitos.
+Todos os patches do Magento Open Source 2.x da página de downloads de software estão incluídos na versão magento/magento-cloud-patches v1.0.1. Para evitar conflitos, remova todos os patches copiados anteriormente no projeto.
 
 Esta versão inclui os seguintes patches e correções críticas:
 
 - **Corrigir bloqueios de cron e melhorar o bloqueio de cron**—
 
-  - Corrige um problema em que alguns trabalhos cron não estão sendo executados devido a um valor de status incorreto na tabela `cron_schedule`. Agora, usamos a estrutura Adobe Commerce lock para verificar e atualizar o status do trabalho cron em vez de usar a tabela `cron_schedule`. Os trabalhos do CRON que terminaram com um status de erro são repetidos durante a próxima execução do CRON, em vez de aguardarem 24 horas.
+  - Corrige um problema em que alguns trabalhos cron não estão sendo executados devido a um valor de status incorreto na tabela `cron_schedule`. Agora, a estrutura de bloqueio do Adobe Commerce é usada para verificar e atualizar o status do trabalho cron em vez de usar a tabela `cron_schedule`. Os trabalhos do CRON que terminaram com um status de erro são repetidos durante a próxima execução do CRON, em vez de aguardarem 24 horas.
 
-  - Adiciona uma operação _retry_ para evitar deadlock durante atualizações dos dados na tabela `cron_schedule`.
+  - Para evitar deadlock durante atualizações dos dados na tabela `cron_schedule`, adicione uma operação _retry_.
 
 - **Atualização de `magento/magento-cloud-patches` para incluir todos os patches disponíveis para o Magento Open Source 2.x**—Atualização do pacote magento/magento-cloud-patches para incluir todos os patches do Magento Open Source 2.x disponíveis na página de downloads de software. Se você tiver copiado patches do Magento Open Source no seu projeto Adobe Commerce na infraestrutura em nuvem anteriormente, remova-os para evitar conflitos.<!--MAGECLOUD-4606-->
 
 - **Correção de paginação de catálogo do Elasticsearch** — Substituiu o patch de paginação de catálogo do Elasticsearch entregue em magento/magento-cloud-patches v1.0 por uma correção mais eficaz.<!--MAGECLOUD-4847-->
 
-- **Patches do Page Builder** — Em Patches da nuvem para o Commerce 1.0.0, agrupamos patches do Page Builder para solucionar uma vulnerabilidade conhecida de execução remota de código (RCE) do Page Builder, com a correção inicial baseada no Adobe Commerce 2.3.3. Atualizamos esses patches com uma implementação mais estável baseada no Adobe Commerce 2.3.4., que inclui várias otimizações para corrigir o problema.<!--MAGECLOUD-4884-->
+- **Patches do Page Builder**—Em Patches da nuvem para o Commerce 1.0.0, os patches do Page Builder foram agrupados para solucionar uma vulnerabilidade conhecida de execução remota de código (RCE) do Page Builder, com a correção inicial baseada no Adobe Commerce 2.3.3. Esses patches foram atualizados com uma implementação mais estável baseada no Adobe Commerce 2.3.4., que inclui várias otimizações para corrigir o problema.<!--MAGECLOUD-4884-->
 
   Se você tiver o pacote magento/magento-cloud-patches 1.0.0, ainda estará protegido contra problemas de vulnerabilidade do RCE no Page Builder. Se você atualizar para 1.0.1 ou posterior, terá uma implementação melhor da mesma correção.
 
@@ -425,11 +425,11 @@ Esta versão inclui os seguintes patches e correções críticas:
 
 Data de lançamento: 14 de novembro de 2019
 
-Esta é a primeira versão do pacote [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches), que é uma nova dependência da versão 2002.0.22 ou posteriores do pacote `ece-tools`.
+Esta versão é a primeira versão do pacote [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches), que é uma nova dependência para a versão 2002.0.22 ou versões posteriores do pacote `ece-tools`.
 
 Esta versão inclui os seguintes patches e correções críticas:
 
-- **Patches de segurança do Page Builder para as versões 2.3.1.x e 2.3.2.x**—Corrige um problema na visualização do Page Builder que permite que usuários não autenticados acessem alguns métodos de modelo que podem ser usados para disparar a execução arbitrária de código na rede (RCE), resultando em vazamentos de informações globais. Esse problema pode ocorrer ao usar versões não compatíveis do Page Builder com as versões 2.3.1 e 2.3.2 do Adobe Commerce.<!--MAGECLOUD-4649-->
+- **Patches de segurança do Page Builder para as versões 2.3.1.x e 2.3.2.x**—Corrige um problema de visualização do Page Builder que permite que usuários não autenticados acionem a execução de código arbitrário (RCE) e vazamentos de informações globais. Esse problema pode ocorrer ao usar versões não compatíveis do Page Builder com as versões 2.3.1 e 2.3.2 do Adobe Commerce.<!--MAGECLOUD-4649-->
 
 - **Patches MSI** — corrige problemas que causavam erros de indexação e problemas de desempenho ao usar configurações de inventário padrão para gerenciar estoque.<!--MAGECLOUD-4428-->
 
