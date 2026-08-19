@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e7db7e06142322898d7d9a28ae0dd06458fdcf6d
+source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
 workflow-type: tm+mt
-source-wordcount: 3580
+source-wordcount: 3631
 ht-degree: 0%
 
 ---
@@ -40,7 +40,13 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v2002.2.12 {#latest}
+## v2002.2.13 {#latest}
+
+Data de lançamento: 19 de agosto de 2026
+
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias no cache** Suporte aprimorado ao cache do Symfony_l2 para conexões subordinadas do Redis e Valkey e problemas relacionados ao cache, índice de marca, pré-carregamento e implantação estática resolvidos..<!-- MCLOUD-15433 -->
+
+## v2002.2.12
 
 Data de lançamento: 20 de julho de 2026
 
