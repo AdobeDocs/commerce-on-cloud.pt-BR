@@ -121,7 +121,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Para ambientes Pro Staging e Pro Production, a rotação, compactação e remoção automáticas do registro são ativadas para arquivos de registro com um nome de arquivo fixo. Cada tipo de arquivo de log tem um padrão rotativo e uma duração.
 >Detalhes completos sobre a rotação de logs e a duração de logs compactados do ambiente podem ser encontrados em: `/etc/logrotate.conf` e `/etc/logrotate.d/<various>`.
->Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar alterações na configuração de rotação do log.
+>Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar alterações na configuração de rotação do log.
 
 >[!TIP]
 >
@@ -232,7 +232,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
+A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-29640).
 
 ## Logs do aplicativo
 
@@ -270,7 +270,7 @@ Os logs do aplicativo são compactados e arquivados uma vez por dia e mantidos p
 
 Os arquivos de log arquivados são sempre armazenados no diretório onde o arquivo original estava localizado antes da compactação.
 
-Você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar alterações no período de retenção do log ou na configuração de logrotate. Você pode aumentar o período de retenção até um máximo de 365 dias, reduzi-lo para conservar a cota de armazenamento ou adicionar outros caminhos de log à configuração de logrotate. Essas alterações estão disponíveis para clusters Pro de armazenamento temporário e produção.
+Você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support) para solicitar alterações no período de retenção do log ou na configuração de logrotate. Você pode aumentar o período de retenção até um máximo de 365 dias, reduzi-lo para conservar a cota de armazenamento ou adicionar outros caminhos de log à configuração de logrotate. Essas alterações estão disponíveis para clusters Pro de armazenamento temporário e produção.
 
 Por exemplo, se você criar um caminho personalizado para armazenar logs no diretório `var/log/mymodule`, poderá solicitar a rotação de logs para esse caminho. No entanto, a infraestrutura atual requer nomes de arquivos consistentes para que o Adobe configure a rotação de logs adequadamente. A Adobe recomenda manter os nomes de log consistentes para evitar problemas de configuração.
 

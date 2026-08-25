@@ -35,7 +35,7 @@ A atualização do valor da propriedade `enable_smtp` pela [linha de comando](#e
 
 Use o botão **[!UICONTROL Outgoing emails]** no modo de exibição _Configurar ambiente_ para habilitar ou desabilitar o suporte por email.
 
-Se os emails de saída precisarem ser desativados ou reativados nos ambientes de Produção Pro ou de Preparo, você poderá enviar um [tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se os emails de saída precisarem ser desativados ou reativados nos ambientes de Produção Pro ou de Preparo, você poderá enviar um [tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 >[!TIP]
 >

@@ -24,7 +24,7 @@ O TTL (tempo de vida útil) de cache para seus arquivos de mídia e estáticos e
 
 >[!NOTE]
 >
->Antes de atualizar o ambiente de Produção, é importante testar as alterações no ambiente de Preparo. [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para obter ajuda para atualizar a configuração nesses ambientes.
+>Antes de atualizar o ambiente de Produção, é importante testar as alterações no ambiente de Preparo. [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para obter ajuda para atualizar a configuração nesses ambientes.
 
 1. Especifique o tempo de TTL (em segundos) na propriedade [`web` &#x200B;](web-property.md) do arquivo `.magento.app.yaml`. Você pode adicionar a chave `expires` em `locations` ou em `"/media"` e `"/static"`.
 
