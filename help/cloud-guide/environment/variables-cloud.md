@@ -12,9 +12,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: ab64bb5a3cc159844015072738404274fdea97cd
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 343
+source-wordcount: 344
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ As variáveis de ambiente específicas do Adobe Commerce na infraestrutura em nu
 
 >[!WARNING]
 >
->Para adicionar variáveis de ambiente a [substituir definições de configuração](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=pt-BR) usando [[!DNL Cloud Console]](../project/overview.md), você deve anexar o nome da variável a `env:` como no exemplo a seguir:
+>Para adicionar variáveis de ambiente a [substituir definições de configuração](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/paths/override-config-settings) usando [[!DNL Cloud Console]](../project/overview.md), você deve anexar o nome da variável a `env:` como no exemplo a seguir:
 >
 >![Exemplo de variável de ambiente](../../assets/set-env-variable-ui.png)
 

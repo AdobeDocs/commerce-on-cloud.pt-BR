@@ -17,9 +17,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1638
+source-wordcount: 1642
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ A estratégia de ramificação usa um fluxo de trabalho Git comum, no qual você
 
 Sua conta oferece suporte a um número limitado de ![ramificações ativas](../../assets/icon-active.png){width="32"} (ativas) e a um número ilimitado de ![ramificações inativas](../../assets/icon-inactive.png){width="32"} (inativas) de ramificações de desenvolvimento. Gerencie ramificações ativas e inativas adicionando ou excluindo uma ramificação usando somente o [!DNL Cloud Console] ou a CLI da nuvem. Antes de excluir uma ramificação, desative-a, que permanece na lista _Ambientes_ como _inativa_. Você pode reativar a ramificação mais tarde ou [excluir a ramificação](../dev-tools/cloud-cli-overview.md#) nas configurações do ambiente ou usando a CLI da nuvem.
 
-Se você precisar de ambientes ativos adicionais para desenvolvimento, envie um [Tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket).
+Se você precisar de ambientes ativos adicionais para desenvolvimento, envie um [Tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 **Para adicionar uma ramificação**:
 

@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 874
+source-wordcount: 884
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ hooks:
 
 >[!NOTE]
 >
->Com o lançamento do `ece-tools` 2002.1.x, há um novo formato de [configuração de ganchos](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=pt-BR). O formato herdado das versões do `ece-tools` 2002.0.x ainda é suportado. No entanto, é necessário atualizar para o novo formato para usar o recurso de implantação baseada em cenário.
+>Com o lançamento do `ece-tools` 2002.1.x, há um novo formato de [configuração de ganchos](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property). O formato herdado das versões do `ece-tools` 2002.0.x ainda é suportado. No entanto, é necessário atualizar para o novo formato para usar o recurso de implantação baseada em cenário.
 
 ## Revisar etapas do cenário
 
@@ -92,9 +92,9 @@ Durante a implantação, os cenários personalizados são mesclados com o cenár
 
   No exemplo, os cenários têm a seguinte prioridade:
 
-   1. `vendor/vendor-name/module-name/deploy2.xml`
-   1. `vendor/vendor-name/module-name/deploy.xml`
-   1. `scenario/deploy.xml` (cenário padrão ou de linha de base)
+  1. `vendor/vendor-name/module-name/deploy2.xml`
+  1. `vendor/vendor-name/module-name/deploy.xml`
+  1. `scenario/deploy.xml` (cenário padrão ou de linha de base)
 
 - As etapas do cenário de maior prioridade substituem as etapas com o mesmo nome nos outros cenários. Novas etapas são adicionadas à configuração. As mesmas regras se aplicam para mais de dois cenários com cada cenário sendo priorizado da direita para a esquerda, por exemplo (C → B → A).
 

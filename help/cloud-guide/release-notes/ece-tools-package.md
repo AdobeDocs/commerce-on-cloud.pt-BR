@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
 source-wordcount: 3631
 ht-degree: 0%
@@ -206,7 +206,7 @@ Data de lançamento: 10 de março de 2023
 
 Data de lançamento: 27 de outubro de 2022
 
-- ![novo ícone](../../assets/new.svg) **Suporte adicionado para Adobe I/O Events para Adobe Commerce**. Os desenvolvedores de extensão agora podem usar a estrutura [Adobe I/O Events](https://developer.adobe.com/events/docs/) para enviar informações de eventos Commerce de instâncias da Nuvem para seus aplicativos, gravadas para o [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). O Adobe I/O Events para Adobe Commerce está em Visualização de Parceiro.<!-- CEXT-932 -->
+- ![novo ícone](../../assets/new.svg) **Suporte adicionado para Adobe I/O Events para Adobe Commerce**. Os desenvolvedores de extensão agora podem usar a estrutura [Adobe I/O Events](https://developer.adobe.com/events/docs/) para enviar informações de eventos Commerce de instâncias da Nuvem para seus aplicativos, gravadas para o [Adobe App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/). O Adobe I/O Events para Adobe Commerce está em Visualização de Parceiro.<!-- CEXT-932 -->
 - ![novo ícone](../../assets/new.svg) **Validador para configuração do OPcache**—Adicionou um validador para verificar a configuração do OPcache para caminhos excluídos.<!-- MCLOUD-9485 -->
 - ![ícone de correção](../../assets/fix.svg) **Correção de um problema com a configuração de cache do GraphQL**—Agora o ECE-Tools mantém o valor `id_salt` do GraphQL na configuração `cache` no arquivo `app/etc/env.php`.<!-- MCLOUD-9486 -->
 

@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1094
+source-wordcount: 1105
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Para adicionar uma visualização de loja à URL base do site, não é necessário criar vários diretórios. Consulte [Adicionar o código de armazenamento à URL de base](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=pt-BR) no _Guia de Configuração_.
+>Para adicionar uma visualização de loja à URL base do site, não é necessário criar vários diretórios. Consulte [Adicionar o código de armazenamento à URL de base](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) no _Guia de Configuração_.
 
 ## Adicionar domínios
 
@@ -55,15 +55,15 @@ O processo para adicionar um domínio depende do tipo de conta da Cloud:
 
 - Para preparo e produção profissionais
 
-  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou abra um tíquete de suporte para solicitar assistência. Além disso, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar que novos domínios sejam adicionados a um cluster.
+  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou abra um tíquete de suporte para solicitar assistência. Além disso, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar que novos domínios sejam adicionados a um cluster.
 
 - Somente para produção inicial
 
-  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar assistência. Além disso, você deve adicionar o novo domínio à guia **Domínios** em [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar assistência. Além disso, você deve adicionar o novo domínio à guia **Domínios** em [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configurar instalação local
 
-Para configurar sua instalação local para usar várias lojas, consulte [Vários sites ou lojas](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html?lang=pt-BR) no _Guia de Configuração_.
+Para configurar sua instalação local para usar várias lojas, consulte [Vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/multi-sites/ms-overview) no _Guia de Configuração_.
 
 Depois de criar e testar com êxito a instalação local para usar várias lojas, você deve preparar seu ambiente de integração:
 
@@ -222,7 +222,7 @@ Onde a configuração de rotas define como as URLs são processadas, a proprieda
 
 ### Configurar sites, lojas e visualizações de loja
 
-Na _Interface do Administrador_, configure os **Sites**, as **Lojas** e as **Exibições da Loja** do Adobe Commerce. Consulte [Configurar vários sites, lojas e exibições de loja no Administrador](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=pt-BR) no _Guia de Configuração_.
+Na _Interface do Administrador_, configure os **Sites**, as **Lojas** e as **Exibições da Loja** do Adobe Commerce. Consulte [Configurar vários sites, lojas e exibições de loja no Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) no _Guia de Configuração_.
 
 É importante usar o mesmo nome e código de seus sites, lojas e exibições de loja do Administrador ao configurar a instalação local. Você precisa desses valores ao atualizar o arquivo `magento-vars.php`.
 
@@ -278,8 +278,8 @@ Em vez de configurar um host virtual NGINX, passe as variáveis `MAGE_RUN_CODE` 
    - `example.com`—com a URL de base do seu _site_
    - `default`—com o CÓDIGO exclusivo do seu _site_ ou _exibição de loja_
    - `store`—com um dos seguintes valores:
-      - `website`—carrega o _site_ na vitrine
-      - `store`—carregar uma _exibição de loja_ na loja
+     - `website`—carrega o _site_ na vitrine
+     - `store`—carregar uma _exibição de loja_ na loja
 
    Para vários sites usando domínios exclusivos:
 

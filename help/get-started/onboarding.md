@@ -11,9 +11,9 @@ feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 745b243d165ba3a7695dea2827ddff37573ba8d0
 workflow-type: tm+mt
-source-wordcount: 517
+source-wordcount: 521
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Você só pode adicionar usuários registrados à sua Adobe Commerce em projetos
 
 ### Acesso à conta compartilhada
 
-O Proprietário da licença pode configurar o acesso compartilhado para a conta. O acesso compartilhado permite que funcionários confiáveis e provedores de serviços usem a central de ajuda para enviar e rastrear tíquetes de suporte relacionados à sua Adobe Commerce em projetos de infraestrutura em nuvem. Para obter instruções de configuração, consulte o artigo [Acesso compartilhado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#shared-access) na Central de ajuda.
+O Proprietário da licença pode configurar o acesso compartilhado para a conta. O acesso compartilhado permite que funcionários confiáveis e provedores de serviços usem a central de ajuda para enviar e rastrear tíquetes de suporte relacionados à sua Adobe Commerce em projetos de infraestrutura em nuvem. Para obter instruções de configuração, consulte o artigo [Acesso compartilhado](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#shared-access) na Central de ajuda.
 
 ### [!DNL Cloud Console]
 

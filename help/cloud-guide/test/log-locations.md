@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1287
+source-wordcount: 1369
 ht-degree: 0%
 
 ---
@@ -121,12 +121,12 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Para ambientes Pro Staging e Pro Production, a rotação, compactação e remoção automáticas do registro são ativadas para arquivos de registro com um nome de arquivo fixo. Cada tipo de arquivo de log tem um padrão rotativo e uma duração.
 >Detalhes completos sobre a rotação de logs e a duração de logs compactados do ambiente podem ser encontrados em: `/etc/logrotate.conf` e `/etc/logrotate.d/<various>`.
->Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para solicitar alterações na configuração de rotação do log.
+>Para ambientes de Pro Staging e Pro Production, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar alterações na configuração de rotação do log.
 
 >[!TIP]
 >
 >A rotação de logs não pode ser configurada em ambientes Pro Integration.
->Para Integração Pro, você deve implementar uma solução/script personalizado e [configurar seu cron](../application/crons-property.md) para executar o script conforme necessário.
+>Para a Integração Pro, você deve implementar uma solução/script personalizado e [configurar seu cron](../application/crons-property.md) para executar o script conforme necessário.
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=pt-BR).
+A maioria das mensagens de erro contém uma descrição e uma ação sugerida. Use a [Referência da mensagem de erro para ECE-Tools](../dev-tools/error-reference.md) para consultar o código de erro para obter mais orientações. Para obter mais orientações, use a [Solução de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-29640).
 
 ## Logs do aplicativo
 

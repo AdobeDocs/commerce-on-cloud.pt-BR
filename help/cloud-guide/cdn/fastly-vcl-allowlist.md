@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2025-01-29
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 873
+source-wordcount: 874
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ O seguinte código de trecho de VCL personalizado (formato JSON) mostra a lógic
 }
 ```
 
-Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=pt-BR#add-the-custom-vcl-snippet) deste exemplo, revise os valores para determinar se você precisa fazer alterações. Em seguida, insira cada valor nos respectivos campos, como `type` no campo Tipo, `content` no campo Conteúdo.
+Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist#add-the-custom-vcl-snippet) deste exemplo, revise os valores para determinar se você precisa fazer alterações. Em seguida, insira cada valor nos respectivos campos, como `type` no campo Tipo, `content` no campo Conteúdo.
 
 - `name` — Nome do trecho VCL. Para este exemplo, `allowlist`.
 

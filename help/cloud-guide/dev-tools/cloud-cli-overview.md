@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 860
+source-wordcount: 862
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Esta ferramenta estende a funcionalidade do [[!DNL Cloud Console]](../../get-sta
 
 **Para instalar a `magento-cloud` CLI**:
 
-1. Na sua _estação de trabalho local_, altere para o diretório onde você pretende clonar o projeto na Nuvem e onde o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR) tem acesso de _gravação_.
+1. Na sua _estação de trabalho local_, altere para o diretório onde você pretende clonar o projeto na Nuvem e onde o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) tem acesso de _gravação_.
 
 1. Instale a CLI do `magento-cloud`.
 
@@ -148,7 +148,7 @@ As etapas a seguir demonstram o uso dos comandos CLI e Git alternadamente para g
 
 1. Na estação de trabalho local, altere para o diretório do projeto.
 
-1. Alternar para o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=pt-BR).
+1. Alternar para o [proprietário do sistema de arquivos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
 
 1. Faça logon no projeto.
 

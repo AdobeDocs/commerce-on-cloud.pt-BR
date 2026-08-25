@@ -6,9 +6,9 @@ breadcrumb-title: Commerce na nuvem
 user-guide-description: Saiba como gerenciar o aplicativo do Adobe Commerce na infraestrutura em nuvem.
 product: magento
 feature: Cloud
-source-git-commit: de2e5072775d032d46f91394ed870768271fa9a1
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '390'
 ht-degree: 8%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 8%
   + [Fluxo de trabalho Pro](architecture/pro-develop-deploy-workflow.md)
   + [Arquitetura dimensionada](architecture/scaled-architecture.md)
   + [Dimensionamento automático](architecture/autoscaling.md)
-+ [Introdução](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=pt-BR)
++ [Introdução](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/start/overview)
 + Notas de versão {#release-notes}
   + [Conjunto de ferramentas da nuvem](release-notes/cloud-tools-suite.md)
   + [Pacote ECE-Tools](release-notes/ece-tools-package.md)

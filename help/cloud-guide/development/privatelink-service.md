@@ -17,9 +17,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1798
+source-wordcount: 1799
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ O Adobe Commerce na infraestrutura em nuvem oferece suporte à integração com 
 
 >[!TIP]
 >
->O PrivateLink é melhor usado para proteger conexões para integrações não HTTP(S), como transferências de banco de dados ou arquivos. Se você planeja integrar seu aplicativo com as APIs do Adobe Commerce, veja como criar uma [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) na _API Mesh para o Adobe Developer App Builder_.
+>O PrivateLink é melhor usado para proteger conexões para integrações não HTTP(S), como transferências de banco de dados ou arquivos. Se você planeja integrar seu aplicativo com as APIs do Adobe Commerce, veja como criar uma [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) na _API Mesh para o Adobe Developer App Builder_.
 
 ## Recursos e suporte
 
@@ -40,9 +40,9 @@ A integração do serviço PrivateLink para projetos de infraestrutura em nuvem 
 - Suporte para comunicação unidirecional ou bidirecional entre serviços de endpoint disponíveis na Adobe e VPCs do cliente.
 - Ativação de serviço:
 
-   - Abra as portas necessárias no ambiente Adobe Commerce na infraestrutura em nuvem
-   - Estabeleça a conexão inicial entre o cliente e os VPCs do Adobe
-   - Solução de problemas de conexão durante a ativação
+  - Abra as portas necessárias no ambiente Adobe Commerce na infraestrutura em nuvem
+  - Estabeleça a conexão inicial entre o cliente e os VPCs do Adobe
+  - Solução de problemas de conexão durante a ativação
 
 ## Limitação
 
@@ -51,8 +51,8 @@ A integração do serviço PrivateLink para projetos de infraestrutura em nuvem 
 - O suporte da Adobe Commerce não abrange a solução de problemas do AWS PrivateLink além da ativação inicial.
 - Os clientes são responsáveis pelos custos associados ao gerenciamento de sua própria VPC.
 - Suporte ao **protocolo HTTPS (porta 443) pela plataforma:**
-   - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encloreto de origem rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=pt-BR).
-   - **AWS PrivateLink**: há suporte para conexões do protocolo HTTPS (porta 443).
+  - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encloreto de origem rápido](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly).
+  - **AWS PrivateLink**: há suporte para conexões do protocolo HTTPS (porta 443).
 - PrivateDNS não está disponível.
 
 ## Tipos de conexão PrivateLink
@@ -66,8 +66,8 @@ Escolha um dos tipos de conexão PrivateLink mais adequados para seus ambientes 
 - **PrivateLink Unidirecional**-Escolha esta configuração para recuperar dados com segurança de um Adobe Commerce no repositório de infraestrutura da nuvem.
 - **PrivateLink bidirecional**-Escolha esta configuração para estabelecer conexões seguras de e para sistemas fora da Adobe Commerce no ambiente de infraestrutura em nuvem. A opção bidirecional requer duas conexões:
 
-   - Uma conexão entre o VPC do cliente e o Adobe VPC
-   - Uma conexão entre o Adobe VPC e o VPC do cliente
+  - Uma conexão entre o VPC do cliente e o Adobe VPC
+  - Uma conexão entre o Adobe VPC e o VPC do cliente
 
 >[!TIP]
 >
@@ -106,12 +106,12 @@ Obtenha os seguintes dados necessários para a ativação do PrivateLink:
 - Forneça a ID do cluster; usando SSH, faça logon no controle remoto e use o comando: `cat /etc/platform_cluster`
 - Para que um serviço externo se conecte ao cluster Adobe Commerce Pro, é necessário:
 
-   - Uma lista de portas no cluster Pro para expor ao novo Ponto de Extremidade Privado externo
-   - Uma lista de IDs de assinatura do Azure para as conexões de Ponto de extremidade privado
+  - Uma lista de portas no cluster Pro para expor ao novo Ponto de Extremidade Privado externo
+  - Uma lista de IDs de assinatura do Azure para as conexões de Ponto de extremidade privado
 
 - Para conectar seu cluster Adobe Commerce Pro a um serviço externo, você precisa:
 
-   - Uma lista de IDs de recursos para os serviços de destino. As IDs de serviço de Link privado externo são semelhantes ao seguinte:
+  - Uma lista de IDs de recursos para os serviços de destino. As IDs de serviço de Link privado externo são semelhantes ao seguinte:
 
   ```text
   /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/privateLinkServices/{svcNameID}
@@ -142,12 +142,12 @@ O fluxo de trabalho a seguir descreve o processo de ativação da integração d
    - A **Adobe** fornece a entidade de conta da Adobe (usuário raiz para a conta da AWS ou da Azure) e solicita acesso ao serviço de ponto de extremidade do VPC do cliente.
    - O **Cliente** habilita o acesso da Adobe ao serviço de ponto de extremidade no VPC do cliente. Isso pressupõe que a entidade de conta da Adobe tenha acesso a `arn:aws:iam::402592597372:root`, conforme descrito anteriormente no pré-requisito **acesso ao serviço de Ponto de Extremidade concedido**.
 
-      - Atualize a configuração do serviço de ponto de extremidade do cliente para aceitar solicitações iniciadas da conta do Adobe. Consulte a documentação da plataforma na nuvem para obter instruções:
+     - Atualize a configuração do serviço de ponto de extremidade do cliente para aceitar solicitações iniciadas da conta do Adobe. Consulte a documentação da plataforma na nuvem para obter instruções:
 
-         - Para o AWS, consulte [Adicionando e removendo permissões para o serviço de ponto de extremidade].
-         - Para o Azure, consulte [Gerenciar uma conexão de Ponto de Extremidade Privado]
+       - Para o AWS, consulte [Adicionando e removendo permissões para o serviço de ponto de extremidade].
+       - Para o Azure, consulte [Gerenciar uma conexão de Ponto de Extremidade Privado]
 
-      - Forneça à Adobe o nome do serviço de ponto de extremidade do VPC do cliente.
+     - Forneça à Adobe o nome do serviço de ponto de extremidade do VPC do cliente.
 
    - A **Adobe** adiciona o serviço de ponto de extremidade do cliente à conta da plataforma da Adobe (AWS ou Azure), o que aciona uma solicitação de conexão com o cliente VPC.
    - O **Cliente** aprova a solicitação de conexão da Adobe para concluir a configuração.
@@ -219,7 +219,7 @@ Você pode usar o aplicativo Telnet para testar a conexão com o serviço de pon
 
 ## Alterar configuração do PrivateLink
 
-[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
+[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
 
 - Remova a conexão PrivateLink do ambiente de produção ou preparo do Adobe Commerce na infraestrutura em nuvem Pro.
 - Altere o número da conta da plataforma Customer Cloud para acessar o serviço de endpoint da Adobe.
@@ -241,14 +241,14 @@ Se esses recursos não estiverem disponíveis na VPC do cliente, você deverá f
 Consulte a documentação da sua plataforma na nuvem para obter instruções de configuração do PrivateLink:
 
 - **Documentação do AWS PrivateLink**
-   - [Criar um Balanceador de Carga de Rede]
-   - [Criar uma configuração de serviço de ponto de extremidade]
-   - [Criar um ponto de extremidade de interface]
-   - [Ciclo de vida do ponto de extremidade da interface]
+  - [Criar um Balanceador de Carga de Rede]
+  - [Criar uma configuração de serviço de ponto de extremidade]
+  - [Criar um ponto de extremidade de interface]
+  - [Ciclo de vida do ponto de extremidade da interface]
 
 - **Documentação do Azure PrivateLink**
-   - [Criar um Balanceador de Carga]
-   - [Fluxo de trabalho do Azure Private Link]
+  - [Criar um Balanceador de Carga]
+  - [Fluxo de trabalho do Azure Private Link]
 
 <!--Link definitions-->
 

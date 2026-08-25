@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1979
+source-wordcount: 1982
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Revise estas práticas recomendadas e considerações para seu processo de impla
 
 - **Verifique as versões e relações do serviço e a capacidade de conexão**
 
-  Verifique os serviços disponíveis para seu aplicativo e certifique-se de que você esteja usando a versão mais atual e compatível. Consulte [Relacionamentos de serviço](../services/services-yaml.md#service-relationships) e [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) no _Guia de instalação_ para obter as versões recomendadas.
+  Verifique os serviços disponíveis para seu aplicativo e certifique-se de que você esteja usando a versão mais atual e compatível. Consulte [Relacionamentos de serviço](../services/services-yaml.md#service-relationships) e [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements) no _Guia de instalação_ para obter as versões recomendadas.
 
 - **Testar localmente e no ambiente de integração antes de implantar em Preparo e Produção**
 
@@ -95,11 +95,11 @@ Revise estas práticas recomendadas e considerações para seu processo de impla
 
   Antes de implantar na produção, conclua as seguintes tarefas:
 
-   - Verifique se você pode se conectar a todos os três nós no ambiente de Produção usando o [SSH](../development/secure-connections.md).
+  - Verifique se você pode se conectar a todos os três nós no ambiente de Produção usando o [SSH](../development/secure-connections.md).
 
-   - Verifique se os Indexadores estão definidos como _Atualizar na Agenda_. Consulte [Modos de indexação](https://developer.adobe.com/commerce/php/development/components/indexing/) no _Guia de Desenvolvedor de Extensão_.
+  - Verifique se os Indexadores estão definidos como _Atualizar na Agenda_. Consulte [Modos de indexação](https://developer.adobe.com/commerce/php/development/components/indexing/) no _Guia de Desenvolvedor de Extensão_.
 
-   - Prepare o ambiente atualizando quaisquer variáveis específicas do ambiente no código de Produção, verificando a disponibilidade e a compatibilidade do serviço e fazendo quaisquer outras alterações de configuração necessárias.
+  - Prepare o ambiente atualizando quaisquer variáveis específicas do ambiente no código de Produção, verificando a disponibilidade e a compatibilidade do serviço e fazendo quaisquer outras alterações de configuração necessárias.
 
 - **Monitorar o processo de implantação**
 
@@ -186,13 +186,13 @@ Se o arquivo `app/etc/config.php` não existir na base de código, os arquivos e
 
 Há dois ganchos de implantação. O gancho `pre-deploy.php` conclui a limpeza e a recuperação necessárias dos recursos e do código gerados no gancho de compilação. O gancho `php ./vendor/bin/ece-tools deploy` executa uma série de comandos e scripts:
 
-- Se o Adobe Commerce estiver **não instalado**, ele será instalado com `bin/magento setup:install`, atualizará a configuração de implantação, `app/etc/env.php`, e o banco de dados para seu ambiente especificado, como Redis e URLs de sites. **Importante:** quando você concluiu a [Primeira implantação](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=pt-BR) durante a instalação, o Adobe Commerce foi instalado e implantado em todos os ambientes.
+- Se o Adobe Commerce estiver **não instalado**, ele será instalado com `bin/magento setup:install`, atualizará a configuração de implantação, `app/etc/env.php`, e o banco de dados para seu ambiente especificado, como Redis e URLs de sites. **Importante:** quando você concluiu a [Primeira implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/overview) durante a instalação, o Adobe Commerce foi instalado e implantado em todos os ambientes.
 
 - Se o Adobe Commerce **estiver instalado**, faça as atualizações necessárias. O script de implantação executa o `bin/magento setup:upgrade` para atualizar o esquema e os dados do banco de dados (o que é necessário após atualizações de extensão ou de código principal) e também atualiza a configuração de implantação, `app/etc/env.php`, e o banco de dados para o seu ambiente. Finalmente, o script de implantação limpa o cache do Adobe Commerce.
 
 - O script gera opcionalmente conteúdo estático da Web usando o comando `magento setup:static-content:deploy`.
 
-- Usa escopos (`-s` sinalizador em scripts de compilação) com uma configuração padrão de `quick` para estratégia de implantação de conteúdo estático. Você pode personalizar a estratégia usando a variável de ambiente [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Para obter detalhes sobre essas opções e recursos, consulte [Estratégias de implantação de arquivos estáticos](../deploy/static-content.md) e o sinalizador `-s` para [Implantar arquivos de exibição estáticos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=pt-BR).
+- Usa escopos (`-s` sinalizador em scripts de compilação) com uma configuração padrão de `quick` para estratégia de implantação de conteúdo estático. Você pode personalizar a estratégia usando a variável de ambiente [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). Para obter detalhes sobre essas opções e recursos, consulte [Estratégias de implantação de arquivos estáticos](../deploy/static-content.md) e o sinalizador `-s` para [Implantar arquivos de exibição estáticos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 >[!NOTE]
 >

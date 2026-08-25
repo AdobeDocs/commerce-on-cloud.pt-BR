@@ -21,9 +21,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 413
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Considere a Adobe Commerce na infraestrutura em nuvem como cinco camadas funcion
 
 1. [**Infraestrutura em nuvem**](pro-architecture.md): escolha Amazon Web Services (AWS) ou Microsoft Azure como base da sua Infraestrutura como um Serviço (IaaS) para o seu Adobe Commerce em projetos Pro de infraestrutura em nuvem.
 
-   A Adobe analisa seu uso de recurso de computação virtual (vCPU) com frequência e aloca recursos automaticamente para otimizar seu uso a longo prazo e reduzir o risco de exceder sua permissão diária máxima anual de vCPU. Se você espera um aumento no tráfego do site por períodos específicos, continue abrindo um tíquete de Suporte para [solicitar um upsize temporário](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=pt-BR).
+   A Adobe analisa seu uso de recurso de computação virtual (vCPU) com frequência e aloca recursos automaticamente para otimizar seu uso a longo prazo e reduzir o risco de exceder sua permissão diária máxima anual de vCPU. Se você espera um aumento no tráfego do site por períodos específicos, continue abrindo um tíquete de Suporte para [solicitar um upsize temporário](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize).
 
 1. [**Platform as a Service**](cloud-architecture.md): cada projeto de infraestrutura do Adobe Commerce na nuvem fornece um ambiente de Integração do Platform as a Service (PaaS) para desenvolvimento, teste e integração de serviços.
 1. [**Adobe Commerce**](../project/overview.md): o Adobe Commerce na infraestrutura em nuvem fornece uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis, serviços de fila de mensagens ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) e tecnologias de mecanismo de pesquisa com suporte.

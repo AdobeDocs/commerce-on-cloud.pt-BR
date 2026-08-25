@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 745b243d165ba3a7695dea2827ddff37573ba8d0
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: 362
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Depois de enviar a solicitação de alteração de senha, verifique se há notif
 
 >[!TIP]
 >
->Se a redefinição de senha falhar ou você não conseguir fazer logon no painel de administração, um usuário com acesso de administrador poderá se conectar ao projeto usando SSH e adicionar um usuário administrador usando o comando da CLI `admin:user:create`. Consulte [Criar, editar ou desbloquear uma conta de administrador](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=pt-BR) no _Guia de instalação_.
+>Se a redefinição de senha falhar ou você não conseguir fazer logon no painel de administração, um usuário com acesso de administrador poderá se conectar ao projeto usando SSH e adicionar um usuário administrador usando o comando da CLI `admin:user:create`. Consulte [Criar, editar ou desbloquear uma conta de administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/tutorials/admin) no _Guia de instalação_.
 
 ## Monitorar integridade do site
 

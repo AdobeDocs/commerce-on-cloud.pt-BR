@@ -15,9 +15,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 2168
+source-wordcount: 2170
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Adicione todos os seus produtos, catálogos, conteúdo do site e assim por diant
 
 Para ajudar a exportar dados de produção como dados de teste para uso em ambientes de preparo e integração:
 
-- [Execute os utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=pt-BR) comandos da CLI (Recomendado) ao exportar um backup protegido do cliente e armazenar dados usando sua chave de criptografia do Adobe Commerce
+- [Execute os utilitários de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/run-support-utilities) comandos da CLI (Recomendado) ao exportar um backup protegido do cliente e armazenar dados usando sua chave de criptografia do Adobe Commerce
 
 - Ferramenta [Coleta de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/support#data-collector) para gerar e exportar dados
 
@@ -185,7 +185,7 @@ Para migrar esses dados, consulte [Migrar e implantar arquivos e dados estático
 
 >[!NOTE]
 >
->Antes de enviar os dados para outro ambiente, você deve considerar a limpeza dos dados. Você tem algumas opções, incluindo [usar utilitários de suporte](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=pt-BR) ou desenvolver um script para limpar os dados do cliente.
+>Antes de enviar os dados para outro ambiente, você deve considerar a limpeza dos dados. Você tem algumas opções, incluindo [usar utilitários de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/run-support-utilities) ou desenvolver um script para limpar os dados do cliente.
 
 >[!WARNING]
 >

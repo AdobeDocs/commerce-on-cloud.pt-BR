@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: 414
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ A fase _build_ monta contêineres para os serviços definidos nos arquivos de co
 
 ## ![Fase de implantação](../../assets/status-deploy.png) Fase de implantação
 
-A fase _implantar_ coloca uma suspensão temporária em solicitações de entrada e faz a transição do site para o [modo de manutenção](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=pt-BR). A fase de implantação usa os novos contêineres e, após a montagem do sistema de arquivos, abre conexões de rede, ativa os serviços definidos na seção `relationships` do arquivo `.magento.app.yaml` e executa os ganchos de implantação definidos no arquivo `.magento.app.yaml`. Tudo é _somente leitura_, exceto os diretórios definidos no arquivo `.magento.app.yaml`. Por padrão, a propriedade [`mounts` &#x200B;](../application/properties.md#mounts) inclui os seguintes diretórios:
+A fase _implantar_ coloca uma suspensão temporária em solicitações de entrada e faz a transição do site para o [modo de manutenção](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/setup/application-modes). A fase de implantação usa os novos contêineres e, após a montagem do sistema de arquivos, abre conexões de rede, ativa os serviços definidos na seção `relationships` do arquivo `.magento.app.yaml` e executa os ganchos de implantação definidos no arquivo `.magento.app.yaml`. Tudo é _somente leitura_, exceto os diretórios definidos no arquivo `.magento.app.yaml`. Por padrão, a propriedade [`mounts` &#x200B;](../application/properties.md#mounts) inclui os seguintes diretórios:
 
 - `app/etc` — contém os arquivos de configuração `env.php` e `config.php`
 - `pub/media` — contém todos os dados de mídia, como produtos ou categorias
