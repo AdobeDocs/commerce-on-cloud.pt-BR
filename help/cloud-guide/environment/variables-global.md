@@ -6,19 +6,13 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
 TQID: https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 774
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -65,7 +59,7 @@ stage:
 - **Padrão**-_Não definido_
 - **Versão** — Adobe Commerce 2.4.4 e posterior
 
-Quando definido como `true`, habilita webhooks do Commerce. O webhook é executado em um endpoint externo, como uma ação de tempo de execução do App Builder ou um sistema de gerenciamento de inventário de terceiros. O [_Guia de Webhooks_](https://developer.adobe.com/commerce/extensibility/webhooks) descreve esse recurso detalhadamente.
+Quando definido como `true`, habilita webhooks do Commerce. O webhook é executado em um endpoint externo, como uma ação de tempo de execução do App Builder ou um sistema de gerenciamento de inventário de terceiros. O [_Guia de Webhooks_](https://developer.adobe.com/commerce/extensibility/webhooks/) descreve esse recurso detalhadamente.
 
 ```yaml
 stage:
@@ -167,8 +161,8 @@ stage:
 ## `SKIP_HTML_MINIFICATION`
 
 - **Padrão**:
-   - `true`—para `ece-tools` 2002.0.13 e posterior
-   - `false`—para versões anteriores do `ece-tools`
+  - `true`—para `ece-tools` 2002.0.13 e posterior
+  - `false`—para versões anteriores do `ece-tools`
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
 Habilita ou desabilita a cópia de arquivos de exibição estáticos para o diretório `<magento_root>/init/` no final do estágio de compilação. Se definido como `true`, os arquivos não serão copiados e a minificação do HTML estará disponível mediante solicitação. Defina esse valor como `true` para reduzir o tempo de inatividade ao implantar em ambientes de Preparo e Produção.
@@ -189,7 +183,7 @@ stage:
 - **Padrão**—_Não definido_
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=pt-BR) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
+Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/security/xframe-options) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
 
 - `DENY`—A página não pode ser exibida em um quadro.
 - `SAMEORIGIN`—(A configuração padrão do Adobe Commerce.) A página pode ser exibida somente em um quadro na mesma origem da própria página.

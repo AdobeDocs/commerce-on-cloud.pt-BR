@@ -4,19 +4,13 @@ description: Saiba como gerenciar o espaço em disco usando a interface de linha
 feature: Cloud, Storage
 exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
 TQID: https://experienceleague.adobe.com/645o-d3ZvMtaYOwy0IKwAjSxUyUgkrI36OGLWtZR--g
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 801
+source-wordcount: 806
 ht-degree: 0%
 
 ---
@@ -143,7 +137,7 @@ Dois [arquivos de configuração](../environment/overview.md) controlam a aloca�
 
 >[!IMPORTANT]
 >
->- Para ambientes de Produção e Preparo Profissionais, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para alterar a alocação de espaço em disco. Um aumento de tamanho dos ambientes de produção Pro e de preparo só pode ocorrer em determinados intervalos. Portanto, dependendo do uso atual do espaço em disco, o suporte pode recomendar o aumento da alocação de espaço em disco em um mínimo de 10 GB. Depois de alocado, o aumento de armazenamento para preparo e produção Pro não pode ser revertido. O armazenamento não pode ser realocado nem redistribuído entre os recursos. Para adicionar mais espaço de armazenamento de arquivos, reduza o espaço em disco alocado para o MySQL.
+>- Para ambientes de Produção e Preparo Profissionais, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para alterar a alocação de espaço em disco. Um aumento de tamanho dos ambientes de produção Pro e de preparo só pode ocorrer em determinados intervalos. Portanto, dependendo do uso atual do espaço em disco, o suporte pode recomendar o aumento da alocação de espaço em disco em um mínimo de 10 GB. Depois de alocado, o aumento de armazenamento para preparo e produção Pro não pode ser revertido. O armazenamento não pode ser realocado nem redistribuído entre os recursos. Para adicionar mais espaço de armazenamento de arquivos, reduza o espaço em disco alocado para o MySQL.
 >- Os ambientes de produção e de preparo profissionais hospedados no AWS têm um [resfriamento obrigatório de 6 horas](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) que se aplica a aumentos de espaço em disco. Depois que o espaço em disco for aumentado em uma montagem, você deve aguardar 6 horas antes que o espaço em disco possa ser aumentado novamente nessa montagem.
 
 ### Espaço em disco do aplicativo
@@ -200,7 +194,7 @@ O arquivo `.magento/services.yaml` controla o espaço em disco disponível para 
 
 ## Monitorar espaço em disco
 
-Em ambientes de produção Pro, é possível monitorar o espaço em disco e outros indicadores de desempenho usando a política de alerta Gerenciado para Adobe Commerce para New Relic. Para obter detalhes, consulte [Monitorar o desempenho com Alertas Gerenciados](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Para obter mais orientações, consulte [Práticas recomendadas para resolver problemas de desempenho do banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=pt-BR).
+Em ambientes de produção Pro, é possível monitorar o espaço em disco e outros indicadores de desempenho usando a política de alerta Gerenciado para Adobe Commerce para New Relic. Para obter detalhes, consulte [Monitorar o desempenho com Alertas Gerenciados](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Para obter mais orientações, consulte [Práticas recomendadas para resolver problemas de desempenho do banco de dados](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues).
 
 ## Não há mais espaço
 

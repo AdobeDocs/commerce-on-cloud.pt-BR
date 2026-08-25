@@ -4,14 +4,11 @@ description: Saiba como aplicar patches no projeto Adobe Commerce na infraestrut
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
 TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 910
+source-wordcount: 911
 ht-degree: 0%
 
 ---
@@ -21,15 +18,15 @@ ht-degree: 0%
 Os [Patches da Nuvem para o Commerce](https://github.com/magento/magento-cloud-patches) e a [Ferramenta de Patches de Qualidade](https://github.com/magento/quality-patches) fornecem patches para o aplicativo Adobe Commerce instalado.
 
 - O pacote Cloud Patches for Commerce fornece os patches necessários com correções críticas
-- Os Patches de qualidade oferecem correções de qualidade opcionais de baixo impacto como [patches individuais](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=pt-BR#individual-patch) que não contêm alterações incompatíveis com versões anteriores
+- Os Patches de qualidade oferecem correções de qualidade opcionais de baixo impacto como [patches individuais](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) que não contêm alterações incompatíveis com versões anteriores
 
-Consulte [Patches Disponíveis](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no _Guia de Ferramentas de Operações do Commerce_ para ver uma lista completa de patches lançados.
+Consulte [Patches Disponíveis](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no _Guia de Ferramentas de Operações do Commerce_ para ver uma lista completa de patches lançados.
 
 Ambos os pacotes melhoram a integração de todas as versões do Adobe Commerce com ambientes na nuvem e permitem a entrega rápida de correções críticas, opcionais e personalizadas. Você pode usar esses pacotes para aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para o Commerce.
 
 >[!TIP]
 >
->Você pode usar a [Ferramenta de patches de qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) e Patches na nuvem para o Commerce como pacotes autônomos para projetos Magento Open Source e Adobe Commerce. Recomendamos o uso da Ferramenta de correções de qualidade para projetos que não estejam na nuvem.
+>Você pode usar a [Ferramenta de patches de qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) e Patches na nuvem para o Commerce como pacotes autônomos para projetos Magento Open Source e Adobe Commerce. Recomendamos o uso da Ferramenta de correções de qualidade para projetos que não estejam na nuvem.
 
 Quando você implanta alterações no ambiente remoto, o pacote `ece-tools` usa `magento/magento-cloud-patches` e `magento/quality-patches` para verificar patches pendentes e os aplica automaticamente na seguinte ordem:
 
@@ -98,20 +95,20 @@ Magento 2 Enterprise Edition, version 2.3.5.0
 A tabela de status contém os seguintes tipos de informações:
 
 - **Tipo**:
-   - `Optional`—Todos os patches da Ferramenta de Patches de Qualidade e do pacote de Patches na Nuvem são opcionais para instalações do Adobe Commerce e do Magento Open Source. Para o Adobe Commerce na infraestrutura em nuvem, todos os patches são opcionais.
-   - `Required` — Todos os patches do pacote Cloud Patches for Commerce são necessários para clientes da nuvem.
-   - `Deprecated`—O patch individual é marcado como obsoleto e recomendamos revertê-lo se você o tiver aplicado. Após reverter um patch obsoleto, ele não será mais exibido na tabela de status.
-   - `Custom` — Todos os patches do diretório &#39;m2-hotfixes&#39;.
+  - `Optional`—Todos os patches da Ferramenta de Patches de Qualidade e do pacote de Patches na Nuvem são opcionais para instalações do Adobe Commerce e do Magento Open Source. Para o Adobe Commerce na infraestrutura em nuvem, todos os patches são opcionais.
+  - `Required` — Todos os patches do pacote Cloud Patches for Commerce são necessários para clientes da nuvem.
+  - `Deprecated`—O patch individual é marcado como obsoleto e recomendamos revertê-lo se você o tiver aplicado. Após reverter um patch obsoleto, ele não será mais exibido na tabela de status.
+  - `Custom` — Todos os patches do diretório &#39;m2-hotfixes&#39;.
 
 - **Status**:
-   - `Applied` — O patch foi aplicado.
-   - `Not applied`—O patch não foi aplicado.
-   - `N/A`—O status do patch não pode ser definido devido a conflitos.
+  - `Applied` — O patch foi aplicado.
+  - `Not applied`—O patch não foi aplicado.
+  - `N/A`—O status do patch não pode ser definido devido a conflitos.
 
 - **Detalhes**:
-   - `Affected components` — A lista de módulos afetados.
-   - `Required patches` — A lista de patches necessários (dependências).
-   - `Recommended replacement` — O patch que é um substituto recomendado para um patch obsoleto.
+  - `Affected components` — A lista de módulos afetados.
+  - `Required patches` — A lista de patches necessários (dependências).
+  - `Recommended replacement` — O patch que é um substituto recomendado para um patch obsoleto.
 
 ## Aplicar um patch em um ambiente local
 

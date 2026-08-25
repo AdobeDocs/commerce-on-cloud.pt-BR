@@ -3,21 +3,13 @@ title: Lista de verificação de inicialização
 description: Revise os itens da lista de verificação para o lançamento do site.
 exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
 TQID: https://experienceleague.adobe.com/-27J2-qKGpa71AJliIomIC7heTbTelOnFf960NODt0E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1180
 ht-degree: 0%
 
 ---
@@ -85,7 +77,8 @@ Quando estiver pronto para iniciar o site, você deverá atualizar a configuraç
 
 >[!IMPORTANT]
 >
->As instruções de DNS em [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**seção 2.4**) afirmam que:>_Um registro CNAME não pode coexistir com outros dados. Em outras palavras, se suzy.podunk.xx for um alias para sue.podunk.xx, você não poderá ter também um registro MX para suzy.podunk.edu, um registro A ou mesmo um registro TXT._
+>As instruções DNS em [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**seção 2.4**) afirmam que:
+>_Um registro CNAME não pode coexistir com outros dados. Em outras palavras, se suzy.podunk.xx for um alias para sue.podunk.xx, você não poderá ter também um registro MX para suzy.podunk.edu, um registro A ou mesmo um registro TXT._
 >
 >Por esse motivo, os registros DNS devem ser do tipo `CNAME` para subdomínios e do tipo `A` para domínios apex (domínios raiz). Descartar essa regra pode causar interrupções no serviço de email ou na propagação do DNS, pois você perde a capacidade de adicionar outros registros, como MX ou NS. Alguns provedores de DNS podem contornar isso usando personalizações internas, mas seguir o padrão garante estabilidade e flexibilidade (como a alteração do provedor de DNS).
 
@@ -103,7 +96,7 @@ Quando estiver pronto para iniciar o site, você deverá atualizar a configuraç
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **OBSERVAÇÃO**: você também pode atualizar a URL base do Administrador. Consulte [Armazenar URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=pt-BR) no _Guia de Experiência de Compras e Lojas da Adobe Commerce_.
+   **OBSERVAÇÃO**: você também pode atualizar a URL base do Administrador. Consulte [Armazenar URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) no _Guia de Experiência de Compras e Lojas da Adobe Commerce_.
 
 1. Aguarde alguns minutos para que o site seja atualizado.
 
@@ -117,7 +110,7 @@ Os itens a seguir são alterações e verificações recomendadas:
 
 - [Teste de email de saída concluído](../project/outgoing-emails.md)
 
-- [Configuração segura para credenciais de Administrador e URL de Administração Base](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-admin)
+- [Configuração segura para credenciais de Administrador e URL de Administração Base](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
 - [Otimizar todas as imagens para a Web](../cdn/fastly-image-optimization.md)
 
@@ -149,13 +142,13 @@ Você também pode testar usando as seguintes opções de terceiros:
 
 - [Configurar a verificação de segurança](overview.md#set-up-the-security-scan-tool)
 
-- [Configuração segura para o usuário administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-admin)
+- [Configuração segura para o usuário administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
-- [Configuração segura do URL do administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+- [Configuração segura do URL do administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 - [Remova os usuários que não estão mais no projeto Adobe Commerce na infraestrutura em nuvem](../project/user-access.md)
 
-- [Configurar autenticação de dois fatores](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/)
+- [Configurar autenticação de dois fatores](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication)
 
 ## Monitoramento de desempenho
 
