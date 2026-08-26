@@ -1,6 +1,6 @@
 ---
 title: Lista de verificação de inicialização
-description: Revise os itens da lista de verificação para o lançamento do site.
+description: Revise a lista de verificação do Launch para a infraestrutura em nuvem do Adobe Commerce para confirmar a configuração, os testes e a instalação do Fastly antes de implantar na produção.
 exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
 TQID: https://experienceleague.adobe.com/-27J2-qKGpa71AJliIomIC7heTbTelOnFf960NODt0E
 product_v2:
@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 285a91916015e03b506195f3cb027c779976fdf0
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: 1194
 ht-degree: 0%
 
 ---
