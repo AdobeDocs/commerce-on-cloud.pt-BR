@@ -232,5 +232,5 @@ Consulte os seguintes artigos de suporte da Adobe Commerce para obter ajuda com 
 
 - [Verificando consultas e processos lentos MySQL](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql)
 - [Criar despejo de banco de dados na nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud)
-- [Solução de problemas da Ferramenta de migração de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+- [Solução de problemas da Ferramenta de migração de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
 - [Atualização do Adobe Commerce: tabelas compactas para dinâmicas 2.2.x, 2.3.x para 2.4.x](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)
