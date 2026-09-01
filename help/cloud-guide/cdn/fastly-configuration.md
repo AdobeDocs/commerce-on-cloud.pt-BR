@@ -4,10 +4,18 @@ description: Saiba como instalar, configurar e testar o Fastly caching, trechos 
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 TQID: https://experienceleague.adobe.com/sDx6n5Qgt1lI3-3FDzhUR-JyKgI59woXmoVHSjKFT9w
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
 source-wordcount: 2216
@@ -107,7 +115,7 @@ Você precisa dos seguintes componentes para habilitar e configurar os serviços
 
    ![Expanda para selecionar Fastly](../../assets/cdn/fastly-menu.png)
 
-1. Na seção _[!UICONTROL Caching Application]_, remova a seleção de **[!UICONTROL Use system value]**e selecione **[!UICONTROL Fastly CDN]**na lista suspensa.
+1. Na seção _[!UICONTROL Caching Application]_, remova a seleção de **[!UICONTROL Use system value]**&#x200B;e selecione **[!UICONTROL Fastly CDN]**&#x200B;na lista suspensa.
 
    ![Escolher rapidamente](../../assets/cdn/fastly-enable-admin.png)
 
