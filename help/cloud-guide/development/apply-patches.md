@@ -1,17 +1,14 @@
 ---
 title: Aplicar patches
-description: Saiba como aplicar patches no projeto Adobe Commerce na infraestrutura em nuvem.
+description: Saiba como aplicar patches necessários, opcionais e personalizados a um projeto do Adobe Commerce na infraestrutura na nuvem usando as ferramentas ECE e a ferramenta Quality Patches.
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
 TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: f3a3403ffd55c2e08e20592fa719f42a9473e72d
 workflow-type: tm+mt
-source-wordcount: 911
+source-wordcount: 922
 ht-degree: 0%
 
 ---
@@ -21,15 +18,15 @@ ht-degree: 0%
 Os [Patches da Nuvem para o Commerce](https://github.com/magento/magento-cloud-patches) e a [Ferramenta de Patches de Qualidade](https://github.com/magento/quality-patches) fornecem patches para o aplicativo Adobe Commerce instalado.
 
 - O pacote Cloud Patches for Commerce fornece os patches necessários com correções críticas
-- Os Patches de qualidade oferecem correções de qualidade opcionais de baixo impacto como [patches individuais](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/versioning-policy#individual-patch) que não contêm alterações incompatíveis com versões anteriores
+- Os Patches de qualidade oferecem correções de qualidade opcionais de baixo impacto como [patches individuais](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) que não contêm alterações incompatíveis com versões anteriores
 
-Consulte [Patches Disponíveis](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no _Guia de Ferramentas de Operações do Commerce_ para ver uma lista completa de patches lançados.
+Consulte [Patches Disponíveis](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no _Guia de Ferramentas de Operações do Commerce_ para ver uma lista completa de patches lançados.
 
 Ambos os pacotes melhoram a integração de todas as versões do Adobe Commerce com ambientes na nuvem e permitem a entrega rápida de correções críticas, opcionais e personalizadas. Você pode usar esses pacotes para aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para o Commerce.
 
 >[!TIP]
 >
->Você pode usar a [Ferramenta de patches de qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) e Patches na nuvem para o Commerce como pacotes autônomos para projetos Magento Open Source e Adobe Commerce. Recomendamos o uso da Ferramenta de correções de qualidade para projetos que não estejam na nuvem.
+>Você pode usar a [Ferramenta de patches de qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) e Patches na nuvem para o Commerce como pacotes autônomos para projetos Magento Open Source e Adobe Commerce. Recomendamos o uso da Ferramenta de correções de qualidade para projetos que não estejam na nuvem.
 
 Quando você implanta alterações no ambiente remoto, o pacote `ece-tools` usa `magento/magento-cloud-patches` e `magento/quality-patches` para verificar patches pendentes e os aplica automaticamente na seguinte ordem:
 
@@ -119,7 +116,7 @@ Você pode aplicar patches manualmente em um ambiente local e testá-los antes d
 
 **Para aplicar patches individuais em um ambiente de desenvolvimento local**:
 
-1. Adicione a variável &#39;QUALITY_PATCHES&#39; ao arquivo `.magento.env.yaml` e liste os patches necessários abaixo de.
+1. Adicione a variável `QUALITY_PATCHES` ao arquivo `.magento.env.yaml` e liste os patches necessários abaixo de.
 
    ```yaml
    stage:
@@ -194,7 +191,7 @@ Ao implantar, o ECE-Tools aplica todos os patches do Adobe e qualquer patch pers
 
 **Para aplicar e testar um patch personalizado em um ambiente na nuvem**:
 
-1. Na raiz do projeto, crie um diretório chamado `m2-hotfixes` se ele não existir
+1. Na raiz do projeto, crie um diretório chamado `m2-hotfixes` se ele não existir.
 
    ```bash
    mkdir m2-hotfixes

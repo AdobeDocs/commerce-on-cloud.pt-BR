@@ -6,15 +6,12 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 82923b6f-221d-4902-a1b8-5ba6c7b3339a
 TQID: https://experienceleague.adobe.com/Zk52OMqjrB74v9djO1PVOYd3wOS8EbdfL1rnqIdA8B4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
-source-wordcount: 344
+source-wordcount: 340
 ht-degree: 0%
 
 ---
@@ -35,15 +32,15 @@ As variáveis de ambiente específicas do Adobe Commerce na infraestrutura em nu
 | `MAGENTO_CLOUD_ROUTES` | Descreva as rotas definidas no arquivo de ambiente `.magento/routes.yaml`. |
 | `MAGENTO_CLOUD_TREE_ID` | A ID da árvore do aplicativo, que corresponde ao SHA da árvore no Git. |
 | `MAGENTO_CLOUD_VARIABLES` | Um objeto JSON codificado em base64 com pares de valores chave, como `"key":"value"`. |
-| `MAGENTO_CLOUD_LOCKS_DIR` | Fornece o caminho para o ponto de montagem do provedor de bloqueio na infraestrutura em nuvem. O provedor de bloqueio impede a inicialização de trabalhos cron duplicados e grupos cron.<br><br>Somente os provedores de bloqueio `file` e `db` têm suporte.<br><br>**Ambientes de produção e preparo profissionais** padrão para o provedor de bloqueio `file`. Este valor não pode ser alterado.<br><br>**Ambientes iniciais e de integração Pro**, não use a variável `MAGENTO_CLOUD_LOCKS_DIR`. O provedor de bloqueio `db` é aplicado por padrão. Você pode alterar o valor padrão atualizando a variável de implantação de ambiente `[LOCK_PROVIDER](variables-deploy.md#lock_provider` no arquivo `.magento.env.yaml`. |
+| `MAGENTO_CLOUD_LOCKS_DIR` | Fornece o caminho para o ponto de montagem do provedor de bloqueio na infraestrutura em nuvem. O provedor de bloqueio impede a inicialização de trabalhos cron duplicados e grupos cron.<br><br>Somente os provedores de bloqueio `file` e `db` têm suporte.<br><br>**Ambientes de produção e preparo profissionais** padrão para o provedor de bloqueio `file`. Este valor não pode ser alterado.<br><br>**Ambientes iniciais e de integração Pro**, não use a variável `MAGENTO_CLOUD_LOCKS_DIR`. O provedor de bloqueio `db` é aplicado por padrão. Você pode alterar o valor padrão atualizando a variável de implantação de ambiente [`LOCK_PROVIDER`](variables-deploy.md#lock_provider) no arquivo `.magento.env.yaml`. |
 
 >[!WARNING]
 >
->Para adicionar variáveis de ambiente a [substituir definições de configuração](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/paths/override-config-settings) usando [[!DNL Cloud Console]](../project/overview.md), você deve anexar o nome da variável a `env:` como no exemplo a seguir:
+>Para adicionar variáveis de ambiente a [substituir definições de configuração](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/override-config-settings) usando [[!DNL Cloud Console]](../project/overview.md), você deve anexar o nome da variável a `env:` como no exemplo a seguir:
 >
 >![Exemplo de variável de ambiente](../../assets/set-env-variable-ui.png)
 
-Como os valores podem mudar com o tempo, é melhor inspecionar a variável no tempo de execução e usá-la para configurar seu aplicativo. Por exemplo, use a variável `MAGENTO_CLOUD_RELATIONSHIPS` para recuperar as relações relacionadas ao ambiente da seguinte maneira:
+Como os valores podem mudar com o tempo, inspecione a variável no tempo de execução e use-a para configurar seu aplicativo. Por exemplo, use a variável `MAGENTO_CLOUD_RELATIONSHIPS` para recuperar as relações relacionadas ao ambiente da seguinte maneira:
 
 ```php
 <?php
