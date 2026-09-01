@@ -4,21 +4,13 @@ description: Saiba mais sobre os ambientes compatíveis com a arquitetura Starte
 feature: Cloud, Paas
 exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
 TQID: https://experienceleague.adobe.com/NZ2ea2-D3coPcwXTEHL7viNlgpIBSVA0zO2-iVUIhB0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fb61610380b7b60e274ce8c89f7dda41674f1107
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 8465292300c871aaa85e57cbb25e7ae5358bcd2f
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -104,13 +96,12 @@ Os ambientes de produção e de preparo incluem as seguintes tecnologias. Você 
 
 - Fastly para cache HTTP e CDN
 - Servidor Web Nginx falando com PHP-FPM, uma instância com vários workers
-- Servidor Redis
-- Elasticsearch para pesquisa de catálogo do Adobe Commerce 2.2 para 2.4.3-p2
-- OpenSearch para pesquisa de catálogo para Adobe Commerce 2.3.7-p3, 2.4.3-p2 e 2.4.4 e posterior
+- Servidor Redis ou Valkey
+- OpenSearch para pesquisa de catálogo para Adobe Commerce 2.4.4 e posterior
 
 ### Serviços
 
-O Adobe Commerce na infraestrutura em nuvem oferece suporte aos seguintes serviços no momento: PHP, MySQL (MariaDB), Elasticsearch (Adobe Commerce 2.2 a 2.4.3-p2), OpenSearch (2.3.7-p3, 2.4.3-p2, 2.4.4 e posterior), Redis e [!DNL RabbitMQ].
+O Adobe Commerce na infraestrutura em nuvem oferece suporte aos seguintes serviços no momento: PHP, MySQL (MariaDB), OpenSearch (2.4.4 e posterior), Redis ou Valkey e [!DNL RabbitMQ].
 
 Cada serviço é executado em um contêiner seguro e separado. Os containers são gerenciados juntos no projeto. Alguns serviços são padrão, como os seguintes:
 
@@ -130,7 +121,7 @@ O Adobe Commerce na infraestrutura em nuvem usa o sistema operacional Debian GNU
 
 - [MySQL](../services/mysql.md)
 
-- [Redis](../services/redis.md)
+- [Redis](../services/redis.md) ou [Valkey](../services/valkey.md)
 
 - [RabbitMQ](../services/rabbitmq.md)
 
