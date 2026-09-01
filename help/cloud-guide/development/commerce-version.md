@@ -4,43 +4,36 @@ description: Saiba como atualizar a versão do Adobe Commerce no ambiente de inf
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 TQID: https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: a8c3a083e7003b63452961925e0a7c1aa185b8da
 workflow-type: tm+mt
-source-wordcount: 1024
+source-wordcount: 1050
 ht-degree: 0%
 
 ---
 
 # Atualizar versão do Commerce
 
-Você pode atualizar a base de código do Adobe Commerce para uma versão mais recente. Antes de atualizar o ambiente, verifique os [requisitos de sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements) no guia _Instalação_ para obter os requisitos de versão de software mais recentes.
+Você pode atualizar a base de código do Adobe Commerce para uma versão mais recente. Antes de atualizar o ambiente, verifique os [requisitos de sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) no guia _Instalação_ para obter os requisitos de versão de software mais recentes.
 
 Dependendo do tipo de ambiente (Desenvolvimento, Preparo ou Produção), suas tarefas de atualização podem incluir o seguinte:
 
 - Atualize extensões de terceiros para a versão mais recente com suporte.
-- Para projetos Pro, você deve enviar um tíquete de suporte da Adobe Commerce para instalar ou atualizar serviços em ambientes de preparo e produção.
-- Para ramificações de desenvolvimento/integração/RP:
-  - Atualize o arquivo `.magento/services.yaml` com novas versões para MariaDB (MySQL), OpenSearch, RabbitMQ e Redis para compatibilidade com novas versões do Adobe Commerce.
-  - Atualize o arquivo `.magento.app.yaml` com novas configurações para ganchos e variáveis de ambiente.
+- Atualize o arquivo `.magento/services.yaml` com as versões de serviço necessárias para MariaDB (MySQL), OpenSearch, RabbitMQ e Redis ou Valkey, para que permaneçam compatíveis com a versão de destino do Adobe Commerce.
+  - Para ramificações de desenvolvimento/integração/PR, essas alterações são usadas diretamente como parte da configuração do ambiente.
+  - Para ambientes de preparo e produção profissionais, o Suporte da Adobe Commerce executa a instalação ou atualização real do serviço, mas você ainda deve manter `.magento/services.yaml` atualizado, completo e válido, pois seu conteúdo é validado durante a implantação.
+- Atualize o arquivo `.magento.app.yaml` com novas configurações para ganchos e variáveis de ambiente.
 
 {{upgrade-tip}}
 
-{{pro-update-service}}
+{{$include /help/_includes/pro-services-support.md}}
 
 ## Arquivos de configuração
 
-Antes de atualizar o aplicativo, você deve atualizar os arquivos de configuração do projeto para levar em conta as alterações nas configurações padrão do Adobe Commerce na infraestrutura em nuvem ou no aplicativo. Os padrões mais recentes podem ser encontrados no [repositório GitHub da magento-cloud](https://github.com/magento/magento-cloud).
+Para levar em conta as alterações nas definições de configuração padrão do Adobe Commerce na infraestrutura em nuvem ou no aplicativo, atualize os arquivos de configuração do projeto antes de atualizar o aplicativo. Os padrões mais recentes podem ser encontrados no [repositório GitHub da magento-cloud](https://github.com/magento/magento-cloud).
 
 ### composer.json
 
@@ -84,7 +77,7 @@ Para atualizar o arquivo `composer.json` para o Adobe Commerce versão 2.4.4 e p
 
 ## Backup de ambiente
 
-Recomendamos criar um backup da instância antes de uma atualização. Use as etapas a seguir para fazer backup dos ambientes de integração, de preparo e de produção.
+A Adobe recomenda criar um backup da instância antes de uma atualização. Use as etapas a seguir para fazer backup dos ambientes de integração, de preparo e de produção.
 
 **Para fazer backup do banco de dados e do código do ambiente de integração**:
 
@@ -142,7 +135,7 @@ Examine as informações das [versões de serviço](../services/services-yaml.md
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Se você estiver usando B2B, atualize seu arquivo `composer.json` com a [versão com suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability#adobe-authored-extensions) para Commerce.
+1. Se você estiver usando B2B, atualize seu arquivo `composer.json` com a [versão com suporte](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) para Commerce.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -156,15 +149,15 @@ Examine as informações das [versões de serviço](../services/services-yaml.md
 
 1. Revise os patches atualmente aplicados:
 
-   - Se houver patches instalados no diretório `m2-hotfixes`, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e trabalhe com o Suporte da Adobe Commerce para verificar quais patches ainda podem ser aplicados à nova versão. Remova os patches não aplicáveis do diretório `m2-hotfixes`.
+   - Se houver patches instalados no diretório `m2-hotfixes`, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e trabalhe com o Suporte da Adobe Commerce para verificar quais patches ainda podem ser aplicados à nova versão. Remova os patches não aplicáveis do diretório `m2-hotfixes`.
 
    - Se houver [Patches de Qualidade] aplicados no arquivo `.magento.env.yaml`, verifique se eles ainda podem ser aplicados à nova versão. Remova os patches não aplicáveis da seção `QUALITY_PATCHES` do arquivo `.magento.env.yaml`.
 
-   **Método 1**: [Verifique as versões aplicáveis nas notas de versão de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Método 1**: [Verifique as versões aplicáveis nas notas de versão de Patches de Qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Método 2**: [Exibir patches e status disponíveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Método 2**: [Exibir patches e status disponíveis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Método 3**: [Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR)
+   **Método 3**: [Pesquisar patches](https://experienceleague.adobe.com/en/tools/commerce-quality-patches)
 
 
 1. Adicionar, confirmar e enviar alterações de código.
@@ -185,7 +178,7 @@ Examine as informações das [versões de serviço](../services/services-yaml.md
 
    Os arquivos que o Composer empacota pertencem à nova versão do Adobe Commerce, para substituir a versão desatualizada desses mesmos arquivos. Atualmente, o empacotamento está desativado no Adobe Commerce, portanto, você deve adicionar os arquivos empacotados ao controle do código-fonte.
 
-1. Aguarde a conclusão da implantação.
+1. Para concluir a atualização, aguarde a implantação.
 
 1. Verifique a atualização em seu ambiente de integração, preparo ou produção usando SSH para fazer logon e verificar a versão.
 
@@ -213,9 +206,9 @@ Revise suas páginas de extensão e módulo de terceiros no Marketplace ou outro
 
 1. Encaminhar e testar no ambiente de integração.
 
-1. Encaminhar para o ambiente de preparo para testar em um ambiente de pré-produção.
+1. Para testar um ambiente de pré-produção, envie para o ambiente de preparo.
 
-A Adobe recomenda que você atualize seu ambiente de Produção _antes_, incluindo as extensões atualizadas em seu processo de inicialização do site.
+A Adobe recomenda atualizar seu ambiente de Produção _antes_, incluindo as extensões atualizadas em seu processo de inicialização do site.
 
 >[!NOTE]
 >
