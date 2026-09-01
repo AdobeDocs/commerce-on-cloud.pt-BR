@@ -54,7 +54,7 @@ A infraestrutura do Adobe Commerce na nuvem é compatível com os seguintes serv
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->[Atualizar RabbitMQ sequencialmente entre as versões disponíveis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Por exemplo, não atualize da 3.9 diretamente para a 4.1.
+>[Atualizar RabbitMQ sequencialmente entre as versões disponíveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Por exemplo, não atualize da 3.9 diretamente para a 4.1.
 >
 >Para garantir que suas filas de mensagens personalizadas sejam recriadas no RabbitMQ depois da atualização para uma nova versão, acione uma implantação completa.
 
@@ -200,7 +200,7 @@ Você pode recuperar os dados de configuração de todas as relações de servi�
 
 ## Versões de serviço
 
-As versões implantadas e testadas na infraestrutura em nuvem determinam a versão do serviço e o suporte à compatibilidade do Adobe Commerce na infraestrutura em nuvem, que às vezes diferem das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
+As versões implantadas e testadas na infraestrutura em nuvem determinam a versão do serviço e o suporte à compatibilidade do Adobe Commerce na infraestrutura em nuvem, que às vezes diferem das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
 
 ### Verificações de EOL de software
 

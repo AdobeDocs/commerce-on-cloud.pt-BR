@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
+>Os projetos provisionados antes de 5 de junho de 2020 tinham vários ambientes de integração menores. Se você precisar de um ambiente de Integração maior para teste e desenvolvimento, solicite uma atualização para os ambientes de Integração aprimorada. Consulte o artigo [Solicitação de ambiente de integração](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27242) na _Central de Ajuda da Adobe Commerce_ para obter detalhes.
 
 ## Opções de mesclagem {#merge-options}
 
@@ -41,15 +41,15 @@ Defina a opção `_merge` como uma das opções a seguir:
 >Alguns **projetos profissionais** exigem a assistência do Suporte da Adobe para atualizar as configurações de rota no arquivo `routes.yaml` e as configurações cron no arquivo `.magento.app.yaml`. A Adobe recomenda fazer e validar primeiro todas as alterações de configuração do YAML em um ambiente de integração e, em seguida, implantá-las no ambiente de preparo.
 >
 >
->Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e não houver mensagens de erro relacionadas no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
+>Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e não houver mensagens de erro relacionadas no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
 
 ## Backups Pro {#pro-backups}
 
 >[!TIP]
 >
->Para recuperar um backup específico em ambientes de Preparo e Produção Pro, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) anotando a data, a hora e o fuso horário no tíquete.
+>Para recuperar um backup específico em ambientes de Preparo e Produção Pro, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) anotando a data, a hora e o fuso horário no tíquete.
 >
->O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
+>O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
 
 ## Aviso de reimplantação {#redeploy-warning}
 
@@ -87,7 +87,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->Para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Para obter os requisitos de agendamento e as orientações de disponibilidade do cliente, consulte o [Suporte a serviços profissionais](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) em _Configurar serviços_.
+>Para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Para obter os requisitos de agendamento e as orientações de disponibilidade do cliente, consulte o [Suporte a serviços profissionais](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) em _Configurar serviços_.
 
 ## Alteração de serviço {#service-change-tip}
 
@@ -99,7 +99,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!TIP]
 >
->Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640) na _Central de Ajuda do Commerce_.
+>Para obter ajuda com implantações paralisadas, use o [solucionador de problemas de implantação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-29640) na _Central de Ajuda do Commerce_.
 
 ## Atualização para ECE-Tools {#ece-tools-package}
 
