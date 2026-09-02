@@ -1,6 +1,6 @@
 ---
 title: Commerce na infraestrutura em nuvem
-description: Saiba mais sobre como criar, implantar e gerenciar a infraestrutura do Commerce na nuvem.
+description: Saiba mais sobre como criar, implantar e gerenciar o Adobe Commerce na infraestrutura em nuvem, uma plataforma segura como um serviço (PaaS) hospedada nas regiões da AWS e da Azure.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
 TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
 product_v2:
@@ -17,10 +17,10 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2026-08-28
-source-git-commit: 646dc40e0fe48293665e15b01a0f581adae3568d
+source-git-commit: d5d947f9858ab15e2e5daed7848163846580f883
 workflow-type: tm+mt
-source-wordcount: 324
-ht-degree: 3%
+source-wordcount: 356
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 O Adobe Commerce na infraestrutura em nuvem fornece uma plataforma de hospedagem automatizada com uma abordagem de **autoatendimento** para criar, implantar e gerenciar o aplicativo [!DNL Commerce] em um ambiente nativo em nuvem. A infraestrutura do Adobe Commerce na nuvem vem com recursos adicionais que a diferenciam das plataformas locais do Adobe Commerce e do Magento Open Source:
 
-- Uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis, serviços de fila de mensagens ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) e tecnologias de mecanismo de pesquisa com suporte.
+- Uma infraestrutura pré-provisionada que inclui PHP, MySQL (MariaDB), Redis ou Valkey, serviços de fila de mensagens ([!DNL RabbitMQ] ou [!DNL ActiveMQ]) e tecnologias de mecanismo de pesquisa compatíveis.
 - Fluxo de trabalho baseado em Git com criação e implantação automáticas para desenvolvimento rápido e implantação contínua eficientes sempre que você envia alterações de código em um ambiente de Plataforma como um serviço (PaaS).
 - Arquivos de configuração de ambiente altamente personalizáveis e ferramentas de gerenciamento e implantação da interface de linha de comando (CLI).
 - Hospedagem do Amazon Web Services (AWS) que oferece um ambiente escalável e seguro para vendas e varejo online.
@@ -58,7 +58,7 @@ As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do 
 
 >[!NOTE]
 >
-> Somente no local na China e na Rússia.
+> O Adobe Commerce na infraestrutura em nuvem não está disponível na China ou na Rússia. Somente implantações locais são suportadas nesses países.
 
 ## Regiões do Azure
 
@@ -66,7 +66,7 @@ As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do 
 
 >[!NOTE]
 >
-> Somente no local na China e na Rússia. Todos os comerciantes que exigem ambientes de integração devem usar regiões dos EUA.
+> Somente implantações locais têm suporte na China e na Rússia. Todos os comerciantes que exigem ambientes de integração devem usar regiões dos EUA.
 
 ## Documentação do Adobe Commerce
 

@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: a8c3a083e7003b63452961925e0a7c1aa185b8da
 workflow-type: tm+mt
-source-wordcount: 739
+source-wordcount: 783
 ht-degree: 0%
 
 ---
@@ -204,7 +204,7 @@ O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infra
 
    - Altere a versão do serviço Elasticsearch no arquivo `services.yaml` para uma versão que seja compatível com o cliente PHP Elasticsearch.
 
-     {{pro-update-service}}
+     Para obter os requisitos de agendamento de atualização de serviço do Pro e orientação de disponibilidade para o cliente, consulte [Suporte a serviços do Pro](services-yaml.md#pro-services-support) em _Configurar serviços_.
 
 ## Reiniciar o serviço Elasticsearch
 

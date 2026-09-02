@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 473
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ A tabela a seguir descreve os arquivos incluídos em um projeto na nuvem:
 | Arquivo | Descrição |
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml` | Arquivo de configuração que redireciona `www` para o domínio apex e o aplicativo `php` para servir HTTP. Consulte [Configurar rotas](../routes/routes-yaml.md). |
-| `/.magento/services.yaml` | Um arquivo de configuração que define uma instância do MySQL (MariaDB), Redis e OpenSearch ou Elasticsearch. Consulte [Configurar serviços](../services/services-yaml.md). |
+| `/.magento/services.yaml` | Um arquivo de configuração que define uma instância do MySQL (MariaDB), Redis ou Valkey e OpenSearch ou Elasticsearch. Consulte [Configurar serviços](../services/services-yaml.md). |
 | `/app` | A pasta `code` é usada para módulos personalizados. A pasta `design` é usada para [temas personalizados](../store/custom-theme.md). A pasta `etc` contém arquivos de configuração para o aplicativo. |
 | `/m2-hotfixes` | Usado para patches personalizados. |
 | `/update` | Uma pasta de serviço usada pelo módulo de suporte. |

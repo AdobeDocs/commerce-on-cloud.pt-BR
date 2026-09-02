@@ -1,6 +1,6 @@
 ---
 title: Arquitetura Pro
-description: Saiba mais sobre os ambientes compatíveis com a arquitetura Pro.
+description: Saiba mais sobre a arquitetura de ambiente Pro, incluindo os ambientes Master, Integration, Staging e Production, além de dimensionamento de cluster e backups.
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
 exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
@@ -18,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
-source-wordcount: 1619
+source-wordcount: 1621
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ A tabela a seguir resume as diferenças entre ambientes:
 | Inclui o serviço New Relic | Não | APM | APM + NRI |
 | Backups automáticos | Não | Sim | Sim |
 
+**APM** refere-se ao Monitoramento de Desempenho de Aplicativo [!DNL New Relic's].
+
 >[!NOTE]
 >
 >O Adobe fornece a ferramenta Cloud Docker para Commerce para implantação em um ambiente do Cloud Docker local, para que você possa desenvolver e testar projetos do Adobe Commerce. Consulte [Desenvolvimento do Docker](../dev-tools/cloud-docker.md).
@@ -64,7 +66,7 @@ Em projetos Pro, a ramificação `master` fornece um ambiente PaaS ativo com seu
 
 - **não** crie uma ramificação baseada na ramificação `master`. Use o ambiente de integração para criar ramificações ativas para desenvolvimento.
 
-- Não usar o ambiente `master` para desenvolvimento, UAT ou teste de desempenho
+- Não usar o ambiente `master` para desenvolvimento, teste de aceitação de usuário (UAT) ou teste de desempenho
 
 ### Ambiente de integração
 
@@ -99,11 +101,11 @@ Para verificar o número de produtos no catálogo, execute a seguinte consulta M
 
 - A arquitetura do ambiente de integração não corresponde à arquitetura de preparo e produção
 
-- Não usar o ambiente `integration` para teste de desenvolvimento, teste de desempenho ou teste de aceitação de usuário (UAT)
+- Não usar o ambiente `integration` para teste de desenvolvimento, teste de desempenho ou UAT
 
 - Não use o ambiente `integration` para testar B2B para funcionalidade do Adobe Commerce
 
-- Não é possível restaurar o banco de dados no ambiente de integração a partir da produção ou preparação do banco de dados
+- Não é possível restaurar o banco de dados no ambiente de integração do banco de dados de produção ou de preparo
 
 {{enhanced-integration-envs}}
 
@@ -160,11 +162,9 @@ O ambiente de produção tem três máquinas virtuais (VMs) por trás de um Bala
   - `pub/static`
   - `app/etc`
 
-- **Redis** — um servidor por VM com apenas um ativo e os outros dois como réplicas
+- **Redis** ou **Valkey** — um servidor por VM com apenas um ativo e os outros dois como réplicas.
 
-- **Elasticsearch**—pesquise por Adobe Commerce na infraestrutura de nuvem 2.2 a 2.4.3-p2
-
-- **OpenSearch**—pesquisar Adobe Commerce na infraestrutura de nuvem 2.3.7-p3, 2.4.3-p2, 2.4.4 e posterior
+- **OpenSearch**—pesquise por Adobe Commerce na infraestrutura de nuvem 2.4.4 e posterior
 
 - **Galera** — cluster de banco de dados com um banco de dados MariaDB MySQL por nó com uma configuração de incremento automático de três para IDs exclusivas em cada banco de dados
 
@@ -191,7 +191,7 @@ O Adobe Commerce na infraestrutura em nuvem usa uma arquitetura de alta disponib
 
 >[!NOTE]
 >
->Os volumes montados incluem/referem-se apenas a [montagens graváveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) e não incluirão todo o diretório `app/`. Quanto aos outros arquivos, eles são criados/gerados pelo [processo de compilação e implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), e você também terá que verificar se há arquivos restantes no repositório Git.
+>Os volumes montados incluem apenas ou se referem a [montagens graváveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) e não incluem todo o diretório `app/`. Quanto aos outros arquivos, eles são criados/gerados pelo [processo de compilação e implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), e você também terá que verificar se há arquivos restantes no repositório Git.
 
 {{pro-backups}}
 
@@ -213,11 +213,11 @@ O Adobe retém backups automáticos de acordo com a seguinte política de reten�
 | Semanas 8 a 12 | Um backup quinzenal |
 | Mês 3 até 5 | Um backup por mês |
 
-Essa política pode variar dependendo do seu plano de infraestrutura em nuvem.
+Essa política varia dependendo do seu plano de infraestrutura em nuvem.
 
 ### Meta de tempo de recuperação
 
-O RTO depende do tamanho do armazenamento. Grandes volumes de EBS demoram mais tempo para restaurar. Os tempos de restauração podem variar dependendo do tamanho do banco de dados. Entre em contato com o Gerente de sucesso do cliente da Adobe para obter mais detalhes.
+O RTO depende do tamanho do armazenamento. Grandes volumes de EBS demoram mais tempo para restaurar. Os tempos de restauração variam dependendo do tamanho do banco de dados. Entre em contato com o Gerente de sucesso do cliente da Adobe para obter mais detalhes.
 
 ## Escalabilidade de cluster Pro
 

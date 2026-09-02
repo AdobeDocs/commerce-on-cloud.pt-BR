@@ -13,7 +13,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: c754e69243236bbf862ea636261c6d2a6cae9eb7
 workflow-type: tm+mt
 source-wordcount: 706
 ht-degree: 0%
@@ -33,14 +33,14 @@ O arquivo `.magento.env.yaml` usa variáveis de ambiente para centralizar o gere
 O arquivo `.magento.env.yaml` contém duas seções: `stage` e `log`. A seção `stage` controla as ações que ocorrem durante as fases do [processo de implantação da nuvem](../deploy/process.md).
 
 - `stage`—Use a seção de preparo para definir determinadas ações para os seguintes estágios de implantação:
-   - `global` — Controla ações nas fases de compilação, implantação e pós-implantação. Você pode substituir essas configurações nas seções de criação, implantação e pós-implantação.
-   - `build` — Controla ações somente na fase de compilação. Se você não especificar configurações nesta seção, a fase de criação usará configurações da seção global.
-   - `deploy` — Controla ações somente na fase de implantação. Se você não especificar configurações nesta seção, a fase de implantação usará configurações da seção global.
-   - `post-deploy` — Controla as ações _após_ a implantação do aplicativo e _após_ o contêiner começa a aceitar conexões.
+  - `global` — Controla ações nas fases de compilação, implantação e pós-implantação. Você pode substituir essas configurações nas seções de criação, implantação e pós-implantação.
+  - `build` — Controla ações somente na fase de compilação. Se você não especificar configurações nesta seção, a fase de criação usará configurações da seção global.
+  - `deploy` — Controla ações somente na fase de implantação. Se você não especificar configurações nesta seção, a fase de implantação usará configurações da seção global.
+  - `post-deploy` — Controla as ações _após_ a implantação do aplicativo e _após_ o contêiner começa a aceitar conexões.
 - `log`—Use a seção de log para configurar [notificações](set-up-notifications.md), incluindo tipos de notificação e nível de detalhes.
-   - `slack` — Configurar uma mensagem para enviar a um bot do Slack.
-   - `email` — Configure um email para enviar a um ou mais destinatários de email.
-   - [manipuladores de log](log-handlers.md) — Configure as mensagens de aplicativos de hardware e software enviadas a um servidor de log remoto.
+  - `slack` — Configurar uma mensagem para enviar a um bot do Slack.
+  - `email` — Configure um email para enviar a um ou mais destinatários de email.
+  - [manipuladores de log](log-handlers.md) — Configure as mensagens de aplicativos de hardware e software enviadas a um servidor de log remoto.
 
 ### Variáveis de ambiente
 
@@ -172,7 +172,7 @@ Se você tiver ativado o Gerenciamento de configurações após despejar as conf
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
 ```
 
 >Depois de habilitar o Gerenciamento de configuração, mova as variáveis SCD_* para o estágio de criação:
@@ -182,10 +182,9 @@ Se você tiver ativado o Gerenciamento de configurações após despejar as conf
     CRON_CONSUMERS_RUNNER:
       cron_run: true
       consumers: []
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
   build:
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
 ```
-

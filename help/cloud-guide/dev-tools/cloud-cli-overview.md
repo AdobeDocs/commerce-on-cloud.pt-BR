@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 862
+source-wordcount: 859
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Esta ferramenta estende a funcionalidade do [[!DNL Cloud Console]](../../get-sta
 
 >[!NOTE]
 >
->Essa é uma ferramenta local e só é suportada em sistemas operacionais baseados em Unix. O Windows não é compatível. Ele não pode ser instalado no ambiente de nuvem (que é somente leitura) usando o método descrito nesta página. Você só pode instalar módulos no ambiente de Nuvem por meio de um dos **fluxos de trabalho de implantação** a seguir.
+>Essa ferramenta local é suportada apenas em sistemas operacionais baseados em Unix. O Windows não é compatível. Ele não pode ser instalado no ambiente de nuvem (que é somente leitura) usando o método descrito nesta página. Você só pode instalar módulos no ambiente de Nuvem por meio de um dos **fluxos de trabalho de implantação** a seguir.
 >
 >- [Fluxo de trabalho de implantação profissional](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
 >- [Fluxo de trabalho de implantação inicial](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
@@ -43,7 +43,7 @@ Esta ferramenta estende a funcionalidade do [[!DNL Cloud Console]](../../get-sta
    curl -sS https://accounts.magento.cloud/cli/installer | php
    ```
 
-1. Adicione a CLI do `magento-cloud` ao perfil bash.
+1. Adicione a CLI `magento-cloud` ao perfil bash.
 
    ```bash
    export PATH=$PATH:$HOME/.magento-cloud/bin
@@ -105,7 +105,11 @@ magento-cloud environment:list
 
 ### Reimplantação do ambiente
 
-Acione uma reimplantação sem usar um push. Verifique e confirme o ambiente para reimplantação. Não use a reimplantação se houver uma build em um estado pendente.
+Acione uma reimplantação sem usar um push. Verifique e confirme o ambiente para reimplantação.
+
+>[!CAUTION]
+>
+>Não use a reimplantação se houver uma build em um estado pendente.
 
 ```bash
 magento-cloud environment:redeploy
@@ -121,7 +125,7 @@ Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 
 ## Comandos do Git
 
-Você pode notar que alguns desses comandos são semelhantes aos comandos do Git. Os comandos `magento-cloud` se conectam diretamente ao projeto da Nuvem baseada em Git com recursos adicionais. Se você criar uma ramificação sem usar a CLI do `magento-cloud`, ela não será &quot;ativada&quot; e não será criada automaticamente quando você enviar as alterações para o ambiente remoto. O comando da CLI `magento-cloud` inclui ativação.
+Alguns desses comandos são semelhantes aos comandos Git. Os comandos `magento-cloud` se conectam diretamente ao projeto da Nuvem baseada em Git com recursos adicionais. Se você criar uma ramificação sem usar a CLI do `magento-cloud`, ela não será &quot;ativada&quot; e não será criada automaticamente quando você enviar as alterações para o ambiente remoto. O comando da CLI `magento-cloud` inclui ativação.
 
 Para criar uma ramificação, use o comando `magento-cloud` para que a ramificação seja ativada.
 
@@ -190,7 +194,7 @@ As etapas a seguir demonstram o uso dos comandos CLI e Git alternadamente para g
    >
    >Você pode criar uma ramificação de ambiente usando a sintaxe de comando `magento-cloud environment:branch <environment-name> <parent-environment-ID>`. Pode levar algum tempo adicional para criar e ativar uma ramificação de ambiente.
 
-1. Use a ID de ambiente para enviar qualquer código atualizado para o local. Isso não será necessário se a ramificação do ambiente for nova.
+1. Use a ID de ambiente para enviar qualquer código atualizado para o ambiente local. Essa etapa não será necessária se a ramificação do ambiente for nova.
 
    ```bash
    git pull origin <environment-ID>

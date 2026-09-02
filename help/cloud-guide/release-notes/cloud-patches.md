@@ -1,6 +1,6 @@
 ---
 title: Patches da nuvem para o Commerce
-description: Consulte uma lista das melhorias mais recentes no pacote de Patches na nuvem.
+description: Saiba mais sobre as últimas melhorias no pacote Cloud Patches for Commerce, incluindo correções de segurança, aprimoramentos de cache e atualizações de confiabilidade de patch.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 2969
+source-wordcount: 2978
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ Data de lançamento: 29 de julho de 2021
 
 - **Correção de um problema causado pela aplicação do patch de navegação em Camadas B2B**—Essa correção resolve um erro `Undefined offset` que aparece na página Pesquisa após alternar o modo de exibição Loja.<!--MCLOUD-5287-->
 
-- **Patch de Finalização do Paypal**—Corrige um problema do Adobe Commerce 2.3.7 com o PayPal Express, no qual o preço do pedido inserido anteriormente é exibido.<!--MC-42674-->
+- **Patch de Check-out do PayPal**—Corrige um problema do Adobe Commerce 2.3.7 com o PayPal Express, no qual o preço do pedido colocado anteriormente é exibido.<!--MC-42674-->
 
 - **Suporte à categoria de patch** — Adição de suporte ao processamento de categorias de patch e origens de origem atribuídas a Patches de Qualidade. As categorias permitem que os clientes usem filtros e classificações para localizar patches com mais rapidez ao usar a [Ferramenta de Patches de Qualidade](https://github.com/magento/quality-patches) e a Ferramenta de Análise do Site (SWAT). <!--MC-38577-->
 

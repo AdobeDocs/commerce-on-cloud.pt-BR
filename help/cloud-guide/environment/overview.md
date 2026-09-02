@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 284
+source-wordcount: 286
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Você pode definir configurações de aplicativo, rotas, criar e implantar açõ
 | [Aplicativo](../application/configure-app-yaml.md) | `.magento.app.yaml` | Define como criar e implantar o Adobe Commerce, incluindo serviços, ganchos e trabalhos cron. |
 | [Ambiente](configure-env-yaml.md) | `.magento.env.yaml` | Centraliza o gerenciamento de ações de criação e implantação em todos os seus ambientes, incluindo o armazenamento temporário e a produção profissionais, usando variáveis de ambiente. |
 | [Rotas](../routes/routes-yaml.md) | `.magento/routes.yaml` | Configurar armazenamento em cache, redirecionamentos e inclusões do lado do servidor. |
-| [Serviço](../services/services-yaml.md) | `.magento/services.yaml` | Define os serviços que a Adobe Commerce usa por nome e versão. Por exemplo, este arquivo pode incluir versões de MariaDB, extensões PHP, Redis, RabbitMQ e Elasticsearch ou OpenSearch. Você deve abrir um tíquete de suporte para enviar essas alterações para os ambientes de preparo e produção do plano Pro. |
+| [Serviço](../services/services-yaml.md) | `.magento/services.yaml` | Define os serviços que a Adobe Commerce usa por nome e versão. Por exemplo, este arquivo pode incluir versões de MariaDB, extensões PHP, Redis ou Valkey, RabbitMQ e Elasticsearch ou OpenSearch. Você deve abrir um tíquete de suporte para enviar essas alterações para os ambientes de preparo e produção do plano Pro. |
 | [configurações do PHP](../application/php-settings.md#configure-php) | `php.ini` | Um arquivo opcional que pode ser adicionado ao projeto. As configurações contidas nesse arquivo são anexadas às mantidas pela infraestrutura de nuvem. |
 
 {style="table-layout:auto"}

@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 2defc3f82cdada4e9576721ae7a7b3dd25a84adc
 workflow-type: tm+mt
-source-wordcount: 828
+source-wordcount: 807
 ht-degree: 0%
 
 ---
@@ -36,33 +36,33 @@ Historicamente, a arquitetura Pro consistia em três nós, cada um contendo uma 
 
 ### Camada de serviço
 
-Há três nós de serviço para armazenamento de dados, cache e serviços: **OpenSearch** ou **Elasticsearch**, **MariaDB**, **Redis** e muito mais. Quando a camada de serviço se aproxima da capacidade, a única maneira de dimensionar é aumentar o tamanho do servidor, como aumentar a energia e a memória do CPU. A capacidade é limitada ao tamanho do nó disponível. Como o cluster de banco de dados foi projetado para alta disponibilidade, você não pode dimensionar horizontalmente de forma confiável com as tecnologias usadas.
+Cada um dos três nós de serviço executa o mesmo conjunto de serviços: **OpenSearch** ou **Elasticsearch** para pesquisa, **MariaDB** para o banco de dados e **Redis** ou **Valkey** para armazenamento em cache, entre outros. Quando a camada de serviço se aproxima da capacidade, você pode dimensionar apenas verticalmente, aumentando o tamanho do servidor (CPU e memória). A capacidade é limitada ao maior tamanho de nó disponível. Como o cluster do banco de dados foi projetado para alta disponibilidade, você não pode dimensionar os nós do banco de dados de forma confiável com as tecnologias usadas.
 
 ![Escalonamento de camada de serviço](../../assets/scaling-service.png)
 
-Considere um exemplo de que o tipo de instância do nó de serviço é _m5.2xlarge_ com 32 Gb de RAM. Um serviço, como o banco de dados, usa uma quantidade considerável de memória (30 Gb). O dimensionamento para o próximo tamanho de instância disponível _m5.4xlarge_ fornece RAM de 64 Gbit, o que dobra a memória e acomoda as necessidades crescentes do banco de dados.
+Considere um exemplo em que o tipo de instância do nó de serviço é _m5.2xlarge_ com 32 Gb de RAM. Um serviço, como o banco de dados, usa uma quantidade considerável de memória (30 Gb). O dimensionamento para o próximo tamanho de instância disponível _m5.4xlarge_ fornece RAM de 64 Gbit, o que dobra a memória e acomoda as necessidades crescentes do banco de dados.
 
-Você pode otimizar ainda mais o desempenho da camada de serviço, roteando o tráfego com base no tipo de nó. Por padrão, o nó do banco de dados é isolado do tráfego da Web. Como exemplo, você pode optar por veicular o tráfego da Web no nó do banco de dados.
+Você pode otimizar ainda mais o desempenho da camada de serviço, roteando o tráfego com base no tipo de nó. Por padrão, o nó do banco de dados é isolado do tráfego da Web. Por exemplo, você pode optar por fornecer o tráfego da Web no nó do banco de dados.
 
 ### Camada da Web
 
-Há três nós da Web para processar solicitações e tráfego da Web: **php-fpm** e **NGINX**. Além do dimensionamento vertical ao aumentar a potência e a memória, a camada da Web pode ser dimensionada horizontalmente ao adicionar servidores da Web a um cluster existente quando constrito no nível do PHP. Consulte [Escalonamento automático](autoscaling.md) para saber como os nós da Web são dimensionados automaticamente.
+Há três nós da Web para processar solicitações e tráfego da Web: **php-fpm** e **NGINX**. Além do dimensionamento vertical ao aumentar a potência e a memória, a camada da Web pode ser dimensionada horizontalmente ao adicionar servidores da Web a um cluster existente quando constrito no nível do PHP. Para saber como os nós da Web são dimensionados automaticamente, consulte [Dimensionamento automático](autoscaling.md).
 
 ![Escalonamento da camada da Web](../../assets/scaling-web.png)
 
-Isso complementa o dimensionamento vertical fornecido pela camada de serviço. À medida que o nível de serviço é dimensionado em tamanho e capacidade para acomodar um banco de dados e uso de serviço cada vez maiores, o nível da Web é dimensionado em tamanho, energia e instâncias para acomodar um aumento nas solicitações de processo e requisitos de tráfego mais altos.
+Isso complementa o dimensionamento vertical fornecido pela camada de serviço. À medida que o nível de serviço é dimensionado para acomodar um banco de dados em crescimento, o nível da Web é dimensionado para lidar com um aumento nas solicitações e no tráfego.
 
-Considere um exemplo de que o tipo de instância do nó da Web é _C5.2xlarge com oito CPUs e 16 Gbit RAM_. O número de solicitações ao site aumentou bastante. Você pode adicionar um nó C5.2xlarge para lidar com o aumento nos processos php-fpm ou pode alterar cada tipo de instância para _C5.4xlarge com 16 CPU e 32 Gb de RAM_. A adição de um nó reduz o risco de capacidade insuficiente de sobretensão.
+Considere um exemplo em que o tipo de instância do nó da Web é _C5.2xlarge com oito CPUs e 16 Gbit RAM_. O número de solicitações ao site aumentou bastante. Para lidar com o aumento nos processos php-fpm, você pode adicionar um nó C5.2xlarge ou alterar cada tipo de instância para _C5.4xlarge com 16 CPU e 32 Gb de RAM_. A adição de um nó reduz o risco de capacidade insuficiente de sobretensão.
 
 ## Estrutura de projeto
 
-No mínimo, os projetos Pro com arquitetura Scaled têm seis nós disponíveis.
+Os projetos profissionais com arquitetura em escala têm seis nós disponíveis.
 
 - 3 nós da Web c5.2xlarge (8 CPU, 16 Gbit RAM)
 
 - 3 nós de serviço m5.2xlarge (8 CPU, 32 Gb de RAM)
 
-Entretanto, cada projeto é exclusivo e requer o monitoramento do desempenho para analisar adequadamente o gerenciamento de recursos. Cada conta inclui o [serviço New Relic](../monitor/new-relic-service.md), que se conecta automaticamente aos dados do aplicativo e à análise de desempenho para fornecer monitoramento dinâmico do servidor. Especificamente, você pode usar o serviço New Relic para monitorar a utilização do CPU e da RAM para determinar quais nós exigem recursos adicionais. À medida que um recurso atinge a capacidade ou você nota uma degradação no desempenho com base na análise, é possível criar uma solicitação para dimensionar sua infraestrutura para atender à demanda.
+Entretanto, cada projeto é exclusivo e requer o monitoramento do desempenho para analisar o gerenciamento de recursos corretamente. Cada conta inclui o [serviço New Relic](../monitor/new-relic-service.md), que se conecta automaticamente aos dados do aplicativo e à análise de desempenho para fornecer monitoramento dinâmico do servidor. Especificamente, você pode usar o serviço New Relic para monitorar a utilização do CPU e da RAM para determinar quais nós exigem recursos adicionais. À medida que um recurso atinge a capacidade ou você nota uma degradação no desempenho com base na análise, é possível criar uma solicitação para dimensionar sua infraestrutura para atender à demanda.
 
 ### Acesso SSH
 
@@ -114,7 +114,6 @@ project-id@server-id:~$
 
 ### Locais de log
 
-Os locais dos logs variam um pouco dependendo do nó. Por exemplo, um log de banco de dados, como o **log de erros do MySQL**, está disponível em um nó de serviço (`/var/log/mysql/mysql-error.log`), mas não está disponível em um nó da Web.
+Os locais dos logs variam um pouco dependendo do nó. Por exemplo, o **log de erros do MySQL** (`/var/log/mysql/mysql-error.log`) está disponível em um nó de serviço, mas não em um nó da Web.
 
 Cada conta Pro inclui o [serviço de Logs do New Relic](../monitor/new-relic-service.md), que se conecta automaticamente com dados de log do aplicativo para fornecer gerenciamento de log dinâmico. Os dados de log agregados de todos os nós são exibidos no aplicativo de Logs do New Relic para que você possa solucionar problemas de desempenho em nós específicos de um único painel.
-

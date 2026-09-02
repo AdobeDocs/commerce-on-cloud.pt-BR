@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5fefabb5795e68abd467a7115bc2a6e554e0d832
+source-git-commit: 67ed09e3b7c5f5218407b6648e8ca2c32933bbda
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->O Elasticsearch 7 e posterior não é compatível com o Adobe Commerce na infraestrutura em nuvem. As versões do Adobe Commerce 2.3.7-p3, 2.4.3-p2 e 2.4.4 e posteriores são compatíveis com o serviço OpenSearch.
+>O Elasticsearch 7 e posterior não é compatível com o Adobe Commerce na infraestrutura em nuvem. O Adobe Commerce 2.4.4 e posterior é compatível com o serviço OpenSearch.
 
 ## Integração aprimorada {#enhanced-integration-envs}
 
@@ -32,7 +32,7 @@ Defina a opção `_merge` como uma das opções a seguir:
 
 >[!NOTE]
 >
->A Adobe recomenda o uso de um repositório privado para o seu projeto do Adobe Commerce na infraestrutura em nuvem para proteger qualquer informação ou trabalho de desenvolvimento proprietário, como extensões e configurações confidenciais.
+>A Adobe recomenda usar um repositório privado para seu projeto Adobe Commerce na infraestrutura em nuvem para proteger qualquer informação proprietária ou trabalho de desenvolvimento, como extensões e configurações confidenciais.
 
 ## Aviso de autoatendimento do profissional {#pro-self-service-warning}
 
@@ -41,44 +41,13 @@ Defina a opção `_merge` como uma das opções a seguir:
 >Alguns **projetos profissionais** exigem a assistência do Suporte da Adobe para atualizar as configurações de rota no arquivo `routes.yaml` e as configurações cron no arquivo `.magento.app.yaml`. A Adobe recomenda fazer e validar primeiro todas as alterações de configuração do YAML em um ambiente de integração e, em seguida, implantá-las no ambiente de preparo.
 >
 >
->Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e nenhuma mensagem de erro relacionada no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
-
-## Suporte a serviços profissionais {#pro-update-service}
-
->[!BEGINSHADEBOX]
-
-- Para projetos Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar ou atualizar os [serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) somente em ambientes `Staging` e `Production`.
-
-- Indique as mudanças de serviço necessárias, inclua os arquivos atualizados do `.magento.app.yaml` e do `services.yaml` e informe a versão do PHP no tíquete. Para alterações de autoatendimento na versão, extensões ou configurações do ambiente do PHP, consulte [configurações do PHP](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/php-settings) em _Configuração do aplicativo_.
-
-  >[!IMPORTANT]
-  >
-  >Ao selecionar o campo Ambiente no novo formulário de tíquete, use a nomenclatura de ambiente do Adobe. Por exemplo, selecione Preparo mesmo se você chamar esse ambiente de **Desenvolvimento** internamente. Você pode mencionar seu nome interno na descrição, mas o próprio campo Environment deve usar a nomenclatura do Adobe.
-
-- Para alterações em um ambiente de Produção em tempo real (**Somente profissionais**), é necessário um aviso de no mínimo 48 horas. Isso permite que a equipe de infraestrutura da nuvem tenha tempo suficiente para empacotar recursos e realizar uma atualização segura. O período de aviso começa quando a equipe de infraestrutura reconhece a solicitação e programa a atualização, exceto nos finais de semana. Por exemplo, para que os upgrades de serviço sejam concluídos na segunda-feira, uma confirmação do upgrade agendado deve ser recebida até quarta-feira. Durante períodos de pico de demanda, pode levar mais tempo para processar sua solicitação.
-
-  >[!NOTE]
-  >
-  >Todas as janelas de manutenção programadas devem ser fornecidas em formato UTC para garantir clareza e consistência em todas as comunicações. As atualizações de serviço não podem ser agendadas no ambiente de preparo; na maioria dos casos, as atualizações em preparo são executadas no mesmo dia que a solicitação.
-  >
-  >Se você solicitar uma atualização do RabbitMQ, certifique-se de reimplantar o ambiente após a conclusão da atualização para que as filas de mensagens sejam reinicializadas.
-
-- **Processo de handshake de duas partes para agendar atualizações**
-
-  Para garantir um processo de upgrade simples e coordenado, o Suporte da Adobe Commerce segue um processo de handshake de duas partes para todas as atualizações do ambiente de produção:
-
-  1. **Confirmação do cliente**: o Suporte da Adobe solicita primeiro que o cliente confirme a data e hora desejadas para a atualização. Essa etapa garante que o tempo se alinhe às necessidades de negócios do cliente e às janelas de manutenção.
-  2. **Agendamento e confirmação final**: assim que o cliente confirmar o tempo, o Suporte da Adobe enviará a solicitação à equipe de Infraestrutura, que então analisará a solicitação e fornecerá a confirmação final da janela de atualização agendada.
-
-A atualização não é considerada programada até que a equipe de infraestrutura forneça a confirmação final. Os clientes são incentivados a responder prontamente pelo menos 48 horas antes da janela de atualização para evitar atrasos e permitir o aviso adequado.
-
->[!ENDSHADEBOX]
+>Se suas alterações não forem refletidas nos sites de Preparo após a reimplantação e não houver mensagens de erro relacionadas no log, você **deve** [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). No ticket, descreva claramente as alterações de configuração que você tentou e anexe quaisquer arquivos de configuração YAML atualizados no ticket.
 
 ## Backups Pro {#pro-backups}
 
 >[!TIP]
 >
->Em ambientes de preparo e produção profissionais, você deve [enviar um tíquete de suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para recuperar um backup específico, anotando a data, a hora e o fuso horário no tíquete.
+>Para recuperar um backup específico em ambientes de Preparo e Produção Pro, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) anotando a data, a hora e o fuso horário no tíquete.
 >
 >O Adobe **não** restaura qualquer ambiente a partir de um backup automático. Consulte [Restaurar um instantâneo do BD de Preparo ou Produção](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production) para obter ajuda sobre como escolher um método para restaurar um instantâneo de Preparo ou Produção.
 
@@ -118,13 +87,13 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais.
+>Para alterar a configuração do serviço em ambientes de Produção e Preparo Profissionais, [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Para obter os requisitos de agendamento e as orientações de disponibilidade do cliente, consulte o [Suporte a serviços profissionais](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) em _Configurar serviços_.
 
 ## Alteração de serviço {#service-change-tip}
 
 >[!TIP]
 >
->Após a configuração inicial do serviço, você pode alterar a versão do software de um serviço instalado atualizando os arquivos de configuração `services.yaml` e `.magento.app.yaml`. Consulte [Alterar versão de serviço](/help/cloud-guide/services/services-yaml.md#change-service-version) para obter orientação sobre como atualizar ou rebaixar um serviço.
+>Após a configuração inicial do serviço, você pode alterar a versão do software de um serviço instalado atualizando os arquivos de configuração `services.yaml` e `.magento.app.yaml`. Consulte [Alterar versão de serviço](/help/cloud-guide/services/services-yaml.md#change-service-version) para obter orientação sobre como atualizar ou rebaixar um serviço. Este método de autoatendimento não se aplica a ambientes de Preparo ou Produção Pro — consulte [Suporte a serviços Pro](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) em _Configurar serviços_.
 
 ## Dica de implantação travada {#stuck-deployment-tip}
 
@@ -136,7 +105,7 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->Se você usar uma versão do Adobe Commerce na infraestrutura em nuvem que não contenha o pacote `ece-tools`, será necessário executar uma [atualização única](/help/cloud-guide/dev-tools/install-package.md) para o projeto em nuvem, a fim de remover pacotes obsoletos. Se você usa atualmente o pacote `ece-tools` e precisa atualizá-lo, consulte [Atualizar o pacote ECE-Tools](/help/cloud-guide/dev-tools/update-package.md).
+>Para remover pacotes obsoletos em versões do Adobe Commerce na infraestrutura de nuvem que não contêm o pacote `ece-tools`, é necessário executar uma [atualização única](/help/cloud-guide/dev-tools/install-package.md) para o projeto de nuvem. Se você usa atualmente o pacote `ece-tools` e precisa atualizá-lo, consulte [Atualizar o pacote ECE-Tools](/help/cloud-guide/dev-tools/update-package.md).
 
 ## Dica de atualização {#upgrade-tip}
 
@@ -148,11 +117,11 @@ Use as instruções a seguir para a configuração do serviço em ambientes Pro 
 
 >[!NOTE]
 >
->O New Relic ainda pode mostrar o Redis mesmo após a migração para o Valkey
+>O New Relic ainda pode mostrar o Redis mesmo após a migração para o Valkey.
 >
 >Espera-se que o New Relic continue se referindo ao serviço de cache como Redis mesmo após o ambiente ter sido migrado para o Valkey.
 >
->Valkey é uma bifurcação de código aberto da Redis, e algumas ferramentas e integrações continuam a identificar o serviço usando a nomenclatura Redis em vez de um rótulo distinto da Valkey. Isso não indica necessariamente que o Redis ainda está instalado.
+>Valkey é uma bifurcação de código aberto da Redis, e algumas ferramentas e integrações continuam a identificar o serviço usando a nomenclatura Redis em vez de um rótulo distinto da Valkey. Esse comportamento não indica necessariamente que o Redis ainda está instalado.
 
 <!-- Fastly-related snippets begin -->
 
