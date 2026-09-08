@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
+source-git-commit: 86a182b19d49cb7abd91a716f6f403cd44ecc0ae
 workflow-type: tm+mt
-source-wordcount: 2978
+source-wordcount: 2997
 ht-degree: 0%
 
 ---
@@ -44,7 +44,13 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 
 <!--Add release notes below-->
 
-## v1.1.19 {#latest}
+## v1.1.20 {#latest}
+
+Data de lançamento: 08 de setembro de 2026
+
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Suporte incluído para o patch de segurança isolado de setembro de 2026.<!-- MCLOUD-15053 -->
+
+## v1.1.19
 
 Data de lançamento: 19 de agosto de 2026
 
