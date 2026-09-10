@@ -19,16 +19,20 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9e10bdbdc726a85bea99a9b5f23d9211ac09c661
+source-git-commit: 1195121d2c83da858744839e82e14bd423ea5528
 workflow-type: tm+mt
-source-wordcount: 3043
+source-wordcount: 3067
 ht-degree: 0%
 
 ---
 
 # Patches da nuvem para o Commerce
 
-O pacote [Patches da Nuvem](https://github.com/magento/magento-cloud-patches) fornece um conjunto de patches necessários que melhoram a integração de todas as versões do Adobe Commerce com ambientes na Nuvem e oferecem suporte à entrega rápida de correções críticas.
+O pacote do `magento/magento-cloud-patches` Composer fornece um conjunto de patches necessários que melhoram a integração de todas as versões do Adobe Commerce com ambientes na nuvem e oferecem suporte à entrega rápida de correções críticas. A Adobe distribui este pacote por meio do repositório do Commerce Composer em `repo.magento.com`.
+
+>[!NOTE]
+>
+>A partir da versão 1.1.15, a Adobe distribui o pacote `magento/magento-cloud-patches` exclusivamente por meio do repositório do Commerce Composer em `repo.magento.com`. Você deve ter o direito ao Adobe Commerce EE para baixar este pacote.
 
 O pacote Cloud Patches for Commerce é uma dependência do pacote ECE-Tools e é instalado e atualizado quando você instala ou atualiza o pacote ECE-Tools. Você também pode usar e gerenciar Patches da nuvem para o Commerce como um pacote independente para aplicar patches a um projeto do Adobe Commerce que não esteja na Plataforma de nuvem. Estas notas de versão descrevem as melhorias mais recentes neste pacote.
 
@@ -68,7 +72,7 @@ Data de lançamento: 19 de agosto de 2026
 Data de lançamento: 11 de agosto de 2026
 
 - ![Ícone de correção](../../assets/fix.svg) **Tratamento de patch aprimorado**—Agora os patches ignoram blocos de módulos de direcionamento removidos via `composer.json` `replace` e continuam aplicando as partes restantes instaladas.<!-- MCLOUD-15325 -->
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 --> aplicadas
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Correções de segurança referenciadas na [Atualização de Segurança do Adobe Commerce APSB26-92](https://helpx.adobe.com/br/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 --> aplicadas
 
 ## v1.1.17
 
@@ -141,7 +145,7 @@ Data de lançamento: 03 de junho de 2025
 
 Data de lançamento: 05 de maio de 2025
 
-- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.8**—Este é um patch atualizado para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27148), que foi lançado em 1.1.7<!-- MCLOUD-13619 -->
+- ![novo ícone](../../assets/new.svg) **Patch atualizado para Commerce 2.4.4 para 2.4.8**—Esta atualização revisa o patch para [CVE-2025-24434](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27148), que foi lançado em 1.1.7<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
@@ -271,7 +275,7 @@ Patch crítico para o Adobe Commerce 2.3.3-p1 e versões posteriores:
 
 Patches atualizados para resolver uma vulnerabilidade **crítica**, resultando na execução de código remoto não autenticado.<!-- MCLOUD-8479 -->
 
-Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/br/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -288,7 +292,7 @@ Patch crítico para o Adobe Commerce 2.3.3-p1 e versões posteriores:
 
 Adição de um patch para resolver uma vulnerabilidade **crítica**, resultando na execução de código remoto não autenticado.<!-- MCLOUD-8461 -->
 
-Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Consulte o [Boletim de segurança do Adobe APSB22-12](https://helpx.adobe.com/br/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -436,7 +440,7 @@ Esta versão inclui os seguintes patches e correções críticas:
 
 - **Correção de paginação de catálogo do Elasticsearch** — Substituiu o patch de paginação de catálogo do Elasticsearch entregue em magento/magento-cloud-patches v1.0 por uma correção mais eficaz.<!--MAGECLOUD-4847-->
 
-- **Patches do Page Builder**—Em Patches da nuvem para o Commerce 1.0.0, os patches do Page Builder foram agrupados para solucionar uma vulnerabilidade conhecida de execução remota de código (RCE) do Page Builder, com a correção inicial baseada no Adobe Commerce 2.3.3. Esses patches foram atualizados com uma implementação mais estável baseada no Adobe Commerce 2.3.4., que inclui várias otimizações para corrigir o problema.<!--MAGECLOUD-4884-->
+- **Patches do Page Builder**—Em Patches da nuvem para o Commerce 1.0.0, os patches do Page Builder foram agrupados para solucionar uma vulnerabilidade conhecida de execução remota de código (RCE) do Page Builder, com a correção inicial baseada no Adobe Commerce 2.3.3. Esses patches foram atualizados com uma implementação mais estável baseada no Adobe Commerce 2.3.4, que inclui várias otimizações para corrigir o problema.<!--MAGECLOUD-4884-->
 
   Se você tiver o pacote magento/magento-cloud-patches 1.0.0, ainda estará protegido contra problemas de vulnerabilidade do RCE no Page Builder. Se você atualizar para 1.0.1 ou posterior, terá uma implementação melhor da mesma correção.
 
@@ -444,7 +448,7 @@ Esta versão inclui os seguintes patches e correções críticas:
 
 Data de lançamento: 14 de novembro de 2019
 
-Esta versão é a primeira versão do pacote [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches), que é uma nova dependência para a versão 2002.0.22 ou versões posteriores do pacote `ece-tools`.
+Esta versão é a primeira versão do pacote `magento/magento-cloud-patches`, que é uma nova dependência do pacote `ece-tools` versão 2002.0.22 ou versões posteriores.
 
 Esta versão inclui os seguintes patches e correções críticas:
 

@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 86a182b19d49cb7abd91a716f6f403cd44ecc0ae
+source-git-commit: 9e21b435447f7b87b1105f9d435314b5a3efb072
 workflow-type: tm+mt
-source-wordcount: 3685
+source-wordcount: 3676
 ht-degree: 0%
 
 ---
@@ -461,7 +461,7 @@ Data de lançamento: 6 de fevereiro de 2020
 
   - ![novo ícone](../../assets/new.svg) **Adição de um pacote separado do Cloud Docker para Commerce**—Dissociação entre o pacote do Docker e o pacote `ece-tools` para manter a qualidade do código e fornecer versões independentes. As atualizações e correções relacionadas a `ece-tools` são gerenciadas no [repositório GitHub da magento-cloud-docker](https://github.com/magento/magento-cloud-docker).<!--MAGECLOUD-2927-->
 
-  - ![novo ícone](../../assets/new.svg) **Atualização dos recursos de patch**—A funcionalidade de patch do pacote ECE-Tools foi movida para um pacote [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) separado. Durante a implantação, `ece-tools` usa o novo pacote para aplicar patches. Consulte as [notas de versão de patches de nuvem](cloud-patches.md).<!--MAGECLOUD-4567-->
+  - ![novo ícone](../../assets/new.svg) **Recursos de correção atualizados**—A funcionalidade de correção foi movida do pacote ECE-Tools para um pacote `magento-cloud-patches` separado. Durante a implantação, `ece-tools` usa o novo pacote para aplicar patches. Consulte as [notas de versão de patches de nuvem](cloud-patches.md).<!--MAGECLOUD-4567-->
 
   - ![novo ícone](../../assets/new.svg) **Dependências atualizadas do Composer**—Atualizou o arquivo `composer.json` do Adobe Commerce na infraestrutura de nuvem com uma dependência para o pacote `magento/magento-cloud-docker`. Agora, `ece-tools` inclui dependências para todos os pacotes em [`Cloud Tools Suite for Commerce`](cloud-tools-suite.md). Esses pacotes são instalados e atualizados automaticamente quando você instala ou atualiza o `ece-tools`.
 
