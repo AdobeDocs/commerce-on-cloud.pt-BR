@@ -52,13 +52,13 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 
 Data de lançamento: 08 de setembro de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança** — Aplicadas as correções de segurança referenciadas no [Adobe Commerce Security Update APSB26-146](https://helpx.adobe.com/security/products/magento/apsb26-146.html).<!--MCLOUD-15587 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança** — Aplicadas as correções de segurança referenciadas no [Adobe Commerce Security Update APSB26-146](https://helpx.adobe.com/br/security/products/magento/apsb26-146.html).<!--MCLOUD-15587 -->
 
 ## v1.1.20
 
 Data de lançamento: 08 de setembro de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Suporte incluído para os patches de segurança isolados de setembro de 2026 referenciados na [Atualização de Segurança do Adobe Commerce APSB26-138](https://helpx.adobe.com/security/products/magento/apsb26-138.html).<!-- MCLOUD-15053 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Suporte incluído para os patches de segurança isolados de setembro de 2026 referenciados na [Atualização de Segurança do Adobe Commerce APSB26-138](https://helpx.adobe.com/br/security/products/magento/apsb26-138.html).<!-- MCLOUD-15053 -->
 
 ## v1.1.19
 
