@@ -8,23 +8,29 @@ exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
 TQID: https://experienceleague.adobe.com/H-A-2jStZ7GuPn2oE-OrZWhScp1GsjEUU1NHDQKhRBU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e8754280e9df523442d29f0a6d203a183407cff5
 workflow-type: tm+mt
-source-wordcount: 4509
+source-wordcount: '4535'
 ht-degree: 0%
-
 ---
-
 # Pacote do Cloud Docker
 
 O pacote [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker) fornece funcionalidade e imagens do Docker para implantar o Adobe Commerce em um ambiente de Nuvem local. Estas notas de versão descrevem as últimas melhorias neste pacote, que é um componente do [Conjunto de ferramentas da nuvem para o Commerce](cloud-tools-suite.md).
@@ -38,7 +44,13 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.4.9 {#latest}
+## v1.4.10 {#latest}
+
+Data de lançamento: 08 de outubro de 2026
+
+- ![novo ícone](../../assets/new.svg) **Testes funcionais para serviços**-Adição da cobertura de teste funcional do Magento 2.4.10 para AtiveMQ Artemis, OpenSearch, RabbitMQ, MariaDB e Valkey.<!-- MCLOUD-15399 -->
+
+## v1.4.9
 
 Data de lançamento: 20 de julho de 2026
 
@@ -200,7 +212,7 @@ Data de lançamento: 14 de junho de 2021
 
 - ![novo ícone](../../assets/new.svg) **Adição do PHP 8.0**—Atualização do PHP para a versão 8.0, permitindo que você aproveite todos os novos recursos e otimizações que o PHP 8.0 inclui.<!--MCLOUD-7941-->
 - ![novo ícone](../../assets/new.svg) **Atualizado para o Vernish 6.6 e o Elasticsearch 7.11.2**—Os links a seguir fornecem informações sobre a versão do [Varnish Cache 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) e do Elasticsearch 7.11.2.<!--MCLOUD-7921-->
-- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por &#x200B;](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
+- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por ](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
 - ![novo ícone](../../assets/new.svg) **Adição de uma opção de sincronização de arquivo:`manual-native`**—A opção de sincronização de arquivo `manual-native` fornece controle manual sobre a sincronização, que fornece o melhor desempenho para ambientes macOS e Windows. Leia sobre como usar a opção `manual-native` no [Modo de desenvolvedor](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode) e [Sincronizando dados em um ambiente de desenvolvedor do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data#file-synchronization-options).<!--MCLOUD-7977-->
 - ![novo ícone](../../assets/new.svg) **Remoção de exclusões de volume dos comandos `up` e `down`**—A opção `--volume` foi removida dos comandos `bin/magento-docker up` e `bin/magento-docker down`, substituída pelo novo comando `bin/magento-docker init` com um aviso de perda de dados. Essa alteração ajuda a evitar a perda acidental de dados. *[Enviado por joeshelton-wagento](https://github.com/magento/magento-cloud-docker/pull/319).*<!--PR #319-->
 - ![Ícone de correção](../../assets/fix.svg) **Atualização do valor `CN` para o certificado gerado**—Remoção do valor codificado `CN` do Dockerfile. Este valor criou um erro de certificado (`NET::ERR_CERT_INVALID`) que fez com que a opção `--host` do comando `ece-docker build:compose` fosse ignorada.<!--MCLOUD-7934-->
@@ -433,7 +445,7 @@ Data de lançamento: 5 de fevereiro de 2020
 
     - ![novo ícone](../../assets/new.svg) **Certificados NGINX gerados automaticamente**—O arquivo de configuração do Docker agora inclui a configuração para gerar automaticamente certificados NGINX para o contêiner da Web.<!--MAGECLOUD-4258-->
 
-  - ![novo ícone](../../assets/new.svg) **Novo contêiner Selenium**—Adicionou um [contêiner Selenium](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#selenium-container) para suportar o teste de aplicativos Adobe Commerce usando o MFTF (Estrutura de Teste Funcional) do Magento.<!--MAGECLOUD-4040-->
+  - ![novo ícone](../../assets/new.svg) **Novo contêiner Selenium**—Adicionou um [contêiner Selenium](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#selenium-container) para suportar o teste de aplicativos do Adobe Commerce usando o MFTF (Magento Functional Testing Framework).<!--MAGECLOUD-4040-->
 
   - ![novo ícone](../../assets/new.svg) **[!DNL RabbitMQ]versão suporte**—Atualizado a configuração de contêiner [!DNL RabbitMQ] para suportar [!DNL RabbitMQ] versão 3.8.<!--MAGECLOUD-4674-->
 
