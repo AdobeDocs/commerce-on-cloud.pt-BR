@@ -96,7 +96,7 @@ Revise e atualize as definições de configuração de E/S padrão para otimiza�
 
    - **Redimensionar filtro**—deixe a configuração padrão (`Lancsoz3`) ou selecione uma alternativa. Essa configuração especifica o filtro usado para fornecer uma imagem redimensionada. Dependendo do filtro selecionado, a imagem redimensionada pode ter um número de pixels maior ou menor.
 
-     - `Lanczos3` (padrão) — Fornece a imagem de melhor qualidade. Ele aumenta a capacidade de detectar bordas e recursos lineares em uma imagem e usa a reamostragem de _[!DNL sinc]_para fornecer a melhor reconstrução possível.
+     - `Lanczos3` (padrão) — Fornece a imagem de melhor qualidade. Ele aumenta a capacidade de detectar bordas e recursos lineares em uma imagem e usa a reamostragem de _[!DNL sinc]_&#x200B;para fornecer a melhor reconstrução possível.
      - `Lanczos2` — Usa o mesmo filtro que `Lancsoz3`, mas com uma aproximação menos precisa da função de reamostragem _[!DNL sinc]_.
      - `Bicubic` — Tem um efeito de nitidez natural ao tornar uma imagem menor.
      - `Bilinear` — Tem um efeito de suavização natural ao tornar uma imagem maior.

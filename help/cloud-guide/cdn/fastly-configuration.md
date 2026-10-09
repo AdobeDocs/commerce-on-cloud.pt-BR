@@ -132,7 +132,7 @@ Você precisa dos seguintes componentes para habilitar e configurar os serviços
 
    ![Expanda para selecionar Fastly](../../assets/cdn/fastly-menu.png)
 
-1. Na seção _[!UICONTROL Caching Application]_, remova a seleção de **[!UICONTROL Use system value]**e selecione **[!UICONTROL Fastly CDN]**na lista suspensa.
+1. Na seção _[!UICONTROL Caching Application]_, remova a seleção de **[!UICONTROL Use system value]**&#x200B;e selecione **[!UICONTROL Fastly CDN]**&#x200B;na lista suspensa.
 
    ![Escolher rapidamente](../../assets/cdn/fastly-enable-admin.png)
 

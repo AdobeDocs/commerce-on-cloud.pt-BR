@@ -69,7 +69,7 @@ A infraestrutura do Adobe Commerce na nuvem é compatível com os seguintes serv
 
 ## Exibir versões e serviços configurados
 
-Você pode exibir exemplos de definições de serviço e valores de disco no arquivo de modelo atual [`services.yaml` ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). As versões padrão e compatíveis do serviço dependem da versão do Adobe Commerce e do modelo de nuvem atual.
+Você pode exibir exemplos de definições de serviço e valores de disco no arquivo de modelo atual [`services.yaml` &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). As versões padrão e compatíveis do serviço dependem da versão do Adobe Commerce e do modelo de nuvem atual.
 
 O exemplo a seguir mostra definições de serviço no arquivo de configuração `services.yaml`:
 
