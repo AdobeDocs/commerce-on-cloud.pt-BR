@@ -3,21 +3,28 @@ title: Recuperação de falha de componente
 description: Saiba como fazer a recuperação se um componente não for implantado corretamente na infraestrutura em nuvem do Adobe Commerce.
 feature: Cloud, Deploy
 exl-id: f5e79366-5548-40dd-ac2a-56dc84c5d4e2
-TQID: https://experienceleague.adobe.com/1krotAWilGcnp3OUMk-fl5iHFObGpWFUC8EpYSPjQfU
+TQID: 'https://experienceleague.adobe.com/1krotAWilGcnp3OUMk-fl5iHFObGpWFUC8EpYSPjQfU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Troubleshooting
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 220
+source-wordcount: '220'
 ht-degree: 0%
-
 ---
-
 # Recuperação de falha de componente
 
 Este tópico discute como recuperar se um componente não for implantado corretamente. Exemplos típicos incluem componentes que possuem dependências que não são atendidas pelo seu ambiente remoto, tais como versões incompatíveis do PHP.

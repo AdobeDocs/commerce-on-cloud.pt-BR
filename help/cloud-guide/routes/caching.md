@@ -3,21 +3,32 @@ title: Armazenamento em cache
 description: Saiba como habilitar o armazenamento em cache de seu Adobe Commerce em ambientes de infraestrutura em nuvem.
 feature: Cloud, Cache, Routes
 exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
-TQID: https://experienceleague.adobe.com/dCr0px-0XWXIznsg1w8tUnBaAeXvanY1h-mwiu6GfzU
+TQID: 'https://experienceleague.adobe.com/dCr0px-0XWXIznsg1w8tUnBaAeXvanY1h-mwiu6GfzU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 1783ae9f-7157-5aeb-a915-91e260301e46
+    internal-label: Routes
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 431
+source-wordcount: '431'
 ht-degree: 0%
-
 ---
-
 # Armazenamento em cache
 
 Você pode ativar o armazenamento em cache no ambiente do projeto de infraestrutura em nuvem. Se você desativar o armazenamento em cache, o Adobe Commerce fornecerá os arquivos diretamente.
@@ -139,7 +150,7 @@ Existe um caso especial se a chave `cookies` tiver o valor `["*"]`. Esse valor s
 
 Os cookies têm as seguintes restrições:
 
-- Há um máximo definido de **50 cookies** no sistema. Caso contrário, o aplicativo acionará uma exceção `Unable to send the cookie. Maximum number of cookies would be exceeded`. Para aumentar o número de cookies para 200, aplique o [patch MDVA-12304](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/release-notes) usando a [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Há um máximo definido de **50 cookies** no sistema. Caso contrário, o aplicativo acionará uma exceção `Unable to send the cookie. Maximum number of cookies would be exceeded`. Para aumentar o número de cookies para 200, aplique o [patch MDVA-12304](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) usando a [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Um tamanho máximo de cookie é de **4096 bytes**. Caso contrário, o aplicativo acionará uma exceção `Unable to send the cookie. Size of '%name' is %size bytes`.
 
 ### `default_ttl`

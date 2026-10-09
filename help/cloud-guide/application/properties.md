@@ -1,23 +1,36 @@
 ---
 title: Propriedades
-description: Use a lista de propriedades como referência ao configurar o aplicativo  [!DNL Commerce]  para compilação e implantação na infraestrutura de nuvem.
+description: Use a lista de propriedades como referência ao configurar o aplicativo [!DNL Commerce] para compilação e implantação na infraestrutura de nuvem.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
-TQID: https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y
+TQID: 'https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 330a8bbd9298a28b5c007f4a79f684ce7adca9ff
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 858
+source-wordcount: '859'
 ht-degree: 0%
-
 ---
-
 # Propriedades para configuração de aplicativo
 
 O arquivo `.magento.app.yaml` usa propriedades para gerenciar o suporte ao ambiente para o aplicativo [!DNL Commerce].
@@ -147,7 +160,7 @@ O tamanho de disco mínimo recomendado é de 256 MB. Se você vir o erro `UserEr
 
 >[!NOTE]
 >
->Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
+>Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
 >
 >Não é possível aumentar temporariamente o armazenamento em disco no armazenamento temporário ou na produção; esse processo não é reversível.
 
@@ -198,7 +211,7 @@ O formato para adicionar sua montagem a esta lista é o seguinte:
 
 >[!NOTE]
 >
->Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
+>Para ambientes de Preparo e Produção Profissionais, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para atualizar a configuração `mounts` e `disk` para o seu aplicativo. Ao enviar o tíquete, indique as alterações de configuração necessárias e inclua uma versão atualizada do arquivo `.magento.app.yaml`.
 
 Você pode tornar a montagem da Web acessível adicionando-a ao bloco de locais [`web`](web-property.md).
 

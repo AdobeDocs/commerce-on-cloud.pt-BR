@@ -4,24 +4,32 @@ description: Saiba como acessar o painel do New Relic e analisar dados do seu pr
 feature: Cloud, Observability
 topic: Performance
 exl-id: b9d806c4-f659-4e10-8dcb-b320a61de5e1
-TQID: https://experienceleague.adobe.com/Ih9Y5JqsurZqdXK-vpPGxVe2erbexdQxAlLpDjCBTCg
+TQID: 'https://experienceleague.adobe.com/Ih9Y5JqsurZqdXK-vpPGxVe2erbexdQxAlLpDjCBTCg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Data collection
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 896
+source-wordcount: '896'
 ht-degree: 0%
-
 ---
-
 # Monitoramento do New Relic
 
 O New Relic conecta e monitora sua infraestrutura e o aplicativo [!DNL Commerce] usando agentes PHP. Depois que um ambiente da nuvem se conecta ao New Relic, você pode fazer logon na sua conta da New Relic para analisar os dados coletados pelo agente.
@@ -42,7 +50,7 @@ Todos os dados coletados detalham o tempo gasto em ações que transmitem dados,
 
 >[!TIP]
 >
->Para obter detalhes sobre como usar esses dados para solucionar problemas de desempenho do aplicativo, consulte [Solução de problemas de desempenho usando o New Relic](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-40830) na _Central de Ajuda do Adobe Commerce_.
+>Para obter detalhes sobre como usar esses dados para solucionar problemas de desempenho do aplicativo, consulte [Solução de problemas de desempenho usando o New Relic](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40830) na _Central de Ajuda do Adobe Commerce_.
 
 ## Monitorar o desempenho com alertas gerenciados
 
@@ -58,7 +66,7 @@ A Adobe fornece a política de alerta _Alertas gerenciados para Adobe Commerce_ 
 | Carga de consulta MariaDB | NRI | Pro |
 | Memória Redis | NRI | Pro |
 
-Quando a infraestrutura do site ou as condições do aplicativo acionam um limite de alerta, o New Relic envia notificações de alerta para que você possa resolver o problema de forma proativa. Consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) na _Central de Ajuda da Adobe Commerce_ para obter detalhes sobre limites de alerta e etapas de solução de problemas para resolver os problemas que dispararam o alerta.
+Quando a infraestrutura do site ou as condições do aplicativo acionam um limite de alerta, o New Relic envia notificações de alerta para que você possa resolver o problema de forma proativa. Consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) na _Central de Ajuda da Adobe Commerce_ para obter detalhes sobre limites de alerta e etapas de solução de problemas para resolver os problemas que dispararam o alerta.
 
 >[!TIP]
 >
@@ -88,7 +96,7 @@ Quando a infraestrutura do site ou as condições do aplicativo acionam um limit
 
      >[!NOTE]
      >
-     >Se a política _Alertas Gerenciados para Adobe Commerce_ não estiver disponível, consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) na _Central de Ajuda da Adobe Commerce_.
+     >Se a política _Alertas Gerenciados para Adobe Commerce_ não estiver disponível, consulte [Alertas Gerenciados para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) na _Central de Ajuda da Adobe Commerce_.
 
 1. Clique na guia **[!UICONTROL Alert conditions]** para revisar as condições de alerta definidas na política.
 

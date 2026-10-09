@@ -4,29 +4,35 @@ description: Saiba como aplicar chaves de autenticação a um projeto de desenvo
 feature: Cloud, Security
 topic: Security
 exl-id: b5a24fcd-9b43-4ec9-8a0c-52956a74e45e
-TQID: https://experienceleague.adobe.com/nYBr0uvw1SZPSQqAU6uHTiitjZ0kcudsLdWagiWRLP8
+TQID: 'https://experienceleague.adobe.com/nYBr0uvw1SZPSQqAU6uHTiitjZ0kcudsLdWagiWRLP8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 319
+source-wordcount: '319'
 ht-degree: 0%
-
 ---
-
 # Chaves de autenticação
 
 Você deve ter uma chave de autenticação para acessar o repositório do Adobe Commerce e habilitar os comandos instalar e atualizar para o projeto do Adobe Commerce na infraestrutura em nuvem. Há dois métodos para especificar credenciais de autorização do Composer.
 
-- **arquivo de autenticação** — Um arquivo que contém suas [credenciais de autorização](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) do Adobe Commerce no diretório raiz da infraestrutura em nuvem do Adobe Commerce.
+- **arquivo de autenticação** — Um arquivo que contém suas [credenciais de autorização](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) do Adobe Commerce no diretório raiz da infraestrutura em nuvem do Adobe Commerce.
 - **Variável de ambiente** — Uma variável de ambiente para configurar chaves de autenticação no projeto Adobe Commerce na infraestrutura em nuvem para evitar exposição acidental.
 
 >[!BEGINSHADEBOX]
@@ -35,7 +41,7 @@ Você deve ter uma chave de autenticação para acessar o repositório do Adobe 
 
 A Adobe recomenda usar o método [variável de ambiente](#composer-auth-environment-variable) com seu projeto de nuvem para evitar a exposição acidental de suas credenciais de autorização.
 
-O método de arquivo de autenticação é ideal ao usar o Cloud Docker para Commerce como uma ferramenta de desenvolvimento local, mas tenha cuidado para não carregar o arquivo `auth.json` para um repositório público baseado em Git. Você pode adicionar o arquivo `auth.json` ao arquivo [`.gitignore` &#x200B;](../project/file-structure.md#ignoring-files).
+O método de arquivo de autenticação é ideal ao usar o Cloud Docker para Commerce como uma ferramenta de desenvolvimento local, mas tenha cuidado para não carregar o arquivo `auth.json` para um repositório público baseado em Git. Você pode adicionar o arquivo `auth.json` ao arquivo [`.gitignore` ](../project/file-structure.md#ignoring-files).
 
 >[!ENDSHADEBOX]
 

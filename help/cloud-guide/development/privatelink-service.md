@@ -3,27 +3,39 @@ title: Serviço PrivateLink
 description: Saiba como usar o serviço PrivateLink para estabelecer uma conexão segura entre uma nuvem privada e a plataforma de nuvem da Adobe Commerce na mesma região.
 feature: Cloud, Iaas, Security
 exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
-TQID: https://experienceleague.adobe.com/AxpzTY-Nb7UoKhW-wzAOuWLm5O7XS4OFxjSaIfFUR-I
+TQID: 'https://experienceleague.adobe.com/AxpzTY-Nb7UoKhW-wzAOuWLm5O7XS4OFxjSaIfFUR-I'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+subfeature_v2:
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Administration
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1799
+source-wordcount: '1799'
 ht-degree: 0%
-
 ---
-
 # Serviço PrivateLink
 
 O Adobe Commerce na infraestrutura em nuvem oferece suporte à integração com o serviço [AWS PrivateLink](https://aws.amazon.com/privatelink/) ou [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/). Você pode usar o PrivateLink para estabelecer comunicação segura e privada entre o Adobe Commerce em ambientes de infraestrutura em nuvem com serviços e aplicativos hospedados em sistemas externos. O aplicativo do Adobe Commerce e os sistemas externos devem ser acessíveis por meio de endpoints da Virtual Private Cloud (VPC) configurados na mesma plataforma de nuvem (AWS ou Azure) na mesma região da nuvem.
@@ -51,7 +63,7 @@ A integração do serviço PrivateLink para projetos de infraestrutura em nuvem 
 - O suporte da Adobe Commerce não abrange a solução de problemas do AWS PrivateLink além da ativação inicial.
 - Os clientes são responsáveis pelos custos associados ao gerenciamento de sua própria VPC.
 - Suporte ao **protocolo HTTPS (porta 443) pela plataforma:**
-  - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encloreto de origem rápido](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly).
+  - **Link Privado do Azure**: você não pode usar o protocolo HTTPS (porta 443) para se conectar ao Adobe Commerce na infraestrutura de nuvem devido a [Encloreto de origem rápido](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
   - **AWS PrivateLink**: há suporte para conexões do protocolo HTTPS (porta 443).
 - PrivateDNS não está disponível.
 
@@ -219,7 +231,7 @@ Você pode usar o aplicativo Telnet para testar a conexão com o serviço de pon
 
 ## Alterar configuração do PrivateLink
 
-[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
+[Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para alterar uma configuração existente do PrivateLink. Por exemplo, você pode solicitar alterações como as seguintes:
 
 - Remova a conexão PrivateLink do ambiente de produção ou preparo do Adobe Commerce na infraestrutura em nuvem Pro.
 - Altere o número da conta da plataforma Customer Cloud para acessar o serviço de endpoint da Adobe.

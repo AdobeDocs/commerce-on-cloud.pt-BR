@@ -3,22 +3,31 @@ title: Configurar vários sites ou lojas
 description: Saiba como configurar vários sites ou lojas para o Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Configuration, Routes, Site Navigation
 exl-id: 773d8d64-d235-4c2b-87e9-aadbf8471b2c
-TQID: https://experienceleague.adobe.com/532nrO6XkiqiNDfRMT6gZ4mVRqlv5PszegPJLuemmyc
+TQID: 'https://experienceleague.adobe.com/532nrO6XkiqiNDfRMT6gZ4mVRqlv5PszegPJLuemmyc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 1783ae9f-7157-5aeb-a915-91e260301e46
+    internal-label: Routes
+  - id: 48c59cc5-3c2e-5df1-8756-f5c139a28932
+    internal-label: Site Navigation
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1105
+source-wordcount: '1105'
 ht-degree: 0%
-
 ---
-
 # Configurar vários sites ou lojas
 
 Você pode configurar o Adobe Commerce para ter vários sites ou lojas, como uma loja em inglês, uma loja em francês e uma loja em alemão. Consulte [Noções básicas sobre sites, lojas e exibições de loja](best-practices.md#store-views).
@@ -45,7 +54,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Para adicionar uma visualização de loja à URL base do site, não é necessário criar vários diretórios. Consulte [Adicionar o código de armazenamento à URL de base](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) no _Guia de Configuração_.
+>Para adicionar uma visualização de loja à URL base do site, não é necessário criar vários diretórios. Consulte [Adicionar o código de armazenamento à URL de base](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) no _Guia de Configuração_.
 
 ## Adicionar domínios
 
@@ -55,15 +64,15 @@ O processo para adicionar um domínio depende do tipo de conta da Cloud:
 
 - Para preparo e produção profissionais
 
-  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou abra um tíquete de suporte para solicitar assistência. Além disso, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar que novos domínios sejam adicionados a um cluster.
+  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou abra um tíquete de suporte para solicitar assistência. Além disso, você deve [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar que novos domínios sejam adicionados a um cluster.
 
 - Somente para produção inicial
 
-  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar assistência. Além disso, você deve adicionar o novo domínio à guia **Domínios** em [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Adicione o novo domínio ao Fastly, consulte [Gerenciar domínios](../cdn/fastly-custom-cache-configuration.md#manage-domains) ou [Enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para solicitar assistência. Além disso, você deve adicionar o novo domínio à guia **Domínios** em [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configurar instalação local
 
-Para configurar sua instalação local para usar várias lojas, consulte [Vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/multi-sites/ms-overview) no _Guia de Configuração_.
+Para configurar sua instalação local para usar várias lojas, consulte [Vários sites ou lojas](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-overview) no _Guia de Configuração_.
 
 Depois de criar e testar com êxito a instalação local para usar várias lojas, você deve preparar seu ambiente de integração:
 
@@ -222,7 +231,7 @@ Onde a configuração de rotas define como as URLs são processadas, a proprieda
 
 ### Configurar sites, lojas e visualizações de loja
 
-Na _Interface do Administrador_, configure os **Sites**, as **Lojas** e as **Exibições da Loja** do Adobe Commerce. Consulte [Configurar vários sites, lojas e exibições de loja no Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) no _Guia de Configuração_.
+Na _Interface do Administrador_, configure os **Sites**, as **Lojas** e as **Exibições da Loja** do Adobe Commerce. Consulte [Configurar vários sites, lojas e exibições de loja no Administrador](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) no _Guia de Configuração_.
 
 É importante usar o mesmo nome e código de seus sites, lojas e exibições de loja do Administrador ao configurar a instalação local. Você precisa desses valores ao atualizar o arquivo `magento-vars.php`.
 

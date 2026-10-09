@@ -3,13 +3,22 @@ title: Insights de tráfego do Adobe Commerce
 description: Saiba mais sobre a ferramenta Adobe Commerce Traffic Insights e como ela pode ajudar você a entender o tráfego no seu projeto de infraestrutura em nuvem do Adobe Commerce.
 feature: Cloud, Observability
 role: Admin
-source-git-commit: 119c9415abd22221e3ae785445d537f0609eba14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Insights de tráfego
 
 O Adobe Commerce Traffic Insights é um aplicativo do New Relic One que visualiza o tráfego de CDN do Fastly [!DNL Adobe Commerce on Cloud Infrastructure]. Ele lê as linhas de log de acesso do Fastly CDN que já estão sendo enviadas para o New Relic como `Log` eventos e renderiza um conjunto preparado de gráficos, com escopo para uma conta do New Relic selecionada e o intervalo de tempo da plataforma. Isso visualiza o tráfego de borda de uma loja sem gravar o NRQL, a linguagem de consulta do New Relic, manualmente.

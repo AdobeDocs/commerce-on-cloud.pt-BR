@@ -3,21 +3,31 @@ title: Gerenciamento de backup
 description: Saiba como criar e restaurar manualmente um backup para seu projeto do Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-TQID: https://experienceleague.adobe.com/UHzlr5FQsXz6FEDpwWzYE5JxThIHAMXI-MKM-7DF2P0
+TQID: 'https://experienceleague.adobe.com/UHzlr5FQsXz6FEDpwWzYE5JxThIHAMXI-MKM-7DF2P0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: 39be4420-bcee-570e-b3c1-3ae01e97f783
+    internal-label: Snapshots
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 865
+source-wordcount: '865'
 ht-degree: 0%
-
 ---
-
 # Gerenciamento de backup
 
 Você pode executar um backup manual de ambientes Iniciadores ativos a qualquer momento usando o botão **[!UICONTROL Backup]** no [!DNL Cloud Console] ou usando o comando `magento-cloud snapshot:create`.
@@ -45,7 +55,7 @@ Você pode criar um backup manual de qualquer ambiente Starter ativo e ambiente 
 
 **Para criar um backup de banco de dados do ambiente Pro**:
 
-Para criar um despejo de banco de dados de qualquer ambiente Pro, incluindo Preparo e Produção, consulte o artigo da Base de conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
+Para criar um despejo de banco de dados de qualquer ambiente Pro, incluindo Preparo e Produção, consulte o artigo da Base de conhecimento [Criar um despejo de banco de dados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud).
 
 **Para criar um backup de qualquer ambiente Inicial usando o[!DNL Cloud Console]**:
 
@@ -158,7 +168,7 @@ Os tempos de restauração variam dependendo do tamanho do banco de dados:
 
 ## Restaurar um Instantâneo da Recuperação de Desastres
 
-Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Para restaurar o Instantâneo da Recuperação de Desastres nos ambientes Pro Staging e Production, [Importe o despejo do banco de dados diretamente do servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Reverter código
 

@@ -3,25 +3,37 @@ title: Configurar o serviço Valkey
 description: Saiba como configurar e otimizar o Valkey como uma solução de cache de back-end para o Adobe Commerce na infraestrutura em nuvem, incluindo a substituição do Redis e a personalização das configurações de back-end do cache.
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
-TQID: https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk
+TQID: 'https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: d5d947f9858ab15e2e5daed7848163846580f883
+    internal-label: Troubleshooting
+source-git-commit: 03cf9c6427ffff359396687545dd8829275f6bc7
 workflow-type: tm+mt
-source-wordcount: 701
+source-wordcount: '701'
 ht-degree: 0%
-
 ---
-
 # Configurar o serviço Valkey
 
 [Valkey](https://valkey.io) é uma solução de cache de back-end opcional para o Adobe Commerce na infraestrutura em nuvem. O Valkey é necessário ao substituir a configuração de cache padrão no Adobe Commerce 2.4.9 e posterior, ou em versões de patch posteriores a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e 2.4.8-p4.
@@ -98,7 +110,7 @@ Depois que a implantação for concluída, verifique se o relacionamento de serv
 
 ## Personalizar a configuração do Valkey
 
-Para obter recomendações de cache, sessão, L2 e conexão de réplica, consulte [Práticas recomendadas para a configuração do serviço Valkey e Redis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) no _Guia de Práticas Recomendadas do Manual de Implementação_.
+Para obter recomendações de cache, sessão, L2 e conexão de réplica, consulte [Práticas recomendadas para a configuração do serviço Valkey e Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) no _Guia de Práticas Recomendadas do Manual de Implementação_.
 
 ## Verificar o relacionamento de serviço
 

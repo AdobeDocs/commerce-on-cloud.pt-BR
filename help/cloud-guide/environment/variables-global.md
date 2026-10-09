@@ -5,24 +5,41 @@ feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
-TQID: https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ
+TQID: 'https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: '775'
 ht-degree: 0%
-
 ---
-
 # Variáveis globais
 
 As variáveis globais controlam ações em cada fase do processo de implantação do [!DNL Commerce]: compilação, implantação e pós-implantação. Como as variáveis globais afetam cada fase, você deve defini-las no estágio `global` do arquivo `.magento.env.yaml`:
@@ -189,7 +206,7 @@ stage:
 - **Padrão**—_Não definido_
 - **Versão** — Adobe Commerce 2.1.4 e posterior
 
-Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/security/xframe-options) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
+Use a variável `X_FRAME_CONFIGURATION` para alterar a configuração do cabeçalho [`X-Frame-Options`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/security/xframe-options) do site do Adobe Commerce. Esta configuração controla como o navegador renderiza uma página em um `<frame>`, `<iframe>` ou `<object>`. Use uma das seguintes opções:
 
 - `DENY`—A página não pode ser exibida em um quadro.
 - `SAMEORIGIN`—(A configuração padrão do Adobe Commerce.) A página pode ser exibida somente em um quadro na mesma origem da própria página.

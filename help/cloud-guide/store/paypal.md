@@ -3,22 +3,31 @@ title: Configurar métodos de pagamento do PayPal
 description: Configurar métodos de pagamento do PayPal para Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Checkout, Payments
 exl-id: 577639f8-74a1-4bb2-96fc-72135252cbd1
-TQID: https://experienceleague.adobe.com/wGyqg7fnVgAglBAqnaA0ak-JaBLHGn5-Bkj-jx8qwoo
+TQID: 'https://experienceleague.adobe.com/wGyqg7fnVgAglBAqnaA0ak-JaBLHGn5-Bkj-jx8qwoo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 697
+source-wordcount: '697'
 ht-degree: 0%
-
 ---
-
 # Configurar métodos de pagamento do PayPal
 
 O Adobe Commerce na infraestrutura em nuvem fornece uma ferramenta de integração para configurar contas de finalização do PayPal Express diretamente por meio do administrador. Essa ferramenta está disponível para ECE 2.1.8 e posterior. Para oferecer melhor suporte ao teste de métodos de pagamento do PayPal, você pode habilitar e configurar sua conta de Finalização expressa do PayPal para contas de sandbox ou produção.
@@ -68,7 +77,7 @@ Para configurar o Check-out do PayPal Express:
    * **Modo de sandbox** selecione Sim ou Não para indicar se as credenciais inseridas são para sandbox. Se você tiver informado credenciais de produção, selecione Não.
    * **API Usa Proxy** selecione Sim ou Não para definir se o sistema usa um servidor proxy para estabelecer uma conexão entre o Adobe Commerce e o sistema de pagamento PayPal. Se Sim, insira o host e a porta do proxy.
 
-1. Para obter informações detalhadas e etapas para configurar sua conta, consulte [Finalização expressa do PayPal](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout), começando com a Etapa 2, Concluir as configurações necessárias.
+1. Para obter informações detalhadas e etapas para configurar sua conta, consulte [Finalização expressa do PayPal](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout), começando com a Etapa 2, Concluir as configurações necessárias.
 
 Com a conta configurada e autenticada, você pode ativar e desativar as opções de pagamento do PayPal em Configurações obrigatórias do PayPal:
 

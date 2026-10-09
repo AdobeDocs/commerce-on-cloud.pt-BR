@@ -5,28 +5,40 @@ role: Admin
 feature: Cloud, Roles/Permissions
 level: Beginner
 short-description: Adicione usuários e atribua funções de projeto e ambiente no Cloud Console ou na CLI.
-last-substantial-update: 2026-06-11
+last-substantial-update: 2026-06-11T00:00:00.000Z
 topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
-TQID: https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g
+TQID: 'https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1694
+source-wordcount: '1694'
 ht-degree: 0%
-
 ---
-
 # Gerenciar acesso do usuário
 
 Os projetos do Adobe Commerce em infraestrutura em nuvem usam acesso com base em funções. Há duas funções disponíveis no nível do projeto:
@@ -258,7 +270,7 @@ As instruções para instalar o aplicativo autenticador e habilitar o TFA estão
 
      >[!WARNING]
      >
-     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para redefinir o aplicativo TFA.
+     >Se você perder o acesso a uma conta com TFA e não tiver a lista de códigos de recuperação, entre em contato com o administrador do projeto ou [Envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para redefinir o aplicativo TFA.
 
 1. Após concluir a configuração do TFA, clique em **Salvar** para atualizar sua conta.
 
@@ -311,4 +323,4 @@ Em projetos que têm a imposição de MFA habilitada, você deve ter um token de
 
 ## Mais ajuda sobre este tópico
 
-- [Não é possível adicionar usuário ao projeto de nuvem do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — solução de problemas ao adicionar um usuário.
+- [Não é possível adicionar usuário ao projeto de nuvem do Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — solução de problemas ao adicionar um usuário.
