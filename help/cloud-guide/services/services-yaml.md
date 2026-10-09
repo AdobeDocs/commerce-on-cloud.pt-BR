@@ -3,7 +3,7 @@ title: Configurar serviços
 description: Saiba como configurar serviços usados pelo Adobe Commerce na infraestrutura em nuvem, como MySQL, Redis e Elasticsearch.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-last-update: 2026-09-01T00:00:00.000Z
+last-update: 2026-09-01
 TQID: 'https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 0%
@@ -63,13 +63,13 @@ A infraestrutura do Adobe Commerce na nuvem é compatível com os seguintes serv
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->[Atualizar RabbitMQ sequencialmente entre as versões disponíveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Por exemplo, não atualize da 3.9 diretamente para a 4.1.
+>[Atualizar RabbitMQ sequencialmente entre as versões disponíveis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Por exemplo, não atualize da 3.9 diretamente para a 4.1.
 >
 >Para garantir que suas filas de mensagens personalizadas sejam recriadas no RabbitMQ depois da atualização para uma nova versão, acione uma implantação completa.
 
 ## Exibir versões e serviços configurados
 
-Você pode exibir exemplos de definições de serviço e valores de disco no arquivo de modelo atual [`services.yaml` &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). As versões padrão e compatíveis do serviço dependem da versão do Adobe Commerce e do modelo de nuvem atual.
+Você pode exibir exemplos de definições de serviço e valores de disco no arquivo de modelo atual [`services.yaml` ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). As versões padrão e compatíveis do serviço dependem da versão do Adobe Commerce e do modelo de nuvem atual.
 
 O exemplo a seguir mostra definições de serviço no arquivo de configuração `services.yaml`:
 
@@ -209,7 +209,7 @@ Você pode recuperar os dados de configuração de todas as relações de servi�
 
 ## Versões de serviço
 
-As versões implantadas e testadas na infraestrutura em nuvem determinam a versão do serviço e o suporte à compatibilidade do Adobe Commerce na infraestrutura em nuvem, que às vezes diferem das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
+As versões implantadas e testadas na infraestrutura em nuvem determinam a versão do serviço e o suporte à compatibilidade do Adobe Commerce na infraestrutura em nuvem, que às vezes diferem das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) no guia _Instalação_ para obter uma lista de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
 
 ### Verificações de EOL de software
 

@@ -3,7 +3,7 @@ title: Introdução a trechos de VCL personalizados
 description: Saiba mais sobre como usar trechos de código da Linguagem de controle do Vernish para personalizar a configuração do serviço Fastly para o Adobe Commerce.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-last-update: 2025-08-20T00:00:00.000Z
+last-update: 2025-08-20
 TQID: 'https://experienceleague.adobe.com/1grH8E6w-CgPS2ANraTxdM1NZ6Jjb8G4i7tgSswcuJE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '2179'
 ht-degree: 0%

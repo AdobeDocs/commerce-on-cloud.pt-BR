@@ -3,7 +3,7 @@ title: VCL personalizado para solicitações de bloqueio
 description: Bloqueie solicitações recebidas pelo endereço IP usando uma lista de controle de acesso (ACL) do Edge com um trecho de VCL personalizado.
 feature: Cloud, Configuration, Security
 exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
-last-update: 2025-01-29T00:00:00.000Z
+last-update: 2025-01-29
 TQID: 'https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -23,7 +23,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 0%

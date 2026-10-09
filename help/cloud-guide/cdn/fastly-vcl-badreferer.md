@@ -3,7 +3,7 @@ title: Bloquear spam de referência
 description: Bloqueie spam de referência do seu site usando o dicionário Fastly Edge e um trecho de VCL personalizado.
 feature: Cloud, Configuration, Security
 exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
-last-update: 2025-01-29T00:00:00.000Z
+last-update: 2025-01-29
 TQID: 'https://experienceleague.adobe.com/Ssuym1h44Jr5-yJxD7adItpPIx-tDWR9b3sRyijXzEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -23,7 +23,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 0%
