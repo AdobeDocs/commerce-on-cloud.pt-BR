@@ -3,7 +3,7 @@ title: Configurar serviços
 description: Saiba como configurar serviços usados pelo Adobe Commerce na infraestrutura em nuvem, como MySQL, Redis e Elasticsearch.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-last-update: 2026-09-01T00:00:00.000Z
+last-update: 2026-09-01
 TQID: 'https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 0%

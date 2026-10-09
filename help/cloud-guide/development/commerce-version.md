@@ -3,7 +3,7 @@ title: Atualizar versão do Commerce
 description: Saiba como atualizar a versão do Adobe Commerce no ambiente de infraestrutura em nuvem.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-last-update: 2026-09-01T00:00:00.000Z
+last-update: 2026-09-01
 TQID: 'https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 35ab85b64dabcaab652e3f0025b99bdcba81a080
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
