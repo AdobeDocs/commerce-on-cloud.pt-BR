@@ -1,29 +1,38 @@
 ---
-title: Gerenciar ramificações com o  [!DNL Cloud Console]
-description: Saiba como gerenciar as ramificações de ambiente para o Adobe Commerce na infraestrutura em nuvem usando o  [!DNL Cloud Console].
+title: Gerenciar ramificações com o [!DNL Cloud Console]
+description: Saiba como gerenciar as ramificações de ambiente para o Adobe Commerce na infraestrutura em nuvem usando o [!DNL Cloud Console].
 role: Developer
 feature: Cloud, Install
 exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
-TQID: https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ
+TQID: 'https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1642
+source-wordcount: '1642'
 ht-degree: 0%
-
 ---
-
 # Gerenciar ramificações com o [!DNL Cloud Console]
 
 Você pode gerenciar seus ambientes usando a CLI do [!DNL Cloud Console] ou do `magento-cloud`. Os arquivos do projeto são armazenados em um repositório Git. Você pode usar comandos do Git para gerenciar seu código, mas a CLI do `magento-cloud` foi projetada para interagir com recursos da plataforma, enquanto os comandos do Git não. Consulte [Comandos do Git](../dev-tools/cloud-cli-overview.md#git-commands) no tópico da CLI da nuvem.

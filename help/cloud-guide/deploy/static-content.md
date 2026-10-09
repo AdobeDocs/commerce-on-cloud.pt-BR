@@ -3,24 +3,37 @@ title: Implantação de conteúdo estático
 description: Saiba mais sobre as estratégias para implantar conteúdo estático, como imagens, scripts e CSS, no Adobe Commerce em projetos de infraestrutura em nuvem.
 feature: Cloud, Build, Deploy, SCD
 exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
-TQID: https://experienceleague.adobe.com/bl2z1YM8u-HNuBYuQH3uqoRwiU4lfHGOQyr8Vbwyef8
+TQID: 'https://experienceleague.adobe.com/bl2z1YM8u-HNuBYuQH3uqoRwiU4lfHGOQyr8Vbwyef8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Troubleshooting
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 860
+source-wordcount: '860'
 ht-degree: 0%
-
 ---
-
 # Estratégias de implantação de conteúdo estático
 
 A implantação de conteúdo estático (SCD) tem um impacto significativo no processo de implantação da loja, que depende do volume de conteúdo a ser gerado (como imagens, scripts, CSS, vídeos, temas, localidades e páginas da Web) e quando gerar o conteúdo. Por exemplo, a estratégia padrão gera conteúdo estático durante a [fase de implantação](process.md#deploy-phase-deploy-phase) quando o site está em modo de manutenção; no entanto, essa estratégia de implantação leva tempo para gravar o conteúdo diretamente no diretório `pub/static` montado. Você tem várias opções ou estratégias para ajudar a melhorar o tempo de implantação, dependendo das suas necessidades.

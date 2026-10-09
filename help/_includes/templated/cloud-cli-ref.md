@@ -1,9 +1,8 @@
 ---
 source-git-commit: fddcfdb97aede07b2cd6ef12bda6d7998f941951
 workflow-type: tm+mt
-source-wordcount: '13721'
-ht-degree: 0%
-
+source-wordcount: '14749'
+ht-degree: 6%
 ---
 # magento-cloud (Adobe Commerce na infraestrutura em nuvem)
 
@@ -120,7 +119,7 @@ A ID do ambiente. Use &quot;.&quot; para selecionar o ambiente padrão do projet
 magento-cloud decode [-P|--property PROPERTY] [--] <value>
 ```
 
-Decodificar uma string codificada, como MAGENTO_CLOUD_VARIABLES
+Decodifique uma string codificada, como MAGENTO_CLOUD_VARIABLES
 
 ### Argumentos
 
@@ -961,7 +960,7 @@ Não gerar saída do cabeçalho da tabela
 magento-cloud logout [-a|--all] [--other]
 ```
 
-Fazer logoff da Magento Cloud
+Faça logout da Magento Cloud
 
 ### Opções
 

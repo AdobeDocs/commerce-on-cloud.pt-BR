@@ -3,29 +3,44 @@ title: Solução de problemas rápida
 description: Saiba como solucionar problemas e gerenciar o módulo e os serviços do Fastly CDN para Adobe Commerce.
 feature: Cloud, Configuration, Cache, Services
 exl-id: 69954ef9-9ece-411e-934e-814a56542290
-TQID: https://experienceleague.adobe.com/2TJ-5byRz5seZ1tpd4FXjZ6JfeaqtKs6ZQlv81Lkr7c
+TQID: 'https://experienceleague.adobe.com/2TJ-5byRz5seZ1tpd4FXjZ6JfeaqtKs6ZQlv81Lkr7c'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1911
+source-wordcount: '1911'
 ht-degree: 0%
-
 ---
-
 # Solução de problemas rápida
 
-Use as seguintes informações para solucionar problemas e gerenciar o módulo Fastly CDN para Magento 2 em seus ambientes de projeto do Adobe Commerce na infraestrutura em nuvem. Por exemplo, você pode investigar valores de cabeçalho de resposta e comportamento do armazenamento em cache para resolver problemas de serviço e desempenho do Fastly.
+Use as informações a seguir para solucionar problemas e gerenciar o módulo Fastly CDN para Magento 2 em seus ambientes de projeto do Adobe Commerce na infraestrutura em nuvem. Por exemplo, você pode investigar valores de cabeçalho de resposta e comportamento do armazenamento em cache para resolver problemas de serviço e desempenho do Fastly.
 
 Em ambientes de produção e preparo profissionais, você pode usar os [logs do New Relic](../monitor/log-management.md) para exibir e analisar os dados de log do Fastly CDN e do WAF para solucionar erros e problemas de desempenho.
 
@@ -53,7 +68,7 @@ Use a lista a seguir para identificar e solucionar problemas relacionados à con
 
 - **O menu Armazenar não é exibido ou funciona**—Talvez você esteja usando um link ou link temporário diretamente para o servidor de origem em vez de usar a URL do site ativo, ou você usou `-H "host:URL"` em um [comando cURL](#check-live-site-through-fastly). Se você ignorar o Fastly no servidor de origem, o menu principal não funcionará e cabeçalhos incorretos serão exibidos para permitir o armazenamento em cache no lado do navegador.
 
-- **A navegação superior não funciona**—A navegação superior depende do processamento de ESI (Edge Side Includes) que é habilitado quando você carrega os trechos padrão de VCL do Magento Fastly. Se a navegação não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
+- **A navegação superior não funciona**—A navegação superior depende do processamento ESI (Edge Side Includes) que é habilitado quando você carrega os trechos VCL padrão do Magento Fastly. Se a navegação não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
 
 - **Geolocalização/GeoIP não funciona**— Os trechos padrão do Magento Fastly VCL anexam o código do país à URL. Se o código do país não estiver funcionando, [carregue o Fastly VCL](fastly-configuration.md#upload-vcl-to-fastly) e verifique o site novamente.
 
@@ -69,8 +84,8 @@ Use a lista a seguir para identificar e solucionar problemas relacionados à con
 
   Esse problema pode ser causado por um dos seguintes:
 
-   - Credenciais Fastly inválidas na configuração do serviço Fastly para o ambiente do projeto do Adobe Commerce na infraestrutura em nuvem
-   - Código inválido em um trecho de VCL personalizado
+  - Credenciais Fastly inválidas na configuração do serviço Fastly para o ambiente do projeto do Adobe Commerce na infraestrutura em nuvem
+  - Código inválido em um trecho de VCL personalizado
 
   Para resolver o problema, consulte [Erro ao limpar o cache do Fastly na Nuvem](https://support.magento.com/hc/en-us/articles/115001853194-Error-purging-Fastly-cache-on-Cloud-The-purge-request-was-not-processed-successfully-) na Central de Ajuda do Adobe Commerce.
 
@@ -189,7 +204,7 @@ Verifique se a resposta retornada contém as seguintes informações:
 
 - Inclui o cabeçalho `X-Magento-Tags`
 
-- O valor do cabeçalho `Fastly-Module-Enabled` é `Yes` ou o número da versão do Fastly para o módulo CDN Magento 2 instalado no ambiente do projeto
+- O valor do cabeçalho `Fastly-Module-Enabled` é `Yes` ou o número da versão do módulo Fastly para CDN Magento 2 instalado no ambiente do projeto
 
 - [Cache-Control: max-age](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) é maior que 0
 

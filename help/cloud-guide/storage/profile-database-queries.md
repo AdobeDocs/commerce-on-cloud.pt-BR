@@ -3,19 +3,25 @@ title: Consultas ao banco de dados de perfil
 description: Saiba como habilitar a criação de perfil para entender o impacto das alterações no banco de dados.
 feature: Cloud, Storage
 exl-id: 8eaa2dea-80b7-4f53-9f9d-734e811f91c0
-TQID: https://experienceleague.adobe.com/ZQZh5c7ts4osFU8oGoW3CeEIt7X1qASguPzyIm-e9-A
+TQID: 'https://experienceleague.adobe.com/ZQZh5c7ts4osFU8oGoW3CeEIt7X1qASguPzyIm-e9-A'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 73
+source-wordcount: '73'
 ht-degree: 0%
-
 ---
-
 # Consultas ao banco de dados de perfil
 
 Ao gravar em um banco de dados, pode ser útil executar a criação de perfil para identificar o impacto dessas alterações. A criação de perfil mantém um log de consultas ao banco de dados e aumenta a precisão do tempo de execução.

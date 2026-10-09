@@ -3,19 +3,27 @@ title: Notificações de integridade
 description: Saiba como configurar notificações do Slack, de email e do PagerDuty para o uso do espaço em disco no seu projeto Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Observability, Integration
 exl-id: 5a7f37e9-e8f9-4b6b-b628-60dcaa60cc64
-TQID: https://experienceleague.adobe.com/Tt4zWTqehO4SLsimUv3IE5VvjJ1OwAA27tT9Mot24FU
+TQID: 'https://experienceleague.adobe.com/Tt4zWTqehO4SLsimUv3IE5VvjJ1OwAA27tT9Mot24FU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 386
+source-wordcount: '386'
 ht-degree: 0%
-
 ---
-
 # Notificações de integridade
 
 O Adobe Commerce na infraestrutura em nuvem monitora o uso do espaço em disco em todos os aplicativos e serviços no ambiente de Início ou no ambiente de integração Pro. Um disco de banco de dados com espaço insuficiente pode causar corrupção de dados. A verificação de status de integridade ocorre a cada 5 minutos e pode notificá-lo por email ou outro serviço externo. Há três avisos de disco baixo para notificações de integridade:

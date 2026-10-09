@@ -4,19 +4,25 @@ description: Saiba mais sobre o serviço do New Relic disponível com seu projet
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00.000Z
 exl-id: 10966241-311d-4b68-804d-4c9569bf933d
-TQID: https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME
+TQID: 'https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 83bab481da52667e8ffb81563109429c7c6b65dd
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '457'
 ht-degree: 0%
-
 ---
-
 # Visão geral do serviço New Relic
 
 Todos os projetos do Adobe Commerce na infraestrutura em nuvem incluem acesso ao serviço New Relic para ajudar a monitorar o desempenho e investigar eventos do aplicativo [!DNL Commerce] e da infraestrutura em nuvem.

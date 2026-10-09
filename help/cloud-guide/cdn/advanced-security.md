@@ -3,13 +3,26 @@ title: Segurança avançada Adobe Commerce
 description: Saiba como a Segurança avançada adiciona gerenciamento de bot, limitação de taxa avançada e proteção de DDoS de camada 7 à Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Configuration, Security
 exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
-source-git-commit: 6bab2df0240c8b74a455de73fbf7a7645a46e904
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
 source-wordcount: '2514'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Advanced Security]
 
 O [!DNL Adobe Commerce Advanced Security] é um produto que funciona com o [!DNL Adobe Commerce on Cloud Infrastructure] para manter sua loja online rápida, disponível e segura. Esses recursos podem ajudar a proteger a receita, reduzir o tempo de inatividade e manter a confiança do cliente durante eventos de pico de tráfego e ataques automatizados.

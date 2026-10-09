@@ -3,26 +3,36 @@ title: Arquitetura inicial
 description: Saiba mais sobre os ambientes compatíveis com a arquitetura Starter.
 feature: Cloud, Paas
 exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
-TQID: https://experienceleague.adobe.com/NZ2ea2-D3coPcwXTEHL7viNlgpIBSVA0zO2-iVUIhB0
+TQID: 'https://experienceleague.adobe.com/NZ2ea2-D3coPcwXTEHL7viNlgpIBSVA0zO2-iVUIhB0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 8465292300c871aaa85e57cbb25e7ae5358bcd2f
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: '1010'
 ht-degree: 0%
-
 ---
-
 # Arquitetura inicial
 
 Sua arquitetura inicial do Adobe Commerce na infraestrutura em nuvem aceita até **quatro** ambientes, incluindo um ambiente `master` que contenha o código inicial do projeto, o ambiente de preparo e até dois ambientes de integração.
@@ -137,7 +147,7 @@ O Adobe Commerce na infraestrutura em nuvem usa o sistema operacional Debian GNU
 
 - [OpenSearch](../services/opensearch.md)
 
-Nos ambientes de preparo e produção, use o Fastly para CDN e armazenamento em cache. A versão mais recente da extensão CDN do Fastly é instalada durante o provisionamento inicial do projeto. Você pode atualizar a extensão do para obter as correções de erros e melhorias mais recentes. Consulte [Módulo Fastly CDN para Magento 2](https://github.com/fastly/fastly-magento2). Além disso, você tem acesso ao [New Relic](../monitor/account-management.md) para monitoramento de desempenho.
+Nos ambientes de preparo e produção, use o Fastly para CDN e armazenamento em cache. A versão mais recente da extensão CDN do Fastly é instalada durante o provisionamento inicial do projeto. Você pode atualizar a extensão do para obter as correções de erros e melhorias mais recentes. Consulte o [Módulo CDN do Fastly para Magento 2](https://github.com/fastly/fastly-magento2). Além disso, você tem acesso ao [New Relic](../monitor/account-management.md) para monitoramento de desempenho.
 
 Use os arquivos a seguir para configurar as versões de software que deseja usar na implementação.
 

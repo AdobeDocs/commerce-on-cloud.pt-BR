@@ -5,20 +5,28 @@ feature: Cloud, Configuration, Cache
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 42523ff9-d8ca-470a-ac7b-d2ce21edd830
-TQID: https://experienceleague.adobe.com/w60X0FgUZr-ff1cJJmo5y8frgYW5MlR0pyBy8tTFfSg
+TQID: 'https://experienceleague.adobe.com/w60X0FgUZr-ff1cJJmo5y8frgYW5MlR0pyBy8tTFfSg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: '516'
 ht-degree: 0%
-
 ---
-
 # Variáveis pós-implantação
 
 As variáveis _pós-implantação_ a seguir controlam ações na fase de pós-implantação e podem herdar e substituir valores das [Variáveis globais](variables-global.md). Insira estas variáveis no estágio `post-deploy` do arquivo `.magento.env.yaml`:
@@ -104,54 +112,54 @@ Personalize a lista de páginas usadas para pré-carregar o cache no estágio `p
   <entity_type>:<pattern|url|product_sku>:<store_id|store_code>
   ```
 
-   - `entity_type`: Possíveis variantes `category`, `cms-page`, `product`, `store-page`
-   - `pattern|url|product_sku`: Use um padrão `regexp` ou uma correspondência exata `url` para filtrar as URLs, ou use um asterisco (\*) para todas as páginas. Usar SKU do produto para o tipo de entidade `product`
-   - `store_id|store_code`: Use a ID ou o Código do armazenamento ou um asterisco (\*) para todos os armazenamentos. Você pode passar várias IDs de armazenamento ou códigos separados por `|`
+  - `entity_type`: Possíveis variantes `category`, `cms-page`, `product`, `store-page`
+  - `pattern|url|product_sku`: Use um padrão `regexp` ou uma correspondência exata `url` para filtrar as URLs, ou use um asterisco (\*) para todas as páginas. Usar SKU do produto para o tipo de entidade `product`
+  - `store_id|store_code`: Use a ID ou o Código do armazenamento ou um asterisco (\*) para todos os armazenamentos. Você pode passar várias IDs de armazenamento ou códigos separados por `|`
 
   O exemplo a seguir armazena em cache os tipos de entidade `category` e `cms-page` com base nesses critérios:
-   - todas as páginas de categoria do armazenamento com ID `1`
-   - todas as páginas de categoria para lojas com código `store1` e `store2`
-   - página de categoria `cars` para armazenamento com código `store_en`
-   - página cms `contact` para todas as lojas
-   - página cms `contact` para armazenamentos com ID `1` e `2`
-   - qualquer página de categoria que contenha `car_` e termine com `html` para armazenamento com ID 2
-   - qualquer página de categoria que contenha `tires_` para armazenamento com código `store_gb`
+  - todas as páginas de categoria do armazenamento com ID `1`
+  - todas as páginas de categoria para lojas com código `store1` e `store2`
+  - página de categoria `cars` para armazenamento com código `store_en`
+  - página cms `contact` para todas as lojas
+  - página cms `contact` para armazenamentos com ID `1` e `2`
+  - qualquer página de categoria que contenha `car_` e termine com `html` para armazenamento com ID 2
+  - qualquer página de categoria que contenha `tires_` para armazenamento com código `store_gb`
 
-     ```yaml
-     stage:
-       post-deploy:
-         WARM_UP_PAGES:
-           - "category:*:1"
-           - "category:*:store1|store2"
-           - "category:cars:store_en"
-           - "cms-page:contact:*"
-           - "cms-page:contact:1|2"
-           - "category:|car_.*?\\.html$|:2"
-           - "category:|tires_.*|:store_gb"
-     ```
+    ```yaml
+    stage:
+      post-deploy:
+        WARM_UP_PAGES:
+          - "category:*:1"
+          - "category:*:store1|store2"
+          - "category:cars:store_en"
+          - "cms-page:contact:*"
+          - "cms-page:contact:1|2"
+          - "category:|car_.*?\\.html$|:2"
+          - "category:|tires_.*|:store_gb"
+    ```
 
   O exemplo a seguir armazena em cache o tipo de entidade `product` com base nesses critérios:
-   - todos os produtos para todas as lojas (limitado programaticamente a 100 por loja para evitar problemas de desempenho)
-   - todos os produtos da loja `store1`
-   - produtos com `sku1` para todas as lojas
-   - produtos com `sku1` para lojas com código `store1` e `store2`
-   - produtos com `sku1`, `sku2` e `sku3` para lojas com código `store1` e `store2`
+  - todos os produtos para todas as lojas (limitado programaticamente a 100 por loja para evitar problemas de desempenho)
+  - todos os produtos da loja `store1`
+  - produtos com `sku1` para todas as lojas
+  - produtos com `sku1` para lojas com código `store1` e `store2`
+  - produtos com `sku1`, `sku2` e `sku3` para lojas com código `store1` e `store2`
 
-     ```yaml
-     stage:
-       post-deploy:
-         WARM_UP_PAGES:
-           - "product:*:*"
-           - "product:*:store1"
-           - "product:sku1:*"
-           - "product:sku1:store1|store2"
-           - "product:sku1|sku2|sku3:store1|store2"
-     ```
+    ```yaml
+    stage:
+      post-deploy:
+        WARM_UP_PAGES:
+          - "product:*:*"
+          - "product:*:store1"
+          - "product:sku1:*"
+          - "product:sku1:store1|store2"
+          - "product:sku1|sku2|sku3:store1|store2"
+    ```
 
   O exemplo a seguir armazena em cache o tipo de entidade `store-page` com base nesses critérios:
-   - página `/contact-us` para todas as lojas
-   - página `/contact-us` do armazenamento com ID `1`
-   - página `/contact-us` para lojas com código `code1` e `code2`
+  - página `/contact-us` para todas as lojas
+  - página `/contact-us` do armazenamento com ID `1`
+  - página `/contact-us` para lojas com código `code1` e `code2`
 
   ```yaml
         stage:

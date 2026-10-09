@@ -1,14 +1,20 @@
 ---
 title: Exemplo de gerenciamento de configurações específicas do sistema
 description: Veja um exemplo de como gerenciar e sincronizar as configurações de armazenamento em todos os ambientes do Adobe Commerce na infraestrutura em nuvem.
-hidefromtoc: true
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+hidefromtoc: 'yes'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 0%
-
 ---
-
 
 # Exemplo de gerenciamento de configurações específicas do sistema
 

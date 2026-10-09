@@ -3,25 +3,31 @@ title: VCL personalizado para permitir solicitações
 description: Filtre solicitações recebidas e permita o acesso por endereço IP para sites do Adobe Commerce com uma lista ACL do Fastly Edge e um trecho VCL personalizado.
 feature: Cloud, Configuration, Security
 exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
-TQID: https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY
+last-update: 2026-08-25T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2026-08-25
-source-git-commit: ccff84c55425e8e4f91812b54f5e6ccf9a700104
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 874
+source-wordcount: '874'
 ht-degree: 0%
-
 ---
-
 # VCL personalizado para permitir solicitações
 
 Você pode usar uma lista de ACL do Fastly Edge com um trecho de código de VCL personalizado para filtrar solicitações recebidas e permitir o acesso pelo endereço IP. A lista de ACL especifica os endereços IP permitidos.
@@ -91,7 +97,7 @@ Antes de [criar um trecho personalizado](https://experienceleague.adobe.com/pt-b
 
 - `name` — Nome do trecho VCL. Para este exemplo, `allowlist`.
 
-- `priority` — Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL padrão do Magento (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
+- `priority` — Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL padrão da Magento (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
 
 - `type` — Especifica um local para inserir o trecho no código de VCL com controle de versão. Este VCL é um tipo de trecho `recv` que adiciona o código de trecho à sub-rotina `vcl_recv` abaixo do código VCL padrão do Fastly e acima de qualquer objeto.
 
@@ -103,7 +109,7 @@ Na amostra de código, a condição `!req.http.Fastly-FF` é importante ao usar 
 
 Depois de revisar e atualizar o código do seu ambiente, use um dos métodos a seguir para adicionar o trecho de VCL personalizado à configuração do serviço Fastly:
 
-- [Adicionar o trecho de VCL personalizado do Administrador](#add-the-custom-vcl-snippet). Esse método é recomendado se você puder acessar o Administrador. (Requer o [Módulo CDN Fastly para o Magento 2 versão 1.2.58](fastly-configuration.md#upgrade) ou posterior.)
+- [Adicionar o trecho de VCL personalizado do Administrador](#add-the-custom-vcl-snippet). Esse método é recomendado se você puder acessar o Administrador. (Requer o módulo [Fastly CDN para a versão 1.2.58](fastly-configuration.md#upgrade) do Magento 2 ou posterior.)
 
 - Salve o exemplo de código JSON em um arquivo (por exemplo, `allowlist.json`) e [carregue-o usando a API Fastly](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Use esse método se não conseguir acessar o Administrador.
 

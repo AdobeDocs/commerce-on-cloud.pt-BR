@@ -3,28 +3,34 @@ title: VCL personalizado para solicitações de bloqueio
 description: Bloqueie solicitações recebidas pelo endereço IP usando uma lista de controle de acesso (ACL) do Edge com um trecho de VCL personalizado.
 feature: Cloud, Configuration, Security
 exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
-TQID: https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg
+last-update: 2025-01-29T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2025-01-29
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1026
+source-wordcount: '1026'
 ht-degree: 0%
-
 ---
-
 # VCL personalizado para solicitações de bloqueio
 
-Você pode usar o módulo Fastly CDN para o Magento 2 a fim de criar uma ACL do Edge com uma lista de endereços IP que você deseja bloquear. Em seguida, você pode usar essa lista com um trecho VCL para bloquear solicitações recebidas. O código verifica o endereço IP da solicitação recebida. Se ele corresponder a um endereço IP incluído na lista de ACL, o Fastly bloqueará o acesso ao site e retornará um `403 Forbidden error`. Todos os outros endereços IP de clientes têm acesso permitido.
+Você pode usar o módulo Fastly CDN para a Magento 2 para criar uma ACL do Edge com uma lista de endereços IP que você deseja bloquear. Em seguida, você pode usar essa lista com um trecho VCL para bloquear solicitações recebidas. O código verifica o endereço IP da solicitação recebida. Se ele corresponder a um endereço IP incluído na lista de ACL, o Fastly bloqueará o acesso ao site e retornará um `403 Forbidden error`. Todos os outros endereços IP de clientes têm acesso permitido.
 
 **Pré-requisitos:**
 
@@ -71,7 +77,7 @@ Antes de criar um trecho com base neste exemplo, revise os valores para determin
 
 - `name`: Nome do trecho VCL. Neste exemplo, usamos o nome `blocklist`.
 
-- `priority`: Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL padrão do Magento (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
+- `priority`: Determina quando o trecho VCL é executado. A prioridade é `5` para executar imediatamente e verificar se uma solicitação de administrador vem de um endereço IP permitido. O trecho é executado antes de qualquer um dos trechos de VCL padrão da Magento (`magentomodule_*`) ter uma prioridade 50. Defina a prioridade para cada trecho personalizado acima ou abaixo de 50, dependendo de quando você deseja que seu trecho seja executado. Os trechos com números de prioridade mais baixa são executados primeiro.
 
 - `type`: Especifica o tipo de trecho de VCL que determina o local do trecho no código de VCL gerado. Neste exemplo, usamos `recv`, que insere o código de VCL na sub-rotina `vcl_recv`, abaixo do VCL padrão e acima de qualquer objeto. Consulte a [Referência de trecho Fastly VCL](https://docs.fastly.com/api/config#api-section-snippet) para obter a lista de tipos de trecho.
 

@@ -3,22 +3,29 @@ title: Tema personalizado
 description: Saiba como instalar um tema personalizado com o Adobe Commerce na infraestrutura em nuvem.
 feature: Cloud, Themes
 exl-id: 3ae4b0d5-9179-42c4-bb07-8ec09bd057d0
-TQID: https://experienceleague.adobe.com/rk-VP6z1tQSY-HMU-dD9hv6O9Wpesbp1o5KQMYapCJE
+TQID: 'https://experienceleague.adobe.com/rk-VP6z1tQSY-HMU-dD9hv6O9Wpesbp1o5KQMYapCJE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 8b440f30-6794-5ed6-981f-391de4e9b0cc
+    internal-label: Themes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '296'
 ht-degree: 0%
-
 ---
-
 # Tema personalizado
 
 Você pode instalar um ou vários temas para usar em uma ou todas as lojas e sites do projeto. Os temas incluem vários arquivos estáticos, incluindo imagens, fontes, CSS, JavaScript, PHP e muito mais para projetar completamente suas lojas. Você pode adicionar o tema extraindo seu código para o sistema de arquivos ou usando o Composer.
