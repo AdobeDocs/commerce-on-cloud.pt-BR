@@ -1,13 +1,12 @@
 ---
-source-git-commit: 205287e813ec7358273f95df87189b9b663679f5
+source-git-commit: 74cb44aaa4a1c178561bfd1ac7b40c0f3ceb7551
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 7%
-
 ---
 # ece-tools
 
-**Versão**: 2002.2.14
+**Versão**: 2002.2.15
 
 Esta referência contém 34 comandos disponíveis através da ferramenta de linha de comando `ece-tools`.
 A lista inicial é gerada automaticamente usando o comando `ece-tools list` no Adobe Commerce na infraestrutura em nuvem.
@@ -527,7 +526,7 @@ Para opções globais, consulte [Opções globais](#global-options).
 ece-tools cron:disable
 ```
 
-Desative todos os processos cron do Magento e encerre todos os processos em execução.
+Desative todos os processos cron da Magento e encerre todos os processos em execução.
 
 ### Opções
 
@@ -540,7 +539,7 @@ Para opções globais, consulte [Opções globais](#global-options).
 ece-tools cron:enable
 ```
 
-Habilita os processos cron do Magento.
+Habilita os processos cron da Magento.
 
 ### Opções
 
@@ -553,7 +552,7 @@ Para opções globais, consulte [Opções globais](#global-options).
 ece-tools cron:kill
 ```
 
-Encerra todos os processos cron do Magento.
+Encerra todos os processos de cron da Magento.
 
 ### Opções
 
