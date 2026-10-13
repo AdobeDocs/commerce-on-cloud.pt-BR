@@ -113,7 +113,7 @@ Data de lançamento: 06 de maio de 2026
 
 - ![Ícone de correção](../../assets/fix.svg) **Visibilidade de versão de patch**—Visibilidade de versão de patch de nuvem corrigida em ambientes de nuvem.<!--MCLOUD-14221 -->
 - ![ícone de correção](../../assets/fix.svg) **limpeza do PHPUnit**—Avisos do PHPUnit corrigidos<!--MCLOUD-14717 -->
-- ![novo ícone ](../../assets/new.svg)**Correções cosméticas**—Melhorias cosméticas adicionadas.<!--MCLOUD-14686 -->
+- ![novo ícone &#x200B;](../../assets/new.svg)**Correções cosméticas**—Melhorias cosméticas adicionadas.<!--MCLOUD-14686 -->
 
 ## v1.1.13
 
