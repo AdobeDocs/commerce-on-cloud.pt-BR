@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 6f7a0fb23a3b479c766f82273658d4404707a171
+source-git-commit: df46dbad973a1042e02fccc47c3fc17227a453a5
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3098'
 ht-degree: 0%
 ---
 # Patches da nuvem para o Commerce
@@ -60,7 +60,7 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 
 Data de lançamento: 13 de outubro de 2026
 
-- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança** — Aplicadas as correções de segurança referenciadas no [Adobe Commerce Security Update APSB26-153](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança** — Aplicadas as correções de segurança referenciadas no [Adobe Commerce Security Update APSB26-153](https://www.adobe.com/trust/security/products/commerce/apsb26-153.html).<!--MCLOUD-15727 -->
 
 ## v1.1.21
 
@@ -408,7 +408,7 @@ Data de lançamento: 12 de maio de 2020
 
 - **Aprimoramento de desempenho do site**—Corrige um problema de desempenho com a função `Magento\Framework\App\DeploymentConfig\Reader::load`, que periodicamente apresentou longos tempos de carregamento que afetaram o desempenho do site. <!--MCLOUD-5650-->
 
-- Atualização da atribuição de patch para patches do método de pagamento para direcionar os módulos de pagamento em vez do pacote base da Magento (magento/magento2-base), de modo que os patches de pagamento sejam aplicados somente se os módulos de pagamento existirem.<!--MCLOUD-5666-->
+- Atualização da atribuição de patch para patches do método de pagamento para direcionar os módulos de pagamento em vez do pacote base do Magento (magento/magento2-base), de modo que os patches de pagamento sejam aplicados somente se os módulos de pagamento existirem.<!--MCLOUD-5666-->
 
 - Patches atualizados para compatibilidade com o Magento Open Source.<!--MCLOUD-5701-->
 
