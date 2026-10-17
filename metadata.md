@@ -5,6 +5,7 @@ solution-title: Commerce
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
 usetq: true
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
@@ -12,17 +13,15 @@ feature-set: Commerce
 role: Admin, Developer
 topic: Commerce, Development
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-on-cloud.pt-BR
+git-repo: https://github.com/AdobeDocs/commerce-on-cloud.en
 description: Guias da infraestrutura do Adobe Commerce na nuvem
 index: true
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 source-git-commit: 15897d0d0ae489d5ec2bb73f71d5e0916274f293
 workflow-type: tm+mt
-source-wordcount: 74
+source-wordcount: '68'
 ht-degree: 0%
-
 ---
-
 
 # Metadados para uso interno
 
