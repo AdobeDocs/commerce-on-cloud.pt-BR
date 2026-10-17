@@ -1,7 +1,7 @@
 ---
-source-git-commit: ad0b2ef144a1ad8579eb5e8d0c5a98690fd91fdd
+source-git-commit: 2e4b0e29f89050cddd138865dbd7f5b823c0427b
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '514'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,28 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 13 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">Referência de CLI</a> e das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Mensagens de erro</a> após a versão ECE-Tools v2002.2.15.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d27cc83271459bb3c8cb718fe72a1810d2f5a3c5">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 10 de setembro de 2026
 
