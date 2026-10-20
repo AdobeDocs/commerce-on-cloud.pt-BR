@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: df46dbad973a1042e02fccc47c3fc17227a453a5
+source-git-commit: d7aff88a23f73345c5ad5c80f1131b77a8f797ca
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3143'
 ht-degree: 0%
 ---
 # Patches da nuvem para o Commerce
@@ -56,7 +56,13 @@ O pacote `magento/magento-cloud-patches` usa a seguinte sequência de versão: `
 
 <!--Add release notes below-->
 
-## v1.1.22 {#latest}
+## v1.1.23 {#latest}
+
+Data de lançamento: 19 de outubro de 2026
+
+- ![Ícone de correção](../../assets/fix.svg) **Melhorias de segurança**—Atualizou o patch de segurança isolado de outubro de 2026 para 2.4.8-p5 para incluir salvaguardas de segurança adicionais (defesa detalhada) para reduzir ainda mais o risco. Consulte [KA-50927](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-50927).<!--MCLOUD-15841 -->
+
+## v1.1.22
 
 Data de lançamento: 13 de outubro de 2026
 
@@ -408,7 +414,7 @@ Data de lançamento: 12 de maio de 2020
 
 - **Aprimoramento de desempenho do site**—Corrige um problema de desempenho com a função `Magento\Framework\App\DeploymentConfig\Reader::load`, que periodicamente apresentou longos tempos de carregamento que afetaram o desempenho do site. <!--MCLOUD-5650-->
 
-- Atualização da atribuição de patch para patches do método de pagamento para direcionar os módulos de pagamento em vez do pacote base do Magento (magento/magento2-base), de modo que os patches de pagamento sejam aplicados somente se os módulos de pagamento existirem.<!--MCLOUD-5666-->
+- Atualização da atribuição de patch para patches do método de pagamento para direcionar os módulos de pagamento em vez do pacote base da Magento (magento/magento2-base), de modo que os patches de pagamento sejam aplicados somente se os módulos de pagamento existirem.<!--MCLOUD-5666-->
 
 - Patches atualizados para compatibilidade com o Magento Open Source.<!--MCLOUD-5701-->
 
