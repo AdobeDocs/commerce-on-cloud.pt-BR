@@ -1,7 +1,7 @@
 ---
-source-git-commit: e3d730f2e6ca7fe67e6f07368bef4d3b4f461d38
+source-git-commit: 01f6e8984fe013e99ab05fe63a5963e0b772c73b
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '270'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -10,120 +10,9 @@ ht-degree: 1%
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
 
-### 13 de outubro de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">Referência de CLI</a> e das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Mensagens de erro</a> após a versão ECE-Tools v2002.2.15.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d27cc83271459bb3c8cb718fe72a1810d2f5a3c5">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de setembro de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Esclarecimento em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Patches da nuvem para o Commerce</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Notas de versão para o Conjunto de ferramentas do Commerce Cloud</a> que, a partir da versão 1.1.15, os clientes devem baixar os Patches da nuvem para o pacote do Commerce por meio do Composer de <code>repo.magento.com</code> em vez de GitHub, e que é necessário um Adobe Commerce com direito à infraestrutura em nuvem.</p>
-</td>
-      <td>
-        Feedback, técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/ccc122ea36aa8709ac5fa281f94f0814d62e71db">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 de setembro de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">Referência de CLI</a> e das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Mensagens de erro</a> após a versão ECE-Tools, v2002.2.14.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/0e2395ce240935dd67032fe7d2d9d7005958e026">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 de setembro de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>O novo aplicativo <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/traffic-insights/overview">Insights de tráfego</a> ajuda os usuários a visualizar seu tráfego de CDN.</p>
-</td>
-      <td>
-        Atualização importante, novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/74ff686398d92e74f6f889aa10eca67205beb42e">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 1 de setembro de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da documentação do serviço Redis e Valkey para refletir o suporte atual à versão e ao nível de patch, além de referências Valkey adicionadas na arquitetura do Guia de Nuvem e nas páginas de serviços, incluindo <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/redis">Configurar o serviço Redis</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/valkey">Configurar o serviço Valkey</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/environment/variables-deploy">Implantar variáveis</a>.</p>
-</td>
-      <td>
-        Feedback, atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/89a9594b50dfeacc4e0e7765f195d9bade00413d">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição de orientação sobre os requisitos de disponibilidade do cliente durante as janelas de atualização do Commerce e esclarecimento sobre o processo de agendamento e solicitação de atualização do serviço Pro, em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">Atualizar versão do Commerce</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml">Configurar serviços</a>.</p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/ea46582388a9afaf94eb9ced6b61dbef0044370d">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
+| Descrição | Tipo | Data/origem |
+| --- | --- | --- |
+| Atualização da [Referência de CLI](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference) e das [Mensagens de erro](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference) após a versão ECE-Tools v2002.2.15. | Técnico | [13 de outubro de 2026](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d27cc83271459bb3c8cb718fe72a1810d2f5a3c5) |
+| Esclarecimento em [Patches da nuvem para o Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) e [Notas de versão para o Conjunto de ferramentas do Commerce Cloud](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) que, a partir da versão 1.1.15, os clientes devem baixar os Patches da nuvem para o pacote do Commerce por meio do Composer de `repo.magento.com` em vez de GitHub, e que é necessário um Adobe Commerce com direito à infraestrutura em nuvem. | Feedback, técnico | [10 de setembro de 2026](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/ccc122ea36aa8709ac5fa281f94f0814d62e71db) |
+| Atualização da [Referência de CLI](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference) e das [Mensagens de erro](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference) após a versão ECE-Tools, v2002.2.14. | Técnico | [9 de setembro de 2026](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/0e2395ce240935dd67032fe7d2d9d7005958e026) |
+| O novo aplicativo [Insights de tráfego](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/traffic-insights/overview) ajuda os usuários a visualizar seu tráfego de CDN. | Atualização importante, novo tópico | [8 de setembro de 2026](https://github.com/AdobeDocs/commerce-on-cloud.en/commit/74ff686398d92e74f6f889aa10eca67205beb42e) |
