@@ -57,7 +57,7 @@ Para adicionar [!DNL Xdebug], a Adobe recomenda trabalhar em [uma ramificação 
 
 Você pode habilitar o [!DNL Xdebug] diretamente para todos os ambientes de inicialização e integração Pro. Essa etapa de configuração não é necessária para ambientes de produção e preparo profissionais. Consulte [Depuração para Preparo e Produção Profissionais](#debug-for-pro-staging-and-production).
 
->[!VIDEO](https://video.tv.adobe.com/v/3437407?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505680?captions=por_br&learn=on)
 
 Para habilitar [!DNL Xdebug] para o seu projeto, adicione `xdebug` à seção `runtime:extensions` do arquivo `.magento.app.yaml`.
 
@@ -97,7 +97,7 @@ Quando implantado em ambientes iniciais e ambientes de integração Pro, o [!DNL
 
 ### Configurar o servidor PhpStorm
 
->[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505698?captions=por_br&learn=on)
 
 O IDE [PhpStorm](https://www.jetbrains.com/phpstorm/) deve ser configurado para funcionar corretamente com [!DNL Xdebug].
 
@@ -137,7 +137,7 @@ O IDE [PhpStorm](https://www.jetbrains.com/phpstorm/) deve ser configurado para 
 
 Isso permite que o aplicativo tenha as configurações de depuração corretas para lidar com a solicitação do aplicativo do Adobe Commerce.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437426?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505743?captions=por_br&learn=on)
 
 1. Abra o aplicativo PHPStorm e clique em **[!UICONTROL Add Configuration]** no lado superior direito da tela.
 
@@ -154,7 +154,7 @@ Isso permite que o aplicativo tenha as configurações de depuração corretas p
 
 ### Configurar encaminhamento de porta
 
->[!VIDEO](https://video.tv.adobe.com/v/3437410?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505689?captions=por_br&learn=on)
 
 Mapeie a conexão `XDEBUG` do servidor para o sistema local. Para fazer qualquer tipo de depuração, você deve encaminhar a porta 9000 do Adobe Commerce no servidor de infraestrutura em nuvem para o computador local. Consulte uma das seguintes seções:
 
@@ -323,7 +323,7 @@ Você precisa do seguinte:
 
 Esta é uma demonstração das configurações usadas, bem como uma demonstração do parâmetro GET para iniciar uma sessão de depuração remota.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505715?captions=por_br&learn=on)
 
 1. Habilitar depuração remota; visite o site no navegador e anexe o seguinte à URL em que `KEY` é o valor de `xdebug_key`.
 
