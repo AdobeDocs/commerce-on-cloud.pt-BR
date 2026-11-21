@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: b8340500872006bee0181c7bb92d89f0ff47abd7
+source-git-commit: 20c3ed7b632d940ccb63a4c1c506969867e72e36
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 3%
@@ -37,7 +37,7 @@ Estas informações de versão detalham as melhorias mais recentes nos pacotes d
 | ----------------- |----------| ---------------------------------------- | --------------------------- |
 | [pacote de ferramentas ece](ece-tools-package.md) | 2002.2.15 | Um conjunto de scripts e ferramentas projetado para gerenciar e implantar projetos na nuvem | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.15) |
 | [Patches da nuvem para o Commerce](cloud-patches.md) | 1.1.23 | Um conjunto de patches que melhoram a integração de todas as versões do Adobe Commerce com ambientes na nuvem. Este pacote inclui patches do Adobe Commerce e hotfixes disponíveis que são aplicados quando você usa o `ece-tools` para implantar | `magento/magento-cloud-patches`, por meio do repositório do Commerce Composer em `repo.magento.com` (requer um direito do Adobe Commerce na infraestrutura de nuvem; consulte [Notas de versão de Patches da nuvem para o Commerce](cloud-patches.md)) |
-| [Cloud Docker para Commerce](cloud-docker.md) | 1.4.10 | Arquivos de funcionalidade e configuração para imagens do Docker para implantar o Adobe Commerce em um ambiente de nuvem local | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.10) |
+| [Cloud Docker para Commerce](cloud-docker.md) | 1.4.11 | Arquivos de funcionalidade e configuração para imagens do Docker para implantar o Adobe Commerce em um ambiente de nuvem local | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.11) |
 | [Componentes na nuvem do Commerce](cloud-components.md) | 1.1.4 | Funcionalidade principal estendida do Adobe Commerce para sites implantados na infraestrutura em nuvem | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.4) |
 
 Ao atualizar para ECE-Tools 2002.1.0 ou posterior, você atualiza automaticamente para as versões mais recentes dos outros pacotes, que são dependências do pacote `ece-tools`. Consulte [Metapackage da nuvem](../development/overview.md#cloud-metapackage) para obter uma lista de dependências.

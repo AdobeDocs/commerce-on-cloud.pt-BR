@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 20c3ed7b632d940ccb63a4c1c506969867e72e36
 workflow-type: tm+mt
-source-wordcount: '4535'
+source-wordcount: '4586'
 ht-degree: 0%
 ---
 # Pacote do Cloud Docker
@@ -50,7 +50,15 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.4.10 {#latest}
+## v1.4.11 {#latest}
+
+Data de lançamento: 19 de novembro de 2026
+
+- ![novo ícone](../../assets/new.svg) **Nginx** — imagem nginx v1.30.7.<!-- MCLOUD-16080 --> adicionada
+- ![novo ícone](../../assets/new.svg) **Imagem base do FPM do PHP 8.1 atualizada**—Atualizou a imagem do Cloud Docker `php-fpm` 8.1 para a imagem base `php:8.1-fpm` (PHP 8.1.34).<!-- MCLOUD-16082 -->
+- ![Ícone de correção](../../assets/fix.svg) **Fortalecimento da segurança do Java**—Avaliou o uso do Java nas ferramentas da Nuvem e aplicou as correções e mitigações necessárias.<!-- MCLOUD-16055 -->
+
+## v1.4.10
 
 Data de lançamento: 08 de outubro de 2026
 
