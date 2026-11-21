@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 20c3ed7b632d940ccb63a4c1c506969867e72e36
 workflow-type: tm+mt
-source-wordcount: '4535'
+source-wordcount: '4586'
 ht-degree: 0%
 ---
 # Pacote do Cloud Docker
@@ -50,7 +50,15 @@ As notas de versão incluem:
 
 <!--Add release notes below-->
 
-## v1.4.10 {#latest}
+## v1.4.11 {#latest}
+
+Data de lançamento: 19 de novembro de 2026
+
+- ![novo ícone](../../assets/new.svg) **Nginx** — imagem nginx v1.30.7.<!-- MCLOUD-16080 --> adicionada
+- ![novo ícone](../../assets/new.svg) **Imagem base do FPM do PHP 8.1 atualizada**—Atualizou a imagem do Cloud Docker `php-fpm` 8.1 para a imagem base `php:8.1-fpm` (PHP 8.1.34).<!-- MCLOUD-16082 -->
+- ![Ícone de correção](../../assets/fix.svg) **Fortalecimento da segurança do Java**—Avaliou o uso do Java nas ferramentas da Nuvem e aplicou as correções e mitigações necessárias.<!-- MCLOUD-16055 -->
+
+## v1.4.10
 
 Data de lançamento: 08 de outubro de 2026
 
@@ -218,7 +226,7 @@ Data de lançamento: 14 de junho de 2021
 
 - ![novo ícone](../../assets/new.svg) **Adição do PHP 8.0**—Atualização do PHP para a versão 8.0, permitindo que você aproveite todos os novos recursos e otimizações que o PHP 8.0 inclui.<!--MCLOUD-7941-->
 - ![novo ícone](../../assets/new.svg) **Atualizado para o Vernish 6.6 e o Elasticsearch 7.11.2**—Os links a seguir fornecem informações sobre a versão do [Varnish Cache 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) e do Elasticsearch 7.11.2.<!--MCLOUD-7921-->
-- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por &#x200B;](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
+- ![novo ícone](../../assets/new.svg) **Adição da extensão `ioncube` para a imagem do PHP 7.4**—A extensão `ioncube` foi adicionada novamente à imagem do PHP 7.4 após ter sido excluída inicialmente da atualização do PHP 7.3 para o PHP 7.4. *[Enviado por ](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
 - ![novo ícone](../../assets/new.svg) **Adição de uma opção de sincronização de arquivo:`manual-native`**—A opção de sincronização de arquivo `manual-native` fornece controle manual sobre a sincronização, que fornece o melhor desempenho para ambientes macOS e Windows. Leia sobre como usar a opção `manual-native` no [Modo de desenvolvedor](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode) e [Sincronizando dados em um ambiente de desenvolvedor do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data#file-synchronization-options).<!--MCLOUD-7977-->
 - ![novo ícone](../../assets/new.svg) **Remoção de exclusões de volume dos comandos `up` e `down`**—A opção `--volume` foi removida dos comandos `bin/magento-docker up` e `bin/magento-docker down`, substituída pelo novo comando `bin/magento-docker init` com um aviso de perda de dados. Essa alteração ajuda a evitar a perda acidental de dados. *[Enviado por joeshelton-wagento](https://github.com/magento/magento-cloud-docker/pull/319).*<!--PR #319-->
 - ![Ícone de correção](../../assets/fix.svg) **Atualização do valor `CN` para o certificado gerado**—Remoção do valor codificado `CN` do Dockerfile. Este valor criou um erro de certificado (`NET::ERR_CERT_INVALID`) que fez com que a opção `--host` do comando `ece-docker build:compose` fosse ignorada.<!--MCLOUD-7934-->
